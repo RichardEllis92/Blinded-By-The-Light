@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3fd23409d8a05943abcedf18c6d8f36, type: 3}
+  m_Name: WelcomeGuide2
+  m_EditorClassIdentifier: 
+  dialogue:
+  - 'What do you mean?
+
+'
+  - You've always been here silly!
+  - You remember me right?
+  - I'm the Guide!
+  - Your best buddy...
+  responses:
+  - responseText: No I don't know you
+    dialogueObject: {fileID: 11400000, guid: d2ac92e03c8d43e42852b4de26cacfeb, type: 2}
+  name: ???

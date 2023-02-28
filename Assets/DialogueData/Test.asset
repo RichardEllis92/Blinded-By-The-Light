@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3fd23409d8a05943abcedf18c6d8f36, type: 3}
+  m_Name: Test
+  m_EditorClassIdentifier: 
+  dialogue:
+  - 'This is first my dialogue!
+
+    Hello.
+
+    Test.'
+  - 'This is my second dialogue.
+
+    Goodbye!'
+  responses:
+  - responseText: Yes
+    dialogueObject: {fileID: 11400000, guid: fbaf6809bcc123542a10ca64077925b4, type: 2}
+  - responseText: No
+    dialogueObject: {fileID: 11400000, guid: 749b6baa5b05286418a4a5d816d0ede9, type: 2}
+  name: Mr. Square

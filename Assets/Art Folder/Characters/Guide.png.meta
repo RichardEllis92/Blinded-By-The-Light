@@ -1,0 +1,420 @@
+fileFormatVersion: 2
+guid: dba8f863b55c8a14d8d1e3dacfc49528
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4771949921492676750
+    second: hood_guy_spritesheet_n.background_0
+  - first:
+      213: 3427313200230261252
+    second: hood_guy_spritesheet_n.background_1
+  - first:
+      213: -5209567547603520027
+    second: hood_guy_spritesheet_n.background_2
+  - first:
+      213: -4952389973157744157
+    second: hood_guy_spritesheet_n.background_3
+  - first:
+      213: 7276091630334100762
+    second: hood_guy_spritesheet_n.background_4
+  - first:
+      213: -7978915519556316387
+    second: hood_guy_spritesheet_n.background_5
+  - first:
+      213: 1546286866823413878
+    second: hood_guy_spritesheet_n.background_6
+  - first:
+      213: -6884560277215932496
+    second: hood_guy_spritesheet_n.background_7
+  - first:
+      213: -4830985324360882034
+    second: hood_guy_spritesheet_n.background_8
+  - first:
+      213: 8511488945186218573
+    second: hood_guy_spritesheet_n.background_9
+  - first:
+      213: 2114406448023551514
+    second: hood_guy_spritesheet_n.background_10
+  - first:
+      213: 8767057587222224690
+    second: hood_guy_spritesheet_n.background_11
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hood_guy_spritesheet_n.background_0
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 3101
+        width: 454
+        height: 902
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27fc97b44d0a6cdb0800000000000000
+      internalID: -4771949921492676750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hood_guy_spritesheet_n.background_1
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 3101
+        width: 454
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4026bb96233409f20800000000000000
+      internalID: 3427313200230261252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hood_guy_spritesheet_n.background_2
+      rect:
+        serializedVersion: 2
+        x: 2269
+        y: 3101
+        width: 454
+        height: 902
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e570bbbae5e3b7b0800000000000000
+      internalID: -5209567547603520027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hood_guy_spritesheet_n.background_3
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 2077
+        width: 454
+        height: 902
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e1f9bcee83954bb0800000000000000
+      internalID: -4952389973157744157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hood_guy_spritesheet_n.background_4
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 2077
+        width: 454
+        height: 870
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a15c14399ced9f460800000000000000
+      internalID: 7276091630334100762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hood_guy_spritesheet_n.background_5
+      rect:
+        serializedVersion: 2
+        x: 2237
+        y: 2077
+        width: 486
+        height: 902
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d139efbeb92354190800000000000000
+      internalID: -7978915519556316387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hood_guy_spritesheet_n.background_6
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 1021
+        width: 518
+        height: 966
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6708cd976b3857510800000000000000
+      internalID: 1546286866823413878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hood_guy_spritesheet_n.background_7
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 1021
+        width: 518
+        height: 934
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bf87c167e02570a0800000000000000
+      internalID: -6884560277215932496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hood_guy_spritesheet_n.background_8
+      rect:
+        serializedVersion: 2
+        x: 2141
+        y: 1021
+        width: 582
+        height: 966
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8828527174e4fcb0800000000000000
+      internalID: -4830985324360882034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hood_guy_spritesheet_n.background_9
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 29
+        width: 582
+        height: 934
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d422d7f8912ee1670800000000000000
+      internalID: 8511488945186218573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hood_guy_spritesheet_n.background_10
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 29
+        width: 614
+        height: 902
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1e3d3d3671e75d10800000000000000
+      internalID: 2114406448023551514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hood_guy_spritesheet_n.background_11
+      rect:
+        serializedVersion: 2
+        x: 2269
+        y: 29
+        width: 582
+        height: 934
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23f16cbfc68daa970800000000000000
+      internalID: 8767057587222224690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
