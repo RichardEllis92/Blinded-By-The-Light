@@ -11,33 +11,33 @@ public class DialogueActivator : MonoBehaviour, IInteractable
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("Player") && other.TryGetComponent(out PlayerController playercontroller))
+        if(other.CompareTag("Player") && other.TryGetComponent(out PlayerController playerController))
         {
-            playercontroller.Interactable = this;
+            playerController.Interactable = this;
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && other.TryGetComponent(out PlayerController playercontroller))
+        if (other.CompareTag("Player") && other.TryGetComponent(out PlayerController playerController))
         {
-            if(playercontroller.Interactable is DialogueActivator dialogueActivator && dialogueActivator == this)
+            if(playerController.Interactable is DialogueActivator dialogueActivator && dialogueActivator == this)
             {
-                playercontroller.Interactable = null;
+                playerController.Interactable = null;
             }
         }
     }
-    public void Interact(PlayerController playercontroller)
+    public void Interact(PlayerController playerController)
     {
         foreach(DialogueResponseEvents responseEvents in GetComponents<DialogueResponseEvents>())
         {
             if(responseEvents.DialogueObject == dialogueObject)
             {
-                playercontroller.DialogueUI.AddResponseEvents(responseEvents.Events);
+                playerController.DialogueUI.AddResponseEvents(responseEvents.Events);
                 break;
             }
         }
 
-        playercontroller.DialogueUI.ShowDialogue(dialogueObject);
+        playerController.DialogueUI.ShowDialogue(dialogueObject);
     }
 }

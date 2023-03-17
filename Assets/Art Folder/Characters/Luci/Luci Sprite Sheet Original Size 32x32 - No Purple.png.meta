@@ -1,0 +1,2868 @@
+fileFormatVersion: 2
+guid: 95794ba67b49cd4438f3e4facd1e99ec
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7607438275376754509
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_0
+  - first:
+      213: 4323526086837899240
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_1
+  - first:
+      213: 8086888183090211703
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_2
+  - first:
+      213: -6558006611853069741
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_3
+  - first:
+      213: -7004495037506132895
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_5
+  - first:
+      213: 1608286786913819572
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_6
+  - first:
+      213: -2337502931101043409
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_7
+  - first:
+      213: -3039294169139358637
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_13
+  - first:
+      213: 7161614950814133345
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_14
+  - first:
+      213: -1327510070869910099
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_15
+  - first:
+      213: -7748873681967509333
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_16
+  - first:
+      213: 9142976818891045818
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_17
+  - first:
+      213: -959727229387673097
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_18
+  - first:
+      213: -2753453805685243899
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_19
+  - first:
+      213: 3658800316493733596
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_20
+  - first:
+      213: -6305038154034414746
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_21
+  - first:
+      213: -4108548574226458328
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_22
+  - first:
+      213: 7407870134304601773
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_23
+  - first:
+      213: -5074387322191442184
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_24
+  - first:
+      213: 6071299954464748090
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_25
+  - first:
+      213: 7355366651438801497
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_26
+  - first:
+      213: -921484699320653312
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_27
+  - first:
+      213: 3571005703226242515
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_28
+  - first:
+      213: 1016081241415869896
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_29
+  - first:
+      213: -5095633052317421163
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_30
+  - first:
+      213: 1439168976068534214
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_31
+  - first:
+      213: -6794009068243452638
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_32
+  - first:
+      213: 8362046571102298913
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_33
+  - first:
+      213: 5484582005197351946
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_34
+  - first:
+      213: -486260340375087904
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_35
+  - first:
+      213: -3822390760861981755
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_36
+  - first:
+      213: -130564264231289284
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_37
+  - first:
+      213: 4871010401800995358
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_38
+  - first:
+      213: 695142164521099209
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_39
+  - first:
+      213: -6825554529294416778
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_40
+  - first:
+      213: -1608705610514816744
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_41
+  - first:
+      213: -7458105889087346467
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_42
+  - first:
+      213: -9155651831502793775
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_43
+  - first:
+      213: 1427361715162852748
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_44
+  - first:
+      213: 3527091258824874949
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_45
+  - first:
+      213: -4639956879933013297
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_46
+  - first:
+      213: -3732289112012428899
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_47
+  - first:
+      213: -607196194666222124
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_48
+  - first:
+      213: 188275576933038559
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_49
+  - first:
+      213: 8947287698396187012
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_50
+  - first:
+      213: -6461476661015556421
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_51
+  - first:
+      213: -6615646940073121182
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_52
+  - first:
+      213: -3410998068089627316
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_53
+  - first:
+      213: 4377262097601393352
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_54
+  - first:
+      213: 1464174983430351206
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_55
+  - first:
+      213: 2165072910410915415
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_56
+  - first:
+      213: -5307725842002182830
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_57
+  - first:
+      213: 2187510036416990486
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_58
+  - first:
+      213: -7539486033449273215
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_59
+  - first:
+      213: 8616847819216356091
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_60
+  - first:
+      213: 7971573709111367644
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_61
+  - first:
+      213: 4771470852103563992
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_62
+  - first:
+      213: 3813047664037585633
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_63
+  - first:
+      213: 8656565834322777978
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_64
+  - first:
+      213: 4241012598579814947
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_65
+  - first:
+      213: -8919823332449849402
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_66
+  - first:
+      213: -1845794034703577710
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_67
+  - first:
+      213: -4345935203362584257
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_68
+  - first:
+      213: 4525922438891665102
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_69
+  - first:
+      213: -8944355801319726161
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_70
+  - first:
+      213: 7230806270897798004
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_71
+  - first:
+      213: 3010488198798563335
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_72
+  - first:
+      213: -7671374678432236358
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_73
+  - first:
+      213: 3532098180271183851
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_74
+  - first:
+      213: 1351673206209945513
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_75
+  - first:
+      213: -6366295077806481855
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_76
+  - first:
+      213: 7619723430492393216
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_77
+  - first:
+      213: 9191984195615010388
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_78
+  - first:
+      213: -5339000374870325810
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_79
+  - first:
+      213: -5715710930770205562
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_80
+  - first:
+      213: 192574734738836303
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_81
+  - first:
+      213: 4199335814847329895
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_82
+  - first:
+      213: -3583703289694115036
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_83
+  - first:
+      213: -7889854845103846926
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_84
+  - first:
+      213: -6776523935490915057
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_85
+  - first:
+      213: 8253498794623364167
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_86
+  - first:
+      213: -3990978131709370449
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_87
+  - first:
+      213: 1549302586245151963
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_88
+  - first:
+      213: 3389573347676449566
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_89
+  - first:
+      213: 8182286694946384673
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_90
+  - first:
+      213: -6017157939763368929
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_91
+  - first:
+      213: 5555290807701949485
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_92
+  - first:
+      213: 4200640916097440547
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_93
+  - first:
+      213: -6735544869745486616
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_94
+  - first:
+      213: 5970564494596853285
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_95
+  - first:
+      213: -1508799988683937730
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_96
+  - first:
+      213: 2632238438180903831
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_97
+  - first:
+      213: 4278204862651933606
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_98
+  - first:
+      213: -2598773312577027532
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_99
+  - first:
+      213: -7738645092113525650
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_100
+  - first:
+      213: 1285335644328598115
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_101
+  - first:
+      213: -5427743526755597564
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_102
+  - first:
+      213: -5815098203330759491
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_103
+  - first:
+      213: 2643355172109267759
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_104
+  - first:
+      213: -4741343968398238923
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_105
+  - first:
+      213: -4495506630494724650
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_106
+  - first:
+      213: 3935849464620887015
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_107
+  - first:
+      213: 3066925775874493613
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_108
+  - first:
+      213: -6905164177597400910
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_109
+  - first:
+      213: 523169684480890226
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_110
+  - first:
+      213: -1932608491101334033
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_111
+  - first:
+      213: 3029385000588490480
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_112
+  - first:
+      213: 3344915186829490441
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_113
+  - first:
+      213: -2037853031693090187
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_114
+  - first:
+      213: 8918756086294889300
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_115
+  - first:
+      213: -1110347590614220124
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_116
+  - first:
+      213: -8553142079283331772
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_117
+  - first:
+      213: 3065948564470999810
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_118
+  - first:
+      213: 1787653775564505020
+    second: Luci Sprite Sheet Original Size 32x32 - No Purple_119
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 441
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b05579c133fc6690800000000000000
+      internalID: -7607438275376754509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 440
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ef8b17a110400c30800000000000000
+      internalID: 4323526086837899240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_2
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 440
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77b6563d4f56a3070800000000000000
+      internalID: 8086888183090211703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_3
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 440
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 352b5d97bb74df4a0800000000000000
+      internalID: -6558006611853069741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 452
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 164e572ffd80bce90800000000000000
+      internalID: -7004495037506132895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 452
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bbd3f6cf48c15610800000000000000
+      internalID: 1608286786913819572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 452
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f25b94208758f8fd0800000000000000
+      internalID: -2337502931101043409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_13
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 420
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35458885e0242d5d0800000000000000
+      internalID: -3039294169139358637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_14
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 420
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16c27699ada236360800000000000000
+      internalID: 7161614950814133345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_15
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 420
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dad9b0ebf9cb39de0800000000000000
+      internalID: -1327510070869910099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 388
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba014f80178767490800000000000000
+      internalID: -7748873681967509333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_17
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 388
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abbb1a7a9f062ee70800000000000000
+      internalID: 9142976818891045818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_18
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 388
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f1f3137b2d5ea2f0800000000000000
+      internalID: -959727229387673097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_19
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 388
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5000fa62a54c9c9d0800000000000000
+      internalID: -2753453805685243899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_20
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 388
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cde12b0b08ba6c230800000000000000
+      internalID: 3658800316493733596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_21
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 388
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66b7e7554310088a0800000000000000
+      internalID: -6305038154034414746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_22
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 388
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8295bcaf6d08bf6c0800000000000000
+      internalID: -4108548574226458328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_23
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 388
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da6737973aa0ec660800000000000000
+      internalID: 7407870134304601773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 356
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fe8800ad972499b0800000000000000
+      internalID: -5074387322191442184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 356
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3277b63427914450800000000000000
+      internalID: 6071299954464748090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_26
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 356
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 952a3c3cff2831660800000000000000
+      internalID: 7355366651438801497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 356
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00ae8075c8a3633f0800000000000000
+      internalID: -921484699320653312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_28
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 356
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d5b1bf54c2ce8130800000000000000
+      internalID: 3571005703226242515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_29
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 356
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c5e7817188d91e00800000000000000
+      internalID: 1016081241415869896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_30
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 356
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59171ea9cbca849b0800000000000000
+      internalID: -5095633052317421163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_31
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 356
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cfd3560f84f8f310800000000000000
+      internalID: 1439168976068534214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 324
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22df096afb4d6b1a0800000000000000
+      internalID: -6794009068243452638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_33
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 324
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12363d96d05fb0470800000000000000
+      internalID: 8362046571102298913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_34
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 324
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0ca94176462d1c40800000000000000
+      internalID: 5484582005197351946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_35
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 324
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e41597fbc47049f0800000000000000
+      internalID: -486260340375087904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_36
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 324
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c3261adad324fac0800000000000000
+      internalID: -3822390760861981755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_37
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 324
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3e32225e74203ef0800000000000000
+      internalID: -130564264231289284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_38
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 324
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e12c498172e499340800000000000000
+      internalID: 4871010401800995358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_39
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 324
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cf1da89d14a5a900800000000000000
+      internalID: 695142164521099209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 292
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6740956a152c641a0800000000000000
+      internalID: -6825554529294416778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_41
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 292
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 811261145cabca9e0800000000000000
+      internalID: -1608705610514816744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_42
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 292
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd823b7653c7f7890800000000000000
+      internalID: -7458105889087346467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_43
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 292
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d31f100b2790f080800000000000000
+      internalID: -9155651831502793775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_44
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 292
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8d264edae10fc310800000000000000
+      internalID: 1427361715162852748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_45
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 292
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cb54a400deb2f030800000000000000
+      internalID: 3527091258824874949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_46
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 292
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc2867e1dcf8b9fb0800000000000000
+      internalID: -4639956879933013297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_47
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 292
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d99e07fb3de343cc0800000000000000
+      internalID: -3732289112012428899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 260
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dd63fb274ec297f0800000000000000
+      internalID: -607196194666222124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_49
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 260
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd9b9f2c3a3ec9200800000000000000
+      internalID: 188275576933038559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_50
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 260
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4898026c1c62b2c70800000000000000
+      internalID: 8947287698396187012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_51
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 260
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbec0bf06393456a0800000000000000
+      internalID: -6461476661015556421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_52
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 260
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26aaa81c8208034a0800000000000000
+      internalID: -6615646940073121182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_53
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 260
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4d59fd4453b9a0d0800000000000000
+      internalID: -3410998068089627316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_54
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 260
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c2ff40afa82fbc30800000000000000
+      internalID: 4377262097601393352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_55
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 260
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6692160d36bc15410800000000000000
+      internalID: 1464174983430351206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 228
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75e1dd94752eb0e10800000000000000
+      internalID: 2165072910410915415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_57
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 228
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25d7c4ed77b2756b0800000000000000
+      internalID: -5307725842002182830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_58
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 228
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61d8c37c9c89b5e10800000000000000
+      internalID: 2187510036416990486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_59
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 228
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 188bc33066d5e5790800000000000000
+      internalID: -7539486033449273215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_60
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 228
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf28df30071359770800000000000000
+      internalID: 8616847819216356091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_61
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 228
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd71d60ad08b0ae60800000000000000
+      internalID: 7971573709111367644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_62
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 228
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8da63cba57ba73240800000000000000
+      internalID: 4771470852103563992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_63
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 228
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e2e796e5aaaae430800000000000000
+      internalID: 3813047664037585633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 196
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a77979903cc422870800000000000000
+      internalID: 8656565834322777978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_65
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 196
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3226e421d7a1bda30800000000000000
+      internalID: 4241012598579814947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_66
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 196
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cfe51a30fb663480800000000000000
+      internalID: -8919823332449849402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_67
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 196
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29d45f8da1c6266e0800000000000000
+      internalID: -1845794034703577710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_68
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 196
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3945b255f220b3c0800000000000000
+      internalID: -4345935203362584257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_69
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 196
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec67b139a7e4fce30800000000000000
+      internalID: 4525922438891665102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_70
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 196
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa322a5b9c34fd380800000000000000
+      internalID: -8944355801319726161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_71
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 196
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47bb7803efbf85460800000000000000
+      internalID: 7230806270897798004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 164
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 708d4e9011767c920800000000000000
+      internalID: 3010488198798563335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_73
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 164
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abcbe19ef5dc98590800000000000000
+      internalID: -7671374678432236358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_74
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 164
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be71ed2c498840130800000000000000
+      internalID: 3532098180271183851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_75
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 164
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9af9e8c9e9b12c210800000000000000
+      internalID: 1351673206209945513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_76
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 164
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14ed6085b5066a7a0800000000000000
+      internalID: -6366295077806481855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_77
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 164
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00f4839c612beb960800000000000000
+      internalID: 7619723430492393216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_78
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 164
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45e23a8bcec709f70800000000000000
+      internalID: 9191984195615010388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_79
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 164
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec54d20427f08e5b0800000000000000
+      internalID: -5339000374870325810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 132
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 684ef9c0137bda0b0800000000000000
+      internalID: -5715710930770205562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_81
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 132
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4bc2d073b92ca200800000000000000
+      internalID: 192574734738836303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_82
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 132
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 766fc80bca9074a30800000000000000
+      internalID: 4199335814847329895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_83
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 132
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42b226568d0244ec0800000000000000
+      internalID: -3583703289694115036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_84
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 132
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f9c03412da918290800000000000000
+      internalID: -7889854845103846926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_85
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 132
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f05c12d5263f4f1a0800000000000000
+      internalID: -6776523935490915057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_86
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 132
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74ce3afbc615a8270800000000000000
+      internalID: 8253498794623364167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_87
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 132
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faf5c19c8823d98c0800000000000000
+      internalID: -3990978131709370449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_88
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 100
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdc7cbe5e7a308510800000000000000
+      internalID: 1549302586245151963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_89
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 100
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1be260400f2a0f20800000000000000
+      internalID: 3389573347676449566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_90
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 100
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12b2faeb5625d8170800000000000000
+      internalID: 8182286694946384673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_91
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 100
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1cabfaebb2ce7ca0800000000000000
+      internalID: -6017157939763368929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_92
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 100
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2c41117e8b581d40800000000000000
+      internalID: 5555290807701949485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_93
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 100
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32b95f048acab4a30800000000000000
+      internalID: 4200640916097440547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_94
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 100
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e49d1e90a98682a0800000000000000
+      internalID: -6735544869745486616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_95
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 100
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52e410146c4bbd250800000000000000
+      internalID: 5970564494596853285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 68
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e38616d776aaf0be0800000000000000
+      internalID: -1508799988683937730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_97
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 68
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79bd6efc9e6978420800000000000000
+      internalID: 2632238438180903831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_98
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 68
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a3a7bad7ac3f5b30800000000000000
+      internalID: 4278204862651933606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_99
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 68
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 432c41ce07d4febd0800000000000000
+      internalID: -2598773312577027532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_100
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 68
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e64d0c13a4fca9490800000000000000
+      internalID: -7738645092113525650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_101
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 68
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36a9a5165fd66d110800000000000000
+      internalID: 1285335644328598115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_102
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 68
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4038ec31508cca4b0800000000000000
+      internalID: -5427743526755597564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_103
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 68
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db435786efe9c4fa0800000000000000
+      internalID: -5815098203330759491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_104
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 36
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f23b3c026851fa420800000000000000
+      internalID: 2643355172109267759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_105
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 36
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53b9ead08cc533eb0800000000000000
+      internalID: -4741343968398238923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_106
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 36
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ddd2fba980cc91c0800000000000000
+      internalID: -4495506630494724650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_107
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 36
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eba32c2c32fe9630800000000000000
+      internalID: 3935849464620887015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_108
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 36
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dac0d7f6eb8ef8a20800000000000000
+      internalID: 3066925775874493613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_109
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 36
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b8fd8ef3cdeb20a0800000000000000
+      internalID: -6905164177597400910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_110
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 36
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2759cb06e0ca24700800000000000000
+      internalID: 523169684480890226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_111
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 36
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe5500611defd25e0800000000000000
+      internalID: -1932608491101334033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_112
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f639ff8b998a0a20800000000000000
+      internalID: 3029385000588490480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_113
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 4
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 909f7cae3a68b6e20800000000000000
+      internalID: 3344915186829490441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_114
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 4
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5720b75f67718b3e0800000000000000
+      internalID: -2037853031693090187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_115
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 4
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 453c5f92869c5cb70800000000000000
+      internalID: 8918756086294889300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_116
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 4
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a28a3ccfb04790f0800000000000000
+      internalID: -1110347590614220124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_117
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 4
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44dfeda68922d4980800000000000000
+      internalID: -8553142079283331772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_118
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 4
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20ba9eca9ff6c8a20800000000000000
+      internalID: 3065948564470999810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luci Sprite Sheet Original Size 32x32 - No Purple_119
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 4
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbf78e133a50fc810800000000000000
+      internalID: 1787653775564505020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

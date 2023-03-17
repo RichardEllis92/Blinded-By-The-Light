@@ -110,8 +110,6 @@ MonoBehaviour:
   noEnemies: 0
   guideDialogue: 0
   enemies:
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 8970366888756230356}
   - {fileID: 377188893484738656}
   - {fileID: 2958224927550979288}

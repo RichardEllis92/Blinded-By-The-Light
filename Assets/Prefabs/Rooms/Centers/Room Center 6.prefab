@@ -2021,7 +2021,6 @@ MonoBehaviour:
   enemies:
   - {fileID: 2655374535389414781}
   - {fileID: 207609068268173305}
-  - {fileID: 0}
   theRoom: {fileID: 0}
 --- !u!1001 &959157407057518051
 PrefabInstance:
