@@ -9,6 +9,7 @@ TagManager:
   - Boss
   - SecondDialogue
   - NoBullet
+  - Level Exit
   layers:
   - Default
   - TransparentFX
@@ -63,4 +64,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 3763430899
+    locked: 0
+  - name: Player Bullets
+    uniqueID: 1307751147
     locked: 0

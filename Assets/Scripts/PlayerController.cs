@@ -30,6 +30,8 @@ public class PlayerController : MonoBehaviour
     public float dashCounter;
     private float dashCoolCounter;
 
+    public bool animationOverride = false;
+
     [HideInInspector]
     public bool canMove = true;
 
@@ -38,6 +40,8 @@ public class PlayerController : MonoBehaviour
     public DialogueUI DialogueUI => dialogueUI;
 
     public IInteractable Interactable { get; set; }
+
+    private int experiencePoints = 0;
 
     private void Awake()
     {
@@ -59,20 +63,13 @@ public class PlayerController : MonoBehaviour
         activeMoveSpeed = moveSpeed;
     }
 
+    
     // Update is called once per frame
     void Update()
     {
         PlayerMove();
-
-        if (Input.GetKeyDown(KeyCode.E) && dialogueUI.isOpen == false)
-        {
-
-            if (Interactable != null)
-            {
-                Interactable.Interact(this);
-            }
-
-        }
+        StopPlayer();
+        Interact();
     }
 
     void PlayerMove()
@@ -80,34 +77,28 @@ public class PlayerController : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
 
+        if (dialogueUI.isOpen)
+        {
+            animationOverride = true;
+            theRB.velocity = Vector3.zero;
+            anim.Play("Player_Idle");
+            anim.enabled = false;
+            theRB.velocity = Vector3.zero;
+        }
+        else
+        {
+            animationOverride = false;
+            anim.enabled = true;
+        }
+
         if (canMove && !LevelManager.instance.isPaused && !dialogueUI.isOpen)
         {
-
             moveInput.x = Input.GetAxisRaw("Horizontal");
             moveInput.y = Input.GetAxisRaw("Vertical");
 
             moveInput.Normalize();
 
             theRB.velocity = moveInput * activeMoveSpeed;
-
-            Vector3 mousePos = Input.mousePosition;
-            Vector3 screenPoint = CameraController.instance.mainCamera.WorldToScreenPoint(transform.localPosition);
-
-            if (mousePos.x < screenPoint.x)
-            {
-                transform.localScale = new Vector3(-1f, 1f, 1f);
-                gunArm.localScale = new Vector3(-1f, -1f, 1f);
-            }
-            else
-            {
-                transform.localScale = Vector3.one;
-                gunArm.localScale = Vector3.one;
-            }
-
-            //rotate gun arm
-            Vector2 offset = new Vector2(mousePos.x - screenPoint.x, mousePos.y - screenPoint.y);
-            float angle = Mathf.Atan2(offset.y, offset.x) * Mathf.Rad2Deg;
-            gunArm.rotation = Quaternion.Euler(0, 0, angle);
 
 
             if (Input.GetKeyDown(KeyCode.Space) && sceneName != "Luci Room")
@@ -117,7 +108,7 @@ public class PlayerController : MonoBehaviour
                     activeMoveSpeed = dashSpeed;
                     dashCounter = dashLength;
 
-                    anim.SetTrigger("dash");
+                    anim.SetTrigger("isRolling");
 
                     PlayerHealthController.instance.MakeInvincible(dashInvincibility);
 
@@ -140,20 +131,120 @@ public class PlayerController : MonoBehaviour
                 dashCoolCounter -= Time.deltaTime;
             }
 
-            if (moveInput != Vector2.zero)
+            if (animationOverride)
             {
-                anim.SetBool("isMoving", true);
+                return;
             }
             else
             {
-                anim.SetBool("isMoving", false);
+                if (moveInput.x > 0 && (!Input.GetKeyDown(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.LeftArrow)))
+                {
+                    anim.SetBool("isMovingRight", true);
+                }
+                else if (anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Walk_Right_Backwards") && Input.GetKey(KeyCode.RightArrow))
+                {
+                    anim.SetBool("isMovingRightBackwards", false);
+                }
+                else if (moveInput.x > 0 && (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKey(KeyCode.LeftArrow)))
+                {
+                    anim.SetBool("isMovingRightBackwards", true);
+                    anim.SetBool("isMovingRight", false);
+                }
+                else
+                {
+                    anim.SetBool("isMovingRight", false);
+                    anim.SetBool("isMovingRightBackwards", false);
+                }
+                if (moveInput.x < 0 && (!Input.GetKeyDown(KeyCode.RightArrow) && !Input.GetKey(KeyCode.RightArrow)))
+                {
+                    anim.SetBool("isMovingLeft", true);
+                }
+                else if (anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Walk_Left_Backwards") && Input.GetKey(KeyCode.LeftArrow))
+                {
+                    anim.SetBool("isMovingLeftBackwards", false);
+                }
+                else if (moveInput.x < 0 && (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKey(KeyCode.RightArrow)))
+                {
+                    anim.SetBool("isMovingLeftBackwards", true);
+                    anim.SetBool("isMovingLeft", false);
+                }
+                else
+                {
+                    anim.SetBool("isMovingLeft", false);
+                    anim.SetBool("isMovingLeftBackwards", false);
+                }
+                if (moveInput.y > 0 && (!Input.GetKeyDown(KeyCode.DownArrow) && !Input.GetKey(KeyCode.DownArrow)))
+                {
+                    anim.SetBool("isMovingUp", true);
+                }
+                else if (anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Walk_Up_Backwards") && Input.GetKey(KeyCode.UpArrow))
+                {
+                    anim.SetBool("isMovingUpBackwards", false);
+                }
+                else if (moveInput.y > 0 && (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKey(KeyCode.DownArrow)))
+                {
+                    anim.SetBool("isMovingUp", false);
+                    anim.SetBool("isMovingUpBackwards", true);
+                }
+                else
+                {
+                    anim.SetBool("isMovingUp", false);
+                    anim.SetBool("isMovingUpBackwards", false);
+                }
+                if (moveInput.y < 0 && (!Input.GetKeyDown(KeyCode.UpArrow) && !Input.GetKey(KeyCode.UpArrow)))
+                {
+                    anim.SetBool("isMovingDown", true);
+                    //anim.SetBool("isMovingUpBackwards", false);
+                }
+                else if (anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Walk_Down_Backwards") && Input.GetKey(KeyCode.DownArrow))
+                {
+                    anim.SetBool("isMovingDownBackwards", false);
+                }
+                else if (moveInput.y < 0 && (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKey(KeyCode.UpArrow)))
+                {
+                    anim.SetBool("isMovingDown", false);
+                    anim.SetBool("isMovingDownBackwards", true);
+                    //Play moving up backwards anim
+                }
+                else
+                {
+                    anim.SetBool("isMovingDown", false);
+                    anim.SetBool("isMovingDownBackwards", false);
+                }
+
             }
         }
-        else
+    }
+
+    void StopPlayer()
+    {
+        if (dialogueUI.isOpen)
         {
-            theRB.velocity = Vector2.zero;
-            anim.SetBool("isMoving", false);
+            anim.Play("Player_Idle");
+            theRB.velocity = Vector3.zero;
         }
     }
-   
+
+    void Interact()
+    {
+        if (Input.GetKeyDown(KeyCode.E) && dialogueUI.isOpen == false)
+        {
+
+            if (Interactable != null)
+            {
+                Interactable.Interact(this);
+            }
+
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Level Exit")
+        {
+            anim.Play("Player_Idle");
+            theRB.velocity = Vector3.zero;
+        }
+    }
+    
 }

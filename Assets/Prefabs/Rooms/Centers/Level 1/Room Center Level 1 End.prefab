@@ -127,6 +127,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 756b1886c226fa7498db423b76db4d4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameObjectRequired: 0
+  gameObject: {fileID: 0}
   DialogueObject: {fileID: 11400000, guid: 6a60d69e9892c784c843fe62cb11eea5, type: 2}
 --- !u!1 &2198091346821441092
 GameObject:
@@ -200,6 +202,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openWhenEnemiesCleared: 1
   noEnemies: 1
+  guideDialogue: 0
   enemies: []
   theRoom: {fileID: 0}
 --- !u!1 &2294127219660233640
@@ -2043,6 +2046,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5227375767016839035, guid: a2fdad7eb401abe45b75bb219916ec3e, type: 3}
       propertyPath: m_Name
+      value: Level Exit
+      objectReference: {fileID: 0}
+    - target: {fileID: 5227375767016839035, guid: a2fdad7eb401abe45b75bb219916ec3e, type: 3}
+      propertyPath: m_TagString
       value: Level Exit
       objectReference: {fileID: 0}
     m_RemovedComponents: []
