@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyController : MonoBehaviour
@@ -11,7 +9,7 @@ public class EnemyController : MonoBehaviour
     [Header("Chase Player")]
     public bool shouldChasePlayer;
     public float rangeToChasePlayer;
-    private Vector3 moveDirection;
+    private Vector3 _moveDirection;
 
     [Header("Run Away")]
     public bool shouldRunAway;
@@ -20,20 +18,20 @@ public class EnemyController : MonoBehaviour
     [Header("Wandering")]
     public bool shouldWander;
     public float wanderLength, pauseLength;
-    private float wanderCounter, pauseCounter;
-    private Vector3 wanderDirection;
+    private float _wanderCounter, _pauseCounter;
+    private Vector3 _wanderDirection;
 
     [Header("Patrolling")]
     public bool shouldPatrol;
     public Transform[] patrolPoints;
-    private int currentPatrolPoint;
+    private int _currentPatrolPoint;
 
     [Header("Shooting")]
     public bool shouldShoot;
     public GameObject bullet;
     public Transform firePoint;
     public float fireRate;
-    private float fireCounter;
+    private float _fireCounter;
     public float shootRange;
 
     [Header("Variables")]
@@ -47,76 +45,77 @@ public class EnemyController : MonoBehaviour
     public bool shouldDropItem;
     public GameObject[] itemsToDrop;
     public float itemDropPercent;
+    private static readonly int IsMoving = Animator.StringToHash("isMoving");
 
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         if(shouldWander)
         {
-            pauseCounter = Random.Range(pauseLength * 0.75f, pauseLength * 1.25f);
+            _pauseCounter = Random.Range(pauseLength * 0.75f, pauseLength * 1.25f);
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (theBody.isVisible && PlayerController.instance.gameObject.activeInHierarchy)
+        if (theBody.isVisible && PlayerController.Instance.gameObject.activeInHierarchy)
         {
-            moveDirection = Vector3.zero;
+            _moveDirection = Vector3.zero;
 
-            if (Vector3.Distance(transform.position, PlayerController.instance.transform.position) < rangeToChasePlayer && shouldChasePlayer)
+            if (Vector3.Distance(transform.position, PlayerController.Instance.transform.position) < rangeToChasePlayer && shouldChasePlayer)
             {
-                moveDirection = PlayerController.instance.transform.position - transform.position;
+                _moveDirection = PlayerController.Instance.transform.position - transform.position;
             }
             else
             {
                 if (shouldWander)
                 {
-                    if (wanderCounter > 0)
+                    if (_wanderCounter > 0)
                     {
-                        wanderCounter -= Time.deltaTime;
+                        _wanderCounter -= Time.deltaTime;
 
                         //move the enemy
-                        moveDirection = wanderDirection;
+                        _moveDirection = _wanderDirection;
 
-                        if (wanderCounter <= 0)
+                        if (_wanderCounter <= 0)
                         {
-                            pauseCounter = Random.Range(pauseLength * .75f, pauseLength * 1.25f);
+                            _pauseCounter = Random.Range(pauseLength * .75f, pauseLength * 1.25f);
                         }
                     }
 
-                    if (pauseCounter > 0)
+                    if (_pauseCounter > 0)
                     {
-                        pauseCounter -= Time.deltaTime;
+                        _pauseCounter -= Time.deltaTime;
 
-                        if (pauseCounter <= 0)
+                        if (_pauseCounter <= 0)
                         {
-                            wanderCounter = Random.Range(wanderLength * .75f, wanderLength * 1.25f);
+                            _wanderCounter = Random.Range(wanderLength * .75f, wanderLength * 1.25f);
 
-                            wanderDirection = new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), 0f);
+                            _wanderDirection = new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), 0f);
                         }
                     }
                 }
 
                 if (shouldPatrol)
                 {
-                    moveDirection = patrolPoints[currentPatrolPoint].position - transform.position;
+                    _moveDirection = patrolPoints[_currentPatrolPoint].position - transform.position;
 
-                    if (Vector3.Distance(transform.position, patrolPoints[currentPatrolPoint].position) < .2f)
+                    if (Vector3.Distance(transform.position, patrolPoints[_currentPatrolPoint].position) < .2f)
                     {
-                        currentPatrolPoint++;
-                        if (currentPatrolPoint >= patrolPoints.Length)
+                        _currentPatrolPoint++;
+                        if (_currentPatrolPoint >= patrolPoints.Length)
                         {
-                            currentPatrolPoint = 0;
+                            _currentPatrolPoint = 0;
                         }
                     }
                 }
             }
 
-            if (shouldRunAway && Vector3.Distance(transform.position, PlayerController.instance.transform.position) < runawayRange)
+            if (shouldRunAway && Vector3.Distance(transform.position, PlayerController.Instance.transform.position) < runawayRange)
             {
-                moveDirection = transform.position - PlayerController.instance.transform.position;
+                _moveDirection = transform.position - PlayerController.Instance.transform.position;
             }
 
 
@@ -126,20 +125,20 @@ public class EnemyController : MonoBehaviour
             } */
 
 
-            moveDirection.Normalize();
+            _moveDirection.Normalize();
 
-            theRB.velocity = moveDirection * moveSpeed;
+            theRB.velocity = _moveDirection * moveSpeed;
 
 
-            if (shouldShoot && Vector3.Distance(transform.position, PlayerController.instance.transform.position) < shootRange)
+            if (shouldShoot && Vector3.Distance(transform.position, PlayerController.Instance.transform.position) < shootRange)
             {
-                fireCounter -= Time.deltaTime;
+                _fireCounter -= Time.deltaTime;
 
-                if (fireCounter <= 0)
+                if (_fireCounter <= 0)
                 {
-                    fireCounter = fireRate;
+                    _fireCounter = fireRate;
                     Instantiate(bullet, firePoint.position, firePoint.rotation);
-                    AudioManager.instance.PlaySFX(10);
+                    AudioManager.Instance.PlaySfx(10);
                 }
             }
 
@@ -150,47 +149,35 @@ public class EnemyController : MonoBehaviour
             theRB.velocity = Vector2.zero;
         }
 
-        if (moveDirection != Vector3.zero)
-        {
-            anim.SetBool("isMoving", true);
-        }
-        else
-        {
-            anim.SetBool("isMoving", false);
-        }
+        anim.SetBool(IsMoving, _moveDirection != Vector3.zero);
     }
 
     public void DamageEnemy(int damage)
     {
         health -= damage;
 
-        Instantiate(hitEffect, transform.position, transform.rotation);
+        var enemyControllerTransform = transform;
+        Instantiate(hitEffect, enemyControllerTransform.position, enemyControllerTransform.rotation);
 
-        if(health <= 0)
-        {
-            Destroy(gameObject);
+        if (health > 0) return;
+        Destroy(gameObject);
 
-            AudioManager.instance.PlaySFX(1);
+        AudioManager.Instance.PlaySfx(1);
 
-            int selectedSplatter = Random.Range(0, deathSplatters.Length);
+        int selectedSplatter = Random.Range(0, deathSplatters.Length);
 
-            int rotation = Random.Range(0, 4) * 90;
+        int rotation = Random.Range(0, 4) * 90;
 
-            Instantiate(deathSplatters[selectedSplatter], transform.position, Quaternion.Euler(0f, 0f, rotation));
+        Instantiate(deathSplatters[selectedSplatter], transform.position, Quaternion.Euler(0f, 0f, rotation));
 
-            //drop items
+        //drop items
 
-            if (shouldDropItem)
-            {
-                float dropChance = Random.Range(0f, 100f);
+        if (!shouldDropItem) return;
+        var dropChance = Random.Range(0f, 100f);
 
-                if (dropChance <= itemDropPercent)
-                {
-                    int randomItem = Random.Range(0, itemsToDrop.Length);
-
-                    Instantiate(itemsToDrop[randomItem], transform.position, transform.rotation);
-                }
-            }
-        }
+        if (!(dropChance <= itemDropPercent)) return;
+        var randomItem = Random.Range(0, itemsToDrop.Length);
+        
+        Instantiate(itemsToDrop[randomItem], enemyControllerTransform.position, enemyControllerTransform.rotation);
     }
 }

@@ -1,44 +1,31 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Breakables : MonoBehaviour
 {
-    public GameObject[] brokenPieces;
-    public int maxPieces = 5;
+    //public GameObject[] brokenPieces;
+    //public int maxPieces = 5;
 
     public bool shouldDropItem;
     public GameObject[] itemsToDrop;
     public float itemDropPercent;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void Smash()
+    private void Smash()
     {
         Destroy(gameObject);
 
-        AudioManager.instance.PlaySFX(0);
+        AudioManager.Instance.PlaySfx(0);
 
         //show broken pieces
+        /*
         int piecesToDrop = Random.Range(1, maxPieces);
 
         for (int i = 0; i < piecesToDrop; i++)
         {
             int randomPiece = Random.Range(0, brokenPieces.Length);
 
-            Instantiate(brokenPieces[randomPiece], transform.position, transform.rotation);
+            var breakablesTransform = transform;
+            Instantiate(brokenPieces[randomPiece], breakablesTransform.position, breakablesTransform.rotation);
         }
-
+        */
         //drop items
 
         if (shouldDropItem)
@@ -49,21 +36,22 @@ public class Breakables : MonoBehaviour
             {
                 int randomItem = Random.Range(0, itemsToDrop.Length);
 
-                Instantiate(itemsToDrop[randomItem], transform.position, transform.rotation);
+                var breakablesTransform = transform;
+                Instantiate(itemsToDrop[randomItem], breakablesTransform.position, breakablesTransform.rotation);
             }
         }
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Player")
+        if(other.CompareTag("Player"))
         {
-            if(PlayerController.instance.dashCounter > 0)
+            if(PlayerController.Instance.dashCounter > 0)
             {
                 Smash();
             }
         }
 
-        if(other.tag == "PlayerBullet")
+        if(other.CompareTag("PlayerBullet"))
         {
             Smash();
         }

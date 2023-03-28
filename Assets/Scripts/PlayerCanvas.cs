@@ -1,23 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class PlayerCanvas : MonoBehaviour
 {
-    public Transform Follow;
+    [FormerlySerializedAs("Follow")] public Transform follow;
 
-    private Camera MainCamera;
+    private Camera _mainCamera;
 
     // Start is called before the first frame update
     void Start()
     {
-        MainCamera = Camera.main;
+        _mainCamera = Camera.main;
     }
 
     // Update is called once per frame
     void Update()
     {
-        var screenPos = MainCamera.WorldToScreenPoint(Follow.position);
+        var screenPos = _mainCamera.WorldToScreenPoint(follow.position);
 
         transform.position = screenPos;
     }

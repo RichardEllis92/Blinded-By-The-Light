@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GuideExit : MonoBehaviour
@@ -8,10 +6,8 @@ public class GuideExit : MonoBehaviour
 
     void Update()
     {
-        if (DialogueUI.instance.talkedToFinalGuide == true)
-        {
-            levelExit.SetActive(true);
-            Destroy(gameObject);
-        }
+        if (DialogueUI.Instance.talkedToFinalGuide != true) return;
+        levelExit.SetActive(true);
+        Destroy(gameObject);
     }
 }

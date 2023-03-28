@@ -1,22 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SpriteSortOrder : MonoBehaviour
 {
-    private SpriteRenderer theSR;
+    private SpriteRenderer _theSr;
 
     // Start is called before the first frame update
     void Start()
     {
-        theSR = GetComponent<SpriteRenderer>();
+        _theSr = GetComponent<SpriteRenderer>();
 
-        theSR.sortingOrder = Mathf.RoundToInt(transform.position.y * -10f);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        _theSr.sortingOrder = Mathf.RoundToInt(transform.position.y * -10f);
     }
 }

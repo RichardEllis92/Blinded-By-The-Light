@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class RoomCenter : MonoBehaviour
 {
-    public static RoomCenter instance;
-
     public bool openWhenEnemiesCleared, noEnemies, guideDialogue;
 
     public List<GameObject> enemies = new List<GameObject>();
@@ -15,7 +13,6 @@ public class RoomCenter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        instance = this;
         if (openWhenEnemiesCleared)
         {
             theRoom.closeWhenEntered = true;
@@ -38,7 +35,7 @@ public class RoomCenter : MonoBehaviour
 
             if (enemies.Count == 0)
             {
-                StartCoroutine(CameraShake.instance.ShakeCamera());
+                StartCoroutine(CameraShake.Instance.ShakeCamera());
 
                 StartCoroutine(RoomComplete());
 
@@ -46,7 +43,7 @@ public class RoomCenter : MonoBehaviour
             }
         }
 
-        if(DialogueUI.instance.talkedToGuide == true)
+        if(DialogueUI.Instance.talkedToGuide)
         {
             guideDialogue = false;
         }
@@ -58,10 +55,10 @@ public class RoomCenter : MonoBehaviour
 
     }
 
-    public IEnumerator RoomComplete()
+    private IEnumerator RoomComplete()
     {
         yield return new WaitForSeconds(1);
-        AudioManager.instance.PlaySFX(13);
+        AudioManager.Instance.PlaySfx(13);
         theRoom.OpenDoors();
     }
 }

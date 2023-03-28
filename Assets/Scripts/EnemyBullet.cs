@@ -5,30 +5,30 @@ using UnityEngine;
 public class EnemyBullet : MonoBehaviour
 {
     public float speed;
-    private Vector3 direction;
+    private Vector3 _direction;
 
     // Start is called before the first frame update
     void Start()
     {
-        direction = PlayerController.instance.transform.position - transform.position;
-        direction.Normalize();
+        _direction = PlayerController.Instance.transform.position - transform.position;
+        _direction.Normalize();
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position += direction * speed * Time.deltaTime;
+        transform.position += _direction * (speed * Time.deltaTime);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Player")
+        if(other.CompareTag("Player"))
         {
-            PlayerHealthController.instance.DamagePlayer();
+            PlayerHealthController.Instance.DamagePlayer();
         }
 
         Destroy(gameObject);
-        AudioManager.instance.PlaySFX(3);
+        AudioManager.Instance.PlaySfx(3);
     }
 
     private void OnBecameInvisible()

@@ -1,13 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class ShopItem : MonoBehaviour
 {
     public GameObject buyMessage;
 
-    private bool inBuyZone;
+    private bool _inBuyZone;
 
     public bool isHealthRestore, isHealthUpgrade, isWeapon;
 
@@ -17,32 +14,32 @@ public class ShopItem : MonoBehaviour
 
     void Update()
     {
-        if(inBuyZone)
+        if(_inBuyZone)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                if(LevelManager.instance.currentCoins >= itemCost)
+                if(LevelManager.Instance.currentCoins >= itemCost)
                 {
-                    LevelManager.instance.SpendCoins(itemCost);
+                    LevelManager.Instance.SpendCoins(itemCost);
 
                     if (isHealthRestore)
                     {
-                        PlayerHealthController.instance.HealPlayer(PlayerHealthController.instance.maxHealth);
+                        PlayerHealthController.Instance.HealPlayer(PlayerHealthController.Instance.maxHealth);
                     }
 
                     if (isHealthUpgrade)
                     {
-                        PlayerHealthController.instance.IncreaseMaxHealth(healthUpgradeAmount);
+                        PlayerHealthController.Instance.IncreaseMaxHealth(healthUpgradeAmount);
                     }
 
                     gameObject.SetActive(false);
-                    inBuyZone = false;
+                    _inBuyZone = false;
 
-                    AudioManager.instance.PlaySFX(11);
+                    AudioManager.Instance.PlaySfx(11);
                 }
                 else
                 {
-                    AudioManager.instance.PlaySFX(12);
+                    AudioManager.Instance.PlaySfx(12);
                 }
             }
         }
@@ -50,20 +47,20 @@ public class ShopItem : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Player")
+        if(other.CompareTag("Player"))
         {
             buyMessage.SetActive(true);
 
-            inBuyZone = true;
+            _inBuyZone = true;
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if (other.CompareTag("Player"))
         {
             buyMessage.SetActive(false);
-            inBuyZone = false;
+            _inBuyZone = false;
         }
     }
 }

@@ -98,5 +98,5 @@ MonoBehaviour:
   moveSpeed: 3
   deceleration: 5
   lifetime: 3
-  theSR: {fileID: 2383792222250435903}
+  theSr: {fileID: 2383792222250435903}
   fadeSpeed: 2.5

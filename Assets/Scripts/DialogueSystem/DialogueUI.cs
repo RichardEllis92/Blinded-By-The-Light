@@ -5,40 +5,38 @@ using UnityEngine.SceneManagement;
 
 public class DialogueUI : MonoBehaviour
 {
-    public static DialogueUI instance;
+    public static DialogueUI Instance;
     public GameObject dialogueBox;
 
     [SerializeField] private GameObject nameBox;
     [SerializeField] private TMP_Text textLabel;
-    [SerializeField] private DialogueObject startingDialogueObject;
     [SerializeField] private TMP_Text nameLabel;
     [SerializeField] private GameObject continueText;
-    public bool isOpen { get; private set; }
-    public bool startingDialogue = false;
-    public bool secondDialogue = false;
-    public bool talkedToGuide = false;
-    public bool talkedToFinalGuide = false;
+    public bool IsOpen { get; private set; }
+    public bool startingDialogue;
+    public bool talkedToGuide;
+    public bool talkedToFinalGuide;
 
     public string playerName = (System.Environment.UserName);
 
 
-    private ResponseHandler responseHandler;
-    private TypeWriterEffect typeWriterEffect;
+    private ResponseHandler _responseHandler;
+    private TypeWriterEffect _typeWriterEffect;
 
     private void Start()
     {
-        instance = this;
+        Instance = this;
         
 
-        typeWriterEffect = GetComponent<TypeWriterEffect>();
-        responseHandler = GetComponent<ResponseHandler>();
+        _typeWriterEffect = GetComponent<TypeWriterEffect>();
+        _responseHandler = GetComponent<ResponseHandler>();
 
     }
 
     private void Update()
     {
-        Scene currentScene = SceneManager.GetActiveScene();
-        string sceneName = currentScene.name;
+        var currentScene = SceneManager.GetActiveScene();
+        var sceneName = currentScene.name;
 
         if (sceneName == "Boss")
         {
@@ -49,7 +47,7 @@ public class DialogueUI : MonoBehaviour
 
     public void ShowDialogue(DialogueObject dialogueObject)
     {
-        isOpen = true;
+        IsOpen = true;
         nameBox.SetActive(true);
         nameLabel.text = dialogueObject.name;
         dialogueBox.SetActive(true);
@@ -58,7 +56,7 @@ public class DialogueUI : MonoBehaviour
 
     public void AddResponseEvents(ResponseEvent[] responseEvents)
     {
-        responseHandler.AddResponseEvents(responseEvents);
+        _responseHandler.AddResponseEvents(responseEvents);
     }
         private IEnumerator StepThroughDialogue(DialogueObject dialogueObject)
     {
@@ -67,27 +65,26 @@ public class DialogueUI : MonoBehaviour
             yield return new WaitForSeconds(2f);
         }
         
-        for (int i = 0; i < dialogueObject.Dialogue.Length; i++)
+        for (var i = 0; i < dialogueObject.Dialogue.Length; i++)
         {
             continueText.SetActive(false);
-            string name = dialogueObject.name;
-            string dialogue = dialogueObject.Dialogue[i];
+            var dialogue = dialogueObject.Dialogue[i];
             dialogue = dialogue.Replace("{playerName}", playerName);
             yield return RunTypingEffect(dialogue);
 
             
             textLabel.text = dialogue;
             
-            if (i == dialogueObject.Dialogue.Length - 1 && dialogueObject.hasResponses) break;
+            if (i == dialogueObject.Dialogue.Length - 1 && dialogueObject.HasResponses) break;
 
             yield return new WaitForSeconds(0.3f);
             continueText.SetActive(true);
             yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.E));
         }
 
-        if (dialogueObject.hasResponses)
+        if (dialogueObject.HasResponses)
         {
-            responseHandler.ShowResponses(dialogueObject.Responses);
+            _responseHandler.ShowResponses(dialogueObject.Responses);
         }
         else
         {
@@ -112,24 +109,24 @@ public class DialogueUI : MonoBehaviour
 
     private IEnumerator RunTypingEffect(string dialogue)
     {
-        AudioManager.instance.PlaySFX(14);
-        typeWriterEffect.Run(dialogue, textLabel);
+        AudioManager.Instance.PlaySfx(14);
+        _typeWriterEffect.Run(dialogue, textLabel);
 
-        while (typeWriterEffect.isRunning)
+        while (_typeWriterEffect.IsRunning)
         {
             yield return null;
 
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                AudioManager.instance.StopSFX(14);
-                typeWriterEffect.Stop();
+                AudioManager.Instance.StopSfx(14);
+                _typeWriterEffect.Stop();
             }
         }
     }
     public void CloseDialogueBox()
     {
         continueText.SetActive(false);
-        isOpen = false;
+        IsOpen = false;
         dialogueBox.SetActive(false);
         textLabel.text = string.Empty;
     }

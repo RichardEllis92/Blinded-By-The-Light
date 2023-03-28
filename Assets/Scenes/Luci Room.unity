@@ -1672,11 +1672,9 @@ MonoBehaviour:
   dialogueBox: {fileID: 1894524854}
   nameBox: {fileID: 922446873}
   textLabel: {fileID: 11126215}
-  startingDialogueObject: {fileID: 11400000, guid: bb1825bc185c26747bd660fef32c2b3c, type: 2}
   nameLabel: {fileID: 922446879}
   continueText: {fileID: 1085157166}
   startingDialogue: 1
-  secondDialogue: 0
   talkedToGuide: 0
   talkedToFinalGuide: 0
   playerName: riggy
@@ -4456,7 +4454,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameObjectRequired: 0
   gameObject: {fileID: 0}
-  DialogueObject: {fileID: 11400000, guid: bb1825bc185c26747bd660fef32c2b3c, type: 2}
+  dialogueObject: {fileID: 11400000, guid: bb1825bc185c26747bd660fef32c2b3c, type: 2}
 --- !u!1 &1989303985
 GameObject:
   m_ObjectHideFlags: 0
@@ -7221,6 +7219,7 @@ MonoBehaviour:
   dashCooldown: 1
   dashInvincibility: 0.5
   dashCounter: 0
+  animationOverride: 0
   canMove: 1
   dialogueUI: {fileID: 504113512}
 --- !u!4 &6810987403103750432
@@ -7318,7 +7317,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletToFire: {fileID: 3839126037310162859, guid: e8b4755967b22144783a20e8b4340ff8, type: 3}
-  firePoint: {fileID: 8370020867486255459}
+  firePointUp: {fileID: 0}
+  firePointDown: {fileID: 0}
+  firePointLeft: {fileID: 0}
+  firePointRight: {fileID: 0}
   timeBetweenShots: 0.4
   dialogueUI: {fileID: 504113512}
 --- !u!114 &6918986080105819520
@@ -7627,7 +7629,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletToFire: {fileID: 3839126037310162859, guid: e8b4755967b22144783a20e8b4340ff8, type: 3}
-  firePoint: {fileID: 7517640960089441039}
+  firePointUp: {fileID: 0}
+  firePointDown: {fileID: 0}
+  firePointLeft: {fileID: 0}
+  firePointRight: {fileID: 0}
   timeBetweenShots: 0.4
   dialogueUI: {fileID: 504113512}
 --- !u!1 &7517640960089441036

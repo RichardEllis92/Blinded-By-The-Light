@@ -7,30 +7,30 @@ public class TypeWriterEffect : MonoBehaviour
 {
     [SerializeField] private float writingSpeed = 5f;
 
-    public bool isRunning { get; private set; }
+    public bool IsRunning { get; private set; }
 
-    private readonly List<Punctuation> punctuations = new List<Punctuation>()
+    private readonly List<Punctuation> _punctuations = new List<Punctuation>()
     {
         new Punctuation(new HashSet<char>(){'.', '!', '?'}, 0.6f)
     };
 
-    private Coroutine typingCoroutine;
+    private Coroutine _typingCoroutine;
  
     public void Run(string textToType, TMP_Text textLabel)
     {
         //AudioManager.instance.PlaySFX(14);
-        typingCoroutine = StartCoroutine(TypeText(textToType, textLabel));
+        _typingCoroutine = StartCoroutine(TypeText(textToType, textLabel));
     }
 
     public void Stop()
     {
-        StopCoroutine(typingCoroutine);
-        isRunning = false;
+        StopCoroutine(_typingCoroutine);
+        IsRunning = false;
     }
 
     private IEnumerator TypeText(string textToType, TMP_Text textLabel)
     {
-        isRunning = true;
+        IsRunning = true;
 
         textLabel.text = string.Empty;
         
@@ -55,23 +55,21 @@ public class TypeWriterEffect : MonoBehaviour
                 
                 textLabel.text = textToType.Substring(0, i + 1);
 
-                if (isPunctuation(textToType[i], out float waitTime) && !isLast && !isPunctuation(textToType[i + 1], out _))
+                if (IsPunctuation(textToType[i], out var waitTime) && !isLast && !IsPunctuation(textToType[i + 1], out _))
                 {
-                    AudioManager.instance.StopSFX(14);
-                    //yield return new WaitForSeconds(waitTime);
-                    //AudioManager.instance.PlaySFX(14);
+                    AudioManager.Instance.StopSfx(14);
                 }
                 
             }
             yield return null;
         }
-        AudioManager.instance.StopSFX(14);
-        isRunning = false;
+        AudioManager.Instance.StopSfx(14);
+        IsRunning = false;
     }
 
-    private bool isPunctuation(char character, out float waitTime)
+    private bool IsPunctuation(char character, out float waitTime)
     {
-        foreach(Punctuation punctuationCategory in punctuations)
+        foreach(Punctuation punctuationCategory in _punctuations)
         {
             if (punctuationCategory.Punctuations.Contains(character))
             {

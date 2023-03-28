@@ -4,38 +4,38 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
-    bool startingRoomDialogue;
-    float waitTime = 1f;
-    bool dialogueTriggered;
+    private bool _startingRoomDialogue;
+    private const float WaitTime = 1f;
+    private bool _dialogueTriggered;
     public bool gameObjectRequired;
-    public GameObject gameObject;
+    public new GameObject gameObject;
 
-    [SerializeField] private DialogueObject DialogueObject;
+    [SerializeField] private DialogueObject dialogueObject;
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && !startingRoomDialogue && !dialogueTriggered)
+        if (other.CompareTag("Player") && !_startingRoomDialogue && !_dialogueTriggered)
         {
             if ((gameObjectRequired && gameObject.activeSelf) || !gameObjectRequired)
             {
-                DialogueUI.instance.ShowDialogue(DialogueObject);
-                dialogueTriggered = true;
+                DialogueUI.Instance.ShowDialogue(dialogueObject);
+                _dialogueTriggered = true;
             }
         }
-        else if (other.CompareTag("Player") && startingRoomDialogue && !dialogueTriggered)
+        else if (other.CompareTag("Player") && _startingRoomDialogue && !_dialogueTriggered)
         {
             if ((gameObjectRequired && gameObject.activeSelf) || !gameObjectRequired)
             {
                 StartCoroutine(WaitForFadeIn());
-                DialogueUI.instance.ShowDialogue(DialogueObject);
-                dialogueTriggered = true;
+                DialogueUI.Instance.ShowDialogue(dialogueObject);
+                _dialogueTriggered = true;
             }
         }
     }
 
-    IEnumerator WaitForFadeIn()
+    private static IEnumerator WaitForFadeIn()
     {
-        yield return new WaitForSeconds(waitTime);
+        yield return new WaitForSeconds(WaitTime);
     }
 
 }

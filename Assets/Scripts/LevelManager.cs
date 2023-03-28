@@ -1,11 +1,10 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
-    public static LevelManager instance;
+    public static LevelManager Instance;
 
     public float waitToLoad = 4f;
 
@@ -15,7 +14,7 @@ public class LevelManager : MonoBehaviour
 
     public int currentCoins;
 
-    public int defaultCoins = 0;
+    public int defaultCoins;
     public int defaultHealth = 5;
     public int defaultMaxHealth = 5;
     
@@ -27,7 +26,7 @@ public class LevelManager : MonoBehaviour
 
     private void Awake()
     {
-        instance = this;
+        Instance = this;
     }
 
     // Start is called before the first frame update
@@ -46,15 +45,15 @@ public class LevelManager : MonoBehaviour
         }
         else
         {
-            currentCoins = CharacterTracker.instance.currentCoins;
+            currentCoins = CharacterTracker.Instance.currentCoins;
         }
 
-        PlayerController.instance.transform.position = startPoint.position;
-        PlayerController.instance.canMove = true;
+        PlayerController.Instance.transform.position = startPoint.position;
+        PlayerController.Instance.canMove = true;
 
         Time.timeScale = 1f;
 
-        UIController.instance.coinText.text = currentCoins.ToString() + " Gold";
+        UIController.Instance.coinText.text = currentCoins.ToString() + " Gold";
 
       
     }
@@ -62,10 +61,7 @@ public class LevelManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Scene currentScene = SceneManager.GetActiveScene();
-        string sceneName = currentScene.name;
-
-        if (Input.GetKeyDown(KeyCode.P) && !DialogueUI.instance.dialogueBox.activeSelf)
+        if (Input.GetKeyDown(KeyCode.P) && !DialogueUI.Instance.dialogueBox.activeSelf)
         {
             PauseUnpause();
         }
@@ -76,17 +72,17 @@ public class LevelManager : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
 
-        AudioManager.instance.PlayLevelWin();
+        AudioManager.Instance.PlayLevelWin();
 
-        PlayerController.instance.canMove = false;
+        PlayerController.Instance.canMove = false;
 
         if(sceneName == "Luci Room")
         {
-            LuciRoomUI.instance.StartFadeToBlack();
+            LuciRoomUI.Instance.StartFadeToBlack();
         }
         else
         {
-            UIController.instance.StartFadeToBlack();
+            UIController.Instance.StartFadeToBlack();
         }
         
 
@@ -94,22 +90,22 @@ public class LevelManager : MonoBehaviour
 
         if(sceneName != "Luci Room")
         {
-            CharacterTracker.instance.currentCoins = currentCoins;
-            CharacterTracker.instance.currentHealth = PlayerHealthController.instance.currentHealth;
-            CharacterTracker.instance.maxHealth = PlayerHealthController.instance.maxHealth;
+            CharacterTracker.Instance.currentCoins = currentCoins;
+            CharacterTracker.Instance.currentHealth = PlayerHealthController.Instance.currentHealth;
+            CharacterTracker.Instance.maxHealth = PlayerHealthController.Instance.maxHealth;
         }     
 
-        DialogueUI.instance.talkedToGuide = false;
+        DialogueUI.Instance.talkedToGuide = false;
         SceneManager.LoadScene(nextLevel);
     }
 
     public void PauseUnpause()
     {
-        if (CameraController.instance.bigMapActive == false)
+        if (CameraController.Instance.bigMapActive == false)
         {
             if (!isPaused)
             {
-                UIController.instance.pauseMenu.SetActive(true);
+                UIController.Instance.pauseMenu.SetActive(true);
 
                 isPaused = true;
 
@@ -117,7 +113,7 @@ public class LevelManager : MonoBehaviour
             }
             else
             {
-                UIController.instance.pauseMenu.SetActive(false);
+                UIController.Instance.pauseMenu.SetActive(false);
 
                 isPaused = false;
 
@@ -130,7 +126,7 @@ public class LevelManager : MonoBehaviour
     {
         currentCoins += amount;
 
-        UIController.instance.coinText.text = currentCoins.ToString() + " Gold";
+        UIController.Instance.coinText.text = currentCoins.ToString() + " Gold";
     }
 
     public void SpendCoins(int amount)
@@ -142,7 +138,7 @@ public class LevelManager : MonoBehaviour
             currentCoins = 0;
         }
 
-        UIController.instance.coinText.text = currentCoins.ToString() + " Gold";
+        UIController.Instance.coinText.text = currentCoins.ToString() + " Gold";
     }
 
     public void RemoveCoins()

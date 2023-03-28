@@ -1,31 +1,30 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraShake : MonoBehaviour
 {
-    public static CameraShake instance;
+    public static CameraShake Instance;
 
-    Transform camTrans;
+    Transform _camTrans;
 
     public float shakeTime;
     public float shakeRange;
-    Vector3 originalPosition, currentPosition;
+    private Vector3 _originalPosition, _currentPosition;
 
     private void Awake()
     {
-        instance = this;
+        Instance = this;
     }
     void Start()
     {
-        camTrans = Camera.main.transform;
-        originalPosition = camTrans.position;
+        if (Camera.main != null) _camTrans = Camera.main.transform;
+        _originalPosition = _camTrans.position;
     }
 
     void Update()
     {
         //camTrans = Camera.main.transform;
-        currentPosition = camTrans.position;
+        _currentPosition = _camTrans.position;
     }
 
     public IEnumerator ShakeCamera()
@@ -34,17 +33,17 @@ public class CameraShake : MonoBehaviour
 
         while (elapsedTime < shakeTime)
         {
-            Vector3 pos = currentPosition + Random.insideUnitSphere * shakeRange;
+            Vector3 pos = _currentPosition + Random.insideUnitSphere * shakeRange;
 
-            pos.z = originalPosition.z;
+            pos.z = _originalPosition.z;
 
-            camTrans.position = pos;
+            _camTrans.position = pos;
 
             elapsedTime += Time.deltaTime;
 
             yield return null;
         }
-        camTrans.position = currentPosition;
+        _camTrans.position = _currentPosition;
     }
 
 }

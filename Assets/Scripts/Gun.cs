@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,9 +8,13 @@ public class Gun : MonoBehaviour
     private Transform firePointUp, firePointDown, firePointLeft, firePointRight;
 
     public float timeBetweenShots;
-    private float shotCounter;
+    private float _shotCounter;
 
     [SerializeField] private DialogueUI dialogueUI;
+    private static readonly int IsMovingUp = Animator.StringToHash("isMovingUp");
+    private static readonly int IsMovingDown = Animator.StringToHash("isMovingDown");
+    private static readonly int IsMovingLeft = Animator.StringToHash("isMovingLeft");
+    private static readonly int IsMovingRight = Animator.StringToHash("isMovingRight");
     public DialogueUI DialogueUI => dialogueUI;
 
     void Update()
@@ -20,54 +22,54 @@ public class Gun : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
 
-        if (PlayerController.instance.canMove && !PlayerController.instance.animationOverride && !LevelManager.instance.isPaused && !dialogueUI.isOpen && sceneName != "Luci Room")
+        if (PlayerController.Instance.canMove && !PlayerController.Instance.animationOverride && !LevelManager.Instance.isPaused && !dialogueUI.IsOpen && sceneName != "Luci Room")
         {
-            if (shotCounter > 0)
+            if (_shotCounter > 0)
             {
-                shotCounter -= Time.deltaTime;
+                _shotCounter -= Time.deltaTime;
             }
             else
             {
                 if (Input.GetKey(KeyCode.UpArrow))
                 {
-                   if (PlayerController.instance.anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Right") || PlayerController.instance.anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Left") || PlayerController.instance.anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle") || PlayerController.instance.anim.GetCurrentAnimatorStateInfo(0).IsName("isMovingUpBackwards"))
-                    {
-                        PlayerController.instance.anim.SetBool("isMovingUp", true);
-                    }
-                    Instantiate(bulletToFire, firePointUp.position, Quaternion.Euler(new Vector3(0,0,90)));
-                    shotCounter = timeBetweenShots;
-                    AudioManager.instance.PlaySFX(9);
+                   if (PlayerController.Instance.anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Right") || PlayerController.Instance.anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Left") || PlayerController.Instance.anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle") || PlayerController.Instance.anim.GetCurrentAnimatorStateInfo(0).IsName("isMovingUpBackwards"))
+                   {
+                        PlayerController.Instance.anim.SetBool(IsMovingUp, true);
+                   }
+                   Instantiate(bulletToFire, firePointUp.position, Quaternion.Euler(new Vector3(0,0,90)));
+                   _shotCounter = timeBetweenShots;
+                   AudioManager.Instance.PlaySfx(9);
                 }
                 else if (Input.GetKey(KeyCode.DownArrow))
                 {
-                    if (PlayerController.instance.anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Right") || PlayerController.instance.anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Left") || PlayerController.instance.anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Back") || PlayerController.instance.anim.GetCurrentAnimatorStateInfo(0).IsName("isMovingDownBackwards"))
+                    if (PlayerController.Instance.anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Right") || PlayerController.Instance.anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Left") || PlayerController.Instance.anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Back") || PlayerController.Instance.anim.GetCurrentAnimatorStateInfo(0).IsName("isMovingDownBackwards"))
                     {
-                        PlayerController.instance.anim.SetBool("isMovingDown", true);
+                        PlayerController.Instance.anim.SetBool(IsMovingDown, true);
                     }
                     Instantiate(bulletToFire, firePointDown.position, Quaternion.Euler(new Vector3(0, 0, -90)));
-                    shotCounter = timeBetweenShots;
-                    AudioManager.instance.PlaySFX(9);
+                    _shotCounter = timeBetweenShots;
+                    AudioManager.Instance.PlaySfx(9);
                 }
                 else if (Input.GetKey(KeyCode.LeftArrow))
                 {
-                    if (PlayerController.instance.anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Right") || PlayerController.instance.anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle") || PlayerController.instance.anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Back") || PlayerController.instance.anim.GetCurrentAnimatorStateInfo(0).IsName("isMovingLeftBackwards"))
+                    if (PlayerController.Instance.anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Right") || PlayerController.Instance.anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle") || PlayerController.Instance.anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Back") || PlayerController.Instance.anim.GetCurrentAnimatorStateInfo(0).IsName("isMovingLeftBackwards"))
                     {
-                        PlayerController.instance.anim.SetBool("isMovingLeft", true);
+                        PlayerController.Instance.anim.SetBool(IsMovingLeft, true);
                     }
 
                     Instantiate(bulletToFire, firePointLeft.position, Quaternion.Euler(new Vector3(0, 0, 180)));
-                    shotCounter = timeBetweenShots;
-                    AudioManager.instance.PlaySFX(9);
+                    _shotCounter = timeBetweenShots;
+                    AudioManager.Instance.PlaySfx(9);
                 }
                 else if (Input.GetKey(KeyCode.RightArrow) )
                 {
-                    if (PlayerController.instance.anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Left") || PlayerController.instance.anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle") || PlayerController.instance.anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Back") || PlayerController.instance.anim.GetCurrentAnimatorStateInfo(0).IsName("isMovingRightBackwards"))
+                    if (PlayerController.Instance.anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Left") || PlayerController.Instance.anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle") || PlayerController.Instance.anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Back") || PlayerController.Instance.anim.GetCurrentAnimatorStateInfo(0).IsName("isMovingRightBackwards"))
                     {
-                        PlayerController.instance.anim.SetBool("isMovingRight", true);
+                        PlayerController.Instance.anim.SetBool(IsMovingRight, true);
                     }
                     Instantiate(bulletToFire, firePointRight.position, Quaternion.Euler(new Vector3(0, 0, 0)));
-                    shotCounter = timeBetweenShots;
-                    AudioManager.instance.PlaySFX(9);
+                    _shotCounter = timeBetweenShots;
+                    AudioManager.Instance.PlaySfx(9);
                 }
             }
         }

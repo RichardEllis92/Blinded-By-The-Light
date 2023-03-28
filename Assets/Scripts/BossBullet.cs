@@ -1,11 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BossBullet : MonoBehaviour
 {
     public float speed;
-    private Vector3 direction;
+    private Vector3 _direction;
 
     // Start is called before the first frame update
     void Start()
@@ -13,15 +11,15 @@ public class BossBullet : MonoBehaviour
         //direction = PlayerController.instance.transform.position - transform.position;
         //direction.Normalize();
 
-        direction = transform.right;
+        _direction = transform.right;
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position += direction * speed * Time.deltaTime;
+        transform.position =  speed * Time.deltaTime * _direction;
 
-        if (!BossController.instance.gameObject.activeInHierarchy)
+        if (!BossController.Instance.gameObject.activeInHierarchy)
         {
             Destroy(gameObject);
         }
@@ -29,13 +27,13 @@ public class BossBullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if (other.CompareTag("Player"))
         {
-            PlayerHealthController.instance.DamagePlayer();
+            PlayerHealthController.Instance.DamagePlayer();
         }
 
         Destroy(gameObject);
-        AudioManager.instance.PlaySFX(3);
+        AudioManager.Instance.PlaySfx(3);
     }
 
     private void OnBecameInvisible()

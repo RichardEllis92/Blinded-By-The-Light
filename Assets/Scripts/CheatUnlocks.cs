@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class CheatUnlocks : MonoBehaviour
 {
-    public static CheatUnlocks instance;
+    public static CheatUnlocks Instance;
     
-    private bool windSpellUnlocked = false;
-    private bool windSpellAlreadyUnlocked = false;
+    private bool _windSpellUnlocked = false;
+    private bool _windSpellAlreadyUnlocked = false;
     [SerializeField]
     private GameObject windSpellUnlockedPopUp;
     [SerializeField]
     private GameObject windSpellAlreadyUnlockedPopUp;
     
-    private bool iceSpellUnlocked = false;
-    private bool iceSpellAlreadyUnlocked = false;
+    private bool _iceSpellUnlocked = false;
+    private bool _iceSpellAlreadyUnlocked = false;
     [SerializeField]
     private GameObject iceSpellUnlockedPopUp;
     [SerializeField]
@@ -22,25 +22,25 @@ public class CheatUnlocks : MonoBehaviour
     
     public void UnlockWindSpell()
     {
-        windSpellUnlocked = true;
+        _windSpellUnlocked = true;
         
         StartCoroutine(UnlockWindSpellPopUp());
     }
     
     IEnumerator UnlockWindSpellPopUp()
     {
-        if (!windSpellAlreadyUnlocked)
+        if (!_windSpellAlreadyUnlocked)
         {
             windSpellUnlockedPopUp.SetActive(true);
-            AudioManager.instance.PlaySFX(1);
+            AudioManager.Instance.PlaySfx(1);
             yield return new WaitForSeconds(2f);
             windSpellUnlockedPopUp.SetActive(false);
-            windSpellAlreadyUnlocked = true;
+            _windSpellAlreadyUnlocked = true;
         }
         else
         {
             windSpellAlreadyUnlockedPopUp.SetActive(true);
-            AudioManager.instance.PlaySFX(2);
+            AudioManager.Instance.PlaySfx(2);
             yield return new WaitForSeconds(2f);
             windSpellAlreadyUnlockedPopUp.SetActive(false);
         }
@@ -49,25 +49,25 @@ public class CheatUnlocks : MonoBehaviour
     
     public void UnlockIceSpell()
     {
-        iceSpellUnlocked = true;
+        _iceSpellUnlocked = true;
         
         StartCoroutine(UnlockIceSpellPopUp());
     }
     
     IEnumerator UnlockIceSpellPopUp()
     {
-        if (!iceSpellAlreadyUnlocked)
+        if (!_iceSpellAlreadyUnlocked)
         {
             iceSpellUnlockedPopUp.SetActive(true);
-            AudioManager.instance.PlaySFX(1);
+            AudioManager.Instance.PlaySfx(1);
             yield return new WaitForSeconds(2f);
             iceSpellUnlockedPopUp.SetActive(false);
-            iceSpellAlreadyUnlocked = true;
+            _iceSpellAlreadyUnlocked = true;
         }
         else
         {
             iceSpellAlreadyUnlockedPopUp.SetActive(true);
-            AudioManager.instance.PlaySFX(2);
+            AudioManager.Instance.PlaySfx(2);
             yield return new WaitForSeconds(2f);
             iceSpellAlreadyUnlockedPopUp.SetActive(false);
         }
