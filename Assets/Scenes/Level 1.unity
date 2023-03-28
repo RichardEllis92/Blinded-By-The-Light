@@ -552,7 +552,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5844066746439515674, guid: bedcdda4aa15af646a06f2243721507e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5844066746964704944, guid: bedcdda4aa15af646a06f2243721507e, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1523,7 +1523,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.011139199, y: -0.10307046}
+  m_Offset: {x: 0.0149559975, y: -0.13289312}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1534,7 +1534,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.35392424, y: 0.5153783}
+  m_Size: {x: 0.2868222, y: 0.6346702}
   m_EdgeRadius: 0
 --- !u!50 &6810987402946678605
 Rigidbody2D:
@@ -1586,15 +1586,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  theRB: {fileID: 6810987402946678605}
-  gunArm: {fileID: 6810987402254044594}
+  theRb: {fileID: 6810987402946678605}
   anim: {fileID: 6810987402946678594}
-  bodySR: {fileID: 1430542123}
+  bodySr: {fileID: 1430542123}
   dashSpeed: 8
   dashLength: 0.5
   dashCooldown: 1
   dashInvincibility: 0.5
   dashCounter: 0
+  animationOverride: 0
   canMove: 1
   dialogueUI: {fileID: 344491099}
 --- !u!114 &7517640959585508816

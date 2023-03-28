@@ -2,33 +2,29 @@ using System;
 
 public class CheatSystemCommandBase
 {
-    private string _cheatID;
-    private string _cheatDescription;
-    private string _cheatFormat;
+    public string CheatID { get; }
+    public string CheatDescription { get; }
+    public string CheatFormat { get; }
 
-    public string cheatID { get { return _cheatID; } }
-    public string cheatDescription { get { return _cheatDescription; } }
-    public string cheatFormat { get { return _cheatFormat; } }
-
-    public CheatSystemCommandBase(string id, string description, string format)
+    protected CheatSystemCommandBase(string id, string description, string format)
     {
-        _cheatID = id;
-        _cheatDescription = description;
-        _cheatFormat = format;
+        CheatID = id;
+        CheatDescription = description;
+        CheatFormat = format;
     }
 }
 
 public class CheatSystemCommand : CheatSystemCommandBase
 {
-    private Action cheat;
+    private readonly Action _cheat;
 
     public CheatSystemCommand(string id, string description, string format, Action cheat) : base(id, description, format)
     {
-        this.cheat = cheat;
+        this._cheat = cheat;
     }
 
     public void Invoke()
     {
-        cheat.Invoke();
+        _cheat.Invoke();
     }
 }

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Room : MonoBehaviour
@@ -26,9 +24,9 @@ public class Room : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Player")
+        if(other.CompareTag("Player"))
         {
-            CameraController.instance.ChangeTarget(transform);
+            CameraController.Instance.ChangeTarget(transform);
 
             if (closeWhenEntered)
             {
@@ -46,7 +44,7 @@ public class Room : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if(other.tag == "Player")
+        if(other.CompareTag("Player"))
         {
             roomActive = false;
         }

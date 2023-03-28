@@ -1,7 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class LevelGenerator : MonoBehaviour
 {
@@ -16,20 +14,20 @@ public class LevelGenerator : MonoBehaviour
 
     public Transform generatorPoint;
 
-    public enum Direction { up, right, down, left};
+    public enum Direction { Up, Right, Down, Left};
     public Direction selectedDirection;
 
     public float xOffset = 18f, yOffset = 10f;
 
     public LayerMask whatIsRoom;
 
-    private GameObject endRoom, shopRoom, healRoom;
+    private GameObject _endRoom, _shopRoom, _healRoom;
 
-    private List<GameObject> layoutRoomObjects = new List<GameObject>();
+    private readonly List<GameObject> _layoutRoomObjects = new List<GameObject>();
 
     public RoomPrefabs rooms;
 
-    private List<GameObject> generatedOutlines = new List<GameObject>();
+    private readonly List<GameObject> _generatedOutlines = new List<GameObject>();
 
     public RoomCenter centerStart, centerEnd, centerShop, centerHealRoom;
     public RoomCenter[] potentialCenters;
@@ -46,14 +44,14 @@ public class LevelGenerator : MonoBehaviour
         {
             GameObject newRoom =  Instantiate(layoutRoom, generatorPoint.position, generatorPoint.rotation);
 
-            layoutRoomObjects.Add(newRoom);
+            _layoutRoomObjects.Add(newRoom);
 
             if(i + 1 == amountOfRooms)
             {
                 newRoom.GetComponent<SpriteRenderer>().color = endRoomColor;
-                layoutRoomObjects.RemoveAt(layoutRoomObjects.Count - 1);
+                _layoutRoomObjects.RemoveAt(_layoutRoomObjects.Count - 1);
 
-                endRoom = newRoom;
+                _endRoom = newRoom;
             }
 
             selectedDirection = (Direction)Random.Range(0, 4);
@@ -69,37 +67,37 @@ public class LevelGenerator : MonoBehaviour
         if (isShop)
         {
             int shopSelector = Random.Range(shopMinDistance, shopMaxDistance + 1);
-            shopRoom = layoutRoomObjects[shopSelector];
-            layoutRoomObjects.RemoveAt(shopSelector);
-            shopRoom.GetComponent<SpriteRenderer>().color = shopRoomColor;
+            _shopRoom = _layoutRoomObjects[shopSelector];
+            _layoutRoomObjects.RemoveAt(shopSelector);
+            _shopRoom.GetComponent<SpriteRenderer>().color = shopRoomColor;
         }
 
         if (isHealRoom)
         {
             int healRoomSelector = Random.Range(healRoomMinDistance, healRoomMaxDistance + 1);
-            healRoom = layoutRoomObjects[healRoomSelector];
-            layoutRoomObjects.RemoveAt(healRoomSelector);
-            healRoom.GetComponent<SpriteRenderer>().color = healRoomColor;
+            _healRoom = _layoutRoomObjects[healRoomSelector];
+            _layoutRoomObjects.RemoveAt(healRoomSelector);
+            _healRoom.GetComponent<SpriteRenderer>().color = healRoomColor;
         }
 
         //create room outlines
         CreateRoomOutline(Vector3.zero);
-        foreach(GameObject room in layoutRoomObjects)
+        foreach(GameObject room in _layoutRoomObjects)
         {
             CreateRoomOutline(room.transform.position);
         }
-        CreateRoomOutline(endRoom.transform.position);
+        CreateRoomOutline(_endRoom.transform.position);
 
         if (isShop)
         {
-            CreateRoomOutline(shopRoom.transform.position);
+            CreateRoomOutline(_shopRoom.transform.position);
         }
         if (isHealRoom)
         {
-            CreateRoomOutline(healRoom.transform.position);
+            CreateRoomOutline(_healRoom.transform.position);
         }
 
-        foreach (GameObject outline in generatedOutlines)
+        foreach (GameObject outline in _generatedOutlines)
         {
             bool generateCenter = true;
             
@@ -110,7 +108,7 @@ public class LevelGenerator : MonoBehaviour
                 generateCenter = false;
             }
 
-            if(outline.transform.position == endRoom.transform.position)
+            if(outline.transform.position == _endRoom.transform.position)
             {
                 Instantiate(centerEnd, outline.transform.position, transform.rotation).theRoom = outline.GetComponent<Room>();
 
@@ -119,7 +117,7 @@ public class LevelGenerator : MonoBehaviour
 
             if (isShop)
             {
-                if (outline.transform.position == shopRoom.transform.position)
+                if (outline.transform.position == _shopRoom.transform.position)
                 {
                     Instantiate(centerShop, outline.transform.position, transform.rotation).theRoom = outline.GetComponent<Room>();
 
@@ -129,7 +127,7 @@ public class LevelGenerator : MonoBehaviour
 
             if (isHealRoom)
             {
-                if (outline.transform.position == healRoom.transform.position)
+                if (outline.transform.position == _healRoom.transform.position)
                 {
                     Instantiate(centerHealRoom, outline.transform.position, transform.rotation).theRoom = outline.GetComponent<Room>();
 
@@ -147,26 +145,26 @@ public class LevelGenerator : MonoBehaviour
 
     // Update is called once per frame
 
-    public void MoveGenerationPoint()
+    private void MoveGenerationPoint()
     {
         switch(selectedDirection)
         {
-            case Direction.up:
+            case Direction.Up:
                 generatorPoint.position += new Vector3(0f, yOffset, 0f);
                 break;
-            case Direction.down:
+            case Direction.Down:
                 generatorPoint.position += new Vector3(0f, -yOffset, 0f);
                 break;
-            case Direction.right:
+            case Direction.Right:
                 generatorPoint.position += new Vector3(xOffset, 0f, 0f);
                 break;
-            case Direction.left:
+            case Direction.Left:
                 generatorPoint.position += new Vector3(-xOffset, 0f, 0f);
                 break;
         }
     }
 
-    public void CreateRoomOutline(Vector3 roomPosition)
+    private void CreateRoomOutline(Vector3 roomPosition)
     {
         bool roomAbove = Physics2D.OverlapCircle(roomPosition + new Vector3(0f, yOffset, 0f), 0.2f, whatIsRoom);
         bool roomBelow = Physics2D.OverlapCircle(roomPosition + new Vector3(0f, -yOffset, 0f), 0.2f, whatIsRoom);
@@ -201,70 +199,70 @@ public class LevelGenerator : MonoBehaviour
 
                 if (roomAbove)
                 {
-                    generatedOutlines.Add(Instantiate(rooms.singleUp, roomPosition, transform.rotation));
+                    _generatedOutlines.Add(Instantiate(rooms.singleUp, roomPosition, transform.rotation));
                 }
                 if (roomBelow)
                 {
-                    generatedOutlines.Add(Instantiate(rooms.singleDown, roomPosition, transform.rotation));
+                    _generatedOutlines.Add(Instantiate(rooms.singleDown, roomPosition, transform.rotation));
                 }
                 if (roomLeft)
                 {
-                    generatedOutlines.Add(Instantiate(rooms.singleLeft, roomPosition, transform.rotation));
+                    _generatedOutlines.Add(Instantiate(rooms.singleLeft, roomPosition, transform.rotation));
                 }
                 if (roomRight)
                 {
-                    generatedOutlines.Add(Instantiate(rooms.singleRight, roomPosition, transform.rotation));
+                    _generatedOutlines.Add(Instantiate(rooms.singleRight, roomPosition, transform.rotation));
                 }
 
                 break;
             case 2:
                 if(roomAbove && roomBelow)
                 {
-                    generatedOutlines.Add(Instantiate(rooms.doubleUpDown, roomPosition, transform.rotation));
+                    _generatedOutlines.Add(Instantiate(rooms.doubleUpDown, roomPosition, transform.rotation));
                 }
                 if (roomLeft && roomRight)
                 {
-                    generatedOutlines.Add(Instantiate(rooms.doubleLeftRight, roomPosition, transform.rotation));
+                    _generatedOutlines.Add(Instantiate(rooms.doubleLeftRight, roomPosition, transform.rotation));
                 }
                 if (roomAbove && roomRight)
                 {
-                    generatedOutlines.Add(Instantiate(rooms.doubleUpRight, roomPosition, transform.rotation));
+                    _generatedOutlines.Add(Instantiate(rooms.doubleUpRight, roomPosition, transform.rotation));
                 }
                 if (roomRight && roomBelow)
                 {
-                    generatedOutlines.Add(Instantiate(rooms.doubleRightDown, roomPosition, transform.rotation));
+                    _generatedOutlines.Add(Instantiate(rooms.doubleRightDown, roomPosition, transform.rotation));
                 }
                 if (roomBelow && roomLeft)
                 {
-                    generatedOutlines.Add(Instantiate(rooms.doubleDownLeft, roomPosition, transform.rotation));
+                    _generatedOutlines.Add(Instantiate(rooms.doubleDownLeft, roomPosition, transform.rotation));
                 }
                 if (roomLeft && roomAbove)
                 {
-                    generatedOutlines.Add(Instantiate(rooms.doubleLeftUp, roomPosition, transform.rotation));
+                    _generatedOutlines.Add(Instantiate(rooms.doubleLeftUp, roomPosition, transform.rotation));
                 }
                 break;
             case 3:
                 if (roomAbove && roomRight && roomBelow)
                 {
-                    generatedOutlines.Add(Instantiate(rooms.tripleUpRightDown, roomPosition, transform.rotation));
+                    _generatedOutlines.Add(Instantiate(rooms.tripleUpRightDown, roomPosition, transform.rotation));
                 }
                 if (roomRight && roomBelow && roomLeft)
                 {
-                    generatedOutlines.Add(Instantiate(rooms.tripleRightDownLeft, roomPosition, transform.rotation));
+                    _generatedOutlines.Add(Instantiate(rooms.tripleRightDownLeft, roomPosition, transform.rotation));
                 }
                 if (roomBelow && roomLeft && roomAbove)
                 {
-                    generatedOutlines.Add(Instantiate(rooms.tripleDownLeftUp, roomPosition, transform.rotation));
+                    _generatedOutlines.Add(Instantiate(rooms.tripleDownLeftUp, roomPosition, transform.rotation));
                 }
                 if (roomLeft && roomAbove && roomRight)
                 {
-                    generatedOutlines.Add(Instantiate(rooms.tripleLeftUpRight, roomPosition, transform.rotation));
+                    _generatedOutlines.Add(Instantiate(rooms.tripleLeftUpRight, roomPosition, transform.rotation));
                 }
                 break;
             case 4:
                 if (roomBelow && roomLeft && roomAbove && roomRight)
                 {
-                    generatedOutlines.Add(Instantiate(rooms.fourway, roomPosition, transform.rotation));
+                    _generatedOutlines.Add(Instantiate(rooms.fourway, roomPosition, transform.rotation));
                 }
                 break;
 

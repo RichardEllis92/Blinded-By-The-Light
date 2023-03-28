@@ -1,10 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    public static CameraController instance;
+    public static CameraController Instance;
 
     public float moveSpeed;
 
@@ -15,17 +13,19 @@ public class CameraController : MonoBehaviour
     public bool bigMapActive;
 
     public bool isBossRoom;
+    private bool _isTargetNotNull;
 
     private void Awake()
     {
-        instance = this;
+        Instance = this;
     }
     // Start is called before the first frame update
     void Start()
     {
+        _isTargetNotNull = target != null;
         if (isBossRoom)
         {
-            target = PlayerController.instance.transform;
+            target = PlayerController.Instance.transform;
         }
     }
 
@@ -37,16 +37,14 @@ public class CameraController : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, new Vector3(target.position.x, target.position.y, transform.position.z), moveSpeed * Time.deltaTime);
         }
 
-        if (Input.GetKeyDown(KeyCode.M) && !isBossRoom)
+        if (!Input.GetKeyDown(KeyCode.M) || isBossRoom) return;
+        if (!bigMapActive)
         {
-            if (!bigMapActive)
-            {
-                ActivateBigMap();
-            }
-            else
-            {
-                DeactivateBigMap();
-            }
+            ActivateBigMap();
+        }
+        else
+        {
+            DeactivateBigMap();
         }
     }
 
@@ -55,41 +53,39 @@ public class CameraController : MonoBehaviour
         target = newTarget;
     }
 
-    public void ActivateBigMap()
+    private void ActivateBigMap()
     {
-        if (!LevelManager.instance.isPaused && !DialogueUI.instance.isOpen)
+        if (!LevelManager.Instance.isPaused && !DialogueUI.Instance.IsOpen)
         {
             bigMapActive = true;
 
             bigMapCamera.enabled = true;
             mainCamera.enabled = false;
 
-            PlayerController.instance.canMove = false;
+            PlayerController.Instance.canMove = false;
 
             Time.timeScale = 0f;
 
-            UIController.instance.mapDisplay.SetActive(false);
-            UIController.instance.bigMapText.SetActive(true);
+            UIController.Instance.mapDisplay.SetActive(false);
+            UIController.Instance.bigMapText.SetActive(true);
         }
         
     }
 
-    public void DeactivateBigMap()
+    private void DeactivateBigMap()
     {
-        if (!LevelManager.instance.isPaused && !DialogueUI.instance.isOpen)
-        {
-            bigMapActive = false;
+        if (LevelManager.Instance.isPaused || DialogueUI.Instance.IsOpen) return;
+        bigMapActive = false;
 
-            bigMapCamera.enabled = false;
-            mainCamera.enabled = true;
+        bigMapCamera.enabled = false;
+        mainCamera.enabled = true;
 
-            PlayerController.instance.canMove = true;
+        PlayerController.Instance.canMove = true;
 
-            Time.timeScale = 1f;
+        Time.timeScale = 1f;
 
-            UIController.instance.mapDisplay.SetActive(true);
-            UIController.instance.bigMapText.SetActive(false);
-        }
-            
+        UIController.Instance.mapDisplay.SetActive(true);
+        UIController.Instance.bigMapText.SetActive(false);
+
     }
 }

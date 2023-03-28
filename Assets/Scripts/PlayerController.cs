@@ -1,36 +1,27 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
 public class PlayerController : MonoBehaviour
 {
-    public static PlayerController instance;
+    public static PlayerController Instance;
 
     public float moveSpeed;
-    private Vector2 moveInput;
+    private Vector2 _moveInput;
 
-    public Rigidbody2D theRB;
-
-    public Transform gunArm;
-
+    [FormerlySerializedAs("theRB")] public Rigidbody2D theRb;
+    
     public Animator anim;
 
-    /*public GameObject bulletToFire;
-    public Transform firePoint;
+    [FormerlySerializedAs("bodySR")] public SpriteRenderer bodySr;
 
-    public float timeBetweenShots;
-    private float shotCounter;*/
-
-    public SpriteRenderer bodySR;
-
-    private float activeMoveSpeed;
+    private float _activeMoveSpeed;
     public float dashSpeed = 8f, dashLength = 0.5f, dashCooldown = 1f, dashInvincibility = 0.5f;
     [HideInInspector]
     public float dashCounter;
-    private float dashCoolCounter;
+    private float _dashCoolCounter;
 
-    public bool animationOverride = false;
+    public bool animationOverride;
 
     [HideInInspector]
     public bool canMove = true;
@@ -41,13 +32,22 @@ public class PlayerController : MonoBehaviour
 
     public IInteractable Interactable { get; set; }
 
-    private int experiencePoints = 0;
+    private int _experiencePoints = 0;
+    private static readonly int IsRolling = Animator.StringToHash("isRolling");
+    private static readonly int IsMovingRight = Animator.StringToHash("isMovingRight");
+    private static readonly int IsMovingRightBackwards = Animator.StringToHash("isMovingRightBackwards");
+    private static readonly int IsMovingLeft = Animator.StringToHash("isMovingLeft");
+    private static readonly int IsMovingLeftBackwards = Animator.StringToHash("isMovingLeftBackwards");
+    private static readonly int IsMovingUp = Animator.StringToHash("isMovingUp");
+    private static readonly int IsMovingUpBackwards = Animator.StringToHash("isMovingUpBackwards");
+    private static readonly int IsMovingDown = Animator.StringToHash("isMovingDown");
+    private static readonly int IsMovingDownBackwards = Animator.StringToHash("isMovingDownBackwards");
 
     private void Awake()
     {
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
-        instance = this;
+        Instance = this;
 
         if(sceneName != "Luci Room")
         {
@@ -60,7 +60,7 @@ public class PlayerController : MonoBehaviour
     {
         //theCam = Camera.main;
 
-        activeMoveSpeed = moveSpeed;
+        _activeMoveSpeed = moveSpeed;
     }
 
     
@@ -77,13 +77,13 @@ public class PlayerController : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
 
-        if (dialogueUI.isOpen)
+        if (dialogueUI.IsOpen)
         {
             animationOverride = true;
-            theRB.velocity = Vector3.zero;
+            theRb.velocity = Vector3.zero;
             anim.Play("Player_Idle");
             anim.enabled = false;
-            theRB.velocity = Vector3.zero;
+            theRb.velocity = Vector3.zero;
         }
         else
         {
@@ -91,28 +91,28 @@ public class PlayerController : MonoBehaviour
             anim.enabled = true;
         }
 
-        if (canMove && !LevelManager.instance.isPaused && !dialogueUI.isOpen)
+        if (canMove && !LevelManager.Instance.isPaused && !dialogueUI.IsOpen)
         {
-            moveInput.x = Input.GetAxisRaw("Horizontal");
-            moveInput.y = Input.GetAxisRaw("Vertical");
+            _moveInput.x = Input.GetAxisRaw("Horizontal");
+            _moveInput.y = Input.GetAxisRaw("Vertical");
 
-            moveInput.Normalize();
+            _moveInput.Normalize();
 
-            theRB.velocity = moveInput * activeMoveSpeed;
+            theRb.velocity = _moveInput * _activeMoveSpeed;
 
 
             if (Input.GetKeyDown(KeyCode.Space) && sceneName != "Luci Room")
             {
-                if (dashCoolCounter <= 0 && dashCounter <= 0)
+                if (_dashCoolCounter <= 0 && dashCounter <= 0)
                 {
-                    activeMoveSpeed = dashSpeed;
+                    _activeMoveSpeed = dashSpeed;
                     dashCounter = dashLength;
 
-                    anim.SetTrigger("isRolling");
+                    anim.SetTrigger(IsRolling);
 
-                    PlayerHealthController.instance.MakeInvincible(dashInvincibility);
+                    PlayerHealthController.Instance.MakeInvincible(dashInvincibility);
 
-                    AudioManager.instance.PlaySFX(6);
+                    AudioManager.Instance.PlaySfx(6);
                 }
             }
 
@@ -121,113 +121,108 @@ public class PlayerController : MonoBehaviour
                 dashCounter -= Time.deltaTime;
                 if (dashCounter <= 0)
                 {
-                    activeMoveSpeed = moveSpeed;
-                    dashCoolCounter = dashCooldown;
+                    _activeMoveSpeed = moveSpeed;
+                    _dashCoolCounter = dashCooldown;
                 }
             }
 
-            if (dashCoolCounter > 0)
+            if (_dashCoolCounter > 0)
             {
-                dashCoolCounter -= Time.deltaTime;
+                _dashCoolCounter -= Time.deltaTime;
             }
 
-            if (animationOverride)
+            if (!animationOverride)
             {
-                return;
-            }
-            else
-            {
-                if (moveInput.x > 0 && (!Input.GetKeyDown(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.LeftArrow)))
+                if (_moveInput.x > 0 && (!Input.GetKeyDown(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.LeftArrow)))
                 {
-                    anim.SetBool("isMovingRight", true);
+                    anim.SetBool(IsMovingRight, true);
                 }
                 else if (anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Walk_Right_Backwards") && Input.GetKey(KeyCode.RightArrow))
                 {
-                    anim.SetBool("isMovingRightBackwards", false);
+                    anim.SetBool(IsMovingRightBackwards, false);
                 }
-                else if (moveInput.x > 0 && (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKey(KeyCode.LeftArrow)))
+                else if (_moveInput.x > 0 && (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKey(KeyCode.LeftArrow)))
                 {
-                    anim.SetBool("isMovingRightBackwards", true);
-                    anim.SetBool("isMovingRight", false);
+                    anim.SetBool(IsMovingRightBackwards, true);
+                    anim.SetBool(IsMovingRight, false);
                 }
                 else
                 {
-                    anim.SetBool("isMovingRight", false);
-                    anim.SetBool("isMovingRightBackwards", false);
+                    anim.SetBool(IsMovingRight, false);
+                    anim.SetBool(IsMovingRightBackwards, false);
                 }
-                if (moveInput.x < 0 && (!Input.GetKeyDown(KeyCode.RightArrow) && !Input.GetKey(KeyCode.RightArrow)))
+                if (_moveInput.x < 0 && (!Input.GetKeyDown(KeyCode.RightArrow) && !Input.GetKey(KeyCode.RightArrow)))
                 {
-                    anim.SetBool("isMovingLeft", true);
+                    anim.SetBool(IsMovingLeft, true);
                 }
                 else if (anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Walk_Left_Backwards") && Input.GetKey(KeyCode.LeftArrow))
                 {
-                    anim.SetBool("isMovingLeftBackwards", false);
+                    anim.SetBool(IsMovingLeftBackwards, false);
                 }
-                else if (moveInput.x < 0 && (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKey(KeyCode.RightArrow)))
+                else if (_moveInput.x < 0 && (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKey(KeyCode.RightArrow)))
                 {
-                    anim.SetBool("isMovingLeftBackwards", true);
-                    anim.SetBool("isMovingLeft", false);
+                    anim.SetBool(IsMovingLeftBackwards, true);
+                    anim.SetBool(IsMovingLeft, false);
                 }
                 else
                 {
-                    anim.SetBool("isMovingLeft", false);
-                    anim.SetBool("isMovingLeftBackwards", false);
+                    anim.SetBool(IsMovingLeft, false);
+                    anim.SetBool(IsMovingLeftBackwards, false);
                 }
-                if (moveInput.y > 0 && (!Input.GetKeyDown(KeyCode.DownArrow) && !Input.GetKey(KeyCode.DownArrow)))
+                if (_moveInput.y > 0 && (!Input.GetKeyDown(KeyCode.DownArrow) && !Input.GetKey(KeyCode.DownArrow)))
                 {
-                    anim.SetBool("isMovingUp", true);
+                    anim.SetBool(IsMovingUp, true);
                 }
                 else if (anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Walk_Up_Backwards") && Input.GetKey(KeyCode.UpArrow))
                 {
-                    anim.SetBool("isMovingUpBackwards", false);
+                    anim.SetBool(IsMovingUpBackwards, false);
                 }
-                else if (moveInput.y > 0 && (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKey(KeyCode.DownArrow)))
+                else if (_moveInput.y > 0 && (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKey(KeyCode.DownArrow)))
                 {
-                    anim.SetBool("isMovingUp", false);
-                    anim.SetBool("isMovingUpBackwards", true);
+                    anim.SetBool(IsMovingUp, false);
+                    anim.SetBool(IsMovingUpBackwards, true);
                 }
                 else
                 {
-                    anim.SetBool("isMovingUp", false);
-                    anim.SetBool("isMovingUpBackwards", false);
+                    anim.SetBool(IsMovingUp, false);
+                    anim.SetBool(IsMovingUpBackwards, false);
                 }
-                if (moveInput.y < 0 && (!Input.GetKeyDown(KeyCode.UpArrow) && !Input.GetKey(KeyCode.UpArrow)))
+                if (_moveInput.y < 0 && (!Input.GetKeyDown(KeyCode.UpArrow) && !Input.GetKey(KeyCode.UpArrow)))
                 {
-                    anim.SetBool("isMovingDown", true);
+                    anim.SetBool(IsMovingDown, true);
                     //anim.SetBool("isMovingUpBackwards", false);
                 }
                 else if (anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Walk_Down_Backwards") && Input.GetKey(KeyCode.DownArrow))
                 {
-                    anim.SetBool("isMovingDownBackwards", false);
+                    anim.SetBool(IsMovingDownBackwards, false);
                 }
-                else if (moveInput.y < 0 && (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKey(KeyCode.UpArrow)))
+                else if (_moveInput.y < 0 && (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKey(KeyCode.UpArrow)))
                 {
-                    anim.SetBool("isMovingDown", false);
-                    anim.SetBool("isMovingDownBackwards", true);
+                    anim.SetBool(IsMovingDown, false);
+                    anim.SetBool(IsMovingDownBackwards, true);
                     //Play moving up backwards anim
                 }
                 else
                 {
-                    anim.SetBool("isMovingDown", false);
-                    anim.SetBool("isMovingDownBackwards", false);
+                    anim.SetBool(IsMovingDown, false);
+                    anim.SetBool(IsMovingDownBackwards, false);
                 }
-
             }
         }
     }
 
     void StopPlayer()
     {
-        if (dialogueUI.isOpen)
+        if (dialogueUI.IsOpen)
         {
             anim.Play("Player_Idle");
-            theRB.velocity = Vector3.zero;
+            theRb.velocity = Vector3.zero;
         }
     }
 
     void Interact()
     {
-        if (Input.GetKeyDown(KeyCode.E) && dialogueUI.isOpen == false)
+        if (Input.GetKeyDown(KeyCode.E) && dialogueUI.IsOpen == false)
         {
 
             if (Interactable != null)
@@ -240,10 +235,10 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Level Exit")
+        if (other.CompareTag("Level Exit"))
         {
             anim.Play("Player_Idle");
-            theRB.velocity = Vector3.zero;
+            theRb.velocity = Vector3.zero;
         }
     }
     

@@ -1,21 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.Serialization;
 
 public class Webcam : MonoBehaviour
 {
-    [SerializeField]
-    private UnityEngine.UI.RawImage _rawImage;
+    [FormerlySerializedAs("_rawImage")] [SerializeField]
+    private UnityEngine.UI.RawImage rawImage;
 
     void Start()
     {
         WebCamDevice[] devices = WebCamTexture.devices;
 
         // for debugging purposes, prints available devices to the console
-        for (int i = 0; i < devices.Length; i++)
+        foreach (var t in devices)
         {
-            print("Webcam available: " + devices[i].name);
+            print("Webcam available: " + t.name);
         }
 
         //Renderer rend = this.GetComponentInChildren<Renderer>();
@@ -24,7 +22,7 @@ public class Webcam : MonoBehaviour
 
         WebCamTexture tex = new WebCamTexture(devices[0].name);
         //rend.material.mainTexture = tex;
-        this._rawImage.texture = tex;
+        this.rawImage.texture = tex;
         tex.Play();
     }
 }

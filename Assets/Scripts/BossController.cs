@@ -1,27 +1,23 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BossController : MonoBehaviour
 {
-    public static BossController instance;
+    public static BossController Instance;
 
     public BossAction[] actions;
-    private int currentAction;
-    private float actionCounter;
+    private int _currentAction;
+    private float _actionCounter;
 
-    private float shotCounter;
-    private Vector2 moveDirection;
-    public Rigidbody2D theRB;
+    private float _shotCounter;
+    private Vector2 _moveDirection;
+    public Rigidbody2D theRb;
 
     public int currentHealth;
 
     public GameObject deathEffect, levelExit, hitEffect, levelExit2, bossHealth;
-    public DialogueObject DialogueObject;
 
     public BossSequence[] sequences;
     public int currentSequence;
-    public bool bossDead = false;
 
     [SerializeField] private DialogueUI dialogueUI;
 
@@ -30,61 +26,61 @@ public class BossController : MonoBehaviour
 
     private void Awake()
     {
-        instance = this;
+        Instance = this;
     }
     // Start is called before the first frame update
     void Start()
     {
         actions = sequences[currentSequence].actions;
 
-        actionCounter = actions[currentAction].actionLength;
+        _actionCounter = actions[_currentAction].actionLength;
 
-        UIController.instance.bossHealthBar.maxValue = currentHealth;
-        UIController.instance.bossHealthBar.value = currentHealth;
+        UIController.Instance.bossHealthBar.maxValue = currentHealth;
+        UIController.Instance.bossHealthBar.value = currentHealth;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!dialogueUI.isOpen && LevelManager.instance.isPaused == false)
+        if (!dialogueUI.IsOpen && LevelManager.Instance.isPaused == false)
         {
-            if (actionCounter > 0)
+            if (_actionCounter > 0)
             {
-                actionCounter -= Time.deltaTime;
+                _actionCounter -= Time.deltaTime;
 
                 //handle movement
-                moveDirection = Vector2.zero;
+                _moveDirection = Vector2.zero;
 
-                if (actions[currentAction].shouldMove)
+                if (actions[_currentAction].shouldMove)
                 {
-                    if (actions[currentAction].shouldChasePlayer)
+                    if (actions[_currentAction].shouldChasePlayer)
                     {
-                        moveDirection = PlayerController.instance.transform.position - transform.position;
-                        moveDirection.Normalize();
+                        _moveDirection = PlayerController.Instance.transform.position - transform.position;
+                        _moveDirection.Normalize();
                     }
 
-                    if (actions[currentAction].moveToPoints && Vector3.Distance(transform.position, actions[currentAction].pointToMoveTo.position) > 0.5f)
+                    if (actions[_currentAction].moveToPoints && Vector3.Distance(transform.position, actions[_currentAction].pointToMoveTo.position) > 0.5f)
                     {
-                        moveDirection = actions[currentAction].pointToMoveTo.position - transform.position;
-                        moveDirection.Normalize();
+                        _moveDirection = actions[_currentAction].pointToMoveTo.position - transform.position;
+                        _moveDirection.Normalize();
                     }
                 }
 
-                theRB.velocity = moveDirection * actions[currentAction].moveSpeed;
+                theRb.velocity = _moveDirection * actions[_currentAction].moveSpeed;
 
                 //handle shooting
 
-                if (actions[currentAction].shouldShoot)
+                if (actions[_currentAction].shouldShoot)
                 {
-                    shotCounter -= Time.deltaTime;
-                    if (shotCounter <= 0)
+                    _shotCounter -= Time.deltaTime;
+                    if (_shotCounter <= 0)
                     {
-                        shotCounter = actions[currentAction].timeBetweenShots;
+                        _shotCounter = actions[_currentAction].timeBetweenShots;
 
-                        foreach (Transform t in actions[currentAction].shotPoints)
+                        foreach (Transform t in actions[_currentAction].shotPoints)
                         {
-                            Instantiate(actions[currentAction].itemToShoot, t.position, t.rotation);
-                            AudioManager.instance.PlaySFX(9);
+                            Instantiate(actions[_currentAction].itemToShoot, t.position, t.rotation);
+                            AudioManager.Instance.PlaySfx(9);
                         }
                     }
                 }
@@ -92,21 +88,21 @@ public class BossController : MonoBehaviour
             }
             else
             {
-                currentAction++;
-                if (currentAction >= actions.Length)
+                _currentAction++;
+                if (_currentAction >= actions.Length)
                 {
-                    currentAction = 0;
+                    _currentAction = 0;
                 }
 
-                actionCounter = actions[currentAction].actionLength;
+                _actionCounter = actions[_currentAction].actionLength;
             }
         }
 
-        if (dialogueUI.isOpen)
+        if (dialogueUI.IsOpen)
         {
             bossHealth.SetActive(false);
         }
-        if (!dialogueUI.isOpen)
+        if (!dialogueUI.IsOpen)
         {
             bossHealth.SetActive(true);
         }
@@ -121,16 +117,17 @@ public class BossController : MonoBehaviour
             gameObject.SetActive(false);
 
 
-            Instantiate(deathEffect, transform.position, transform.rotation);
+            var bossTransform = transform;
+            Instantiate(deathEffect, bossTransform.position, bossTransform.rotation);
 
             /* DialogueUI.instance.ShowDialogue(DialogueObject); */
 
-            LevelManager.instance.bossDoor.SetActive(false);
+            LevelManager.Instance.bossDoor.SetActive(false);
 
-            AudioManager.instance.PlaySFX(13);
-            AudioManager.instance.PlayChoiceMusic();
+            AudioManager.Instance.PlaySfx(13);
+            AudioManager.Instance.PlayChoiceMusic();
 
-            if (Vector3.Distance(PlayerController.instance.transform.position, levelExit.transform.position) < 2f)
+            if (Vector3.Distance(PlayerController.Instance.transform.position, levelExit.transform.position) < 2f)
             {
                 levelExit.transform.position += new Vector3(4f, 0, 0);
             }
@@ -138,7 +135,7 @@ public class BossController : MonoBehaviour
             levelExit.SetActive(true);
             levelExit2.SetActive(true);
 
-            UIController.instance.bossHealthBar.gameObject.SetActive(false);
+            UIController.Instance.bossHealthBar.gameObject.SetActive(false);
 
         }
         else
@@ -147,12 +144,12 @@ public class BossController : MonoBehaviour
             {
                 currentSequence++;
                 actions = sequences[currentSequence].actions;
-                currentAction = 0;
-                actionCounter = actions[currentAction].actionLength;
+                _currentAction = 0;
+                _actionCounter = actions[_currentAction].actionLength;
             }
         }
 
-        UIController.instance.bossHealthBar.value = currentHealth;
+        UIController.Instance.bossHealthBar.value = currentHealth;
     }
 }
 

@@ -9,19 +9,19 @@ public class ResponseHandler : MonoBehaviour
     [SerializeField] private RectTransform responseButtonTemplate;
     [SerializeField] private RectTransform responseContainer;
 
-    private DialogueUI dialogueUI;
-    private ResponseEvent[] responseEvents;
+    private DialogueUI _dialogueUI;
+    private ResponseEvent[] _responseEvents;
 
-    private List<GameObject> tempResponseButtons = new List<GameObject>();
+    private List<GameObject> _tempResponseButtons = new List<GameObject>();
 
     private void Start()
     {
-        dialogueUI = GetComponent<DialogueUI>();
+        _dialogueUI = GetComponent<DialogueUI>();
     }
 
     public void AddResponseEvents(ResponseEvent[] responseEvents)
     {
-        this.responseEvents = responseEvents;
+        this._responseEvents = responseEvents;
     }
         
 
@@ -39,7 +39,7 @@ public class ResponseHandler : MonoBehaviour
             responseButton.GetComponent<TMP_Text>().text = response.ResponseText;
             responseButton.GetComponent<Button>().onClick.AddListener(() => OnPickedResponse(response, responseIndex));
 
-            tempResponseButtons.Add(responseButton);
+            _tempResponseButtons.Add(responseButton);
 
             responseBoxHeight += responseButtonTemplate.sizeDelta.y;
         }
@@ -52,26 +52,26 @@ public class ResponseHandler : MonoBehaviour
     {
         responseBox.gameObject.SetActive(false);
 
-        foreach(GameObject button in tempResponseButtons)
+        foreach(GameObject button in _tempResponseButtons)
         {
             Destroy(button);
         }
-        tempResponseButtons.Clear();
+        _tempResponseButtons.Clear();
 
-        if(responseEvents != null && responseIndex <= responseEvents.Length)
+        if(_responseEvents != null && responseIndex <= _responseEvents.Length)
         {
-            responseEvents[responseIndex].OnPickedResponse?.Invoke();
+            _responseEvents[responseIndex].OnPickedResponse?.Invoke();
         }
 
-        responseEvents = null;
+        _responseEvents = null;
 
         if (response.DialogueObject)
         {
-            dialogueUI.ShowDialogue(response.DialogueObject);
+            _dialogueUI.ShowDialogue(response.DialogueObject);
         }
         else
         {
-            dialogueUI.CloseDialogueBox();
+            _dialogueUI.CloseDialogueBox();
         }
         
     }

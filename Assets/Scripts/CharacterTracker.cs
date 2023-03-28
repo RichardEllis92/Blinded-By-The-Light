@@ -1,17 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class CharacterTracker : MonoBehaviour
 {
-    public static CharacterTracker instance;
+    public static CharacterTracker Instance;
 
     public int currentHealth, maxHealth, currentCoins;
 
     private void Awake()
     {
-        instance = this;
+        Instance = this;
     }
 
     // Start is called before the first frame update
@@ -24,11 +22,5 @@ public class CharacterTracker : MonoBehaviour
         {
             currentCoins = 0;
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-           
     }
 }

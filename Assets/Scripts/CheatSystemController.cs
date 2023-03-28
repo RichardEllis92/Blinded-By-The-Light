@@ -1,57 +1,50 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class CheatSystemController : MonoBehaviour
 {
-    public static CheatSystemController instance;
-
     [SerializeField] bool showConsole;
-    bool showHelp;
-    bool displayHelp;
+    bool _showHelp;
+    bool _displayHelp;
 
-    string input;
+    string _input;
 
-    
-    public static CheatSystemCommand WIND_SPELL;
-    public static CheatSystemCommand ICE_SPELL;
 
-    public static CheatSystemCommand HELP;
+    private static CheatSystemCommand _windSpell;
+    private static CheatSystemCommand _iceSpell;
 
-    public List<object> cheatList;
+    private static CheatSystemCommand Help;
 
-    Vector2 scroll;
-    GUI style;
+    private List<object> _cheatList;
+
+    Vector2 _scroll;
+    GUI _style;
 
     public GameObject invalidCheat;
 
     private void Awake()
     {
-        WIND_SPELL = new CheatSystemCommand("wind_spell", "Gives the player the ability to summon wind spell", "wind_spell", () =>
+        _windSpell = new CheatSystemCommand("wind_spell", "Gives the player the ability to summon wind spell", "wind_spell", () =>
         {
-            CheatUnlocks.instance.UnlockWindSpell();
+            CheatUnlocks.Instance.UnlockWindSpell();
         });
         
-        ICE_SPELL = new CheatSystemCommand("ice_spell", "Gives the player the ability to summon ice spell", "ice_spell", () =>
+        _iceSpell = new CheatSystemCommand("ice_spell", "Gives the player the ability to summon ice spell", "ice_spell", () =>
         {
-            CheatUnlocks.instance.UnlockIceSpell();
+            CheatUnlocks.Instance.UnlockIceSpell();
         });
 
-        HELP = new CheatSystemCommand("help", "Shows a list of commands", "help", () =>
+        Help = new CheatSystemCommand("help", "Shows a list of commands", "help", () =>
         {
-            showHelp = true;
+            _showHelp = true;
         });
 
-        cheatList = new List<object>
+        _cheatList = new List<object>
         {
-            HELP,
+            Help,
         };
-    }
-
-    private void Start()
-    {
-        instance = this;
     }
 
     private void Update()
@@ -59,38 +52,35 @@ public class CheatSystemController : MonoBehaviour
         DisplayCheatBox();
         SubmitCheat();
     }
-    private void OnAnimatorIK(int layerIndex)
-    {
-        
-    }
 
+    [Obsolete("Obsolete")]
     private void OnGUI()
     {
-        if (!showConsole) { displayHelp = false; return; }
+        if (!showConsole) { _displayHelp = false; return; }
 
         float y = 0f;
-        if (displayHelp)
+        if (_displayHelp)
         {
-            if (showHelp)
+            if (_showHelp)
             {
                 GUI.Box(new Rect(0, y, Screen.width, 100), "");
 
-                Rect viewport = new Rect(0, 0, Screen.width - 30, 40 * cheatList.Count);
+                Rect viewport = new Rect(0, 0, Screen.width - 30, 40 * _cheatList.Count);
 
-                scroll = GUI.BeginScrollView(new Rect(0, y + 5f, Screen.width, 90), scroll, viewport);
+                _scroll = GUI.BeginScrollView(new Rect(0, y + 5f, Screen.width, 90), _scroll, viewport);
 
-                for (int i = 0; i < cheatList.Count; i++)
+                for (int i = 0; i < _cheatList.Count; i++)
                 {
-                    CheatSystemCommandBase cheat = cheatList[i] as CheatSystemCommandBase;
+                    if (_cheatList[i] is CheatSystemCommandBase cheat)
+                    {
+                        string label = $"{cheat.CheatFormat} - {cheat.CheatDescription}";
 
-                    string label = $"{cheat.cheatFormat} - {cheat.cheatDescription}";
+                        Rect labelRect = new Rect(5, 40 * i, viewport.width - 100, 50);
 
-                    Rect labelRect = new Rect(5, 40 * i, viewport.width - 100, 50);
+                        GUI.skin.label.fontSize = 30;
 
-                    GUI.skin.label.fontSize = 30;
-
-                    GUI.Label(labelRect, label);
-
+                        GUI.Label(labelRect, label);
+                    }
                 }
 
                 GUI.EndScrollView();
@@ -101,7 +91,7 @@ public class CheatSystemController : MonoBehaviour
         GUI.Box(new Rect(0, y, Screen.width, 50), "");
         GUI.backgroundColor = new Color(0, 0, 0);
         GUI.skin.textField.fontSize = 30;
-        input = GUI.TextField(new Rect(10f, y + 5f, Screen.width - 20f, 50f), input);
+        _input = GUI.TextField(new Rect(10f, y + 5f, Screen.width - 20f, 50f), _input);
         Input.eatKeyPressOnTextFieldFocus = false;
     }
 
@@ -109,15 +99,13 @@ public class CheatSystemController : MonoBehaviour
 
     private void HandleInput()
     {
-        for (int i = 0; i < cheatList.Count; i++)
+        for (var i = 0; i < _cheatList.Count; i++)
         {
-            CheatSystemCommandBase commandBase = cheatList[i] as CheatSystemCommandBase;
-
-            if (input.Contains(commandBase.cheatID))
+            if (_cheatList[i] is CheatSystemCommandBase commandBase && _input.Contains(commandBase.CheatID))
             {
-                if (cheatList[i] as CheatSystemCommand != null)
+                if (_cheatList[i] as CheatSystemCommand != null)
                 {
-                    (cheatList[i] as CheatSystemCommand).Invoke();
+                    (_cheatList[i] as CheatSystemCommand).Invoke();
                 }
                 else
                 {
@@ -150,18 +138,18 @@ public class CheatSystemController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Return))
             {
                 HandleInput();
-                input = "";
-                displayHelp = true;
+                _input = "";
+                _displayHelp = true;
             }
         }
     }
     
     public void AddToListWindSpell()
     {
-        cheatList.Add(WIND_SPELL);
+        _cheatList.Add(_windSpell);
     }
     public void AddToListIceSpell()
     {
-        cheatList.Add(ICE_SPELL);
+        _cheatList.Add(_iceSpell);
     }
 }

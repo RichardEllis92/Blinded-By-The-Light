@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -18,7 +16,7 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
-    public void Contols()
+    public void Controls()
     {
         controlsPanel.SetActive(true);
     }

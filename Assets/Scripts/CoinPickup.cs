@@ -19,10 +19,10 @@ public class CoinPickup : MonoBehaviour
     {
         if (other.CompareTag("Player") && waitToBeCollected <= 0)
         {
-            LevelManager.instance.GetCoins(coinValue);
+            LevelManager.Instance.GetCoins(coinValue);
 
             Destroy(gameObject);
-            AudioManager.instance.PlaySFX(4);
+            AudioManager.Instance.PlaySfx(4);
         }
     }
 }

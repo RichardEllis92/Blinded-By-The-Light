@@ -1,47 +1,43 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class PlayerBullet : MonoBehaviour
 {
     public float speed = 7.5f;
-    public Rigidbody2D theRB;
+    [FormerlySerializedAs("theRB")] public Rigidbody2D theRb;
 
     public GameObject impactEffect;
 
     public int damageToGive = 50;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
-        theRB.velocity = transform.right * speed;
+        theRb.velocity = transform.right * speed;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         
-        if(other.tag != "NoBullet")
+        if(!other.CompareTag("NoBullet"))
         {
-            Instantiate(impactEffect, transform.position, transform.rotation);
+            var playerBulletTransform = transform;
+            Instantiate(impactEffect, playerBulletTransform.position, playerBulletTransform.rotation);
             Destroy(gameObject);
-            AudioManager.instance.PlaySFX(3);
+            AudioManager.Instance.PlaySfx(3);
         }
 
-        if (other.tag == "Enemy")
+        if (other.CompareTag("Enemy"))
         {
             other.GetComponent<EnemyController>().DamageEnemy(damageToGive);
         }
 
-        if(other.tag == "Boss")
+        if(other.CompareTag("Boss"))
         {
-            BossController.instance.TakeDamage(damageToGive);
+            BossController.Instance.TakeDamage(damageToGive);
 
-            Instantiate(BossController.instance.hitEffect, transform.position, transform.rotation);
+            var playerBulletTransform = transform;
+            Instantiate(BossController.Instance.hitEffect, playerBulletTransform.position, playerBulletTransform.rotation);
         }
     }
 

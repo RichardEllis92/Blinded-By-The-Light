@@ -1,21 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
 public class UIController : MonoBehaviour
 {
-    public static UIController instance;
+    public static UIController Instance;
     
     public Slider healthSlider;
     public Text healthText, coinText;
 
-    public GameObject deathscreen;
+    [FormerlySerializedAs("deathscreen")] public GameObject deathScreen;
 
     public Image fadeScreen;
     public float fadeSpeed;
-    private bool fadeToBlack, fadeOutBlack;
+    private bool _fadeToBlack, _fadeOutBlack;
 
     public string newGameScene, mainMenuScene;
 
@@ -27,16 +26,14 @@ public class UIController : MonoBehaviour
     public int defaultHealth = 5;
     public int defaultMaxHealth = 5;
 
-    public int secretEnding = 0;
+    public int secretEnding;
 
-    public int playerCurrentHealth = 0;
+    public int playerCurrentHealth;
 
     // Start is called before the first frame update
     private void Awake()
     {
-        Scene currentScene = SceneManager.GetActiveScene();
-        string sceneName = currentScene.name;
-        instance = this;
+        Instance = this;
 
         DontDestroyOnLoad(gameObject);
         
@@ -53,8 +50,8 @@ public class UIController : MonoBehaviour
     {
         if (scene.name != "Level 1")
         {
-            fadeOutBlack = true;
-            fadeToBlack = false;
+            _fadeOutBlack = true;
+            _fadeToBlack = false;
         }
 
         if (scene.name == "Boss")
@@ -70,8 +67,8 @@ public class UIController : MonoBehaviour
 
     void Start()
     {
-        fadeOutBlack = true;
-        fadeToBlack = false;
+        _fadeOutBlack = true;
+        _fadeToBlack = false;
     }
 
     // Update is called once per frame
@@ -81,21 +78,21 @@ public class UIController : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
 
-        if (fadeOutBlack)
+        if (_fadeOutBlack)
         {
             fadeScreen.color = new Color(fadeScreen.color.r, fadeScreen.color.g, fadeScreen.color.b, Mathf.MoveTowards(fadeScreen.color.a, 0f, fadeSpeed * Time.deltaTime));
             if(fadeScreen.color.a == 0f)
             {
-                fadeOutBlack = false;
+                _fadeOutBlack = false;
             }
         }
 
-        if (fadeToBlack)
+        if (_fadeToBlack)
         {
             fadeScreen.color = new Color(fadeScreen.color.r, fadeScreen.color.g, fadeScreen.color.b, Mathf.MoveTowards(fadeScreen.color.a, 1f, fadeSpeed * Time.deltaTime));
             if (fadeScreen.color.a == 1f)
             {
-                fadeToBlack = false;
+                _fadeToBlack = false;
             }
         }
 
@@ -104,24 +101,24 @@ public class UIController : MonoBehaviour
             mapDisplay.SetActive(false);
         }
 
-        playerCurrentHealth = PlayerHealthController.instance.currentHealth;
+        playerCurrentHealth = PlayerHealthController.Instance.currentHealth;
    
     }
 
     public void StartFadeToBlack()
     {
-        fadeToBlack = true;
-        fadeOutBlack = false;
+        _fadeToBlack = true;
+        _fadeOutBlack = false;
     }
 
     public void NewGame()
     {
         Time.timeScale = 1f;
 
-        DialogueUI.instance.talkedToGuide = false;
+        DialogueUI.Instance.talkedToGuide = false;
         SceneManager.LoadScene(newGameScene);
 
-        Destroy(PlayerController.instance.gameObject);
+        Destroy(PlayerController.Instance.gameObject);
         Destroy(gameObject);
         DestroyAllGameObjects();
 
@@ -130,10 +127,10 @@ public class UIController : MonoBehaviour
     public void ReturnToMainMenu()
     {
         
-        Destroy(PlayerController.instance.gameObject);
+        Destroy(PlayerController.Instance.gameObject);
         Destroy(gameObject);
         DestroyAllGameObjects();
-        DialogueUI.instance.talkedToGuide = false;
+        DialogueUI.Instance.talkedToGuide = false;
 
         SceneManager.LoadScene(mainMenuScene);
         
@@ -141,7 +138,7 @@ public class UIController : MonoBehaviour
 
     public void Resume()
     {
-        LevelManager.instance.PauseUnpause();
+        LevelManager.Instance.PauseUnpause();
     }
 
     // called when the game is terminated
@@ -152,11 +149,11 @@ public class UIController : MonoBehaviour
 
     public void DestroyAllGameObjects()
     {
-        GameObject[] GameObjects = (FindObjectsOfType<GameObject>() as GameObject[]);
+        GameObject[] gameObjects = FindObjectsOfType<GameObject>();
 
-        for (int i = 0; i < GameObjects.Length; i++)
+        foreach (var t in gameObjects)
         {
-            Destroy(GameObjects[i]);
+            Destroy(t);
         }
     }
     public void SecretEnding()
