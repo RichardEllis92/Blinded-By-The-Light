@@ -1,11 +1,15 @@
+using System;
+using System.Collections;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class EnemyController : MonoBehaviour
 {
     public Rigidbody2D theRB;
     public float moveSpeed;
+    public bool isFrozen;
+    private float _frozenTimeRemaining;
     
-
     [Header("Chase Player")]
     public bool shouldChasePlayer;
     public float rangeToChasePlayer;
@@ -62,6 +66,36 @@ public class EnemyController : MonoBehaviour
     {
         if (theBody.isVisible && PlayerController.Instance.gameObject.activeInHierarchy)
         {
+            if(isFrozen)
+            {
+                _frozenTimeRemaining -= Time.deltaTime;
+                if (_frozenTimeRemaining <= 0)
+                {
+                    isFrozen = false;
+                }
+                else
+                {
+                    theRB.velocity = Vector2.zero;
+                    // Stop the enemy's animation
+                    anim.speed = 0;
+
+                    // Wait for 1 second before unfreezing the enemy
+                    StartCoroutine(UnfreezeAfterDelay(1f));
+                    return;
+                }  
+            }
+
+            IEnumerator UnfreezeAfterDelay(float delay)
+            {
+                yield return new WaitForSeconds(delay);
+
+                // Unfreeze the enemy
+                isFrozen = false;
+
+                // Resume the enemy's animation
+                anim.speed = 1;
+            }
+            
             _moveDirection = Vector3.zero;
 
             if (Vector3.Distance(transform.position, PlayerController.Instance.transform.position) < rangeToChasePlayer && shouldChasePlayer)
@@ -179,5 +213,23 @@ public class EnemyController : MonoBehaviour
         var randomItem = Random.Range(0, itemsToDrop.Length);
         
         Instantiate(itemsToDrop[randomItem], enemyControllerTransform.position, enemyControllerTransform.rotation);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("IceSpell"))
+        {
+            if (Random.value > 0.75)
+            {
+                isFrozen = true;
+                _frozenTimeRemaining = 1f;
+            }
+        }
+        
+        if (other.CompareTag("WindSpell"))
+        {
+            Vector2 knockbackDirection = (transform.position - other.transform.position).normalized;
+            theRB.AddForce(knockbackDirection * 2000f);
+        }
     }
 }

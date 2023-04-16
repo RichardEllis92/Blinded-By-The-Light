@@ -1464,7 +1464,7 @@ GameObject:
   - component: {fileID: 6810987402254044594}
   - component: {fileID: 7517640959585508816}
   m_Layer: 6
-  m_Name: Firepoints
+  m_Name: Magic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1609,12 +1609,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74766262d47e324408f30ae631b8fb3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletToFire: {fileID: 3839126037310162859, guid: e8b4755967b22144783a20e8b4340ff8, type: 3}
+  currentSpell: 0
+  fireSpell: {fileID: 6611242228727178593, guid: 6c5ab7e39c1962b4b8ba3e8800abcbf9, type: 3}
+  iceSpell: {fileID: 4885907329009752582, guid: ec6c8a824d098a34ab50fe55dd7b7852, type: 3}
+  windSpell: {fileID: 2808677097795193199, guid: 18b71315fb12c334294b7ccedcee0f3d, type: 3}
+  windSpellUp: {fileID: 4139386812613691621, guid: 7e5541764af68934eae06d71777e21dc, type: 3}
+  windSpellDown: {fileID: 5817215393333790304, guid: bce3f8bfbf3908446ae5414b2a71a09b, type: 3}
+  impactEffect: {fileID: 1746649774678931759, guid: 5e18923242b6df84ab7624e20f4bdba0, type: 3}
   firePointUp: {fileID: 7517640960089441039}
   firePointDown: {fileID: 217267693}
   firePointLeft: {fileID: 648154533}
   firePointRight: {fileID: 160634700}
-  timeBetweenShots: 0.4
+  timeBetweenSpells: 1
+  spellMovingUp: 0
+  spellMovingDown: 0
   dialogueUI: {fileID: 344491099}
 --- !u!1 &7517640960089441036
 GameObject:

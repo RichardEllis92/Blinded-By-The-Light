@@ -10,6 +10,9 @@ TagManager:
   - SecondDialogue
   - NoBullet
   - Level Exit
+  - PlayerSpell
+  - IceSpell
+  - WindSpell
   layers:
   - Default
   - TransparentFX
@@ -18,11 +21,11 @@ TagManager:
   - Water
   - UI
   - Player
-  - Player Bullets
+  - Player Spells
   - Enemies
-  - Enemy Bullets
+  - Enemy Spells
   - Breakable
-  - IgnoreBullets
+  - IgnoreSpells
   - Pickups
   - RoomLayout
   - 
@@ -65,6 +68,6 @@ TagManager:
   - name: Player
     uniqueID: 3763430899
     locked: 0
-  - name: Player Bullets
+  - name: Player Spells
     uniqueID: 1307751147
     locked: 0

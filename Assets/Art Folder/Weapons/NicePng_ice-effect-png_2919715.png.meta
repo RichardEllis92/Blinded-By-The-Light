@@ -1,0 +1,2844 @@
+fileFormatVersion: 2
+guid: 56579a7e3ab4a264ba3e9b06f869f193
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9023756450501164054
+    second: NicePng_ice-effect-png_2919715_0
+  - first:
+      213: -1186167260816396010
+    second: NicePng_ice-effect-png_2919715_1
+  - first:
+      213: -4738364506851823466
+    second: NicePng_ice-effect-png_2919715_2
+  - first:
+      213: -7335515407868194927
+    second: NicePng_ice-effect-png_2919715_3
+  - first:
+      213: 3774179000621836356
+    second: NicePng_ice-effect-png_2919715_4
+  - first:
+      213: 4338519548531796848
+    second: NicePng_ice-effect-png_2919715_5
+  - first:
+      213: 7992258087951807387
+    second: NicePng_ice-effect-png_2919715_6
+  - first:
+      213: -7012781736273045780
+    second: NicePng_ice-effect-png_2919715_7
+  - first:
+      213: 9160441224754992462
+    second: NicePng_ice-effect-png_2919715_8
+  - first:
+      213: -231604018014798632
+    second: NicePng_ice-effect-png_2919715_9
+  - first:
+      213: 1791549956069660131
+    second: NicePng_ice-effect-png_2919715_10
+  - first:
+      213: -304590502555850920
+    second: NicePng_ice-effect-png_2919715_11
+  - first:
+      213: 6432523129497589346
+    second: NicePng_ice-effect-png_2919715_12
+  - first:
+      213: -6604769084306025086
+    second: NicePng_ice-effect-png_2919715_13
+  - first:
+      213: -6939046422601918523
+    second: NicePng_ice-effect-png_2919715_14
+  - first:
+      213: 3039144294365441917
+    second: NicePng_ice-effect-png_2919715_15
+  - first:
+      213: -8916922466877165770
+    second: NicePng_ice-effect-png_2919715_16
+  - first:
+      213: 5916289668608260316
+    second: NicePng_ice-effect-png_2919715_17
+  - first:
+      213: -8189507539180915677
+    second: NicePng_ice-effect-png_2919715_18
+  - first:
+      213: 7000248362331966224
+    second: NicePng_ice-effect-png_2919715_19
+  - first:
+      213: -4038988227831708502
+    second: NicePng_ice-effect-png_2919715_20
+  - first:
+      213: 6778178018426086877
+    second: NicePng_ice-effect-png_2919715_21
+  - first:
+      213: -1835804931482621888
+    second: NicePng_ice-effect-png_2919715_22
+  - first:
+      213: 1886612949178883732
+    second: NicePng_ice-effect-png_2919715_23
+  - first:
+      213: -7856995508178257609
+    second: NicePng_ice-effect-png_2919715_24
+  - first:
+      213: 5822057074831065493
+    second: NicePng_ice-effect-png_2919715_25
+  - first:
+      213: 604125329555384195
+    second: NicePng_ice-effect-png_2919715_26
+  - first:
+      213: -8687804085460128516
+    second: NicePng_ice-effect-png_2919715_27
+  - first:
+      213: 234796391263289926
+    second: NicePng_ice-effect-png_2919715_28
+  - first:
+      213: -8005154721295432964
+    second: NicePng_ice-effect-png_2919715_29
+  - first:
+      213: -985159078398134409
+    second: NicePng_ice-effect-png_2919715_30
+  - first:
+      213: -9209466453534484557
+    second: NicePng_ice-effect-png_2919715_31
+  - first:
+      213: 1868771916177937455
+    second: NicePng_ice-effect-png_2919715_32
+  - first:
+      213: 7854120784963602432
+    second: NicePng_ice-effect-png_2919715_33
+  - first:
+      213: 2285569772262269726
+    second: NicePng_ice-effect-png_2919715_34
+  - first:
+      213: -3271804270924446819
+    second: NicePng_ice-effect-png_2919715_35
+  - first:
+      213: -5682043537776356686
+    second: NicePng_ice-effect-png_2919715_36
+  - first:
+      213: 430076299508234234
+    second: NicePng_ice-effect-png_2919715_37
+  - first:
+      213: 4112031833446943991
+    second: NicePng_ice-effect-png_2919715_38
+  - first:
+      213: -4244758202701343422
+    second: NicePng_ice-effect-png_2919715_39
+  - first:
+      213: 876084018876343602
+    second: NicePng_ice-effect-png_2919715_40
+  - first:
+      213: -8309287558527477834
+    second: NicePng_ice-effect-png_2919715_41
+  - first:
+      213: 5763110913524722740
+    second: NicePng_ice-effect-png_2919715_42
+  - first:
+      213: -3050581269843735278
+    second: NicePng_ice-effect-png_2919715_43
+  - first:
+      213: -4400954291441382999
+    second: NicePng_ice-effect-png_2919715_44
+  - first:
+      213: 5949657128208313764
+    second: NicePng_ice-effect-png_2919715_45
+  - first:
+      213: -2277946199454162312
+    second: NicePng_ice-effect-png_2919715_46
+  - first:
+      213: 5946107676479710646
+    second: NicePng_ice-effect-png_2919715_47
+  - first:
+      213: -9178395141299475544
+    second: NicePng_ice-effect-png_2919715_48
+  - first:
+      213: 6724112071797454772
+    second: NicePng_ice-effect-png_2919715_49
+  - first:
+      213: -3090391224746036572
+    second: NicePng_ice-effect-png_2919715_50
+  - first:
+      213: -7624697552911288973
+    second: NicePng_ice-effect-png_2919715_51
+  - first:
+      213: 7397692315235382238
+    second: NicePng_ice-effect-png_2919715_52
+  - first:
+      213: 29846953446836846
+    second: NicePng_ice-effect-png_2919715_53
+  - first:
+      213: -7831493090714140474
+    second: NicePng_ice-effect-png_2919715_54
+  - first:
+      213: -112200291012657735
+    second: NicePng_ice-effect-png_2919715_55
+  - first:
+      213: 8333400458879355907
+    second: NicePng_ice-effect-png_2919715_56
+  - first:
+      213: 6433088910111842970
+    second: NicePng_ice-effect-png_2919715_57
+  - first:
+      213: 2761427360358108995
+    second: NicePng_ice-effect-png_2919715_58
+  - first:
+      213: 4804091573964164712
+    second: NicePng_ice-effect-png_2919715_59
+  - first:
+      213: 7877494060597107374
+    second: NicePng_ice-effect-png_2919715_60
+  - first:
+      213: -3072969429067136437
+    second: NicePng_ice-effect-png_2919715_61
+  - first:
+      213: -6139901783765269939
+    second: NicePng_ice-effect-png_2919715_62
+  - first:
+      213: 8909723630659961070
+    second: NicePng_ice-effect-png_2919715_63
+  - first:
+      213: -3685907359684926268
+    second: NicePng_ice-effect-png_2919715_64
+  - first:
+      213: 9191532573183667761
+    second: NicePng_ice-effect-png_2919715_65
+  - first:
+      213: 521253986678754089
+    second: NicePng_ice-effect-png_2919715_66
+  - first:
+      213: 8130567920261975452
+    second: NicePng_ice-effect-png_2919715_67
+  - first:
+      213: 3680172229580846353
+    second: NicePng_ice-effect-png_2919715_68
+  - first:
+      213: 1670400034025533651
+    second: NicePng_ice-effect-png_2919715_69
+  - first:
+      213: -2720996217660609338
+    second: NicePng_ice-effect-png_2919715_70
+  - first:
+      213: 2432389708190406611
+    second: NicePng_ice-effect-png_2919715_71
+  - first:
+      213: -4457677169278017934
+    second: NicePng_ice-effect-png_2919715_72
+  - first:
+      213: -5411900754172759351
+    second: NicePng_ice-effect-png_2919715_73
+  - first:
+      213: 7935320734844607344
+    second: NicePng_ice-effect-png_2919715_74
+  - first:
+      213: -8044630615613390904
+    second: NicePng_ice-effect-png_2919715_75
+  - first:
+      213: 7575496829240268191
+    second: NicePng_ice-effect-png_2919715_76
+  - first:
+      213: 3444752630124802135
+    second: NicePng_ice-effect-png_2919715_77
+  - first:
+      213: 5971961614589088818
+    second: NicePng_ice-effect-png_2919715_78
+  - first:
+      213: 1415523604177779950
+    second: NicePng_ice-effect-png_2919715_79
+  - first:
+      213: -7382194050257374314
+    second: NicePng_ice-effect-png_2919715_80
+  - first:
+      213: 7756325576341283096
+    second: NicePng_ice-effect-png_2919715_81
+  - first:
+      213: 1353105272420790394
+    second: NicePng_ice-effect-png_2919715_82
+  - first:
+      213: -5175997340428091542
+    second: NicePng_ice-effect-png_2919715_83
+  - first:
+      213: -2923425343268594756
+    second: NicePng_ice-effect-png_2919715_84
+  - first:
+      213: 5917381700662636665
+    second: NicePng_ice-effect-png_2919715_85
+  - first:
+      213: 5212396366258228699
+    second: NicePng_ice-effect-png_2919715_86
+  - first:
+      213: -8629806350084086313
+    second: NicePng_ice-effect-png_2919715_87
+  - first:
+      213: 8786040306863501177
+    second: NicePng_ice-effect-png_2919715_88
+  - first:
+      213: -8170126684933669398
+    second: NicePng_ice-effect-png_2919715_89
+  - first:
+      213: 6955814752146788356
+    second: NicePng_ice-effect-png_2919715_90
+  - first:
+      213: -2127217102202356286
+    second: NicePng_ice-effect-png_2919715_91
+  - first:
+      213: -456430917134814925
+    second: NicePng_ice-effect-png_2919715_92
+  - first:
+      213: 3854244203174701602
+    second: NicePng_ice-effect-png_2919715_93
+  - first:
+      213: -3374392151700492387
+    second: NicePng_ice-effect-png_2919715_94
+  - first:
+      213: -2631052420805779900
+    second: NicePng_ice-effect-png_2919715_95
+  - first:
+      213: -5670149316171092312
+    second: NicePng_ice-effect-png_2919715_96
+  - first:
+      213: -108259062374964835
+    second: NicePng_ice-effect-png_2919715_97
+  - first:
+      213: -8974691172369506554
+    second: NicePng_ice-effect-png_2919715_98
+  - first:
+      213: -436787041014915113
+    second: NicePng_ice-effect-png_2919715_99
+  - first:
+      213: -4117470202388803795
+    second: NicePng_ice-effect-png_2919715_100
+  - first:
+      213: -7894552555091928341
+    second: NicePng_ice-effect-png_2919715_101
+  - first:
+      213: -7148997493110968273
+    second: NicePng_ice-effect-png_2919715_102
+  - first:
+      213: -4854627667312250059
+    second: NicePng_ice-effect-png_2919715_103
+  - first:
+      213: 557573820031006996
+    second: NicePng_ice-effect-png_2919715_104
+  - first:
+      213: -918507152214093683
+    second: NicePng_ice-effect-png_2919715_105
+  - first:
+      213: -6283550495557924490
+    second: NicePng_ice-effect-png_2919715_106
+  - first:
+      213: 6638124148009566768
+    second: NicePng_ice-effect-png_2919715_107
+  - first:
+      213: -8901286735743642813
+    second: NicePng_ice-effect-png_2919715_108
+  - first:
+      213: 5469204738471118719
+    second: NicePng_ice-effect-png_2919715_109
+  - first:
+      213: 3598624855819318628
+    second: NicePng_ice-effect-png_2919715_110
+  - first:
+      213: 4203140644256255689
+    second: NicePng_ice-effect-png_2919715_111
+  - first:
+      213: -4112902627351177876
+    second: NicePng_ice-effect-png_2919715_112
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_0
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 1218
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61cf2cb8ea2da3d70800000000000000
+      internalID: 9023756450501164054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_1
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 1212
+        width: 60
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61137de2923e98fe0800000000000000
+      internalID: -1186167260816396010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_2
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 1207
+        width: 76
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69037c00692fd3eb0800000000000000
+      internalID: -4738364506851823466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_3
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 1199
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19f8c9d0a93033a90800000000000000
+      internalID: -7335515407868194927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_4
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 1196
+        width: 102
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 448adcafdc3906430800000000000000
+      internalID: 3774179000621836356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_5
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 993
+        width: 106
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07b635dfa84853c30800000000000000
+      internalID: 4338519548531796848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_6
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 992
+        width: 128
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b933c9dd2643aee60800000000000000
+      internalID: 7992258087951807387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_7
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 980
+        width: 130
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce6191a8a289dae90800000000000000
+      internalID: -7012781736273045780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_8
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 1073
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e459d5382cc602f70800000000000000
+      internalID: 9160441224754992462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_9
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 1074
+        width: 50
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dcbca96f5d29ccf0800000000000000
+      internalID: -231604018014798632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_10
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 1028
+        width: 57
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e516e8613ddcd810800000000000000
+      internalID: 1791549956069660131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_11
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 967
+        width: 154
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 857633d3d80e5cbf0800000000000000
+      internalID: -304590502555850920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_12
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 1027
+        width: 59
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 266103f84b9e44950800000000000000
+      internalID: 6432523129497589346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_13
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 1063
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 285157ae2852754a0800000000000000
+      internalID: -6604769084306025086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_14
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 1037
+        width: 38
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c71ed41b0e83bf90800000000000000
+      internalID: -6939046422601918523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_15
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 980
+        width: 48
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7faec632a53d2a20800000000000000
+      internalID: 3039144294365441917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_16
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 981
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63f2610a24ab04480800000000000000
+      internalID: -8916922466877165770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_17
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 775
+        width: 154
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd875b59b12ea1250800000000000000
+      internalID: 5916289668608260316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_18
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 775
+        width: 153
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 324fcb17846095e80800000000000000
+      internalID: -8189507539180915677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_19
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 775
+        width: 152
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01b8e40fbc0e52160800000000000000
+      internalID: 7000248362331966224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_20
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 775
+        width: 152
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa44b143b91a2f7c0800000000000000
+      internalID: -4038988227831708502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_21
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 775
+        width: 153
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd5e5a4defce01e50800000000000000
+      internalID: 6778178018426086877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_22
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 583
+        width: 152
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 048611e2429e586e0800000000000000
+      internalID: -1835804931482621888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_23
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 581
+        width: 152
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49e95784b789e2a10800000000000000
+      internalID: 1886612949178883732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_24
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 583
+        width: 154
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 739f135a63856f290800000000000000
+      internalID: -7856995508178257609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_25
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 583
+        width: 154
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5910b5f101a1cc050800000000000000
+      internalID: 5822057074831065493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_26
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 583
+        width: 156
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 387e6f359c8426800800000000000000
+      internalID: 604125329555384195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_27
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 391
+        width: 156
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfc26f7d638be6780800000000000000
+      internalID: -8687804085460128516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_28
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 391
+        width: 156
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 642cac7e21a224300800000000000000
+      internalID: 234796391263289926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_29
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 391
+        width: 158
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf20521b13af7e090800000000000000
+      internalID: -8005154721295432964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_30
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 391
+        width: 158
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 777f3dca9030452f0800000000000000
+      internalID: -985159078398134409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_31
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 391
+        width: 160
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b7533aed07613080800000000000000
+      internalID: -9209466453534484557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_32
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 199
+        width: 160
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f24130618263fe910800000000000000
+      internalID: 1868771916177937455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_33
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 200
+        width: 160
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00884c2bd317ffc60800000000000000
+      internalID: 7854120784963602432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_34
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 180
+        width: 162
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1320113999f7bf10800000000000000
+      internalID: 2285569772262269726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_35
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 200
+        width: 162
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9341f0b9573892d0800000000000000
+      internalID: -3271804270924446819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_36
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 200
+        width: 162
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b25984d1835521b0800000000000000
+      internalID: -5682043537776356686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_37
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 6
+        width: 162
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af7b082ad10f7f500800000000000000
+      internalID: 430076299508234234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_38
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 172
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fc04b18a2fd01930800000000000000
+      internalID: 4112031833446943991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_39
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 162
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2459f8287e69715c0800000000000000
+      internalID: -4244758202701343422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_40
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 126
+        width: 54
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 235658206c9782c00800000000000000
+      internalID: 876084018876343602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_41
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 111
+        width: 64
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b795617dfa7fac80800000000000000
+      internalID: -8309287558527477834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_42
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 127
+        width: 53
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43c61d177deaaff40800000000000000
+      internalID: 5763110913524722740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_43
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 153
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21d018c6f782aa5d0800000000000000
+      internalID: -3050581269843735278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_44
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 131
+        width: 46
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a9c7e1a36bace2c0800000000000000
+      internalID: -4400954291441382999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_45
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 159
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ad2a3ea2ad619250800000000000000
+      internalID: 5949657128208313764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_46
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 155
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 872651c200c1360e0800000000000000
+      internalID: -2277946199454162312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_47
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 155
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b5ebcc8d61d48250800000000000000
+      internalID: 5946107676479710646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_48
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 151
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab6caa8f3acf9080800000000000000
+      internalID: -9178395141299475544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_49
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 155
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b7376dad48d05d50800000000000000
+      internalID: 6724112071797454772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_50
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 109
+        width: 46
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a237000e89bc15d0800000000000000
+      internalID: -3090391224746036572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_51
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 130
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 375bee619f1af2690800000000000000
+      internalID: -7624697552911288973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_52
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 123
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed3fd3f47f1e9a660800000000000000
+      internalID: 7397692315235382238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_53
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 120
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6a83d165a90a6000800000000000000
+      internalID: 29846953446836846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_54
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 132
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c0ce0be682f05390800000000000000
+      internalID: -7831493090714140474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_55
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 130
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bdbe760e62617ef0800000000000000
+      internalID: -112200291012657735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_56
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 99
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30cc49aa09f26a370800000000000000
+      internalID: 8333400458879355907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_57
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 103
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a92a8bf974ce64950800000000000000
+      internalID: 6433088910111842970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_58
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 85
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34f8037bd8f825620800000000000000
+      internalID: 2761427360358108995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_59
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 86
+        width: 45
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86ec49655df8ba240800000000000000
+      internalID: 4804091573964164712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_60
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 118
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaad3228c1b725d60800000000000000
+      internalID: 7877494060597107374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_61
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 118
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4281d6e59e9a55d0800000000000000
+      internalID: -3072969429067136437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_62
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 86
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4242e6bbdfaacaa0800000000000000
+      internalID: -6139901783765269939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_63
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 99
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee00464bf62b5ab70800000000000000
+      internalID: 8909723630659961070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_64
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 112
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c46bfef8c609dcc0800000000000000
+      internalID: -3685907359684926268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_65
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 104
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13e6b0e2d22ee8f70800000000000000
+      internalID: 9191532573183667761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_66
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 102
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b4eb93dbddb3700800000000000000
+      internalID: 521253986678754089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_67
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 97
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9dc665227495d070800000000000000
+      internalID: 8130567920261975452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_68
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 103
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1157c68f429921330800000000000000
+      internalID: 3680172229580846353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_69
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 101
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d074e41bf37e2710800000000000000
+      internalID: 1670400034025533651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_70
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 101
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cc68234b541d3ad0800000000000000
+      internalID: -2720996217660609338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_71
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 85
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d751006d8591c120800000000000000
+      internalID: 2432389708190406611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_72
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 102
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e90d97b362322c0800000000000000
+      internalID: -4457677169278017934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_73
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 51
+        width: 54
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c23dd300f015e4b0800000000000000
+      internalID: -5411900754172759351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_74
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 73
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07b543b4a2cef1e60800000000000000
+      internalID: 7935320734844607344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_75
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 85
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cfb12fc31bbb5090800000000000000
+      internalID: -8044630615613390904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_76
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 51
+        width: 45
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f95d6ffba32912960800000000000000
+      internalID: 7575496829240268191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_77
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 83
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7507ea914483ecf20800000000000000
+      internalID: 3444752630124802135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_78
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 60
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 234d9d9927ba0e250800000000000000
+      internalID: 5971961614589088818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_79
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 82
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eec723ed733f4a310800000000000000
+      internalID: 1415523604177779950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_80
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 26
+        width: 52
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6933863bf9d2d8990800000000000000
+      internalID: -7382194050257374314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_81
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 27
+        width: 67
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8116914540104ab60800000000000000
+      internalID: 7756325576341283096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_82
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 71
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a707952831237c210800000000000000
+      internalID: 1353105272420790394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_83
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 70
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6fba6da7d92b28b0800000000000000
+      internalID: -5175997340428091542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_84
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 68
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbbd917a328ed67d0800000000000000
+      internalID: -2923425343268594756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_85
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 70
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 970b46c1e43ce1250800000000000000
+      internalID: 5917381700662636665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_86
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 62
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bddcb5fe0e6265840800000000000000
+      internalID: 5212396366258228699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_87
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 70
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d5e3d6e8d4cc3880800000000000000
+      internalID: -8629806350084086313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_88
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 65
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97fecd0db194ee970800000000000000
+      internalID: 8786040306863501177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_89
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 44
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aedb6963111ed9e80800000000000000
+      internalID: -8170126684933669398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_90
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 61
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4009121e9a4088060800000000000000
+      internalID: 6955814752146788356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_91
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 4
+        width: 48
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cdb717e05b9a72e0800000000000000
+      internalID: -2127217102202356286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_92
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 11
+        width: 44
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3317ca7cf7e6aa9f0800000000000000
+      internalID: -456430917134814925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_93
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 46
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22a26df9ea60d7530800000000000000
+      internalID: 3854244203174701602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_94
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 47
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9fa6016730cb21d0800000000000000
+      internalID: -3374392151700492387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_95
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 46
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44e907063cf9c7bd0800000000000000
+      internalID: -2631052420805779900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_96
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 30
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aea23a1d359f41b0800000000000000
+      internalID: -5670149316171092312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_97
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 49
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d916c63d4f26f7ef0800000000000000
+      internalID: -108259062374964835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_98
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 48
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60fd41ebded737380800000000000000
+      internalID: -8974691172369506554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_99
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 50
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dfdfc9108830f9f0800000000000000
+      internalID: -436787041014915113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_100
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 51
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2f0c5d8aaecbd6c0800000000000000
+      internalID: -4117470202388803795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_101
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 29
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bead71d374ae07290800000000000000
+      internalID: -7894552555091928341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_102
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 45
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2076f238a8a9cc90800000000000000
+      internalID: -7148997493110968273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_103
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 41
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 533f1158bd5e0acb0800000000000000
+      internalID: -4854627667312250059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_104
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 32
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41971076f66ecb700800000000000000
+      internalID: 557573820031006996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_105
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 31
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d809f9c8c9ec043f0800000000000000
+      internalID: -918507152214093683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_106
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 29
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6794a00bd185cc8a0800000000000000
+      internalID: -6283550495557924490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_107
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 28
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0328d090eba5f1c50800000000000000
+      internalID: 6638124148009566768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_108
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 23
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3439a18ffd6487480800000000000000
+      internalID: -8901286735743642813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_109
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 16
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7744788bb486eb40800000000000000
+      internalID: 5469204738471118719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_110
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 13
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46570037d32e0f130800000000000000
+      internalID: 3598624855819318628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_111
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 4
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ce86e1952e845a30800000000000000
+      internalID: 4203140644256255689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_ice-effect-png_2919715_112
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 0
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6556fcf9d80ce6c0800000000000000
+      internalID: -4112902627351177876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
