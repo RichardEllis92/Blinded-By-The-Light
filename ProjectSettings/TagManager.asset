@@ -13,6 +13,7 @@ TagManager:
   - PlayerSpell
   - IceSpell
   - WindSpell
+  - NoSpell
   layers:
   - Default
   - TransparentFX

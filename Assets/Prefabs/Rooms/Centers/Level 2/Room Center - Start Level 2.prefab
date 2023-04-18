@@ -2001,7 +2001,7 @@ GameObject:
   - component: {fileID: 3860199821402577491}
   m_Layer: 0
   m_Name: Room Center - Start Level 2
-  m_TagString: NoBullet
+  m_TagString: NoSpell
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2106,7 +2106,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 756b1886c226fa7498db423b76db4d4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogueObject: {fileID: 11400000, guid: 92d481ba16b7f664ebc95a070f3ddd10, type: 2}
+  gameObjectRequired: 0
+  gameObject: {fileID: 0}
+  dialogueObject: {fileID: 0}
 --- !u!61 &2406362720551728622
 BoxCollider2D:
   m_ObjectHideFlags: 0

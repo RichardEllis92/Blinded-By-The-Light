@@ -106,6 +106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   theRB: {fileID: 6236117276046911497}
   moveSpeed: 3
+  isFrozen: 0
   shouldChasePlayer: 1
   rangeToChasePlayer: 7
   shouldRunAway: 0
@@ -119,7 +120,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   shouldShoot: 0
-  bullet: {fileID: 8903432001235117488, guid: f6340dea17fa6aa43aa34f6120c73757, type: 3}
+  spell: {fileID: 8903432001235117488, guid: f6340dea17fa6aa43aa34f6120c73757, type: 3}
   firePoint: {fileID: 6236117276038036385}
   fireRate: 1
   shootRange: 10
@@ -139,6 +140,8 @@ MonoBehaviour:
   - {fileID: 7974458576723694053, guid: 67e9edb2c8ee9d4488c1d37a38804d65, type: 3}
   - {fileID: 8804223883318617335, guid: 883931c680880164698d69bb43b519de, type: 3}
   itemDropPercent: 33
+  separationDistanceThreshold: 2
+  separationMoveSpeed: 1
 --- !u!50 &6236117276046911497
 Rigidbody2D:
   serializedVersion: 4

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BossBullet : MonoBehaviour
+public class BossSpell : MonoBehaviour
 {
     public float speed;
     private Vector3 _direction;
