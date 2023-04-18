@@ -68,7 +68,7 @@ public class Spells : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!other.CompareTag("NoBullet"))
+        if (!other.CompareTag("NoSpell"))
         {
             var playerSpellTransform = transform;
             Instantiate(Magic.Instance.impactEffect, playerSpellTransform.position, playerSpellTransform.rotation);

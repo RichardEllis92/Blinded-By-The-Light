@@ -241,5 +241,8 @@ public class PlayerController : MonoBehaviour
             theRb.velocity = Vector3.zero;
         }
     }
-    
+    public Vector3 GetVelocity()
+    {
+        return theRb.velocity;
+    }
 }
