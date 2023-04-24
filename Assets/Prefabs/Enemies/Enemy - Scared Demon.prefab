@@ -135,6 +135,7 @@ MonoBehaviour:
   itemDropPercent: 60
   separationDistanceThreshold: 2
   separationMoveSpeed: 1
+  experiencePoints: 10
 --- !u!50 &1470364179383198386
 Rigidbody2D:
   serializedVersion: 4

@@ -5,7 +5,9 @@ using UnityEngine;
 
 public class CheatSystemController : MonoBehaviour
 {
-    [SerializeField] bool showConsole;
+    public static CheatSystemController Instance;
+    
+    public bool showConsole;
     bool _showHelp;
     bool _displayHelp;
 
@@ -14,7 +16,11 @@ public class CheatSystemController : MonoBehaviour
 
     private static CheatSystemCommand _windSpell;
     private static CheatSystemCommand _iceSpell;
-
+    private static CheatSystemCommand _complimentPlayer;
+    private static CheatSystemCommand _fullHealth;
+    private static CheatSystemCommand _increaseMaxHealth;
+    private static CheatSystemCommand _invincibility;
+    
     private static CheatSystemCommand Help;
 
     private List<object> _cheatList;
@@ -26,6 +32,8 @@ public class CheatSystemController : MonoBehaviour
 
     private void Awake()
     {
+        Instance = this;
+        
         _windSpell = new CheatSystemCommand("wind_spell", "Gives the player the ability to summon wind spell", "wind_spell", () =>
         {
             CheatUnlocks.Instance.UnlockWindSpell();
@@ -34,6 +42,26 @@ public class CheatSystemController : MonoBehaviour
         _iceSpell = new CheatSystemCommand("ice_spell", "Gives the player the ability to summon ice spell", "ice_spell", () =>
         {
             CheatUnlocks.Instance.UnlockIceSpell();
+        });
+        
+        _complimentPlayer = new CheatSystemCommand("compliment", "Gives the player a nice compliment", "compliment", () =>
+        {
+            CheatUnlocks.Instance.ComplimentPlayer();
+        });
+        
+        _fullHealth = new CheatSystemCommand("healme", "Heals the player to full health. Can only be used once.", "healme", () =>
+        {
+            CheatUnlocks.Instance.HealPlayer();
+        });
+        
+        _increaseMaxHealth = new CheatSystemCommand("morehealth", "Gives the player more max health. Can only be used once.", "morehealth", () =>
+        {
+            CheatUnlocks.Instance.IncreaseMaxHealth();
+        });
+        
+        _invincibility = new CheatSystemCommand("makemeinvincible", "Makes the player invincible for 30 seconds. Can only be used once.", "makemeinvincible", () =>
+        {
+            CheatUnlocks.Instance.Invincibility();
         });
 
         Help = new CheatSystemCommand("help", "Shows a list of commands", "help", () =>
@@ -56,6 +84,7 @@ public class CheatSystemController : MonoBehaviour
     [Obsolete("Obsolete")]
     private void OnGUI()
     {
+        if (LevelManager.Instance.isPaused || CameraController.Instance.bigMapActive) { return;}
         if (!showConsole) { _displayHelp = false; return; }
 
         float y = 0f;
@@ -103,9 +132,9 @@ public class CheatSystemController : MonoBehaviour
         {
             if (_cheatList[i] is CheatSystemCommandBase commandBase && _input.Contains(commandBase.CheatID))
             {
-                if (_cheatList[i] as CheatSystemCommand != null)
+                if (_cheatList[i] is CheatSystemCommand)
                 {
-                    (_cheatList[i] as CheatSystemCommand).Invoke();
+                    (_cheatList[i] as CheatSystemCommand)?.Invoke();
                 }
                 else
                 {
@@ -124,10 +153,10 @@ public class CheatSystemController : MonoBehaviour
 
     private void DisplayCheatBox()
     {
-        if (Input.GetKeyDown("`"))
+        if (Input.GetKeyDown("`") && !LevelManager.Instance.isPaused && !CameraController.Instance.bigMapActive)
         {
             showConsole = !showConsole;
-            //Debug.Log("` Pressed");
+            _input = "";
         }
     }
 
@@ -151,5 +180,34 @@ public class CheatSystemController : MonoBehaviour
     public void AddToListIceSpell()
     {
         _cheatList.Add(_iceSpell);
+    }
+    public void AddToListComplimentPlayer()
+    {
+        _cheatList.Add(_complimentPlayer);
+        ShopItem.Instance.RemoveComplimentFromList();
+    }
+    public void AddToListHealPlayer()
+    {
+        _cheatList.Add(_fullHealth);
+    }
+    public void RemoveFromListHealPlayer()
+    {
+        _cheatList.Remove(_fullHealth);
+    }
+    public void AddToListIncreaseMaxHealth()
+    {
+        _cheatList.Add(_increaseMaxHealth);
+    }
+    public void RemoveFromListIncreaseMaxHealth()
+    {
+        _cheatList.Remove(_increaseMaxHealth);
+    }
+    public void AddToListInvincibility()
+    {
+        _cheatList.Add(_invincibility);
+    }
+    public void RemoveFromListInvincibility()
+    {
+        _cheatList.Remove(_invincibility);
     }
 }

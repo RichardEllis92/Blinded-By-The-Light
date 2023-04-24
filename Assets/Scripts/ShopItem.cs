@@ -1,16 +1,42 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
+using Random = Unity.Mathematics.Random;
 
 public class ShopItem : MonoBehaviour
 {
+    public static ShopItem Instance;
+    
     public GameObject buyMessage;
 
     private bool _inBuyZone;
 
-    public bool isHealthRestore, isHealthUpgrade, isWeapon;
+    public bool isHealthRestore, isHealthUpgrade, isCheat;
 
     public int itemCost;
 
     public int healthUpgradeAmount;
+
+    public delegate void MyFunctionDelegate();
+
+    public List<MyFunctionDelegate> functions;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
+
+    private void Start()
+    {
+        functions = new List<MyFunctionDelegate>();
+
+        // Add your functions to the list
+        CheatSystemController cheatSystemController = FindObjectOfType<CheatSystemController>();
+        functions.Add(() => cheatSystemController.AddToListComplimentPlayer());
+        functions.Add(() => cheatSystemController.AddToListHealPlayer());
+        functions.Add(() => cheatSystemController.AddToListIncreaseMaxHealth());
+        functions.Add(() => cheatSystemController.AddToListInvincibility());
+    }
 
     void Update()
     {
@@ -30,6 +56,12 @@ public class ShopItem : MonoBehaviour
                     if (isHealthUpgrade)
                     {
                         PlayerHealthController.Instance.IncreaseMaxHealth(healthUpgradeAmount);
+                    }
+
+                    if (isCheat)
+                    {
+                        int index = UnityEngine.Random.Range(0, functions.Count);
+                        functions[index]();
                     }
 
                     gameObject.SetActive(false);
@@ -62,5 +94,11 @@ public class ShopItem : MonoBehaviour
             buyMessage.SetActive(false);
             _inBuyZone = false;
         }
+    }
+
+    public void RemoveComplimentFromList()
+    {
+        CheatSystemController cheatSystemController = FindObjectOfType<CheatSystemController>();
+        functions.Remove(() => cheatSystemController.AddToListComplimentPlayer());
     }
 }

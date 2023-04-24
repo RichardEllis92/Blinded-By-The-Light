@@ -24,6 +24,8 @@ public class LevelManager : MonoBehaviour
 
     public GameObject bossDoor;
 
+    private const int LevelEndExperience = 50;
+
     private void Awake()
     {
         Instance = this;
@@ -61,7 +63,7 @@ public class LevelManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P) && !DialogueUI.Instance.dialogueBox.activeSelf)
+        if (Input.GetKeyDown(KeyCode.P) && !DialogueUI.Instance.dialogueBox.activeSelf && !CheatSystemController.Instance.showConsole)
         {
             PauseUnpause();
         }
@@ -96,6 +98,7 @@ public class LevelManager : MonoBehaviour
         }     
 
         DialogueUI.Instance.talkedToGuide = false;
+        Experience.Instance.UpdateExperiencePoints(LevelEndExperience);
         SceneManager.LoadScene(nextLevel);
     }
 
