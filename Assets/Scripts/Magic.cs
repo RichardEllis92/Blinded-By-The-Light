@@ -150,17 +150,39 @@ public class Magic : MonoBehaviour
             switch (currentSpell)
             {
                 case SpellType.Fire:
-                    currentSpell = SpellType.Ice;
-                    timeBetweenSpells = 2f;
-                    break;
-                case SpellType.Ice:
-                    currentSpell = SpellType.Wind;
-                    timeBetweenSpells = 0.2f;
+                    if (CheatUnlocks.Instance._windSpellUnlocked)
+                    {
+                        currentSpell = SpellType.Wind;
+                        timeBetweenSpells = 0.2f;
+                    }
+                    else if (CheatUnlocks.Instance._iceSpellUnlocked)
+                    {
+                        currentSpell = SpellType.Ice;
+                        timeBetweenSpells = 2f;
+                    }
+                    else
+                    {
+                        currentSpell = SpellType.Fire;
+                        timeBetweenSpells = 1f;
+                    }
                     break;
                 case SpellType.Wind:
+                    if (CheatUnlocks.Instance._iceSpellUnlocked)
+                    {
+                        currentSpell = SpellType.Ice;
+                        timeBetweenSpells = 2f;
+                    }
+                    else
+                    {
+                        currentSpell = SpellType.Fire;
+                        timeBetweenSpells = 1f;
+                    }
+                    break;
+                case SpellType.Ice:
                     currentSpell = SpellType.Fire;
                     timeBetweenSpells = 1f;
                     break;
+                
             }
         }
     }

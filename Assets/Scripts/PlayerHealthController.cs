@@ -127,4 +127,5 @@ public class PlayerHealthController : MonoBehaviour
         maxHealth = StartingMaxHealth;
         currentHealth = StartingHealth;
     }
+    
 }

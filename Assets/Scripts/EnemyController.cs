@@ -51,9 +51,12 @@ public class EnemyController : MonoBehaviour
     public float itemDropPercent;
     private static readonly int IsMoving = Animator.StringToHash("isMoving");
 
+    [Header("Separation")]
     public float separationDistanceThreshold = 2.0f;
     public float separationMoveSpeed = 1.0f;
 
+    [Header("Experience")] 
+    public int experiencePoints = 10;
 
     // Start is called before the first frame update
     private void Start()
@@ -224,6 +227,7 @@ public class EnemyController : MonoBehaviour
 
         if (health > 0) return;
         Destroy(gameObject);
+        Experience.Instance.UpdateExperiencePoints(experiencePoints);
 
         AudioManager.Instance.PlaySfx(1);
 

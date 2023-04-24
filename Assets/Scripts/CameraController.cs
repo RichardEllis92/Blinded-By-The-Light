@@ -55,7 +55,7 @@ public class CameraController : MonoBehaviour
 
     private void ActivateBigMap()
     {
-        if (!LevelManager.Instance.isPaused && !DialogueUI.Instance.IsOpen)
+        if (!LevelManager.Instance.isPaused && !DialogueUI.Instance.IsOpen && !CheatSystemController.Instance.showConsole)
         {
             bigMapActive = true;
 

@@ -43,6 +43,7 @@ public class PlayerController : MonoBehaviour
     private static readonly int IsMovingDown = Animator.StringToHash("isMovingDown");
     private static readonly int IsMovingDownBackwards = Animator.StringToHash("isMovingDownBackwards");
 
+    public bool isRolling;
     private void Awake()
     {
         Scene currentScene = SceneManager.GetActiveScene();
@@ -67,9 +68,12 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        PlayerMove();
-        StopPlayer();
-        Interact();
+        if (!CheatSystemController.Instance.showConsole)
+        {
+            PlayerMove();
+            StopPlayer();
+            Interact();
+        }
     }
 
     void PlayerMove()
@@ -116,6 +120,15 @@ public class PlayerController : MonoBehaviour
                 }
             }
 
+            if (this.anim.GetCurrentAnimatorStateInfo(0).IsName("IsRolling"))
+            {
+                isRolling = true;
+            }
+            else
+            {
+                isRolling = false;
+            }
+            
             if (dashCounter > 0)
             {
                 dashCounter -= Time.deltaTime;

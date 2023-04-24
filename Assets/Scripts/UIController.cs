@@ -6,8 +6,8 @@ using UnityEngine.Serialization;
 public class UIController : MonoBehaviour
 {
     public static UIController Instance;
-    
-    public Slider healthSlider;
+
+    public Slider healthSlider, experienceSlider;
     public Text healthText, coinText;
 
     [FormerlySerializedAs("deathscreen")] public GameObject deathScreen;
