@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class CoinPickup : MonoBehaviour
+public class HellBuckPickup : MonoBehaviour
 {
-    public int coinValue = 1;
+    public int hellBuckValue = 1;
 
     public float waitToBeCollected;
 
@@ -19,7 +19,7 @@ public class CoinPickup : MonoBehaviour
     {
         if (other.CompareTag("Player") && waitToBeCollected <= 0)
         {
-            LevelManager.Instance.GetCoins(coinValue);
+            LevelManager.Instance.GetHellBucks(hellBuckValue);
 
             Destroy(gameObject);
             AudioManager.Instance.PlaySfx(4);

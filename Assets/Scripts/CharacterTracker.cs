@@ -5,7 +5,7 @@ public class CharacterTracker : MonoBehaviour
 {
     public static CharacterTracker Instance;
 
-    public int currentHealth, maxHealth, currentCoins;
+    public int currentHealth, maxHealth, currentHellBucks;
 
     private void Awake()
     {
@@ -20,7 +20,7 @@ public class CharacterTracker : MonoBehaviour
 
         if (sceneName == "Level 1" || sceneName == "Level 1 Again")
         {
-            currentCoins = 0;
+            currentHellBucks = 0;
         }
     }
 }

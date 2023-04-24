@@ -8,7 +8,7 @@ public class UIController : MonoBehaviour
     public static UIController Instance;
 
     public Slider healthSlider, experienceSlider;
-    public Text healthText, coinText;
+    public Text healthText, hellBucksText;
 
     [FormerlySerializedAs("deathscreen")] public GameObject deathScreen;
 
@@ -22,7 +22,7 @@ public class UIController : MonoBehaviour
 
     public Slider bossHealthBar;
 
-    public int defaultCoins = 0;
+    public int defaultHellBucks = 0;
     public int defaultHealth = 5;
     public int defaultMaxHealth = 5;
 
