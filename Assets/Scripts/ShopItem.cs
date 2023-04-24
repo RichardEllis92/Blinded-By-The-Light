@@ -44,7 +44,7 @@ public class ShopItem : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                if(LevelManager.Instance.currentCoins >= itemCost)
+                if(LevelManager.Instance.currentHellBucks >= itemCost)
                 {
                     LevelManager.Instance.SpendCoins(itemCost);
 

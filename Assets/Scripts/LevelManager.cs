@@ -12,9 +12,9 @@ public class LevelManager : MonoBehaviour
 
     public bool isPaused;
 
-    public int currentCoins;
+    public int currentHellBucks;
 
-    public int defaultCoins;
+    public int defaultHellBucks;
     public int defaultHealth = 5;
     public int defaultMaxHealth = 5;
     
@@ -43,11 +43,11 @@ public class LevelManager : MonoBehaviour
         }
         else if (sceneName == "Level 1" || sceneName == "Level 1 Again")
         {
-            currentCoins = 0;
+            currentHellBucks = 0;
         }
         else
         {
-            currentCoins = CharacterTracker.Instance.currentCoins;
+            currentHellBucks = CharacterTracker.Instance.currentHellBucks;
         }
 
         PlayerController.Instance.transform.position = startPoint.position;
@@ -55,7 +55,7 @@ public class LevelManager : MonoBehaviour
 
         Time.timeScale = 1f;
 
-        UIController.Instance.coinText.text = currentCoins.ToString() + " Gold";
+        UIController.Instance.hellBucksText.text = currentHellBucks.ToString() + " Hell Bucks";
 
       
     }
@@ -92,7 +92,7 @@ public class LevelManager : MonoBehaviour
 
         if(sceneName != "Luci Room")
         {
-            CharacterTracker.Instance.currentCoins = currentCoins;
+            CharacterTracker.Instance.currentHellBucks = currentHellBucks;
             CharacterTracker.Instance.currentHealth = PlayerHealthController.Instance.currentHealth;
             CharacterTracker.Instance.maxHealth = PlayerHealthController.Instance.maxHealth;
         }     
@@ -125,28 +125,28 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    public void GetCoins(int amount)
+    public void GetHellBucks(int amount)
     {
-        currentCoins += amount;
+        currentHellBucks += amount;
 
-        UIController.Instance.coinText.text = currentCoins.ToString() + " Gold";
+        UIController.Instance.hellBucksText.text = currentHellBucks.ToString() + " Hell Bucks";
     }
 
     public void SpendCoins(int amount)
     {
-        currentCoins -= amount;
+        currentHellBucks -= amount;
 
-        if(currentCoins < 0)
+        if(currentHellBucks < 0)
         {
-            currentCoins = 0;
+            currentHellBucks = 0;
         }
 
-        UIController.Instance.coinText.text = currentCoins.ToString() + " Gold";
+        UIController.Instance.hellBucksText.text = currentHellBucks.ToString() + " Hell Bucks";
     }
 
     public void RemoveCoins()
     {
-        currentCoins = defaultCoins;
+        currentHellBucks = defaultHellBucks;
     }
 
 }
