@@ -64,17 +64,17 @@ public class LevelGenerator : MonoBehaviour
 
         }
 
-        if (isShop)
+        if (isShop && _layoutRoomObjects.Count > 0)
         {
-            int shopSelector = Random.Range(shopMinDistance, shopMaxDistance + 1);
+            int shopSelector = Random.Range(shopMinDistance, Mathf.Min(shopMaxDistance + 1, _layoutRoomObjects.Count));
             _shopRoom = _layoutRoomObjects[shopSelector];
             _layoutRoomObjects.RemoveAt(shopSelector);
             _shopRoom.GetComponent<SpriteRenderer>().color = shopRoomColor;
         }
 
-        if (isHealRoom)
+        if (isHealRoom && _layoutRoomObjects.Count > 0)
         {
-            int healRoomSelector = Random.Range(healRoomMinDistance, healRoomMaxDistance + 1);
+            int healRoomSelector = Random.Range(healRoomMinDistance, Mathf.Min(healRoomMaxDistance + 1, _layoutRoomObjects.Count));
             _healRoom = _layoutRoomObjects[healRoomSelector];
             _layoutRoomObjects.RemoveAt(healRoomSelector);
             _healRoom.GetComponent<SpriteRenderer>().color = healRoomColor;
