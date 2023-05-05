@@ -26,7 +26,7 @@ public class StrongDemonAnimations : MonoBehaviour
 
         if (Mathf.Abs(movementDirection.x) > Mathf.Abs(movementDirection.y))
         {
-            if (movementDirection.x > 0)
+            if (movementDirection.x > 0.1)
             {
                 isMovingRight = true;
             }
@@ -37,7 +37,7 @@ public class StrongDemonAnimations : MonoBehaviour
         }
         else
         {
-            if (movementDirection.y > 0)
+            if (movementDirection.y > 0.1)
             {
                 isMovingUp = true;
             }
@@ -47,11 +47,25 @@ public class StrongDemonAnimations : MonoBehaviour
             }
         }
 
-        anim.SetBool(MovingUp, isMovingUp);
-        anim.SetBool(MovingDown, isMovingDown);
-        anim.SetBool(MovingLeft, isMovingLeft);
-        anim.SetBool(MovingRight, isMovingRight);
+        if (movementDirection == Vector3.zero)
+        {
+            anim.SetBool(MovingUp, false);
+            anim.SetBool(MovingDown, false);
+            anim.SetBool(MovingLeft, false);
+            anim.SetBool(MovingRight, false);
+        }
+        else
+        {
+            anim.SetBool(MovingUp, isMovingUp);
+            anim.SetBool(MovingDown, isMovingDown);
+            anim.SetBool(MovingLeft, isMovingLeft);
+            anim.SetBool(MovingRight, isMovingRight);
+        }
+        
 
+        // If the object is not moving, set all the bools to false
+        
+        
         // Check if the enemy is touching the player
         Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, attackRange);
         bool isTouchingPlayer = false;

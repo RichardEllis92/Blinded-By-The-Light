@@ -259,7 +259,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1534498936301955897, guid: 3c6321a573e5a7345abdbf80bf2c2c86, type: 3}
       propertyPath: isShop
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1534498936301955897, guid: 3c6321a573e5a7345abdbf80bf2c2c86, type: 3}
       propertyPath: centerEnd
@@ -323,7 +323,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1534498936301955897, guid: 3c6321a573e5a7345abdbf80bf2c2c86, type: 3}
       propertyPath: shopMaxDistance
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1534498936301955897, guid: 3c6321a573e5a7345abdbf80bf2c2c86, type: 3}
       propertyPath: shopMinDistance
