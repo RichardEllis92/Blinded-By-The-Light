@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 92482411}
   - component: {fileID: 92482410}
   - component: {fileID: 92482409}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -840,7 +840,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1998900736}
   - component: {fileID: 1998900737}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Grid (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1437,9 +1437,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2419579525998131026}
     m_Modifications:
+    - target: {fileID: 8985927615874114172, guid: 70ea3b1e27e32ea4c9743def7adcb882, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985927616758839068, guid: 70ea3b1e27e32ea4c9743def7adcb882, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8985927616891598544, guid: 70ea3b1e27e32ea4c9743def7adcb882, type: 3}
       propertyPath: m_Name
       value: Door Right
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985927616891598544, guid: 70ea3b1e27e32ea4c9743def7adcb882, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8985927616891598544, guid: 70ea3b1e27e32ea4c9743def7adcb882, type: 3}
       propertyPath: m_IsActive
@@ -1513,7 +1525,15 @@ PrefabInstance:
       value: Door Down
       objectReference: {fileID: 0}
     - target: {fileID: 6096350582667835814, guid: a282ae0f59fe7334b9f8cfdb657ec30f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6096350582667835814, guid: a282ae0f59fe7334b9f8cfdb657ec30f, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6241446430071137200, guid: a282ae0f59fe7334b9f8cfdb657ec30f, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8455458207933609199, guid: a282ae0f59fe7334b9f8cfdb657ec30f, type: 3}
@@ -1558,6 +1578,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8455458207933609199, guid: a282ae0f59fe7334b9f8cfdb657ec30f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067581704836500670, guid: a282ae0f59fe7334b9f8cfdb657ec30f, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

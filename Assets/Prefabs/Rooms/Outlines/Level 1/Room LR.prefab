@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 214381521}
   - component: {fileID: 214381522}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Grid (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 594076576}
   - component: {fileID: 594076575}
   - component: {fileID: 594076574}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1469,9 +1469,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 753525883081754760}
     m_Modifications:
+    - target: {fileID: 8985927615874114172, guid: 70ea3b1e27e32ea4c9743def7adcb882, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985927616758839068, guid: 70ea3b1e27e32ea4c9743def7adcb882, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8985927616891598544, guid: 70ea3b1e27e32ea4c9743def7adcb882, type: 3}
       propertyPath: m_Name
       value: Door Right
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985927616891598544, guid: 70ea3b1e27e32ea4c9743def7adcb882, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8985927616891598544, guid: 70ea3b1e27e32ea4c9743def7adcb882, type: 3}
       propertyPath: m_IsActive
@@ -1545,6 +1557,10 @@ PrefabInstance:
       value: Door Left
       objectReference: {fileID: 0}
     - target: {fileID: 6956578318763197946, guid: 9e64fb7aff7045549b30b1578fe89dd2, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956578318763197946, guid: 9e64fb7aff7045549b30b1578fe89dd2, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -1590,6 +1606,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6956578318763197948, guid: 9e64fb7aff7045549b30b1578fe89dd2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956578318903329846, guid: 9e64fb7aff7045549b30b1578fe89dd2, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956578320166031702, guid: 9e64fb7aff7045549b30b1578fe89dd2, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

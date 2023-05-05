@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1028456041}
   - component: {fileID: 1028456042}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Grid (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 1776340436}
   - component: {fileID: 1776340435}
   - component: {fileID: 1776340434}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1407,6 +1407,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1150865292428831861}
     m_Modifications:
+    - target: {fileID: 4858560361246563275, guid: 4c84d75a0d4728246b44ceacf708c10d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6578819052571578708, guid: 4c84d75a0d4728246b44ceacf708c10d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7224839632746477643, guid: 4c84d75a0d4728246b44ceacf708c10d, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -1454,6 +1462,10 @@ PrefabInstance:
     - target: {fileID: 7846987132675733599, guid: 4c84d75a0d4728246b44ceacf708c10d, type: 3}
       propertyPath: m_Name
       value: Door Up
+      objectReference: {fileID: 0}
+    - target: {fileID: 7846987132675733599, guid: 4c84d75a0d4728246b44ceacf708c10d, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7846987132675733599, guid: 4c84d75a0d4728246b44ceacf708c10d, type: 3}
       propertyPath: m_IsActive

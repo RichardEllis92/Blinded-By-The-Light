@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1876866466}
   - component: {fileID: 1876866467}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Grid (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 1887025218}
   - component: {fileID: 1887025217}
   - component: {fileID: 1887025216}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1568,7 +1568,15 @@ PrefabInstance:
       value: Door Down
       objectReference: {fileID: 0}
     - target: {fileID: 6096350582667835814, guid: a282ae0f59fe7334b9f8cfdb657ec30f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6096350582667835814, guid: a282ae0f59fe7334b9f8cfdb657ec30f, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6241446430071137200, guid: a282ae0f59fe7334b9f8cfdb657ec30f, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8455458207933609199, guid: a282ae0f59fe7334b9f8cfdb657ec30f, type: 3}
@@ -1615,6 +1623,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9067581704836500670, guid: a282ae0f59fe7334b9f8cfdb657ec30f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a282ae0f59fe7334b9f8cfdb657ec30f, type: 3}
 --- !u!1 &5273116131303844721 stripped
@@ -1634,6 +1646,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 756969293618307128}
     m_Modifications:
+    - target: {fileID: 4858560361246563275, guid: 4c84d75a0d4728246b44ceacf708c10d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6578819052571578708, guid: 4c84d75a0d4728246b44ceacf708c10d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7224839632746477643, guid: 4c84d75a0d4728246b44ceacf708c10d, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -1683,6 +1703,10 @@ PrefabInstance:
       value: Door Up
       objectReference: {fileID: 0}
     - target: {fileID: 7846987132675733599, guid: 4c84d75a0d4728246b44ceacf708c10d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7846987132675733599, guid: 4c84d75a0d4728246b44ceacf708c10d, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -1705,9 +1729,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 756969293618307128}
     m_Modifications:
+    - target: {fileID: 8985927615874114172, guid: 70ea3b1e27e32ea4c9743def7adcb882, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985927616758839068, guid: 70ea3b1e27e32ea4c9743def7adcb882, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8985927616891598544, guid: 70ea3b1e27e32ea4c9743def7adcb882, type: 3}
       propertyPath: m_Name
       value: Door Right
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985927616891598544, guid: 70ea3b1e27e32ea4c9743def7adcb882, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8985927616891598544, guid: 70ea3b1e27e32ea4c9743def7adcb882, type: 3}
       propertyPath: m_IsActive
@@ -1781,6 +1817,10 @@ PrefabInstance:
       value: Door Left
       objectReference: {fileID: 0}
     - target: {fileID: 6956578318763197946, guid: 9e64fb7aff7045549b30b1578fe89dd2, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956578318763197946, guid: 9e64fb7aff7045549b30b1578fe89dd2, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -1826,6 +1866,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6956578318763197948, guid: 9e64fb7aff7045549b30b1578fe89dd2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956578318903329846, guid: 9e64fb7aff7045549b30b1578fe89dd2, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956578320166031702, guid: 9e64fb7aff7045549b30b1578fe89dd2, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

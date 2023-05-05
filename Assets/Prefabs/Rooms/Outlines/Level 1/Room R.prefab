@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 473704982}
   - component: {fileID: 473704981}
   - component: {fileID: 473704980}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -844,7 +844,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1159109047}
   - component: {fileID: 1159109048}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Grid (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1419,9 +1419,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7584283922457299084}
     m_Modifications:
+    - target: {fileID: 8985927615874114172, guid: 70ea3b1e27e32ea4c9743def7adcb882, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985927616758839068, guid: 70ea3b1e27e32ea4c9743def7adcb882, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8985927616891598544, guid: 70ea3b1e27e32ea4c9743def7adcb882, type: 3}
       propertyPath: m_Name
       value: Door Right
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985927616891598544, guid: 70ea3b1e27e32ea4c9743def7adcb882, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8985927616891598544, guid: 70ea3b1e27e32ea4c9743def7adcb882, type: 3}
       propertyPath: m_IsActive

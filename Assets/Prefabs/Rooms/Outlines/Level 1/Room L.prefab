@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 527672710}
   - component: {fileID: 527672709}
   - component: {fileID: 527672708}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -844,7 +844,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2061431982}
   - component: {fileID: 2061431983}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Grid (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1444,6 +1444,10 @@ PrefabInstance:
       value: Door Left
       objectReference: {fileID: 0}
     - target: {fileID: 6956578318763197946, guid: 9e64fb7aff7045549b30b1578fe89dd2, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956578318763197946, guid: 9e64fb7aff7045549b30b1578fe89dd2, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -1503,6 +1507,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -1436564035
       objectReference: {fileID: 0}
+    - target: {fileID: 6956578318903329846, guid: 9e64fb7aff7045549b30b1578fe89dd2, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6956578320166031656, guid: 9e64fb7aff7045549b30b1578fe89dd2, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -1514,6 +1522,10 @@ PrefabInstance:
     - target: {fileID: 6956578320166031656, guid: 9e64fb7aff7045549b30b1578fe89dd2, type: 3}
       propertyPath: m_SortingLayerID
       value: -1436564035
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956578320166031702, guid: 9e64fb7aff7045549b30b1578fe89dd2, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e64fb7aff7045549b30b1578fe89dd2, type: 3}

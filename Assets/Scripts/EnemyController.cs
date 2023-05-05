@@ -5,6 +5,9 @@ using Random = UnityEngine.Random;
 
 public class EnemyController : MonoBehaviour
 {
+    public static EnemyController Instance;
+    public string enemyDescription;
+    
     public Rigidbody2D theRB;
     public float moveSpeed;
     public bool isFrozen;
@@ -18,6 +21,8 @@ public class EnemyController : MonoBehaviour
     [Header("Run Away")]
     public bool shouldRunAway;
     public float runawayRange;
+    [SerializeField] private float _idleTimeThreshold = 1f; // Time in seconds without movement to trigger idle behavior
+    private float _idleTimer = 0f; // Timer to track idle time
 
     [Header("Wandering")]
     public bool shouldWander;
@@ -33,7 +38,7 @@ public class EnemyController : MonoBehaviour
     [Header("Shooting")]
     public bool shouldShoot;
     public GameObject spell;
-    public Transform firePoint;
+    public Transform firePoint, firePoint2;
     public float fireRate;
     private float _fireCounter;
     public float shootRange;
@@ -57,6 +62,11 @@ public class EnemyController : MonoBehaviour
 
     [Header("Experience")] 
     public int experiencePoints = 10;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     // Start is called before the first frame update
     private void Start()
@@ -165,7 +175,34 @@ public class EnemyController : MonoBehaviour
 
             if (shouldRunAway && Vector3.Distance(transform.position, PlayerController.Instance.transform.position) < runawayRange)
             {
-                _moveDirection = transform.position - PlayerController.Instance.transform.position;
+                if (Mathf.Approximately(_moveDirection.magnitude, 0f)) // Check if object is not moving
+                {
+                    _idleTimer += Time.deltaTime; // Increment idle timer
+                    if (_idleTimer >= _idleTimeThreshold) // Check if idle time threshold has been reached
+                    {
+                        // The object hasn't moved for 1 second, move away from the player
+                        _moveDirection = transform.position - PlayerController.Instance.transform.position;
+                    }
+                }
+                else // Object is moving
+                {
+                    _idleTimer = 0f; // Reset idle timer
+                    Vector3 playerDirection = PlayerController.Instance.transform.position - transform.position;
+                    RaycastHit2D hit = Physics2D.Raycast(transform.position, playerDirection, Vector3.Distance(transform.position, PlayerController.Instance.transform.position), LayerMask.GetMask("Wall"));
+
+                    if (hit.collider != null && hit.distance <= 1f)
+                    {
+                        // The object is close to the wall, move in a direction that is perpendicular to the wall
+                        Vector3 wallDirection = hit.normal;
+                        Vector3 moveDirection = Vector3.Cross(wallDirection, Vector3.forward);
+                        _moveDirection = moveDirection.normalized;
+                    }
+                    else
+                    {
+                        // The object is not close to the wall, continue moving away from the player
+                        _moveDirection = transform.position - PlayerController.Instance.transform.position;
+                    }
+                }
             }
 
 
@@ -192,14 +229,26 @@ public class EnemyController : MonoBehaviour
                     Vector2 predictedPlayerPosition = PlayerController.Instance.transform.position +
                                                       (PlayerController.Instance.transform.position - transform.position).magnitude *
                                                       (Vector3)PlayerController.Instance.theRb.velocity.normalized;
-
                     // Aim at the predicted position and shoot
-                    Vector2 shootDirection = predictedPlayerPosition - (Vector2)firePoint.position;
-                    float angle = Mathf.Atan2(shootDirection.y, shootDirection.x) * Mathf.Rad2Deg;
-                    Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-                    Instantiate(spell, firePoint.position, rotation);
-                    Debug.DrawLine(firePoint.position, predictedPlayerPosition, Color.green, 0.5f);
-                    AudioManager.Instance.PlaySfx(10);
+                    if (enemyDescription == "EyeDemon" && anim.GetCurrentAnimatorStateInfo(0).IsName("Eye_Demon_Moving_Up"))
+                    {
+                        Vector2 shootDirection = predictedPlayerPosition - (Vector2)firePoint2.position;
+                        float angle = Mathf.Atan2(shootDirection.y, shootDirection.x) * Mathf.Rad2Deg;
+                        Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+                        Instantiate(spell, firePoint2.position, rotation);
+                        Debug.DrawLine(firePoint2.position, predictedPlayerPosition, Color.green, 0.5f);
+                        AudioManager.Instance.PlaySfx(10);
+                    }
+                    else
+                    {
+                        Vector2 shootDirection = predictedPlayerPosition - (Vector2)firePoint.position;
+                        float angle = Mathf.Atan2(shootDirection.y, shootDirection.x) * Mathf.Rad2Deg;
+                        Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+                        Instantiate(spell, firePoint.position, rotation);
+                        Debug.DrawLine(firePoint.position, predictedPlayerPosition, Color.green, 0.5f);
+                        AudioManager.Instance.PlaySfx(10);
+                    }
+                    
                 }
             }
 
@@ -209,8 +258,6 @@ public class EnemyController : MonoBehaviour
         {
             theRB.velocity = Vector2.zero;
         }
-
-        anim.SetBool(IsMoving, _moveDirection != Vector3.zero);
     }
 
     private static Vector2 op_Addition()

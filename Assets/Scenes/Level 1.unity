@@ -259,7 +259,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1534498936301955897, guid: 3c6321a573e5a7345abdbf80bf2c2c86, type: 3}
       propertyPath: isShop
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1534498936301955897, guid: 3c6321a573e5a7345abdbf80bf2c2c86, type: 3}
       propertyPath: centerEnd
@@ -323,11 +323,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1534498936301955897, guid: 3c6321a573e5a7345abdbf80bf2c2c86, type: 3}
       propertyPath: shopMaxDistance
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1534498936301955897, guid: 3c6321a573e5a7345abdbf80bf2c2c86, type: 3}
       propertyPath: shopMinDistance
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1534498936301955897, guid: 3c6321a573e5a7345abdbf80bf2c2c86, type: 3}
       propertyPath: shopRoomColor.g
@@ -675,7 +675,7 @@ PrefabInstance:
     - target: {fileID: 584549142694238802, guid: bedcdda4aa15af646a06f2243721507e, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 36f377e883ce5334dad16ea0eb9dfc90, type: 3}
+      objectReference: {fileID: 21300000, guid: 0226d604b0b013f458d2596251281fce, type: 3}
     - target: {fileID: 590404084383218700, guid: bedcdda4aa15af646a06f2243721507e, type: 3}
       propertyPath: m_FontData.m_Font
       value: 
@@ -1077,7 +1077,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 8183
+    m_Bits: 8191
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -2712,6 +2712,7 @@ GameObject:
   - component: {fileID: 1430542123}
   - component: {fileID: 6810987402946678602}
   - component: {fileID: 6810987402946678603}
+  - component: {fileID: 6810987402946678604}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -2758,6 +2759,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   experiencePoints: 0
+--- !u!114 &6810987402946678604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6810987402946678601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e51e9c0a971aff439606e4e431bcb18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 6810987402946678594}
+  dialogueUI: {fileID: 344491099}
 --- !u!50 &6810987402946678605
 Rigidbody2D:
   serializedVersion: 4
@@ -2843,10 +2858,12 @@ MonoBehaviour:
   firePointDown: {fileID: 217267693}
   firePointLeft: {fileID: 648154533}
   firePointRight: {fileID: 160634700}
+  _shotCounter: 0
   timeBetweenSpells: 1
   spellMovingUp: 0
   spellMovingDown: 0
   dialogueUI: {fileID: 344491099}
+  multipleArrows: 0
 --- !u!1 &7517640960089441036
 GameObject:
   m_ObjectHideFlags: 0

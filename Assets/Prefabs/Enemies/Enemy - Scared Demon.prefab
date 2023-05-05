@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 1470364179383198384}
   - component: {fileID: 1470364179383198387}
   - component: {fileID: 1470364179383198386}
+  - component: {fileID: 1378936844}
   m_Layer: 8
   m_Name: Enemy - Scared Demon
   m_TagString: Enemy
@@ -78,7 +79,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.01286307, y: 0}
+  m_Offset: {x: -0.007049203, y: -0.017441392}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -89,7 +90,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5626541, y: 1}
+  m_Size: {x: 1.1556637, y: 1.6860307}
   m_EdgeRadius: 0
 --- !u!114 &1470364179383198387
 MonoBehaviour:
@@ -103,6 +104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b40b613f85337a488b1ca5e27320410, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDescription: ScaredDemon
   theRB: {fileID: 1470364179383198386}
   moveSpeed: 3
   isFrozen: 0
@@ -118,6 +120,7 @@ MonoBehaviour:
   shouldShoot: 1
   spell: {fileID: 8903432001235117488, guid: f6340dea17fa6aa43aa34f6120c73757, type: 3}
   firePoint: {fileID: 1470364179289846042}
+  firePoint2: {fileID: 0}
   fireRate: 1
   shootRange: 10
   theBody: {fileID: 1470364179945688846}
@@ -157,6 +160,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1378936844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470364179383198383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bd957ac53140b64884d9ca6a95f7a11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 1470364179945688847}
+  movingUp: 0
 --- !u!1 &1470364179945688844
 GameObject:
   m_ObjectHideFlags: 0
@@ -229,7 +246,7 @@ SpriteRenderer:
   m_SortingLayerID: -205838043
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2256474395660849445, guid: 0e3f4cb85986b924c824c35c2a38208e, type: 3}
+  m_Sprite: {fileID: 4233998224020520821, guid: b1e6ee81f9472804eb6d4cd22b986e21, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

@@ -1,0 +1,996 @@
+fileFormatVersion: 2
+guid: 56124187629e44d4cbdd9525953d6715
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2278564663400551913
+    second: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_0
+  - first:
+      213: -1489146454713321161
+    second: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_1
+  - first:
+      213: 391375652446021356
+    second: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_2
+  - first:
+      213: 3030515180628570597
+    second: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_3
+  - first:
+      213: 5103312293905517028
+    second: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_8
+  - first:
+      213: 6053901496752297914
+    second: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_9
+  - first:
+      213: 3734412057594635394
+    second: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_10
+  - first:
+      213: -2057440897892176525
+    second: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_11
+  - first:
+      213: 6254797059296380135
+    second: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_12
+  - first:
+      213: -6718597145035376102
+    second: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_13
+  - first:
+      213: 6174045350993544501
+    second: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_14
+  - first:
+      213: 45776775713161213
+    second: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_15
+  - first:
+      213: 6854061775283824015
+    second: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_16
+  - first:
+      213: 1362904978504717862
+    second: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_17
+  - first:
+      213: -8313201334930062720
+    second: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_18
+  - first:
+      213: 238587137158997077
+    second: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_19
+  - first:
+      213: -7081686932566956544
+    second: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_20
+  - first:
+      213: -4932974197551917616
+    second: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_21
+  - first:
+      213: -6330746800878171508
+    second: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_22
+  - first:
+      213: -1209777187463692451
+    second: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_23
+  - first:
+      213: -6912766033698747653
+    second: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_24
+  - first:
+      213: -3781357147922613047
+    second: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_25
+  - first:
+      213: -5730390546496218895
+    second: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_26
+  - first:
+      213: 5133763855598627587
+    second: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_27
+  - first:
+      213: -5185929502170098666
+    second: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_28
+  - first:
+      213: -4782694078407186380
+    second: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_29
+  - first:
+      213: -6379618295861053948
+    second: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_30
+  - first:
+      213: 2614756749541706683
+    second: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_31
+  - first:
+      213: 8840363688371975
+    second: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_4
+  - first:
+      213: -4291914141132140836
+    second: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_5
+  - first:
+      213: 7639236091090541158
+    second: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_6
+  - first:
+      213: 1283853473898742311
+    second: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_7
+  - first:
+      213: -6469848288802295136
+    second: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_32
+  - first:
+      213: 5787398149140985252
+    second: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_33
+  - first:
+      213: -8687588905851707557
+    second: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_34
+  - first:
+      213: 6718169031385017693
+    second: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_35
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 208
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71aa040d289e060e0800000000000000
+      internalID: -2278564663400551913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_1
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 296
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 739b744703d755be0800000000000000
+      internalID: -1489146454713321161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_2
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 296
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce628c115127e6500800000000000000
+      internalID: 391375652446021356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_3
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 296
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e17bcb108d8e0a20800000000000000
+      internalID: 3030515180628570597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_8
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 140
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e94f182e7b92d640800000000000000
+      internalID: 5103312293905517028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_9
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 208
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab7502b1657c30450800000000000000
+      internalID: 6053901496752297914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_10
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 208
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2842dd90bfb43d330800000000000000
+      internalID: 3734412057594635394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_11
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 208
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37da6c677608273e0800000000000000
+      internalID: -2057440897892176525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_12
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 208
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e4c48d39c08dc650800000000000000
+      internalID: 6254797059296380135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_13
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 208
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1a76354e7fb2c2a0800000000000000
+      internalID: -6718597145035376102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_14
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 208
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5354f15098d9ea550800000000000000
+      internalID: 6174045350993544501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_15
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 208
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dff78572cb1a2a000800000000000000
+      internalID: 45776775713161213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_16
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 72
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f852068ced48e1f50800000000000000
+      internalID: 6854061775283824015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_17
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 140
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62692626bd20ae210800000000000000
+      internalID: 1362904978504717862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_18
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 140
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 082c03d5e6391ac80800000000000000
+      internalID: -8313201334930062720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_19
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 140
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 554e656bcb1af4300800000000000000
+      internalID: 238587137158997077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_20
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 140
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00622d5514bc8bd90800000000000000
+      internalID: -7081686932566956544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_21
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 140
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d510c47a1e8a8bb0800000000000000
+      internalID: -4932974197551917616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_22
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 140
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8a47ba835ba428a0800000000000000
+      internalID: -6330746800878171508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_23
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 140
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5ffad3ce02063fe0800000000000000
+      internalID: -1209777187463692451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_24
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 4
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfa0002faebe010a0800000000000000
+      internalID: -6912766033698747653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_25
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 4
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cc303d55bbe58bc0800000000000000
+      internalID: -3781357147922613047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_26
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 4
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f816dba8209970b0800000000000000
+      internalID: -5730390546496218895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_27
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 4
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30b22bdd60bce3740800000000000000
+      internalID: 5133763855598627587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_28
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 4
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 614dee01890e708b0800000000000000
+      internalID: -5185929502170098666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_29
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 4
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 438ec23531570adb0800000000000000
+      internalID: -4782694078407186380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_30
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 4
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4067e98e5fa0777a0800000000000000
+      internalID: -6379618295861053948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_31
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 4
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbb0d7ef86b794420800000000000000
+      internalID: 2614756749541706683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_4
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 72
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 707a45193486f1000800000000000000
+      internalID: 8840363688371975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_5
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 72
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdec75304de0074c0800000000000000
+      internalID: -4291914141132140836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_6
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 72
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66a9bcc10c4040a60800000000000000
+      internalID: 7639236091090541158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_7
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 72
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 722c26faee921d110800000000000000
+      internalID: 1283853473898742311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_32
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 72
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a23543924b7636a0800000000000000
+      internalID: -6469848288802295136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_33
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 72
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a53d4524f7f05050800000000000000
+      internalID: 5787398149140985252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_34
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 72
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5f95104beb7f6780800000000000000
+      internalID: -8687588905851707557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scared Demon - Sprite Sheet by Lucas Luel 2x Scale_35
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 296
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5debb0c32bbb3d50800000000000000
+      internalID: 6718169031385017693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
