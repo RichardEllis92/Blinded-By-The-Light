@@ -1,0 +1,564 @@
+fileFormatVersion: 2
+guid: 3d9418f34fbb161468d40c4a6c2de209
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4208816827680108545
+    second: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_0
+  - first:
+      213: 1999952873065930749
+    second: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_1
+  - first:
+      213: 6870272258511090797
+    second: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_4
+  - first:
+      213: -2251725526689324117
+    second: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_5
+  - first:
+      213: 37939478691580265
+    second: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_7
+  - first:
+      213: -141430854213151108
+    second: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_8
+  - first:
+      213: 429433854732052704
+    second: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_9
+  - first:
+      213: 7716780328534040387
+    second: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_10
+  - first:
+      213: 1587429654466268006
+    second: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_13
+  - first:
+      213: -7710093459433099947
+    second: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_14
+  - first:
+      213: 426096492698299926
+    second: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_16
+  - first:
+      213: 3285939251307593029
+    second: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_17
+  - first:
+      213: 1609190535986226338
+    second: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_18
+  - first:
+      213: 2167492492408699067
+    second: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_19
+  - first:
+      213: -548112484903191224
+    second: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_20
+  - first:
+      213: 1630966211585519230
+    second: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_21
+  - first:
+      213: -6686362358449353004
+    second: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_22
+  - first:
+      213: 8960519001166533386
+    second: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_23
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 160
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1003f820b98b86a30800000000000000
+      internalID: 4208816827680108545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 160
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dffdd96ba8241cb10800000000000000
+      internalID: 1999952873065930749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_4
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 72
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6436c6083c185f50800000000000000
+      internalID: 6870272258511090797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_5
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 72
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba3e00a409340c0e0800000000000000
+      internalID: -2251725526689324117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_7
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 72
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 969006e31c9c68000800000000000000
+      internalID: 37939478691580265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_8
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 72
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c76585e2369890ef0800000000000000
+      internalID: -141430854213151108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_9
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 72
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e8a4ddc0d7a5f500800000000000000
+      internalID: 429433854732052704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_10
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 72
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34f5ef3d2d2871b60800000000000000
+      internalID: 7716780328534040387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_13
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 72
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66b02643cdea70610800000000000000
+      internalID: 1587429654466268006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_14
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 72
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55d6d6539de300590800000000000000
+      internalID: -7710093459433099947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_16
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 4
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e6257a08cc9e500800000000000000
+      internalID: 426096492698299926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_17
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 4
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54db3b3e6500a9d20800000000000000
+      internalID: 3285939251307593029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_18
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 4
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a42161444ef45610800000000000000
+      internalID: 1609190535986226338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_19
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 4
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb8b85f10fa741e10800000000000000
+      internalID: 2167492492408699067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_20
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 4
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d73685996b468f0800000000000000
+      internalID: -548112484903191224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_21
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 4
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7e2832d02b52a610800000000000000
+      internalID: 1630966211585519230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_22
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 4
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4de45116cd44533a0800000000000000
+      internalID: -6686362358449353004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_23
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 4
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a035ba38e882a5c70800000000000000
+      internalID: 8960519001166533386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

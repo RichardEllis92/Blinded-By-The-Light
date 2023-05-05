@@ -24,7 +24,7 @@ public class Magic : MonoBehaviour
     [SerializeField]
     private Transform firePointUp, firePointDown, firePointLeft, firePointRight;
     
-    private float _shotCounter;
+    public float _shotCounter;
     public float timeBetweenSpells = 1f;
 
     public bool spellMovingUp;
@@ -37,6 +37,8 @@ public class Magic : MonoBehaviour
     private static readonly int IsMovingRight = Animator.StringToHash("isMovingRight");
     public DialogueUI DialogueUI => dialogueUI;
 
+    public bool multipleArrows;
+
     private void Awake()
     {
         Instance = this;
@@ -46,6 +48,8 @@ public class Magic : MonoBehaviour
     {
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
+        MultipleArrowKeys();
+        if (multipleArrows) { return;}
         
         if (PlayerController.Instance.canMove && !PlayerController.Instance.animationOverride && !LevelManager.Instance.isPaused && !dialogueUI.IsOpen && sceneName != "Luci Room")
         {
@@ -57,11 +61,6 @@ public class Magic : MonoBehaviour
             else if (Input.GetKey(KeyCode.UpArrow))
             {
                 spellMovingUp = true;
-                if (PlayerController.Instance.anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Right") || PlayerController.Instance.anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Left") || PlayerController.Instance.anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle") || PlayerController.Instance.anim.GetCurrentAnimatorStateInfo(0).IsName("isMovingUpBackwards"))
-                {
-                    PlayerController.Instance.anim.SetBool(IsMovingUp, true);
-                    
-                }
                 switch (currentSpell)
                 {
                     case SpellType.Fire:
@@ -80,10 +79,6 @@ public class Magic : MonoBehaviour
             else if (Input.GetKey(KeyCode.DownArrow))
             {
                 spellMovingDown = true;
-                if (PlayerController.Instance.anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Right") || PlayerController.Instance.anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Left") || PlayerController.Instance.anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Back") || PlayerController.Instance.anim.GetCurrentAnimatorStateInfo(0).IsName("isMovingDownBackwards"))
-                {
-                    PlayerController.Instance.anim.SetBool(IsMovingDown, true);
-                }
                 switch (currentSpell)
                 {
                     case SpellType.Fire:
@@ -101,10 +96,7 @@ public class Magic : MonoBehaviour
             }
             else if (Input.GetKey(KeyCode.LeftArrow))
             {
-                if (PlayerController.Instance.anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Up") || PlayerController.Instance.anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Down") || PlayerController.Instance.anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Back") || PlayerController.Instance.anim.GetCurrentAnimatorStateInfo(0).IsName("isMovingLeftBackwards"))
-                {
-                    PlayerController.Instance.anim.SetBool(IsMovingLeft, true);
-                }
+                
                 switch (currentSpell)
                 {
                     case SpellType.Fire:
@@ -122,10 +114,6 @@ public class Magic : MonoBehaviour
             }
             else if (Input.GetKey(KeyCode.RightArrow))
             {
-                if (PlayerController.Instance.anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Up") || PlayerController.Instance.anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Down") || PlayerController.Instance.anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Idle_Back") || PlayerController.Instance.anim.GetCurrentAnimatorStateInfo(0).IsName("isMovingRightBackwards"))
-                {
-                    PlayerController.Instance.anim.SetBool(IsMovingRight, true);
-                }
                 switch (currentSpell)
                 {
                     case SpellType.Fire:
@@ -184,6 +172,37 @@ public class Magic : MonoBehaviour
                     break;
                 
             }
+        }
+    }
+    
+    void MultipleArrowKeys()
+    {
+        bool up = Input.GetKey(KeyCode.UpArrow);
+        bool down = Input.GetKey(KeyCode.DownArrow);
+        bool left = Input.GetKey(KeyCode.LeftArrow);
+        bool right = Input.GetKey(KeyCode.RightArrow);
+
+        if (up)
+        {
+            if (down || left || right)
+            {
+                multipleArrows = true;
+            }
+        }
+        else if (down)
+        {
+            if (left || right)
+            {
+                multipleArrows = true;
+            }
+        }
+        else if (left && right)
+        {
+            multipleArrows = true;
+        }
+        else
+        {
+            multipleArrows = false;
         }
     }
 }

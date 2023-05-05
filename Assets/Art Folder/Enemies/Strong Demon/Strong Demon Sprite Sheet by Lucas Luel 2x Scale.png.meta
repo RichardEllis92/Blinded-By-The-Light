@@ -1,0 +1,1311 @@
+fileFormatVersion: 2
+guid: c7ce7695fddd48149a593f58328b8f60
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6271357870054629873
+    second: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_4
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 588
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c23e308aae9e8570800000000000000
+      internalID: 8470882404263670465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_1
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 588
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ca1ab5df2358aae0800000000000000
+      internalID: -1537887807832712512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_2
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 588
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2185a025c083ae9f0800000000000000
+      internalID: -438476388148029422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_3
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 588
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cf6ebbdc7d90a410800000000000000
+      internalID: 1486361036620459974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_8
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 500
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7d51360bdef05480800000000000000
+      internalID: -8912343445911020162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_9
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 500
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 859aab17c18729cf0800000000000000
+      internalID: -247002965989480104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_10
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 500
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e246da7e9f45f9ba0800000000000000
+      internalID: -6080047539616390098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_11
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 500
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfed8d1b2ebf83fc0800000000000000
+      internalID: -3514782558097711363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_12
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 500
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d34401dff40f776d0800000000000000
+      internalID: -2992659201025620931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_13
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 500
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e560ffbfe8e13900800000000000000
+      internalID: 662566736615204329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_14
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 500
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7acd6aa9ff9e05420800000000000000
+      internalID: 2616848667522817191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_15
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 500
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e332a4239ab6dc00800000000000000
+      internalID: 925131914608784353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_16
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 432
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03fdb8556735315a0800000000000000
+      internalID: -6551801265187463376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_17
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 432
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 017d700fb15232030800000000000000
+      internalID: 3468656939926804240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_18
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 432
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2972d94912898b190800000000000000
+      internalID: -7946434272500570222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_19
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 432
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e2f16354b329dec0800000000000000
+      internalID: -3541760374550170908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_20
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 432
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e92e1667f2351a8a0800000000000000
+      internalID: -6295659340772547938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_21
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 432
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52c495b753882b390800000000000000
+      internalID: -7804025440995554267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_22
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 432
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef92461bc5194e2b0800000000000000
+      internalID: -5556156212969199106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_23
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 432
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d85ca0a63a8530bc0800000000000000
+      internalID: -3818110600198044275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_24
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 364
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 518d96caee2cea740800000000000000
+      internalID: 5165280152991160341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_25
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 364
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53d33d2b88d2be5a0800000000000000
+      internalID: -6491044372785447627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_26
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 364
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e845ca8b05855ad00800000000000000
+      internalID: 983289197369250958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_27
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 364
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 190f658516b507c40800000000000000
+      internalID: 5508002817926164625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_28
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 364
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e634f1ab69f371d10800000000000000
+      internalID: 2096214068164510574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_29
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 364
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50ad79f4458848560800000000000000
+      internalID: 7315121590450510341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_30
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 364
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83950cf0579f87d70800000000000000
+      internalID: 9041250533117024568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_31
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 364
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 110408e83cfc19770800000000000000
+      internalID: 8615896000952811537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_32
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 296
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 248edfbc83149ada0800000000000000
+      internalID: -5933139321887528894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_33
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 296
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad445cd9827b495a0800000000000000
+      internalID: -6515381375824739110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_34
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 296
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e64d8e86561c1620800000000000000
+      internalID: 2746094433803781863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_35
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 296
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7618a096dfe36fb00800000000000000
+      internalID: 861945636797972839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_36
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 296
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8c47e8450d8368c0800000000000000
+      internalID: -4007204189592138610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_37
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 296
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 768f62a9612d15480800000000000000
+      internalID: -8912111193072142233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_38
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 296
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53822f2a559dacd90800000000000000
+      internalID: -7076604902630086603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_39
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 296
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 648b83925abf07180800000000000000
+      internalID: -9119512558645495738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_40
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 208
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42256bde02a1c20e0800000000000000
+      internalID: -2293429381509000668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_41
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 208
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef8a007777a187730800000000000000
+      internalID: 3996973769691277566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_42
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 208
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b88217ed66ae2cc0800000000000000
+      internalID: -3733864050085164880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_43
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 208
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c11c5f79cf567d2d0800000000000000
+      internalID: -3254020070196264676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_44
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 208
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1e78221aa7fead50800000000000000
+      internalID: 6750605201296096796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_46
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 4
+        width: 62
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08256ed933da36740800000000000000
+      internalID: 5144145636591293056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_47
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 4
+        width: 62
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd5b84885ec1906f0800000000000000
+      internalID: -718010893429328417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_48
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 140
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23a63cb5358eb9e10800000000000000
+      internalID: 2205611887247452722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_49
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 140
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a398952be32ab4140800000000000000
+      internalID: 4705032625882499386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_50
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 140
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f49c9bfa5cf67f40800000000000000
+      internalID: 5726041443946763509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_51
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 140
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1e3e8728966c0d60800000000000000
+      internalID: 7857768253539368479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_52
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 140
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d1ce9896931e5c0800000000000000
+      internalID: -4188003053029548769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_54
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 4
+        width: 62
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b63452d74ac55140800000000000000
+      internalID: 4707891395305944760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_56
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 72
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc4f6d576891ff660800000000000000
+      internalID: 7421678776223200463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_57
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 72
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77a37f2e70bbf9f30800000000000000
+      internalID: 4584588588233472631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_58
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 72
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20190a7dd0a73de00800000000000000
+      internalID: 1068331736487727362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_59
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 72
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72895bc458f63ce20800000000000000
+      internalID: 3369659564511565863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_60
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 72
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7281c3ec30ee14e0800000000000000
+      internalID: -2008921831636893057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_62
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 4
+        width: 62
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 286806dee0ab56820800000000000000
+      internalID: 2910937307439728258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Strong Demon Sprite Sheet by Lucas Luel 2x Scale_63
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 4
+        width: 62
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91c9d9d4ff9c4ce70800000000000000
+      internalID: 9134648042570226713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

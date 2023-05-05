@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 968782092}
   - component: {fileID: 968782091}
   - component: {fileID: 968782090}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1022,7 +1022,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1514604840}
   - component: {fileID: 1514604841}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1578,7 +1578,15 @@ PrefabInstance:
       value: Door Down
       objectReference: {fileID: 0}
     - target: {fileID: 6096350582667835814, guid: a282ae0f59fe7334b9f8cfdb657ec30f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6096350582667835814, guid: a282ae0f59fe7334b9f8cfdb657ec30f, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6241446430071137200, guid: a282ae0f59fe7334b9f8cfdb657ec30f, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8455458207933609199, guid: a282ae0f59fe7334b9f8cfdb657ec30f, type: 3}
@@ -1623,6 +1631,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8455458207933609199, guid: a282ae0f59fe7334b9f8cfdb657ec30f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067581704836500670, guid: a282ae0f59fe7334b9f8cfdb657ec30f, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
