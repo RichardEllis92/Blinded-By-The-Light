@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3fd23409d8a05943abcedf18c6d8f36, type: 3}
+  m_Name: StartingDialogue-4 - No
+  m_EditorClassIdentifier: 
+  dialogue:
+  - Please!!!!
+  - I literally can't move!
+  - No one deserves this!
+  responses:
+  - responseText: I'll help
+    dialogueObject: {fileID: 11400000, guid: 960325773b1e221458917dfd629c3f21, type: 2}
+  - responseText: I'll help
+    dialogueObject: {fileID: 11400000, guid: 960325773b1e221458917dfd629c3f21, type: 2}
+  name: 

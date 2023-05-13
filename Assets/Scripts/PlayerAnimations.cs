@@ -46,7 +46,7 @@ public class PlayerAnimations : MonoBehaviour
             _canShoot = true;
         }
 
-        if (PlayerController.Instance.canMove && !LevelManager.Instance.isPaused && !dialogueUI.IsOpen)
+        if (PlayerController.Instance.canMove && !LevelManager.Instance.isPaused && !dialogueUI.IsOpen && !CheatSystemController.Instance.showConsole)
         {
             if (Magic.Instance.multipleArrows) { return;}
             if (_moveInput.x > 0 && _moveInput.y == 0 && !Input.GetKey(KeyCode.LeftArrow))

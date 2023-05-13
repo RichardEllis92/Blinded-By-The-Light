@@ -111,7 +111,8 @@ MonoBehaviour:
   shouldChasePlayer: 0
   rangeToChasePlayer: 7
   shouldRunAway: 1
-  runawayRange: 7
+  runawayRange: 20
+  _idleTimeThreshold: 0.5
   shouldWander: 0
   wanderLength: 0
   pauseLength: 0
@@ -173,7 +174,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 1470364179945688847}
-  movingUp: 0
 --- !u!1 &1470364179945688844
 GameObject:
   m_ObjectHideFlags: 0

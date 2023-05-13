@@ -15,15 +15,15 @@ MonoBehaviour:
   dialogue:
   - '...
 
-    Hi, {playerName}'
-  - 'What the hell? '
-  - How did I get here?
-  - 'Wait...
-
 
 '
-  - Is this Torn?
-  - 'I''m in my own video game! '
-  - How is this possible?
-  responses: []
+  - ...
+  - 'Hello?
+
+    Is someone there?
+
+'
+  responses:
+  - responseText: Yes... Who are you?
+    dialogueObject: {fileID: 11400000, guid: 463fb12ad91b2d045aff32998c5af04d, type: 2}
   name: Player

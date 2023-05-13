@@ -34,7 +34,7 @@ public class PlayerHealthController : MonoBehaviour
         else
         {
             maxHealth = CharacterTracker.Instance.maxHealth;
-            currentHealth = UIController.Instance.playerCurrentHealth;
+            currentHealth = CharacterTracker.Instance.maxHealth;
         }
 
 
@@ -80,7 +80,8 @@ public class PlayerHealthController : MonoBehaviour
             {
                 PlayerController.Instance.gameObject.SetActive(false);
 
-                UIController.Instance.deathScreen.SetActive(true);
+                UIController.Instance.NewGame();
+                SceneManager.LoadScene("Luci Room");
                 UIController.Instance.bossHealthUI.SetActive(false);
                 LevelManager.Instance.isPaused = true;
                 AudioManager.Instance.PlayGameOver();

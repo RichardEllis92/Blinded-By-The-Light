@@ -42,6 +42,9 @@ public class PlayerController : MonoBehaviour
     private static readonly int IsMovingUpBackwards = Animator.StringToHash("isMovingUpBackwards");
     private static readonly int IsMovingDown = Animator.StringToHash("isMovingDown");
     private static readonly int IsMovingDownBackwards = Animator.StringToHash("isMovingDownBackwards");
+    
+    public float detectionRadius = 16.0f;
+    public string enemyTag = "Enemy";
 
     public bool isRolling;
     private void Awake()
@@ -95,7 +98,7 @@ public class PlayerController : MonoBehaviour
             anim.enabled = true;
         }
 
-        if (canMove && !LevelManager.Instance.isPaused && !dialogueUI.IsOpen)
+        if (canMove && !LevelManager.Instance.isPaused && !dialogueUI.IsOpen && !CheatSystemController.Instance.showConsole)
         {
             _moveInput.x = Input.GetAxisRaw("Horizontal");
             _moveInput.y = Input.GetAxisRaw("Vertical");
@@ -176,8 +179,18 @@ public class PlayerController : MonoBehaviour
             theRb.velocity = Vector3.zero;
         }
     }
-    public Vector3 GetVelocity()
+
+    public bool EnemyNearby()
     {
-        return theRb.velocity;
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, detectionRadius);
+
+        foreach (Collider2D collider in colliders)
+        {
+            if (collider.CompareTag(enemyTag))
+            {
+                return true;
+            }
+        }
+        return false;
     }
 }

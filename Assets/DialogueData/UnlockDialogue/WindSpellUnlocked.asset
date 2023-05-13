@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3fd23409d8a05943abcedf18c6d8f36, type: 3}
+  m_Name: WindSpellUnlocked
+  m_EditorClassIdentifier: 
+  dialogue:
+  - 'Oh...
+
+    I think gaining experience from killing Demon''s has given me some
+    power.'
+  - 'Let me try something, one moment...
+
+    ...
+
+    ...'
+  - 'YES!
+
+    I''ve unlocked a cheat for the game that will help us.'
+  - 'Type in `
+
+    It will bring up a console'
+  - 'Type in wind_spell and press enter.
+
+    Then press tab to switch to that spell.'
+  - 'If you forget, you just need to type help into the console.
+
+    It will show
+    what cheats are unlocked.'
+  - You're welcome...
+  responses: []
+  name: 

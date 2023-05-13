@@ -37,27 +37,32 @@ public class LevelManager : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
 
-        if(sceneName == "Luci Room")
+        if (sceneName == "Luci Room")
         {
             return;
         }
-        else if (sceneName == "Level 1" || sceneName == "Level 1 Again")
+/*
+        if (sceneName == "Level 1" || sceneName == "Level 1 Again")
         {
-            currentHellBucks = 0;
+            // Set default values for new game or specific levels
+            PlayerHealthController.Instance.currentHealth = defaultHealth;
+            PlayerHealthController.Instance.maxHealth = defaultMaxHealth;
+            currentHellBucks = defaultHellBucks;
         }
         else
         {
+            // Load values from CharacterTracker
             currentHellBucks = CharacterTracker.Instance.currentHellBucks;
+            PlayerHealthController.Instance.currentHealth = CharacterTracker.Instance.currentHealth;
+            PlayerHealthController.Instance.maxHealth = CharacterTracker.Instance.maxHealth;
         }
-
+*/
         PlayerController.Instance.transform.position = startPoint.position;
         PlayerController.Instance.canMove = true;
 
         Time.timeScale = 1f;
 
         UIController.Instance.hellBucksText.text = currentHellBucks.ToString() + " Hell Bucks";
-
-      
     }
 
     // Update is called once per frame
@@ -95,11 +100,12 @@ public class LevelManager : MonoBehaviour
             CharacterTracker.Instance.currentHellBucks = currentHellBucks;
             CharacterTracker.Instance.currentHealth = PlayerHealthController.Instance.currentHealth;
             CharacterTracker.Instance.maxHealth = PlayerHealthController.Instance.maxHealth;
+            Experience.Instance.UpdateExperiencePoints(LevelEndExperience);
         }     
 
         DialogueUI.Instance.talkedToGuide = false;
-        Experience.Instance.UpdateExperiencePoints(LevelEndExperience);
         SceneManager.LoadScene(nextLevel);
+        
     }
 
     public void PauseUnpause()

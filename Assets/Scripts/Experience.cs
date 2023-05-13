@@ -11,6 +11,15 @@ public class Experience : MonoBehaviour
     private bool _iceSpellUnlocked;
     private int _windUnlockExperience = 100;
     private int _iceUnlockExperience = 200;
+    private bool windSpellDialogueUsed;
+    private bool iceSpellDialogueUsed;
+    
+    [SerializeField] private DialogueUI dialogueUI;
+
+    public DialogueUI DialogueUI => dialogueUI;
+
+    [SerializeField] private DialogueObject windSpellUnlockDialogue;
+    [SerializeField] private DialogueObject iceSpellUnlockDialogue;
     private void Awake()
     {
         Instance = this;
@@ -20,6 +29,7 @@ public class Experience : MonoBehaviour
     {
         UIController.Instance.experienceSlider.value = experiencePoints;
         UIController.Instance.experienceSlider.maxValue = MaxExperience;
+        experiencePoints = CharacterTracker.Instance.experience;
     }
 
     private void Update()
@@ -28,14 +38,23 @@ public class Experience : MonoBehaviour
         {
             CheatSystemController.Instance.AddToListWindSpell();
             _windSpellUnlocked = true;
-            Debug.Log("Wind Spell Unlocked");
+        }
+        if (experiencePoints >= _windUnlockExperience && !windSpellDialogueUsed && !PlayerController.Instance.EnemyNearby())
+        {
+            DialogueUI.ShowDialogue(windSpellUnlockDialogue);
+            windSpellDialogueUsed = true;
         }
         //Unlocks Ice spell
         if (experiencePoints >= _iceUnlockExperience && !_iceSpellUnlocked)
         {
             CheatSystemController.Instance.AddToListIceSpell();
-            _windSpellUnlocked = true;
-            Debug.Log("Ice Spell Unlocked");
+            _iceSpellUnlocked = true;
+            
+            if (!iceSpellDialogueUsed && !PlayerController.Instance.EnemyNearby())
+            {
+                DialogueUI.ShowDialogue(iceSpellUnlockDialogue);
+                iceSpellDialogueUsed = true;
+            }
         }
         
     }

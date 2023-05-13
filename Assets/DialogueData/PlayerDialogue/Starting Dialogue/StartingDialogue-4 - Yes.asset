@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3fd23409d8a05943abcedf18c6d8f36, type: 3}
+  m_Name: StartingDialogue-4 - Yes
+  m_EditorClassIdentifier: 
+  dialogue:
+  - Thank you!
+  - 'I''m Luci by the way.
+
+    Nice to meet you.'
+  - The only thing I appear to control is the text box.
+  - I can output what I'm thinking to text and even give you choices of text to choose
+    from.
+  responses:
+  - responseText: Hellooooo.....
+    dialogueObject: {fileID: 11400000, guid: 43219e529e1723242a1f668e0da56f8e, type: 2}
+  - responseText: I'm ChAnGiNg TeXt
+    dialogueObject: {fileID: 11400000, guid: 43219e529e1723242a1f668e0da56f8e, type: 2}
+  - responseText: asdasdggdgdfgdf
+    dialogueObject: {fileID: 11400000, guid: 43219e529e1723242a1f668e0da56f8e, type: 2}
+  name: 
