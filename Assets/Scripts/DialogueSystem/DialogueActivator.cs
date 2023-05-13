@@ -40,4 +40,5 @@ public class DialogueActivator : MonoBehaviour, IInteractable
 
         playerController.DialogueUI.ShowDialogue(dialogueObject);
     }
+    
 }

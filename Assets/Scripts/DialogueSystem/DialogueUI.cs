@@ -7,17 +7,15 @@ public class DialogueUI : MonoBehaviour
 {
     public static DialogueUI Instance;
     public GameObject dialogueBox;
-
-    [SerializeField] private GameObject nameBox;
+    
     [SerializeField] private TMP_Text textLabel;
-    [SerializeField] private TMP_Text nameLabel;
     [SerializeField] private GameObject continueText;
     public bool IsOpen { get; private set; }
     public bool startingDialogue;
     public bool talkedToGuide;
     public bool talkedToFinalGuide;
 
-    public string playerName = (System.Environment.UserName);
+    public string playerName;
 
 
     private ResponseHandler _responseHandler;
@@ -26,13 +24,25 @@ public class DialogueUI : MonoBehaviour
     private void Start()
     {
         Instance = this;
-        
 
+        playerName = GetUserName();
         _typeWriterEffect = GetComponent<TypeWriterEffect>();
         _responseHandler = GetComponent<ResponseHandler>();
 
     }
+    private string GetUserName()
+    {
+        string userName = "";
 
+        #if UNITY_EDITOR_WIN || UNITY_STANDALONE_WIN
+            userName = System.Environment.UserName;
+        #elif UNITY_EDITOR_OSX || UNITY_STANDALONE_OSX
+            userName = System.IO.Path.GetFileNameWithoutExtension(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal));
+        #else
+            Debug.LogError("Retrieving username is not supported on this platform.");
+        #endif
+            return userName;
+    }
     private void Update()
     {
         var currentScene = SceneManager.GetActiveScene();
@@ -48,8 +58,6 @@ public class DialogueUI : MonoBehaviour
     public void ShowDialogue(DialogueObject dialogueObject)
     {
         IsOpen = true;
-        nameBox.SetActive(true);
-        nameLabel.text = dialogueObject.name;
         dialogueBox.SetActive(true);
         StartCoroutine(StepThroughDialogue(dialogueObject));
     }
@@ -93,16 +101,6 @@ public class DialogueUI : MonoBehaviour
                 startingDialogue = true;
             }
             
-            if((dialogueObject.name == "Guide" || dialogueObject.name == "???") && talkedToGuide == false)
-            {
-                talkedToGuide = true;
-            }
-
-            if (dialogueObject.name == "Me" && talkedToFinalGuide == false)
-            {
-                talkedToFinalGuide = true;
-            }
-
             CloseDialogueBox();
         }
     }

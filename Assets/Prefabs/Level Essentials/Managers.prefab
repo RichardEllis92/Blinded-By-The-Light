@@ -327,7 +327,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2b28bc8c83c28c84787a9b8311de4039, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.503
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -452,7 +452,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b57212fa4268aff499f107f7cda01b1e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 95e93cbc76f4cf845a90d0e05fe44f2c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.237
   m_Pitch: 1
@@ -804,6 +804,8 @@ GameObject:
   - component: {fileID: 906038184307584104}
   - component: {fileID: 906038184307584110}
   - component: {fileID: 906038184307584109}
+  - component: {fileID: 1120379239}
+  - component: {fileID: 1120379240}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -842,7 +844,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 0
   maxHealth: 5
-  damageInvincLength: 1
+  damageInvincibleLength: 1
 --- !u!114 &906038184307584110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -856,8 +858,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelMusic: {fileID: 906038183869506335}
-  gameOverMusic: {fileID: 906038185200732722}
+  gameOverMusic: {fileID: 906038183777601559}
   winMusic: {fileID: 906038185122997339}
+  choiceMusic: {fileID: 0}
+  secretEndingMusic: {fileID: 0}
   sfx:
   - {fileID: 906038183766575255}
   - {fileID: 906038183795604948}
@@ -872,6 +876,8 @@ MonoBehaviour:
   - {fileID: 906038184887978986}
   - {fileID: 906038184744261536}
   - {fileID: 906038184282387551}
+  - {fileID: 5673035388780429713}
+  - {fileID: 556726392128803414}
 --- !u!114 &906038184307584109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -887,12 +893,57 @@ MonoBehaviour:
   waitToLoad: 4
   nextLevel: Level 2
   isPaused: 0
-  currentCoins: 0
-  defaultCoins: 0
+  currentHellBucks: 0
+  defaultHellBucks: 0
   defaultHealth: 5
   defaultMaxHealth: 5
   startPoint: {fileID: 748834814}
   dialogueBox: {fileID: 0}
+  bossDoor: {fileID: 0}
+--- !u!114 &1120379239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 906038184307584105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adca7aa757668264784ec22961dae750, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showConsole: 0
+  invalidCheat: {fileID: 0}
+--- !u!114 &1120379240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 906038184307584105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 42beeb24f46d78043a521ccdf5f5aca9, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &906038184744261538
 GameObject:
   m_ObjectHideFlags: 0
@@ -1225,7 +1276,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 0.197
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1604,7 +1655,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 56045741c37bfd94e93a8ebee5aeb662, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2157,7 +2208,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2b28bc8c83c28c84787a9b8311de4039, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.499
   m_Pitch: 1
   Loop: 0
   Mute: 0

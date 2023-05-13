@@ -96,7 +96,7 @@ MonoBehaviour:
   fireRate: 1
   shootRange: 10
   theBody: {fileID: 2996676637726029119}
-  anim: {fileID: 0}
+  anim: {fileID: 1050689778}
   health: 150
   deathSplatters:
   - {fileID: 6988496550906261695, guid: 51566ee29141f7f49bbfdff4da169c5f, type: 3}

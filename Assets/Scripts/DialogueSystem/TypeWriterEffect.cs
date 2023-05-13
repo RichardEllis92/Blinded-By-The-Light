@@ -58,6 +58,8 @@ public class TypeWriterEffect : MonoBehaviour
                 if (IsPunctuation(textToType[i], out var waitTime) && !isLast && !IsPunctuation(textToType[i + 1], out _))
                 {
                     AudioManager.Instance.StopSfx(14);
+                    yield return new WaitForSeconds(waitTime);
+                    AudioManager.Instance.PlaySfx(14);
                 }
                 
             }

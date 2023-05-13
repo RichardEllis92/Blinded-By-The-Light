@@ -21,8 +21,8 @@ public class EnemyController : MonoBehaviour
     [Header("Run Away")]
     public bool shouldRunAway;
     public float runawayRange;
-    [SerializeField] private float _idleTimeThreshold = 1f; // Time in seconds without movement to trigger idle behavior
-    private float _idleTimer = 0f; // Timer to track idle time
+    [SerializeField] private float _idleTimeThreshold = 1f;
+    private float _idleTimer = 0f; 
 
     [Header("Wandering")]
     public bool shouldWander;
@@ -62,6 +62,12 @@ public class EnemyController : MonoBehaviour
 
     [Header("Experience")] 
     public int experiencePoints = 10;
+    
+    [Header("Wall Detection")]
+    public float wallDetectionRadius;
+    public LayerMask wallLayerMask;
+
+    private bool isKnockedBack;
 
     private void Awake()
     {
@@ -187,30 +193,30 @@ public class EnemyController : MonoBehaviour
                 else // Object is moving
                 {
                     _idleTimer = 0f; // Reset idle timer
-                    Vector3 playerDirection = PlayerController.Instance.transform.position - transform.position;
-                    RaycastHit2D hit = Physics2D.Raycast(transform.position, playerDirection, Vector3.Distance(transform.position, PlayerController.Instance.transform.position), LayerMask.GetMask("Wall"));
 
-                    if (hit.collider != null && hit.distance <= 1f)
+                    // Use OverlapCircleAll to detect walls within the specified radius
+                    Collider2D[] wallColliders = Physics2D.OverlapCircleAll(transform.position, wallDetectionRadius, wallLayerMask);
+
+                    if (wallColliders.Length > 0)
                     {
-                        // The object is close to the wall, move in a direction that is perpendicular to the wall
-                        Vector3 wallDirection = hit.normal;
-                        Vector3 moveDirection = Vector3.Cross(wallDirection, Vector3.forward);
+                        // The object is close to a wall, move in a direction that is perpendicular to the wall
+                        Vector3 moveDirection = Vector3.zero;
+                        foreach (Collider2D wallCollider in wallColliders)
+                        {
+                            // Calculate the direction to move away from the wall
+                            Vector3 wallDirection = transform.position - wallCollider.transform.position;
+                            moveDirection += wallDirection;
+                        }
+
                         _moveDirection = moveDirection.normalized;
                     }
                     else
                     {
-                        // The object is not close to the wall, continue moving away from the player
+                        // The object is not close to a wall, continue moving away from the player
                         _moveDirection = transform.position - PlayerController.Instance.transform.position;
                     }
                 }
             }
-
-
-            /*else
-            {
-                moveDirection = Vector3.zero;
-            } */
-
 
             _moveDirection.Normalize();
 
@@ -310,7 +316,31 @@ public class EnemyController : MonoBehaviour
         {
             Vector2 knockbackDirection = (transform.position - other.transform.position).normalized;
             theRB.AddForce(knockbackDirection * 2000f);
+            
+            // Set the flag to indicate that the player is knocked back
+            isKnockedBack = true;
+
+            // Keep the animation the same for 0.2 seconds
+            StartCoroutine(KeepAnimationForSeconds(0.2f));
         }
+    }
+    
+    private IEnumerator KeepAnimationForSeconds(float seconds)
+    {
+        // Get the current animation state
+        AnimatorStateInfo currentAnimationState = anim.GetCurrentAnimatorStateInfo(0);
+
+        // Keep playing the current animation state for the specified duration
+        float timer = 0f;
+        while (timer < seconds)
+        {
+            anim.Play(currentAnimationState.fullPathHash, -1, currentAnimationState.normalizedTime);
+            timer += Time.deltaTime;
+            yield return null;
+        }
+
+        // Reset the flag to indicate that the player is no longer knocked back
+        isKnockedBack = false;
     }
 
     private void EnemySeparation()
