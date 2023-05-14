@@ -1,12 +1,15 @@
 using System;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using Scene = UnityEngine.SceneManagement.Scene;
 
 public class Experience : MonoBehaviour
 {
     public static Experience Instance;
     
     public int experiencePoints;
-    private const int MaxExperience = 1000;
+    public int MaxExperience = 1000;
     private bool _windSpellUnlocked;
     private bool _iceSpellUnlocked;
     private int _windUnlockExperience = 100;
@@ -27,9 +30,15 @@ public class Experience : MonoBehaviour
 
     private void Start()
     {
-        UIController.Instance.experienceSlider.value = experiencePoints;
-        UIController.Instance.experienceSlider.maxValue = MaxExperience;
-        experiencePoints = CharacterTracker.Instance.experience;
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
+        
+        if (sceneName != "Boss")
+        {
+            UIController.Instance.experienceSlider.value = experiencePoints;
+            UIController.Instance.experienceSlider.maxValue = MaxExperience;
+            experiencePoints = CharacterTracker.Instance.experience;
+        }
     }
 
     private void Update()

@@ -111,8 +111,8 @@ MonoBehaviour:
   shouldChasePlayer: 0
   rangeToChasePlayer: 7
   shouldRunAway: 1
-  runawayRange: 20
-  _idleTimeThreshold: 0.5
+  runawayRange: 5
+  _idleTimeThreshold: 1
   shouldWander: 0
   wanderLength: 0
   pauseLength: 0
@@ -140,6 +140,10 @@ MonoBehaviour:
   separationDistanceThreshold: 2
   separationMoveSpeed: 1
   experiencePoints: 10
+  wallDetectionRadius: 5
+  wallLayerMask:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!50 &1470364179383198386
 Rigidbody2D:
   serializedVersion: 4

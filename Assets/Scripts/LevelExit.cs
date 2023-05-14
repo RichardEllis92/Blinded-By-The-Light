@@ -14,6 +14,10 @@ public class LevelExit : MonoBehaviour
 
         if (other.CompareTag("Player") && gameObject.activeSelf)
         {
+            if (sceneName == "Luci Room Complete")
+            {
+                SceneManager.LoadScene(levelToLoad);
+            }
             //SceneManager.LoadScene(levelToLoad);
             if(sceneName == "Boss")
             {

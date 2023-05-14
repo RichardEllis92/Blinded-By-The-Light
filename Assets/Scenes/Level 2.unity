@@ -633,6 +633,10 @@ PrefabInstance:
       value: Managers
       objectReference: {fileID: 0}
     - target: {fileID: 906038184307584109, guid: 2f75f78c013939b439d72fcbfa00891e, type: 3}
+      propertyPath: nextLevel
+      value: Level 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 906038184307584109, guid: 2f75f78c013939b439d72fcbfa00891e, type: 3}
       propertyPath: dialogueBox
       value: 
       objectReference: {fileID: 0}

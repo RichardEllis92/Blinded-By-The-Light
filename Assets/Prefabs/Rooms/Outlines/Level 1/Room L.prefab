@@ -932,7 +932,6 @@ GameObject:
   m_Component:
   - component: {fileID: 677187748221120371}
   - component: {fileID: 6947104180791370003}
-  - component: {fileID: 6207170901018487884}
   m_Layer: 3
   m_Name: Square (3)
   m_TagString: Wall
@@ -1005,32 +1004,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &6207170901018487884
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1095676653594344651}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!1 &1334037128345103341
 GameObject:
   m_ObjectHideFlags: 0
@@ -1586,7 +1559,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8885954534316843744}
   - component: {fileID: 480083044127768554}
-  - component: {fileID: 6505704536890471237}
   m_Layer: 3
   m_Name: Square
   m_TagString: Wall
@@ -1659,32 +1631,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &6505704536890471237
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6867353459190333404}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!1 &7215502421506773107
 GameObject:
   m_ObjectHideFlags: 0
@@ -1695,7 +1641,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6932831766780755796}
   - component: {fileID: 7690233262878233860}
-  - component: {fileID: 2543001841952484753}
   m_Layer: 3
   m_Name: Square (2)
   m_TagString: Wall
@@ -1768,32 +1713,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &2543001841952484753
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7215502421506773107}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!1 &8477166623206129744
 GameObject:
   m_ObjectHideFlags: 0
@@ -1804,7 +1723,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2311515072280032042}
   - component: {fileID: 5355272501803813805}
-  - component: {fileID: 598888178762068128}
   m_Layer: 3
   m_Name: Square (1)
   m_TagString: Wall
@@ -1877,32 +1795,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &598888178762068128
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8477166623206129744}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!1001 &2746989932831015601
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2000,13 +1892,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e64fb7aff7045549b30b1578fe89dd2, type: 3}
---- !u!1 &5086252647663994699 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6956578318763197946, guid: 9e64fb7aff7045549b30b1578fe89dd2, type: 3}
-  m_PrefabInstance: {fileID: 2746989932831015601}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5086252647663994701 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6956578318763197948, guid: 9e64fb7aff7045549b30b1578fe89dd2, type: 3}
+  m_PrefabInstance: {fileID: 2746989932831015601}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5086252647663994699 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6956578318763197946, guid: 9e64fb7aff7045549b30b1578fe89dd2, type: 3}
   m_PrefabInstance: {fileID: 2746989932831015601}
   m_PrefabAsset: {fileID: 0}
