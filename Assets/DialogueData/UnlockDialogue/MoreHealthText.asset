@@ -10,12 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f3fd23409d8a05943abcedf18c6d8f36, type: 3}
-  m_Name: Level 1 End Dialogue
+  m_Name: MoreHealthText
   m_EditorClassIdentifier: 
   dialogue:
-  - 'There''s not much to do other than go down.
+  - Let me look through the code and see what you just unlocked...
+  - 'This cheat gives me more max health, it looks like it will go up by 1.
 
-'
-  - Maybe I'll find out what is happening...
+    It
+    can only be used once though.'
+  - Type in morehealth into the console, might as well use it now!
   responses: []
-  name: Player
+  name: 

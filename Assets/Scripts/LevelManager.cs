@@ -37,26 +37,11 @@ public class LevelManager : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
 
-        if (sceneName == "Luci Room")
+        if (sceneName == "Luci Room" || sceneName == "Luci Room Complete")
         {
             return;
         }
-/*
-        if (sceneName == "Level 1" || sceneName == "Level 1 Again")
-        {
-            // Set default values for new game or specific levels
-            PlayerHealthController.Instance.currentHealth = defaultHealth;
-            PlayerHealthController.Instance.maxHealth = defaultMaxHealth;
-            currentHellBucks = defaultHellBucks;
-        }
-        else
-        {
-            // Load values from CharacterTracker
-            currentHellBucks = CharacterTracker.Instance.currentHellBucks;
-            PlayerHealthController.Instance.currentHealth = CharacterTracker.Instance.currentHealth;
-            PlayerHealthController.Instance.maxHealth = CharacterTracker.Instance.maxHealth;
-        }
-*/
+
         PlayerController.Instance.transform.position = startPoint.position;
         PlayerController.Instance.canMove = true;
 
@@ -83,7 +68,7 @@ public class LevelManager : MonoBehaviour
 
         PlayerController.Instance.canMove = false;
 
-        if(sceneName == "Luci Room")
+        if(sceneName == "Luci Room" || sceneName == "Luci Room Complete")
         {
             LuciRoomUI.Instance.StartFadeToBlack();
         }
@@ -95,7 +80,7 @@ public class LevelManager : MonoBehaviour
 
         yield return new WaitForSeconds(waitToLoad);
 
-        if(sceneName != "Luci Room")
+        if(sceneName != "Luci Room" && sceneName != "Luci Room Complete" && sceneName != "Boss")
         {
             CharacterTracker.Instance.currentHellBucks = currentHellBucks;
             CharacterTracker.Instance.currentHealth = PlayerHealthController.Instance.currentHealth;
@@ -104,8 +89,23 @@ public class LevelManager : MonoBehaviour
         }     
 
         DialogueUI.Instance.talkedToGuide = false;
-        SceneManager.LoadScene(nextLevel);
-        
+
+        if (sceneName == "Level 3")
+        {
+            if (!Experience.Instance.hasMaxExperience)
+            {
+                SceneManager.LoadScene(nextLevel);
+            }
+            else
+            {
+                UIController.Instance.NewGame();
+                SceneManager.LoadScene("Luci Room Complete");
+            }
+        }
+        else
+        {
+            SceneManager.LoadScene(nextLevel);
+        }
     }
 
     public void PauseUnpause()

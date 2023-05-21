@@ -51,7 +51,7 @@ public class Breakables : MonoBehaviour
             }
         }
 
-        if(other.CompareTag("PlayerBullet") || other.CompareTag("IceSpell") || other.CompareTag("WindSpell"))
+        if(other.CompareTag("PlayerSpell") || other.CompareTag("IceSpell") || other.CompareTag("WindSpell"))
         {
             Smash();
         }

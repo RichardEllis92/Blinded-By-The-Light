@@ -53,7 +53,7 @@ public class PlayerController : MonoBehaviour
         string sceneName = currentScene.name;
         Instance = this;
 
-        if(sceneName != "Luci Room")
+        if(sceneName != "Luci Room" && sceneName != "Luci Room Complete")
         {
             DontDestroyOnLoad(gameObject);
         }  
@@ -108,7 +108,7 @@ public class PlayerController : MonoBehaviour
             theRb.velocity = _moveInput * _activeMoveSpeed;
 
 
-            if (Input.GetKeyDown(KeyCode.Space) && sceneName != "Luci Room")
+            if (Input.GetKeyDown(KeyCode.Space) && (sceneName != "Luci Room" && sceneName != "Luci Room Complete"))
             {
                 if (_dashCoolCounter <= 0 && dashCounter <= 0)
                 {
