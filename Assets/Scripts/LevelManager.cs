@@ -92,7 +92,7 @@ public class LevelManager : MonoBehaviour
 
         if (sceneName == "Level 3")
         {
-            if (Experience.Instance.experiencePoints < Experience.Instance.MaxExperience)
+            if (!Experience.Instance.hasMaxExperience)
             {
                 SceneManager.LoadScene(nextLevel);
             }

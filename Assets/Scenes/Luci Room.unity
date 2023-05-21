@@ -5703,7 +5703,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1957684394
 Transform:
   m_ObjectHideFlags: 0
@@ -5758,6 +5758,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameObjectRequired: 0
   gameObject: {fileID: 0}
+  dialogueTriggerKey: StartingDialogue
   dialogueObject: {fileID: 11400000, guid: bb1825bc185c26747bd660fef32c2b3c, type: 2}
 --- !u!1 &1989303985
 GameObject:

@@ -10,12 +10,14 @@ public class Experience : MonoBehaviour
     
     public int experiencePoints;
     public int MaxExperience = 1000;
+    public bool hasMaxExperience;
     private bool _windSpellUnlocked;
     private bool _iceSpellUnlocked;
     private int _windUnlockExperience = 100;
     private int _iceUnlockExperience = 200;
     private bool windSpellDialogueUsed;
     private bool iceSpellDialogueUsed;
+    
     
     [SerializeField] private DialogueUI dialogueUI;
 
@@ -65,12 +67,16 @@ public class Experience : MonoBehaviour
                 iceSpellDialogueUsed = true;
             }
         }
-        
     }
 
     public void UpdateExperiencePoints(int updateExperience)
     {
         experiencePoints += updateExperience;
         UIController.Instance.experienceSlider.value = experiencePoints;
+
+        if (!hasMaxExperience && experiencePoints >= MaxExperience)
+        {
+            hasMaxExperience = true;
+        }
     }
 }

@@ -185,7 +185,7 @@ PrefabInstance:
     - target: {fileID: 1534498936301955897, guid: 3c6321a573e5a7345abdbf80bf2c2c86, type: 3}
       propertyPath: centerEnd
       value: 
-      objectReference: {fileID: 2198091346821441091, guid: 6812d841a76c9cd4893d3774a0c6c4f9, type: 3}
+      objectReference: {fileID: 2198091346821441091, guid: ea17d710c8ed37343bf131f85eea0ca5, type: 3}
     - target: {fileID: 1534498936301955897, guid: 3c6321a573e5a7345abdbf80bf2c2c86, type: 3}
       propertyPath: centerShop
       value: 

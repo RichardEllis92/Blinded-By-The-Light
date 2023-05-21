@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f3fd23409d8a05943abcedf18c6d8f36, type: 3}
-  m_Name: UnlockedBossDialogue1
+  m_Name: ComplimentPlayerUnlocked
   m_EditorClassIdentifier: 
   dialogue:
-  - Wow, you got max experience and unlocked the door to the next circle.
-  - Feels like a trap but we have to go that way.
-  - 'If you want to practice before the boss we can keep on exploring Treachery.
+  - Let me look through the code and see what you just unlocked...
+  - "\"Compliment Player\". \nIf you type in this cheat you will get a nice compliment."
+  - 'Not very useful but maybe it will give you some motivation!
 
-'
+    Try typing
+    in compliment into the console'
   responses: []
   name: 

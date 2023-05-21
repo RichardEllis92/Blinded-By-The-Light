@@ -29,6 +29,14 @@ public class CheatSystemController : MonoBehaviour
     GUI _style;
 
     public GameObject invalidCheat;
+    
+    [SerializeField] private DialogueUI dialogueUI;
+    public DialogueUI DialogueUI => dialogueUI;
+    
+    [SerializeField] private DialogueObject complimentPlayerText;
+    [SerializeField] private DialogueObject healPlayerText;
+    [SerializeField] private DialogueObject increaseMaxHealthText;
+    [SerializeField] private DialogueObject invincibilityText;
 
     private void Awake()
     {
@@ -184,10 +192,12 @@ public class CheatSystemController : MonoBehaviour
     public void AddToListComplimentPlayer()
     {
         _cheatList.Add(_complimentPlayer);
+        DialogueUI.ShowDialogue(complimentPlayerText);
         ShopItem.Instance.RemoveComplimentFromList();
     }
     public void AddToListHealPlayer()
     {
+        DialogueUI.ShowDialogue(healPlayerText);
         _cheatList.Add(_fullHealth);
     }
     public void RemoveFromListHealPlayer()
@@ -196,6 +206,7 @@ public class CheatSystemController : MonoBehaviour
     }
     public void AddToListIncreaseMaxHealth()
     {
+        DialogueUI.ShowDialogue(increaseMaxHealthText);
         _cheatList.Add(_increaseMaxHealth);
     }
     public void RemoveFromListIncreaseMaxHealth()
@@ -204,6 +215,7 @@ public class CheatSystemController : MonoBehaviour
     }
     public void AddToListInvincibility()
     {
+        DialogueUI.ShowDialogue(invincibilityText);
         _cheatList.Add(_invincibility);
     }
     public void RemoveFromListInvincibility()

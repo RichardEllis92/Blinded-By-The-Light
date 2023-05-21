@@ -1818,7 +1818,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameObjectRequired: 0
   gameObject: {fileID: 0}
-  dialogueObject: {fileID: 0}
+  dialogueTriggerKey: StartDialogue
+  dialogueObject: {fileID: 11400000, guid: bb1825bc185c26747bd660fef32c2b3c, type: 2}
 --- !u!61 &8850414187314886615
 BoxCollider2D:
   m_ObjectHideFlags: 0
