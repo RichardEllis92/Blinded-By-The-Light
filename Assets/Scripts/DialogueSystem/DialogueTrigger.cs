@@ -4,20 +4,20 @@ using UnityEngine;
 public class DialogueTrigger : MonoBehaviour
 {
     private bool _startingRoomDialogue;
-    private const float WaitTime = 1f;
     private bool _dialogueTriggered;
     public bool gameObjectRequired;
     public new GameObject gameObject;
-    public string dialogueTriggerKey;
 
     [SerializeField] private DialogueObject dialogueObject;
 
-    void Start()
+    private static bool sessionDialogueTriggered = false;
+
+    private void Start()
     {
-        // Check if the dialogue has been triggered before
-        _dialogueTriggered = PlayerPrefs.GetInt(dialogueTriggerKey, 0) == 1;
+        _dialogueTriggered = sessionDialogueTriggered;
     }
-    void OnTriggerEnter2D(Collider2D other)
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player") && !_startingRoomDialogue && !_dialogueTriggered)
         {
@@ -25,7 +25,7 @@ public class DialogueTrigger : MonoBehaviour
             {
                 DialogueUI.Instance.ShowDialogue(dialogueObject);
                 _dialogueTriggered = true;
-                PlayerPrefs.SetInt(dialogueTriggerKey, 1);
+                sessionDialogueTriggered = true;
             }
         }
         else if (other.CompareTag("Player") && _startingRoomDialogue && !_dialogueTriggered)
@@ -35,14 +35,13 @@ public class DialogueTrigger : MonoBehaviour
                 StartCoroutine(WaitForFadeIn());
                 DialogueUI.Instance.ShowDialogue(dialogueObject);
                 _dialogueTriggered = true;
-                PlayerPrefs.SetInt(dialogueTriggerKey, 1);
+                sessionDialogueTriggered = true;
             }
         }
     }
 
     private static IEnumerator WaitForFadeIn()
     {
-        yield return new WaitForSeconds(WaitTime);
+        yield return new WaitForSeconds(1f);
     }
-
 }

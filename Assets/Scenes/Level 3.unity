@@ -628,6 +628,14 @@ PrefabInstance:
       propertyPath: invalidCheat
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 906038183869506328, guid: 2f75f78c013939b439d72fcbfa00891e, type: 3}
+      propertyPath: m_Name
+      value: Background Music
+      objectReference: {fileID: 0}
+    - target: {fileID: 906038183869506335, guid: 2f75f78c013939b439d72fcbfa00891e, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4f74174007ca1ae48b80bf6585fc133a, type: 3}
     - target: {fileID: 906038184307584105, guid: 2f75f78c013939b439d72fcbfa00891e, type: 3}
       propertyPath: m_Name
       value: Managers

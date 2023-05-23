@@ -990,22 +990,6 @@ PrefabInstance:
       propertyPath: invalidCheat
       value: 
       objectReference: {fileID: 176467252}
-    - target: {fileID: 1120379239, guid: 2f75f78c013939b439d72fcbfa00891e, type: 3}
-      propertyPath: healPlayerText
-      value: 
-      objectReference: {fileID: 11400000, guid: 92978e93cfa91f24c9c0f92b19872898, type: 2}
-    - target: {fileID: 1120379239, guid: 2f75f78c013939b439d72fcbfa00891e, type: 3}
-      propertyPath: invincibilityText
-      value: 
-      objectReference: {fileID: 11400000, guid: d82fb913707927e49b27f81848310659, type: 2}
-    - target: {fileID: 1120379239, guid: 2f75f78c013939b439d72fcbfa00891e, type: 3}
-      propertyPath: complimentPlayerText
-      value: 
-      objectReference: {fileID: 11400000, guid: 5d6a3418ab13beb4097802425d1a9a81, type: 2}
-    - target: {fileID: 1120379239, guid: 2f75f78c013939b439d72fcbfa00891e, type: 3}
-      propertyPath: increaseMaxHealthText
-      value: 
-      objectReference: {fileID: 11400000, guid: 831c3c64c4b106944a8777f897d7f75e, type: 2}
     - target: {fileID: 906038184307584105, guid: 2f75f78c013939b439d72fcbfa00891e, type: 3}
       propertyPath: m_Name
       value: Managers
@@ -1057,6 +1041,10 @@ PrefabInstance:
     - target: {fileID: 906038184307584111, guid: 2f75f78c013939b439d72fcbfa00891e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 906038185481714618, guid: 2f75f78c013939b439d72fcbfa00891e, type: 3}
+      propertyPath: m_Volume
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f75f78c013939b439d72fcbfa00891e, type: 3}
