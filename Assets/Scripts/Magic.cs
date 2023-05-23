@@ -74,7 +74,19 @@ public class Magic : MonoBehaviour
                         break;
                 }
                 _shotCounter = timeBetweenSpells;
-                AudioManager.Instance.PlaySfx(9);
+                if (currentSpell == SpellType.Fire)
+                {
+                    AudioManager.Instance.PlaySfx(9);
+                }
+                else if (currentSpell == SpellType.Ice)
+                {
+                    AudioManager.Instance.PlaySfx(15);
+                }
+                else if (currentSpell == SpellType.Wind)
+                {
+                    AudioManager.Instance.PlaySfx(16);
+                }
+                
             }
             else if (Input.GetKey(KeyCode.DownArrow))
             {
@@ -92,7 +104,18 @@ public class Magic : MonoBehaviour
                         break;
                 }
                 _shotCounter = timeBetweenSpells;
-                AudioManager.Instance.PlaySfx(9);
+                if (currentSpell == SpellType.Fire)
+                {
+                    AudioManager.Instance.PlaySfx(9);
+                }
+                else if (currentSpell == SpellType.Ice)
+                {
+                    AudioManager.Instance.PlaySfx(15);
+                }
+                else if (currentSpell == SpellType.Wind)
+                {
+                    AudioManager.Instance.PlaySfx(16);
+                }
             }
             else if (Input.GetKey(KeyCode.LeftArrow))
             {
@@ -110,7 +133,18 @@ public class Magic : MonoBehaviour
                         break;
                 }
                 _shotCounter = timeBetweenSpells;
-                AudioManager.Instance.PlaySfx(9);
+                if (currentSpell == SpellType.Fire)
+                {
+                    AudioManager.Instance.PlaySfx(9);
+                }
+                else if (currentSpell == SpellType.Ice)
+                {
+                    AudioManager.Instance.PlaySfx(15);
+                }
+                else if (currentSpell == SpellType.Wind)
+                {
+                    AudioManager.Instance.PlaySfx(16);
+                }
             }
             else if (Input.GetKey(KeyCode.RightArrow))
             {
@@ -130,7 +164,18 @@ public class Magic : MonoBehaviour
                         break;
                 }
                 _shotCounter = timeBetweenSpells;
-                AudioManager.Instance.PlaySfx(9);
+                if (currentSpell == SpellType.Fire)
+                {
+                    AudioManager.Instance.PlaySfx(9);
+                }
+                else if (currentSpell == SpellType.Ice)
+                {
+                    AudioManager.Instance.PlaySfx(15);
+                }
+                else if (currentSpell == SpellType.Wind)
+                {
+                    AudioManager.Instance.PlaySfx(16);
+                }
             }
         }
         if (Input.GetKeyDown(KeyCode.Tab))
