@@ -42,7 +42,7 @@ public class CheatUnlocks : MonoBehaviour
         if (!_windSpellAlreadyUnlocked)
         {
             windSpellUnlockedPopUp.SetActive(true);
-            AudioManager.Instance.PlaySfx(1);
+            AudioManager.Instance.PlaySfx(17);
             yield return new WaitForSeconds(2f);
             windSpellUnlockedPopUp.SetActive(false);
             _windSpellAlreadyUnlocked = true;
@@ -50,7 +50,7 @@ public class CheatUnlocks : MonoBehaviour
         else
         {
             windSpellAlreadyUnlockedPopUp.SetActive(true);
-            AudioManager.Instance.PlaySfx(2);
+            AudioManager.Instance.PlaySfx(18);
             yield return new WaitForSeconds(2f);
             windSpellAlreadyUnlockedPopUp.SetActive(false);
         }
@@ -69,7 +69,7 @@ public class CheatUnlocks : MonoBehaviour
         if (!_iceSpellAlreadyUnlocked)
         {
             iceSpellUnlockedPopUp.SetActive(true);
-            AudioManager.Instance.PlaySfx(1);
+            AudioManager.Instance.PlaySfx(17);
             yield return new WaitForSeconds(2f);
             iceSpellUnlockedPopUp.SetActive(false);
             _iceSpellAlreadyUnlocked = true;
@@ -77,7 +77,7 @@ public class CheatUnlocks : MonoBehaviour
         else
         {
             iceSpellAlreadyUnlockedPopUp.SetActive(true);
-            AudioManager.Instance.PlaySfx(2);
+            AudioManager.Instance.PlaySfx(18);
             yield return new WaitForSeconds(2f);
             iceSpellAlreadyUnlockedPopUp.SetActive(false);
         }
@@ -90,7 +90,7 @@ public class CheatUnlocks : MonoBehaviour
     IEnumerator ComplimentPlayerPopUp()
     {
         complimentPlayer.SetActive(true);
-        string[] compliments = {"You're doing great!", "You're awesome!", "Keep up the good work!", "You're a superstar!"};
+        string[] compliments = {"You're doing great!", "You're awesome!", "Keep up the good work!", "You're a superstar!", "HAIL SATAN!"};
         int index = Random.Range(0, compliments.Length);
         complimentPlayer.GetComponent<Text>().text = compliments[index];
         yield return new WaitForSeconds(2f);
@@ -100,21 +100,21 @@ public class CheatUnlocks : MonoBehaviour
     public void HealPlayer()
     {
         PlayerHealthController.Instance.HealPlayer(PlayerHealthController.Instance.maxHealth);
-        AudioManager.Instance.PlaySfx(1);
+        AudioManager.Instance.PlaySfx(17);
         CheatSystemController.Instance.RemoveFromListHealPlayer();
     }
     
     public void IncreaseMaxHealth()
     {
         PlayerHealthController.Instance.IncreaseMaxHealth(1);
-        AudioManager.Instance.PlaySfx(1);
+        AudioManager.Instance.PlaySfx(17);
         CheatSystemController.Instance.RemoveFromListIncreaseMaxHealth();
     }
 
     public void Invincibility()
     {
         PlayerHealthController.Instance.MakeInvincible(InvincibilityLength);
-        AudioManager.Instance.PlaySfx(1);
+        AudioManager.Instance.PlaySfx(17);
         CheatSystemController.Instance.RemoveFromListInvincibility();
     }
 

@@ -10,10 +10,14 @@ public class Magic : MonoBehaviour
         Ice,
         Wind
     }
-
+    
     public static Magic Instance;
     
     public SpellType currentSpell = SpellType.Fire;
+
+    public GameObject fireUnlocked;
+    public GameObject windUnlocked;
+    public GameObject iceUnlocked;
 
     public GameObject fireSpell;
     public GameObject iceSpell;
@@ -25,7 +29,10 @@ public class Magic : MonoBehaviour
     private Transform firePointUp, firePointDown, firePointLeft, firePointRight;
     
     public float _shotCounter;
-    public float timeBetweenSpells = 1f;
+    public float timeBetweenSpells;
+    public float fireTime = 0.8f;
+    public float windTime = 0.2f;
+    public float iceTime = 2f;
 
     public bool spellMovingUp;
     public bool spellMovingDown;
@@ -42,6 +49,31 @@ public class Magic : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+    }
+
+    private void Start()
+    {
+        switch (currentSpell)
+        {
+            case SpellType.Fire:
+                timeBetweenSpells = fireTime;
+                fireUnlocked.SetActive(true);
+                windUnlocked.SetActive(false);
+                iceUnlocked.SetActive(false);
+                break;
+            case SpellType.Wind:
+                timeBetweenSpells = windTime;
+                fireUnlocked.SetActive(false);
+                windUnlocked.SetActive(true);
+                iceUnlocked.SetActive(false);
+                break;
+            case SpellType.Ice:
+                timeBetweenSpells = windTime;
+                fireUnlocked.SetActive(false);
+                windUnlocked.SetActive(false);
+                iceUnlocked.SetActive(true);
+                break;
+        }
     }
 
     void Update()
@@ -152,15 +184,15 @@ public class Magic : MonoBehaviour
                 {
                     case SpellType.Fire:
                         Instantiate(fireSpell, firePointRight.position, Quaternion.identity);
-                        timeBetweenSpells = 1f;
+                        timeBetweenSpells = fireTime;
                         break;
                     case SpellType.Ice:
                         Instantiate(iceSpell, firePointRight.position, Quaternion.identity);
-                        timeBetweenSpells = 2f;
+                        timeBetweenSpells = iceTime;
                         break;
                     case SpellType.Wind:
                         Instantiate(windSpell, firePointRight.position, Quaternion.identity);
-                        timeBetweenSpells = 0.2f;
+                        timeBetweenSpells = windTime;
                         break;
                 }
                 _shotCounter = timeBetweenSpells;
@@ -186,34 +218,53 @@ public class Magic : MonoBehaviour
                     if (CheatUnlocks.Instance._windSpellUnlocked)
                     {
                         currentSpell = SpellType.Wind;
-                        timeBetweenSpells = 0.2f;
+                        timeBetweenSpells = windTime;
+                        fireUnlocked.SetActive(false);
+                        windUnlocked.SetActive(true);
+                        iceUnlocked.SetActive(false);
+                        
                     }
                     else if (CheatUnlocks.Instance._iceSpellUnlocked)
                     {
                         currentSpell = SpellType.Ice;
-                        timeBetweenSpells = 2f;
+                        timeBetweenSpells = iceTime;
+                        fireUnlocked.SetActive(false);
+                        windUnlocked.SetActive(false);
+                        iceUnlocked.SetActive(true);
                     }
                     else
                     {
                         currentSpell = SpellType.Fire;
-                        timeBetweenSpells = 1f;
+                        timeBetweenSpells = fireTime;
+                        fireUnlocked.SetActive(true);
+                        windUnlocked.SetActive(false);
+                        iceUnlocked.SetActive(false);
                     }
                     break;
                 case SpellType.Wind:
                     if (CheatUnlocks.Instance._iceSpellUnlocked)
                     {
                         currentSpell = SpellType.Ice;
-                        timeBetweenSpells = 2f;
+                        timeBetweenSpells = iceTime;
+                        fireUnlocked.SetActive(false);
+                        windUnlocked.SetActive(false);
+                        iceUnlocked.SetActive(true);
                     }
                     else
                     {
                         currentSpell = SpellType.Fire;
-                        timeBetweenSpells = 1f;
+                        timeBetweenSpells = fireTime;
+                        fireUnlocked.SetActive(true);
+                        windUnlocked.SetActive(false);
+                        iceUnlocked.SetActive(false);
                     }
                     break;
                 case SpellType.Ice:
                     currentSpell = SpellType.Fire;
-                    timeBetweenSpells = 1f;
+                    timeBetweenSpells = fireTime;
+                    fireUnlocked.SetActive(true);
+                    windUnlocked.SetActive(false);
+                    iceUnlocked.SetActive(false);
                     break;
                 
             }

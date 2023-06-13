@@ -21,7 +21,6 @@ public class LevelExit : MonoBehaviour
             //SceneManager.LoadScene(levelToLoad);
             if(sceneName == "Boss")
             {
-                LevelManager.Instance.RemoveCoins();
                 PlayerHealthController.Instance.DefaultHealth();
                 UIController.Instance.SecretEnding();
             }

@@ -203,6 +203,7 @@ public class CheatSystemController : MonoBehaviour
     public void RemoveFromListHealPlayer()
     {
         _cheatList.Remove(_fullHealth);
+        ShopItem.Instance.AddHealPlayerCheat();
     }
     public void AddToListIncreaseMaxHealth()
     {
@@ -212,6 +213,7 @@ public class CheatSystemController : MonoBehaviour
     public void RemoveFromListIncreaseMaxHealth()
     {
         _cheatList.Remove(_increaseMaxHealth);
+        ShopItem.Instance.AddIncreaseMaxHealthCheat();
     }
     public void AddToListInvincibility()
     {
@@ -221,5 +223,6 @@ public class CheatSystemController : MonoBehaviour
     public void RemoveFromListInvincibility()
     {
         _cheatList.Remove(_invincibility);
+        ShopItem.Instance.AddInvincibleCheat();
     }
 }

@@ -67,6 +67,10 @@ public class CameraController : MonoBehaviour
             Time.timeScale = 0f;
 
             UIController.Instance.mapDisplay.SetActive(false);
+            UIController.Instance.activeSpells.SetActive(false);
+            UIController.Instance.health.SetActive(false);
+            UIController.Instance.hellBucks.SetActive(false);
+            UIController.Instance.experience.SetActive(false);
             UIController.Instance.bigMapText.SetActive(true);
         }
         
@@ -85,6 +89,10 @@ public class CameraController : MonoBehaviour
         Time.timeScale = 1f;
 
         UIController.Instance.mapDisplay.SetActive(true);
+        UIController.Instance.activeSpells.SetActive(true);
+        UIController.Instance.health.SetActive(true);
+        UIController.Instance.hellBucks.SetActive(true);
+        UIController.Instance.experience.SetActive(true);
         UIController.Instance.bigMapText.SetActive(false);
 
     }

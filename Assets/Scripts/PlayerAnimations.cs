@@ -26,10 +26,49 @@ public class PlayerAnimations : MonoBehaviour
 
     private bool multipleArrows;
     
+    private enum MovementDirection
+    {
+        None,
+        Up,
+        Down,
+        Left,
+        Right
+    }
+    
+    private MovementDirection currentDirection = MovementDirection.None;
+
 
     void Update()
     {
+        GetMovementInput();
         Animations();
+    }
+
+    void GetMovementInput()
+    {
+        _moveInput.x = Input.GetAxisRaw("Horizontal");
+        _moveInput.y = Input.GetAxisRaw("Vertical");
+
+        if (_moveInput.x == 0 && _moveInput.y == 0)
+        {
+            currentDirection = MovementDirection.None;
+        }
+        else if (_moveInput.x > 0)
+        {
+            currentDirection = MovementDirection.Right;
+        }
+        else if (_moveInput.x < 0)
+        {
+            currentDirection = MovementDirection.Left;
+        }
+        else if (_moveInput.y > 0)
+        {
+            currentDirection = MovementDirection.Up;
+        }
+        else if (_moveInput.y < 0)
+        {
+            currentDirection = MovementDirection.Down;
+        }
     }
 
     void Animations()
@@ -48,7 +87,47 @@ public class PlayerAnimations : MonoBehaviour
 
         if (PlayerController.Instance.canMove && !LevelManager.Instance.isPaused && !dialogueUI.IsOpen && !CheatSystemController.Instance.showConsole)
         {
-            if (Magic.Instance.multipleArrows) { return;}
+
+            if (Magic.Instance.multipleArrows)
+            {
+                if (_moveInput.x > 0)
+                {
+                    anim.SetBool(IsMovingRight, true);
+                    anim.SetBool(IsMovingLeft, false);
+                    anim.SetBool(IsMovingUp, false);
+                    anim.SetBool(IsMovingDown, false);
+                }
+                else if (_moveInput.x < 0)
+                {
+                    anim.SetBool(IsMovingLeft, true);
+                    anim.SetBool(IsMovingRight, false);
+                    anim.SetBool(IsMovingUp, false);
+                    anim.SetBool(IsMovingDown, false);
+                }
+                else if (_moveInput.y > 0)
+                {
+                    anim.SetBool(IsMovingUp, true);
+                    anim.SetBool(IsMovingLeft, false);
+                    anim.SetBool(IsMovingRight, false);
+                    anim.SetBool(IsMovingDown, false);
+                }
+                else if (_moveInput.y < 0)
+                {
+                    anim.SetBool(IsMovingDown, true);
+                    anim.SetBool(IsMovingUp, false);
+                    anim.SetBool(IsMovingLeft, false);
+                    anim.SetBool(IsMovingRight, false);
+                }
+                else
+                {
+                    anim.SetBool(IsMovingDown, false);
+                    anim.SetBool(IsMovingUp, false);
+                    anim.SetBool(IsMovingLeft, false);
+                    anim.SetBool(IsMovingRight, false);
+                }
+                return;
+            }
+
             if (_moveInput.x > 0 && _moveInput.y == 0 && !Input.GetKey(KeyCode.LeftArrow))
             {
                 anim.SetBool(IsMovingRight, true);

@@ -138,7 +138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyDescription: EyeDemon
   theRB: {fileID: 8232783800390430233}
-  moveSpeed: 3
+  moveSpeed: 1
   isFrozen: 0
   shouldChasePlayer: 1
   rangeToChasePlayer: 7
@@ -154,7 +154,7 @@ MonoBehaviour:
   spell: {fileID: 8903432001235117488, guid: f6340dea17fa6aa43aa34f6120c73757, type: 3}
   firePoint: {fileID: 8232783800162270641}
   firePoint2: {fileID: 257972326}
-  fireRate: 1
+  fireRate: 2
   shootRange: 10
   theBody: {fileID: 8232783800818172837}
   anim: {fileID: 8232783800818172836}
@@ -175,6 +175,10 @@ MonoBehaviour:
   separationDistanceThreshold: 2
   separationMoveSpeed: 1
   experiencePoints: 5
+  wallDetectionRadius: 0
+  wallLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!50 &8232783800390430233
 Rigidbody2D:
   serializedVersion: 4

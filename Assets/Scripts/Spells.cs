@@ -100,14 +100,14 @@ public class Spells : MonoBehaviour
 
 public class FireSpell : Spells
 {
-    public float fireSpeed = 10f;
+    public float fireSpeed = 12f;
     public int fireDamage = 50;
     public float fireTimeBetweenSpells = 1f;
 }
 
 public class WindSpell : Spells
 {
-    public float windSpeed = 12f;
+    public float windSpeed = 15f;
     public int windDamage = 5;
     public float windTimeBetweenSpells = 0.2f;
 }

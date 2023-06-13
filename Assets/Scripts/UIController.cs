@@ -8,7 +8,7 @@ public class UIController : MonoBehaviour
     public static UIController Instance;
 
     public Slider healthSlider, experienceSlider;
-    public Text healthText, hellBucksText;
+    public Text healthText, hellBucksText, levelText;
 
     [FormerlySerializedAs("deathscreen")] public GameObject deathScreen;
 
@@ -18,7 +18,7 @@ public class UIController : MonoBehaviour
 
     public string newGameScene, mainMenuScene;
 
-    public GameObject pauseMenu, mapDisplay, bigMapText, bossHealthUI;
+    public GameObject pauseMenu, mapDisplay, bigMapText, bossHealthUI, activeSpells, health, hellBucks, experience;
 
     public Slider bossHealthBar;
 

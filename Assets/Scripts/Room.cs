@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class Room : MonoBehaviour
 {
-    
     public bool closeWhenEntered;
 
     public GameObject[] doors;
@@ -11,7 +10,7 @@ public class Room : MonoBehaviour
     public bool roomActive;
 
     public GameObject mapHider;
-
+    
     public void OpenDoors()
     {
         foreach (GameObject door in doors)
