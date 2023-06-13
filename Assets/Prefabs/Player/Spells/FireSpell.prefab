@@ -98,14 +98,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2917379c51d2cb46a82599edaa74db1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7.5
+  speed: 2
   theRb: {fileID: 6611242228727178606}
   impactEffect: {fileID: 1746649774678931759, guid: 5e18923242b6df84ab7624e20f4bdba0, type: 3}
   damageToGive: 50
   isFireSpell: 1
   isWindSpell: 0
   isIceSpell: 0
-  timeBetweenSpells: 1
+  timeBetweenSpells: 0.2
 --- !u!61 &6611242228727178594
 BoxCollider2D:
   m_ObjectHideFlags: 0

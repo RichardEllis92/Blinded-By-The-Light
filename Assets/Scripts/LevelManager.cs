@@ -47,7 +47,12 @@ public class LevelManager : MonoBehaviour
 
         Time.timeScale = 1f;
 
-        UIController.Instance.hellBucksText.text = currentHellBucks.ToString() + " Hell Bucks";
+        UIController.Instance.hellBucksText.text = currentHellBucks.ToString("D2");
+
+        LevelText();
+
+        currentHellBucks = CharacterTracker.Instance.currentHellBucks;
+        UIController.Instance.hellBucksText.text = CharacterTracker.Instance.currentHellBucks.ToString("D2");
     }
 
     // Update is called once per frame
@@ -57,6 +62,8 @@ public class LevelManager : MonoBehaviour
         {
             PauseUnpause();
         }
+        
+        LevelText();
     }
 
     public IEnumerator LevelEnd()
@@ -82,7 +89,6 @@ public class LevelManager : MonoBehaviour
 
         if(sceneName != "Luci Room" && sceneName != "Luci Room Complete" && sceneName != "Boss")
         {
-            CharacterTracker.Instance.currentHellBucks = currentHellBucks;
             CharacterTracker.Instance.currentHealth = PlayerHealthController.Instance.currentHealth;
             CharacterTracker.Instance.maxHealth = PlayerHealthController.Instance.maxHealth;
             Experience.Instance.UpdateExperiencePoints(LevelEndExperience);
@@ -92,15 +98,8 @@ public class LevelManager : MonoBehaviour
 
         if (sceneName == "Level 3")
         {
-            if (!Experience.Instance.hasMaxExperience)
-            {
-                SceneManager.LoadScene(nextLevel);
-            }
-            else
-            {
-                UIController.Instance.NewGame();
-                SceneManager.LoadScene("Luci Room Complete");
-            }
+            UIController.Instance.NewGame();
+            SceneManager.LoadScene("Luci Room Complete");
         }
         else
         {
@@ -133,26 +132,43 @@ public class LevelManager : MonoBehaviour
 
     public void GetHellBucks(int amount)
     {
-        currentHellBucks += amount;
+        CharacterTracker.Instance.currentHellBucks += amount;
 
-        UIController.Instance.hellBucksText.text = currentHellBucks.ToString() + " Hell Bucks";
+        UIController.Instance.hellBucksText.text = CharacterTracker.Instance.currentHellBucks.ToString("D2");
     }
 
     public void SpendCoins(int amount)
     {
-        currentHellBucks -= amount;
+        CharacterTracker.Instance.currentHellBucks -= amount;
 
-        if(currentHellBucks < 0)
+        if(CharacterTracker.Instance.currentHellBucks < 0)
         {
-            currentHellBucks = 0;
+            CharacterTracker.Instance.currentHellBucks = 0;
         }
 
-        UIController.Instance.hellBucksText.text = currentHellBucks.ToString() + " Hell Bucks";
+        UIController.Instance.hellBucksText.text = CharacterTracker.Instance.currentHellBucks.ToString("D2");
     }
 
-    public void RemoveCoins()
+    public void LevelText()
     {
-        currentHellBucks = defaultHellBucks;
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
+
+        switch (sceneName)
+        {
+            case "Level 1":
+                UIController.Instance.levelText.text = "Treachery: 1";
+                break;
+            case "Level 2":
+                UIController.Instance.levelText.text = "Treachery: 2";
+                break;
+            case "Level 3":
+                UIController.Instance.levelText.text = "Treachery: 3";
+                break;
+            case "Boss":
+                UIController.Instance.levelText.text = "Boss";
+                break;
+        }
     }
 
 }

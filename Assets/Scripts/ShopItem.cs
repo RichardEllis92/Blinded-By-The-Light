@@ -1,4 +1,4 @@
-using System;
+ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using Random = Unity.Mathematics.Random;
@@ -6,7 +6,7 @@ using Random = Unity.Mathematics.Random;
 public class ShopItem : MonoBehaviour
 {
     public static ShopItem Instance;
-    
+
     public GameObject buyMessage;
 
     private bool _inBuyZone;
@@ -40,11 +40,11 @@ public class ShopItem : MonoBehaviour
 
     void Update()
     {
-        if(_inBuyZone)
+        if (_inBuyZone)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                if(LevelManager.Instance.currentHellBucks >= itemCost)
+                if (CharacterTracker.Instance.currentHellBucks >= itemCost)
                 {
                     LevelManager.Instance.SpendCoins(itemCost);
 
@@ -62,6 +62,7 @@ public class ShopItem : MonoBehaviour
                     {
                         int index = UnityEngine.Random.Range(0, functions.Count);
                         functions[index]();
+                        functions.RemoveAt(index);
                     }
 
                     gameObject.SetActive(false);
@@ -79,7 +80,7 @@ public class ShopItem : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
             buyMessage.SetActive(true);
 
@@ -95,10 +96,27 @@ public class ShopItem : MonoBehaviour
             _inBuyZone = false;
         }
     }
-
+    
     public void RemoveComplimentFromList()
     {
         CheatSystemController cheatSystemController = FindObjectOfType<CheatSystemController>();
         functions.Remove(() => cheatSystemController.AddToListComplimentPlayer());
     }
+
+    public void AddHealPlayerCheat()
+    {
+        CheatSystemController cheatSystemController = FindObjectOfType<CheatSystemController>();
+        functions.Add(() => cheatSystemController.AddToListHealPlayer());
+    }
+    public void AddIncreaseMaxHealthCheat()
+    {
+        CheatSystemController cheatSystemController = FindObjectOfType<CheatSystemController>();
+        functions.Add(() => cheatSystemController.AddToListIncreaseMaxHealth());
+    }
+    public void AddInvincibleCheat()
+    {
+        CheatSystemController cheatSystemController = FindObjectOfType<CheatSystemController>();
+        functions.Add(() => cheatSystemController.AddToListInvincibility());
+    }
+    
 }

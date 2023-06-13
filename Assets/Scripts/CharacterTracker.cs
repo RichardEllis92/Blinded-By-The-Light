@@ -22,22 +22,15 @@ public class CharacterTracker : MonoBehaviour
 
         currentHealth = PlayerHealthController.Instance.currentHealth;
         maxHealth = PlayerHealthController.Instance.maxHealth;
-        currentHellBucks = LevelManager.Instance.currentHellBucks;
         experience = Experience.Instance.experiencePoints;
+        currentHellBucks = 0;
 
-        if (sceneName == "Level 1")
-        {
-            currentHealth = 5;
-            maxHealth = 5;
-            currentHellBucks = 0;
-        }
     }
 
     private void Update()
     {
         currentHealth = PlayerHealthController.Instance.currentHealth;
         maxHealth = PlayerHealthController.Instance.maxHealth;
-        currentHellBucks = LevelManager.Instance.currentHellBucks;
         experience = Experience.Instance.experiencePoints;
     }
 }
