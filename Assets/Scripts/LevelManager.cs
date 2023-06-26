@@ -30,6 +30,22 @@ public class LevelManager : MonoBehaviour
     {
         Instance = this;
     }
+    
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+    
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
+        if (sceneName == "Boss" || sceneName == "BossFail")
+        {
+            CheatUnlocks.Instance.UnlockWindSpell();
+            CheatUnlocks.Instance.UnlockIceSpell();
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -37,22 +53,22 @@ public class LevelManager : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
 
-        if (sceneName == "Luci Room" || sceneName == "Luci Room Complete")
+        if (sceneName == "Luci Room" || sceneName == "Luci Room Complete" || sceneName == "Luci Room Doll")
         {
             return;
         }
 
-        PlayerController.Instance.transform.position = startPoint.position;
-        PlayerController.Instance.canMove = true;
-
+        if (sceneName != "Boss" && sceneName != "BossFail" && sceneName != "RecordingScene")
+        {
+            PlayerController.Instance.transform.position = startPoint.position;
+            PlayerController.Instance.canMove = true;
+            UIController.Instance.hellBucksText.text = currentHellBucks.ToString("D2");
+            currentHellBucks = CharacterTracker.Instance.currentHellBucks;
+            UIController.Instance.hellBucksText.text = CharacterTracker.Instance.currentHellBucks.ToString("D2");
+        }
+        
         Time.timeScale = 1f;
-
-        UIController.Instance.hellBucksText.text = currentHellBucks.ToString("D2");
-
         LevelText();
-
-        currentHellBucks = CharacterTracker.Instance.currentHellBucks;
-        UIController.Instance.hellBucksText.text = CharacterTracker.Instance.currentHellBucks.ToString("D2");
     }
 
     // Update is called once per frame
@@ -75,7 +91,7 @@ public class LevelManager : MonoBehaviour
 
         PlayerController.Instance.canMove = false;
 
-        if(sceneName == "Luci Room" || sceneName == "Luci Room Complete")
+        if(sceneName == "Luci Room" || sceneName == "Luci Room Complete" || sceneName == "Luci Room Doll")
         {
             LuciRoomUI.Instance.StartFadeToBlack();
         }
@@ -87,7 +103,7 @@ public class LevelManager : MonoBehaviour
 
         yield return new WaitForSeconds(waitToLoad);
 
-        if(sceneName != "Luci Room" && sceneName != "Luci Room Complete" && sceneName != "Boss")
+        if(sceneName != "Luci Room" && sceneName != "Luci Room Complete" && sceneName != "Luci Room Doll" && sceneName != "Boss")
         {
             CharacterTracker.Instance.currentHealth = PlayerHealthController.Instance.currentHealth;
             CharacterTracker.Instance.maxHealth = PlayerHealthController.Instance.maxHealth;
@@ -166,9 +182,17 @@ public class LevelManager : MonoBehaviour
                 UIController.Instance.levelText.text = "Treachery: 3";
                 break;
             case "Boss":
-                UIController.Instance.levelText.text = "Boss";
+                UIController.Instance.levelText.text = "Boss Room";
+                break;
+            case "BossFail":
+                UIController.Instance.levelText.text = "Boss Room";
                 break;
         }
+    }
+    
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
 }

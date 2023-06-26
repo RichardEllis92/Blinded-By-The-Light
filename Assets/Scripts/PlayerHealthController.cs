@@ -8,6 +8,8 @@ public class PlayerHealthController : MonoBehaviour
 
     private const int StartingMaxHealth = 5;
     private const int StartingHealth = 5;
+    private const int BossStartingMaxHealth = 10;
+    private const int BossStartingHealth = 10;
 
     public int currentHealth;
     public int maxHealth;
@@ -30,6 +32,11 @@ public class PlayerHealthController : MonoBehaviour
         {
             maxHealth = StartingMaxHealth;
             currentHealth = StartingHealth;
+        }
+        else if (sceneName == "Boss" || sceneName == "BossFail")
+        {
+            maxHealth = BossStartingMaxHealth;
+            currentHealth = BossStartingHealth;
         }
         else
         {
@@ -65,6 +72,9 @@ public class PlayerHealthController : MonoBehaviour
 
     public void DamagePlayer()
     {
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
+        
         if (_invincibleCount <= 0)
         {
             AudioManager.Instance.PlaySfx(8);
@@ -81,8 +91,17 @@ public class PlayerHealthController : MonoBehaviour
                 PlayerController.Instance.gameObject.SetActive(false);
 
                 UIController.Instance.NewGame();
-                SceneManager.LoadScene("Luci Room");
-                UIController.Instance.bossHealthUI.SetActive(false);
+                
+                if (sceneName == "Boss" || sceneName == "BossFail")
+                {
+                    SceneManager.LoadScene("Luci Room Doll");
+                }
+                else
+                {
+                    SceneManager.LoadScene("Luci Room");
+                }
+                
+                BossLevelController.Instance.bossHealth.SetActive(false);
                 LevelManager.Instance.isPaused = true;
                 AudioManager.Instance.PlayGameOver();
                 AudioManager.Instance.PlaySfx(7);

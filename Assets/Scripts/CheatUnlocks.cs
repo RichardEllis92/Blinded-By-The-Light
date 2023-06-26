@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CheatUnlocks : MonoBehaviour
 {
@@ -32,9 +33,12 @@ public class CheatUnlocks : MonoBehaviour
 
     public void UnlockWindSpell()
     {
-        _windSpellUnlocked = true;
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
         
-        StartCoroutine(UnlockWindSpellPopUp());
+        _windSpellUnlocked = true;
+        if (sceneName != "Boss" && sceneName != "BossFail")
+            StartCoroutine(UnlockWindSpellPopUp());
     }
     
     IEnumerator UnlockWindSpellPopUp()
@@ -59,9 +63,12 @@ public class CheatUnlocks : MonoBehaviour
     
     public void UnlockIceSpell()
     {
-        _iceSpellUnlocked = true;
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
         
-        StartCoroutine(UnlockIceSpellPopUp());
+        _iceSpellUnlocked = true;
+        if (sceneName != "Boss" && sceneName != "BossFail")
+            StartCoroutine(UnlockIceSpellPopUp());
     }
     
     IEnumerator UnlockIceSpellPopUp()

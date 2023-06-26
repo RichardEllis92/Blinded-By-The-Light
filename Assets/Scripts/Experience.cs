@@ -33,7 +33,7 @@ public class Experience : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
         
-        if (sceneName != "Boss")
+        if (sceneName != "Boss" && sceneName != "BossFail")
         {
             UIController.Instance.experienceSlider.value = experiencePoints;
             UIController.Instance.experienceSlider.maxValue = MaxExperience;

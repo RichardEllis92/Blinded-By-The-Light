@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3fd23409d8a05943abcedf18c6d8f36, type: 3}
+  m_Name: AfterPlayerSummon
+  m_EditorClassIdentifier: 
+  dialogue:
+  - Well... what do you think?
+  - 'If you win, (yeah right), I will leave you alone and you keep your body.
+
+'
+  - However... if I win, I will take your body and escape this awful place.
+  - I've even thrown in some extra health for you.
+  - Deal?
+  responses:
+  - responseText: Yes
+    dialogueObject: {fileID: 11400000, guid: ef6e0d669c20ca44a994e02a89a693fa, type: 2}
+  - responseText: Yes I'm forcing you to say yes
+    dialogueObject: {fileID: 11400000, guid: ef6e0d669c20ca44a994e02a89a693fa, type: 2}
+  name: 

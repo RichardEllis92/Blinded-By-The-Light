@@ -18,7 +18,7 @@ public class UIController : MonoBehaviour
 
     public string newGameScene, mainMenuScene;
 
-    public GameObject pauseMenu, mapDisplay, bigMapText, bossHealthUI, activeSpells, health, hellBucks, experience;
+    public GameObject pauseMenu, mapDisplay, bigMapText, activeSpells, health, hellBucks, experience;
 
     public Slider bossHealthBar;
 
@@ -54,19 +54,24 @@ public class UIController : MonoBehaviour
             _fadeToBlack = false;
         }
 
-        if (scene.name == "Boss")
+        if (scene.name == "Boss" || scene.name == "BossFail")
         {
-            bossHealthUI.SetActive(true);
-        }
-        else
-        {
-            bossHealthUI.SetActive(false);
-            mapDisplay.SetActive(true);
+            experience.SetActive(false);
+            hellBucks.SetActive(false);
+            mapDisplay.SetActive(false);
         }
     }
 
     void Start()
     {
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
+
+        if (sceneName == "Boss" || sceneName == "BossFail")
+        {
+            experience.SetActive(false);
+            hellBucks.SetActive(false);
+        }
         _fadeOutBlack = true;
         _fadeToBlack = false;
     }
@@ -120,7 +125,11 @@ public class UIController : MonoBehaviour
 
         Destroy(PlayerController.Instance.gameObject);
         Destroy(gameObject);
-        DestroyAllGameObjects();
+        
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
+        if(sceneName != "Boss")
+            DestroyAllGameObjects();
 
     }
 

@@ -14,17 +14,17 @@ public class LevelExit : MonoBehaviour
 
         if (other.CompareTag("Player") && gameObject.activeSelf)
         {
-            if (sceneName == "Luci Room Complete")
+            if (sceneName == "Luci Room Complete" || sceneName == "Luci Room Doll")
             {
                 SceneManager.LoadScene(levelToLoad);
             }
             //SceneManager.LoadScene(levelToLoad);
-            if(sceneName == "Boss")
+            if(sceneName == "Boss" || sceneName == "BossFail")
             {
                 PlayerHealthController.Instance.DefaultHealth();
                 UIController.Instance.SecretEnding();
             }
-            if(sceneName != "Boss")
+            if(sceneName != "Boss" && sceneName != "BossFail")
             {
                 StartCoroutine(LevelManager.Instance.LevelEnd());
             }

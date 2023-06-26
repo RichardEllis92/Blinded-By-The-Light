@@ -1,0 +1,1632 @@
+fileFormatVersion: 2
+guid: 70f502ce715913d47883accfae4f0a09
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4647537855367661405
+    second: Player Doll - Sprite Sheet 2x _0
+  - first:
+      213: -4078165371998422990
+    second: Player Doll - Sprite Sheet 2x _1
+  - first:
+      213: 198703436024170122
+    second: Player Doll - Sprite Sheet 2x _2
+  - first:
+      213: 5043333690654476243
+    second: Player Doll - Sprite Sheet 2x _3
+  - first:
+      213: 8303631297642272039
+    second: Player Doll - Sprite Sheet 2x _4
+  - first:
+      213: -2095704845100599229
+    second: Player Doll - Sprite Sheet 2x _5
+  - first:
+      213: -3971880607631486060
+    second: Player Doll - Sprite Sheet 2x _6
+  - first:
+      213: 4287682345588013036
+    second: Player Doll - Sprite Sheet 2x _7
+  - first:
+      213: 506225675381151272
+    second: Player Doll - Sprite Sheet 2x _8
+  - first:
+      213: -3887597881178759471
+    second: Player Doll - Sprite Sheet 2x _9
+  - first:
+      213: 1186554908089430341
+    second: Player Doll - Sprite Sheet 2x _10
+  - first:
+      213: -5428049596219488828
+    second: Player Doll - Sprite Sheet 2x _11
+  - first:
+      213: -3612819727952362687
+    second: Player Doll - Sprite Sheet 2x _12
+  - first:
+      213: 5644812523179132379
+    second: Player Doll - Sprite Sheet 2x _13
+  - first:
+      213: 4511348953435900632
+    second: Player Doll - Sprite Sheet 2x _14
+  - first:
+      213: 2370376892489852167
+    second: Player Doll - Sprite Sheet 2x _15
+  - first:
+      213: -5547888899351245743
+    second: Player Doll - Sprite Sheet 2x _16
+  - first:
+      213: 525636744283439351
+    second: Player Doll - Sprite Sheet 2x _17
+  - first:
+      213: -2791367696541822001
+    second: Player Doll - Sprite Sheet 2x _18
+  - first:
+      213: 6868543896131578522
+    second: Player Doll - Sprite Sheet 2x _19
+  - first:
+      213: -1566378953646926159
+    second: Player Doll - Sprite Sheet 2x _20
+  - first:
+      213: 8779519171480243133
+    second: Player Doll - Sprite Sheet 2x _21
+  - first:
+      213: -9039930621008141029
+    second: Player Doll - Sprite Sheet 2x _22
+  - first:
+      213: 7706791913644565819
+    second: Player Doll - Sprite Sheet 2x _23
+  - first:
+      213: -4276006352746475803
+    second: Player Doll - Sprite Sheet 2x _24
+  - first:
+      213: -1925520855981642573
+    second: Player Doll - Sprite Sheet 2x _25
+  - first:
+      213: 5877209946395023199
+    second: Player Doll - Sprite Sheet 2x _26
+  - first:
+      213: -2624322516250048680
+    second: Player Doll - Sprite Sheet 2x _27
+  - first:
+      213: 2859259916684041690
+    second: Player Doll - Sprite Sheet 2x _28
+  - first:
+      213: -3951417201569542442
+    second: Player Doll - Sprite Sheet 2x _29
+  - first:
+      213: 9215907225175370224
+    second: Player Doll - Sprite Sheet 2x _30
+  - first:
+      213: 2139033564330954850
+    second: Player Doll - Sprite Sheet 2x _31
+  - first:
+      213: -1025892870281794567
+    second: Player Doll - Sprite Sheet 2x _32
+  - first:
+      213: 2553610210482623173
+    second: Player Doll - Sprite Sheet 2x _33
+  - first:
+      213: 3753460132828463035
+    second: Player Doll - Sprite Sheet 2x _34
+  - first:
+      213: 6005913982507867465
+    second: Player Doll - Sprite Sheet 2x _35
+  - first:
+      213: -2536654786505824175
+    second: Player Doll - Sprite Sheet 2x _36
+  - first:
+      213: 6694312235485651324
+    second: Player Doll - Sprite Sheet 2x _37
+  - first:
+      213: 1245662640068560106
+    second: Player Doll - Sprite Sheet 2x _38
+  - first:
+      213: 3410247889358253163
+    second: Player Doll - Sprite Sheet 2x _39
+  - first:
+      213: 9065463838472747728
+    second: Player Doll - Sprite Sheet 2x _40
+  - first:
+      213: -8843074912087102358
+    second: Player Doll - Sprite Sheet 2x _41
+  - first:
+      213: -2997135460124411299
+    second: Player Doll - Sprite Sheet 2x _42
+  - first:
+      213: -2740711341518289884
+    second: Player Doll - Sprite Sheet 2x _43
+  - first:
+      213: 5010122346547071973
+    second: Player Doll - Sprite Sheet 2x _44
+  - first:
+      213: -7176934723370416896
+    second: Player Doll - Sprite Sheet 2x _45
+  - first:
+      213: -6663517244220537497
+    second: Player Doll - Sprite Sheet 2x _46
+  - first:
+      213: 6561316846732169434
+    second: Player Doll - Sprite Sheet 2x _47
+  - first:
+      213: -5659313008150023034
+    second: Player Doll - Sprite Sheet 2x _48
+  - first:
+      213: -6922621929914374551
+    second: Player Doll - Sprite Sheet 2x _49
+  - first:
+      213: -2327589327549351720
+    second: Player Doll - Sprite Sheet 2x _50
+  - first:
+      213: -1387455166427888361
+    second: Player Doll - Sprite Sheet 2x _51
+  - first:
+      213: -3545990805954926566
+    second: Player Doll - Sprite Sheet 2x _52
+  - first:
+      213: -5901411062043239655
+    second: Player Doll - Sprite Sheet 2x _53
+  - first:
+      213: -3816959173176272920
+    second: Player Doll - Sprite Sheet 2x _54
+  - first:
+      213: -662048057515217055
+    second: Player Doll - Sprite Sheet 2x _55
+  - first:
+      213: -6074831262901979125
+    second: Player Doll - Sprite Sheet 2x _56
+  - first:
+      213: 8381473452256648057
+    second: Player Doll - Sprite Sheet 2x _57
+  - first:
+      213: -398508040283961905
+    second: Player Doll - Sprite Sheet 2x _58
+  - first:
+      213: -4491024745747429316
+    second: Player Doll - Sprite Sheet 2x _59
+  - first:
+      213: 3682194612619355617
+    second: Player Doll - Sprite Sheet 2x _60
+  - first:
+      213: 2866414817540960898
+    second: Player Doll - Sprite Sheet 2x _61
+  - first:
+      213: -4306648890576831523
+    second: Player Doll - Sprite Sheet 2x _62
+  - first:
+      213: -5065622929525128140
+    second: Player Doll - Sprite Sheet 2x _63
+  - first:
+      213: 4386578508725619661
+    second: Player Doll - Sprite Sheet 2x _64
+  - first:
+      213: -4652598938600634922
+    second: Player Doll - Sprite Sheet 2x _65
+  - first:
+      213: 1122897393206511175
+    second: Player Doll - Sprite Sheet 2x _66
+  - first:
+      213: 738955078666217287
+    second: Player Doll - Sprite Sheet 2x _67
+  - first:
+      213: 6157000010176908901
+    second: Player Doll - Sprite Sheet 2x _68
+  - first:
+      213: 4516122671952327318
+    second: Player Doll - Sprite Sheet 2x _69
+  - first:
+      213: -3637924578024763900
+    second: Player Doll - Sprite Sheet 2x _70
+  - first:
+      213: -6598226130063457714
+    second: Player Doll - Sprite Sheet 2x _71
+  - first:
+      213: 5023928200661230477
+    second: Player Doll - Sprite Sheet 2x _72
+  - first:
+      213: 757198455967313244
+    second: Player Doll - Sprite Sheet 2x _73
+  - first:
+      213: 3942312360255518842
+    second: Player Doll - Sprite Sheet 2x _74
+  - first:
+      213: -9029514990658969140
+    second: Player Doll - Sprite Sheet 2x _75
+  - first:
+      213: 7239272018021825429
+    second: Player Doll - Sprite Sheet 2x _76
+  - first:
+      213: -6901135614917466529
+    second: Player Doll - Sprite Sheet 2x _77
+  - first:
+      213: 565315963351381623
+    second: Player Doll - Sprite Sheet 2x _78
+  - first:
+      213: 1543118889198486934
+    second: Player Doll - Sprite Sheet 2x _79
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 588
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a831aab1f0a08fb0800000000000000
+      internalID: -4647537855367661405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 588
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2383cb283327767c0800000000000000
+      internalID: -4078165371998422990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _2
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 588
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a86ced7e8bfe1c200800000000000000
+      internalID: 198703436024170122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _3
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 588
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d7483b55458df540800000000000000
+      internalID: 5043333690654476243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _8
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 500
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8269645d199760700800000000000000
+      internalID: 506225675381151272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _9
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 500
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1de57ce035a7c0ac0800000000000000
+      internalID: -3887597881178759471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _10
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 500
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 541ba2bf66d777010800000000000000
+      internalID: 1186554908089430341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _11
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 500
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c5822ab6a1bba4b0800000000000000
+      internalID: -5428049596219488828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _12
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 500
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14340e5599facddc0800000000000000
+      internalID: -3612819727952362687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _13
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 500
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd5c4c31517665e40800000000000000
+      internalID: 5644812523179132379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _14
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 500
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8da806398f78b9e30800000000000000
+      internalID: 4511348953435900632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _15
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 500
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 705e6a4993545e020800000000000000
+      internalID: 2370376892489852167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _16
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 432
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c06d4a070f103b0800000000000000
+      internalID: -5547888899351245743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _17
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 432
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f048ef75df6b4700800000000000000
+      internalID: 525636744283439351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _18
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 432
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc3df1a8ed11349d0800000000000000
+      internalID: -2791367696541822001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _19
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 432
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9aa91d4848f15f50800000000000000
+      internalID: 6868543896131578522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _20
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 432
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b61a3404aa134ae0800000000000000
+      internalID: -1566378953646926159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _21
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 432
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbbcfcaab2e17d970800000000000000
+      internalID: 8779519171480243133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _22
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 432
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1522aceef6bb8280800000000000000
+      internalID: -9039930621008141029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _23
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 432
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3523a2c96604fa60800000000000000
+      internalID: 7706791913644565819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _24
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 364
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee8b3f90e298a4c0800000000000000
+      internalID: -4276006352746475803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _25
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 364
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bcab9bbbfc2745e0800000000000000
+      internalID: -1925520855981642573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _26
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 364
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f579445be4b009150800000000000000
+      internalID: 5877209946395023199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _27
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 364
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8574bd26398849bd0800000000000000
+      internalID: -2624322516250048680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _28
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 364
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: add1776ceb12ea720800000000000000
+      internalID: 2859259916684041690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _29
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 364
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6de441d9dfeb929c0800000000000000
+      internalID: -3951417201569542442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _30
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 364
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f9a8871bca75ef70800000000000000
+      internalID: 9215907225175370224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _31
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 364
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 260959491bf5fad10800000000000000
+      internalID: 2139033564330954850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _32
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 296
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb6f31bedb43c1f0800000000000000
+      internalID: -1025892870281794567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _33
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 296
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c290a2f4fe307320800000000000000
+      internalID: 2553610210482623173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _34
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 296
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbfb4d7aa18f61430800000000000000
+      internalID: 3753460132828463035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _35
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 296
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ddee642fa495350800000000000000
+      internalID: 6005913982507867465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _36
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 296
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 158a68459edfbccd0800000000000000
+      internalID: -2536654786505824175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _37
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 296
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c716cab9289f6ec50800000000000000
+      internalID: 6694312235485651324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _38
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 296
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae40343429b794110800000000000000
+      internalID: 1245662640068560106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _39
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 296
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c69391362a35f20800000000000000
+      internalID: 3410247889358253163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _48
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 208
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 684787cadc41671b0800000000000000
+      internalID: -5659313008150023034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _49
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 208
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 966ef194808edef90800000000000000
+      internalID: -6922621929914374551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _50
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 208
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d83e64b6ddb2bfd0800000000000000
+      internalID: -2327589327549351720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _51
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 208
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 715094f80e4cebce0800000000000000
+      internalID: -1387455166427888361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _52
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 208
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a186142462c1acec0800000000000000
+      internalID: -3545990805954926566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _53
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 208
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91b1a55f7e9f91ea0800000000000000
+      internalID: -5901411062043239655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _56
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 140
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b083a48f62dd1bba0800000000000000
+      internalID: -6074831262901979125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _57
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 140
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97bdf18a2b9f05470800000000000000
+      internalID: 8381473452256648057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _58
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 140
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc5ccba7c07387af0800000000000000
+      internalID: -398508040283961905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _59
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 140
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c384c38c9ccaca1c0800000000000000
+      internalID: -4491024745747429316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _60
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 140
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e5a807bd78c91330800000000000000
+      internalID: 3682194612619355617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _61
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 140
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 282f172f61d87c720800000000000000
+      internalID: 2866414817540960898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _64
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 72
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcb04ff99e140ec30800000000000000
+      internalID: 4386578508725619661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _65
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 72
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d589567ae5ae6fb0800000000000000
+      internalID: -4652598938600634922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _66
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 72
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7464941da35559f00800000000000000
+      internalID: 1122897393206511175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _67
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 72
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 747eed89abb414a00800000000000000
+      internalID: 738955078666217287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _68
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 72
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56ecba853ee027550800000000000000
+      internalID: 6157000010176908901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _69
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 72
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6927ec784ad7cae30800000000000000
+      internalID: 4516122671952327318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _72
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 4
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d83ea71a41498b540800000000000000
+      internalID: 5023928200661230477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _73
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 4
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5de760ebfb128a00800000000000000
+      internalID: 757198455967313244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _74
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 4
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7879a25438e5b630800000000000000
+      internalID: 3942312360255518842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _75
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 4
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc125b7d4f7b0b280800000000000000
+      internalID: -9029514990658969140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _76
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 4
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59bbd9a8b8f077460800000000000000
+      internalID: 7239272018021825429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Doll - Sprite Sheet 2x _77
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 4
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f562c06d8bd3a30a0800000000000000
+      internalID: -6901135614917466529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

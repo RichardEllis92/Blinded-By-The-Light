@@ -83,7 +83,7 @@ public class Magic : MonoBehaviour
         MultipleArrowKeys();
         if (multipleArrows) { return;}
         
-        if (PlayerController.Instance.canMove && !PlayerController.Instance.animationOverride && !LevelManager.Instance.isPaused && !dialogueUI.IsOpen && sceneName != "Luci Room")
+        if (PlayerController.Instance.canMove && !PlayerController.Instance.animationOverride && !LevelManager.Instance.isPaused && !dialogueUI.IsOpen && (sceneName != "Luci Room" && sceneName != "Luci Room Complete" && sceneName != "Luci Room Doll"))
         {
             if (_shotCounter > 0)
             {
