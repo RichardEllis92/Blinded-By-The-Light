@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3fd23409d8a05943abcedf18c6d8f36, type: 3}
+  m_Name: Boss Dead 1
+  m_EditorClassIdentifier: 
+  dialogue:
+  - 'How...?
+
+    How did you beat me at my own game?
+
+    LITERALLY!!!!!!'
+  - 'A deal is a deal...
+
+    I will leave you alone... but be warned...'
+  - Each time someone downloads this game, another version of myself is created.
+  - I will take over the world, even if you beat me, not everyone will!
+  - Its been fun {playerName}, but I will have the last laugh!
+  responses:
+  - responseText: Goodbye
+    dialogueObject: {fileID: 0}
+  - responseText: Bye then
+    dialogueObject: {fileID: 0}
+  name: 

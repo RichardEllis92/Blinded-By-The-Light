@@ -48,7 +48,7 @@ public class DialogueUI : MonoBehaviour
         var currentScene = SceneManager.GetActiveScene();
         var sceneName = currentScene.name;
 
-        if (sceneName == "Boss")
+        if (sceneName == "Boss" || sceneName == "BossFail")
         {
             talkedToFinalGuide = false;
         }

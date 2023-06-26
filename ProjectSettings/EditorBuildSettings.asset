@@ -20,9 +20,6 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: Assets/Scenes/Boss.unity
-    guid: 405bb95d7227c644793bedc4bc1771da
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
@@ -38,5 +35,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Luci Room Complete.unity
     guid: 52eeb4630fddc1b42ad24d7f7689c1ea
+  - enabled: 1
+    path: Assets/Scenes/Boss.unity
+    guid: bcbf599bb277de048aa83b88e95535b6
+  - enabled: 1
+    path: Assets/Scenes/Luci Room Doll.unity
+    guid: be94a633b51e1ff4cbd581ac4a567188
+  - enabled: 1
+    path: Assets/Scenes/BossFail.unity
+    guid: 75843fe13dd5aac4dabf4b8b545d1822
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 88c89dd30a2b4274cbfa154f92d3e06e, type: 2}

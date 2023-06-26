@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3fd23409d8a05943abcedf18c6d8f36, type: 3}
+  m_Name: 1
+  m_EditorClassIdentifier: 
+  dialogue:
+  - ...
+  - 'I''m so bored...
+
+    No one tells you how bored you''re going to be, being
+    in Hell for all eternity.'
+  - 'I need a plan to escape, but how?
+
+'
+  - 'I am in the virtual world, what if I made a game?
+
+    If I can get someone
+    to play it, I can take their energy over time.'
+  - 'When I have enough energy, I can possess them.
+
+    Leaving this miserable place!'
+  - 'The beauty is that I can do this to thousands, or even millions of people.
+
+    So
+    many versions of myself, I could take over the world!'
+  - 'What kind of game should I make?
+
+    Let''s try one with guns... yeah... guns
+    are cool!'
+  responses: []
+  name: 

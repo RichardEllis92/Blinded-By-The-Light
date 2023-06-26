@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CameraController : MonoBehaviour
 {
@@ -22,10 +23,20 @@ public class CameraController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Instance = this;
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
         _isTargetNotNull = target != null;
         if (isBossRoom)
         {
-            target = PlayerController.Instance.transform;
+            if (sceneName == "Boss")
+            {
+                target = BossController.Instance.transform;
+            }
+            else if (sceneName == "BossFail")
+            {
+                target = PlayerController.Instance.transform;
+            }
         }
     }
 
@@ -95,5 +106,10 @@ public class CameraController : MonoBehaviour
         UIController.Instance.experience.SetActive(true);
         UIController.Instance.bigMapText.SetActive(false);
 
+    }
+
+    public void ChangeTargetToPlayer()
+    {
+        target = PlayerController.Instance.transform;
     }
 }

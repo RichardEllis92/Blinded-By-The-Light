@@ -15,6 +15,7 @@ TagManager:
   - WindSpell
   - NoSpell
   - Wall
+  - EnemySpell
   layers:
   - Default
   - TransparentFX

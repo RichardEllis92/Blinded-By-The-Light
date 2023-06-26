@@ -39,9 +39,14 @@ public class EnemySpell : MonoBehaviour
         {
             PlayerHealthController.Instance.DamagePlayer();
         }
-
-        Destroy(gameObject);
         AudioManager.Instance.PlaySfx(3);
+        
+        if (other.CompareTag("EnemySpell"))
+        {
+            return;
+        }
+        Destroy(gameObject);
+        
     }
 
     private void OnBecameInvisible()

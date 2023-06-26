@@ -53,7 +53,7 @@ public class PlayerController : MonoBehaviour
         string sceneName = currentScene.name;
         Instance = this;
 
-        if(sceneName != "Luci Room" && sceneName != "Luci Room Complete")
+        if(sceneName != "Luci Room" && sceneName != "Luci Room Complete" && sceneName != "Luci Room Doll")
         {
             DontDestroyOnLoad(gameObject);
         }  
@@ -72,11 +72,11 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         if (!CheatSystemController.Instance.showConsole)
-        {
-            PlayerMove();
-            StopPlayer();
-            Interact();
-        }
+            {
+                PlayerMove();
+                StopPlayer();
+                Interact();
+            }
     }
 
     void PlayerMove()
@@ -88,7 +88,15 @@ public class PlayerController : MonoBehaviour
         {
             animationOverride = true;
             theRb.velocity = Vector3.zero;
-            anim.Play("Player_Idle");
+            
+            if (sceneName == "Luci Room Doll" || sceneName == "Boss" || sceneName == "BossFail")
+            {
+                anim.Play("Doll_Idle");
+            }
+            else
+            {
+                anim.Play("Player_Idle");
+            }
             anim.enabled = false;
             theRb.velocity = Vector3.zero;
         }
@@ -108,7 +116,7 @@ public class PlayerController : MonoBehaviour
             theRb.velocity = _moveInput * _activeMoveSpeed;
 
 
-            if (Input.GetKeyDown(KeyCode.Space) && (sceneName != "Luci Room" && sceneName != "Luci Room Complete"))
+            if (Input.GetKeyDown(KeyCode.Space) && (sceneName != "Luci Room" && sceneName != "Luci Room Complete" && sceneName != "Luci Room Doll"))
             {
                 if (_dashCoolCounter <= 0 && dashCounter <= 0)
                 {

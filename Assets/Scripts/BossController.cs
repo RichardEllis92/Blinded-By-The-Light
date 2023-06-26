@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class BossController : MonoBehaviour
 {
@@ -14,15 +15,24 @@ public class BossController : MonoBehaviour
 
     public int currentHealth;
 
-    public GameObject deathEffect, levelExit, hitEffect, levelExit2, bossHealth;
+    public GameObject deathEffect, levelExit, hitEffect, levelExit2;
 
     public BossSequence[] sequences;
     public int currentSequence;
 
     [SerializeField] private DialogueUI dialogueUI;
-
+    [SerializeField] private DialogueObject bossDead;
     public DialogueUI DialogueUI => dialogueUI;
 
+    public GameObject endDemoScreen;
+    
+    [SerializeField]
+    private Animator bossAnimator;
+    
+    private static readonly int PlayerIdle = Animator.StringToHash("Player_Idle");
+    [SerializeField] private GameObject dialogueBox;
+
+    public bool bossIsDead;
 
     private void Awake()
     {
@@ -34,15 +44,12 @@ public class BossController : MonoBehaviour
         actions = sequences[currentSequence].actions;
 
         _actionCounter = actions[_currentAction].actionLength;
-
-        UIController.Instance.bossHealthBar.maxValue = currentHealth;
-        UIController.Instance.bossHealthBar.value = currentHealth;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!dialogueUI.IsOpen && LevelManager.Instance.isPaused == false)
+        if (!dialogueUI.IsOpen && !dialogueBox.activeSelf && LevelManager.Instance.isPaused == false && BossLevelController.Instance.bossStarted)
         {
             if (_actionCounter > 0)
             {
@@ -97,46 +104,15 @@ public class BossController : MonoBehaviour
                 _actionCounter = actions[_currentAction].actionLength;
             }
         }
-
-        if (dialogueUI.IsOpen)
-        {
-            bossHealth.SetActive(false);
-        }
-        if (!dialogueUI.IsOpen)
-        {
-            bossHealth.SetActive(true);
-        }
     }
 
     public void TakeDamage(int damageAmount)
     {
         currentHealth -= damageAmount;
 
-        if (currentHealth <= 0)
+        if (currentHealth <= 0 && !bossIsDead)
         {
-            gameObject.SetActive(false);
-
-
-            var bossTransform = transform;
-            Instantiate(deathEffect, bossTransform.position, bossTransform.rotation);
-
-            /* DialogueUI.instance.ShowDialogue(DialogueObject); */
-
-            LevelManager.Instance.bossDoor.SetActive(false);
-
-            AudioManager.Instance.PlaySfx(13);
-            AudioManager.Instance.PlayChoiceMusic();
-
-            if (Vector3.Distance(PlayerController.Instance.transform.position, levelExit.transform.position) < 2f)
-            {
-                levelExit.transform.position += new Vector3(4f, 0, 0);
-            }
-
-            levelExit.SetActive(true);
-            levelExit2.SetActive(true);
-
-            UIController.Instance.bossHealthBar.gameObject.SetActive(false);
-
+            StartCoroutine(EndGame());
         }
         else
         {
@@ -151,7 +127,25 @@ public class BossController : MonoBehaviour
 
         UIController.Instance.bossHealthBar.value = currentHealth;
     }
+    private IEnumerator EndGame()
+    {
+        bossIsDead = true;
+        UIController.Instance.bossHealthBar.gameObject.SetActive(false);
+        bossAnimator.Play(PlayerIdle);
+        bossAnimator.enabled = false;
+        theRb.velocity = Vector2.zero;
+        DialogueUI.Instance.ShowDialogue(bossDead);
+            
+        while (dialogueBox.activeSelf)
+        {
+            yield return null;
+        }
+        endDemoScreen.SetActive(true);
+        gameObject.SetActive(false);
+    }
 }
+
+
 
 [System.Serializable]
 public class BossAction
