@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a353bfa0e99832744bb71e4893cb2fbb
+guid: b45cccd3a500c8740be5a73109663402
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -392,7 +392,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -478,7 +478,7 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 2
         y: 440
         width: 32
         height: 32
@@ -499,8 +499,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_1
       rect:
         serializedVersion: 2
-        x: 3
-        y: 438
+        x: 36
+        y: 440
         width: 32
         height: 32
       alignment: 0
@@ -521,7 +521,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 70
-        y: 441
+        y: 440
         width: 32
         height: 32
       alignment: 0
@@ -541,8 +541,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 452
+        x: 104
+        y: 440
         width: 32
         height: 32
       alignment: 0
@@ -559,263 +559,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Luci Sprite Sheet Original Size 32x32_4
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 452
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8b406a505a564a360800000000000000
-      internalID: 7179975465374188728
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Luci Sprite Sheet Original Size 32x32_5
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 452
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7a5711e7494b96ae0800000000000000
-      internalID: -1555513646416562777
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Luci Sprite Sheet Original Size 32x32_6
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 452
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b0fbcf92fa0a9bf60800000000000000
-      internalID: 8050642483085623051
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Luci Sprite Sheet Original Size 32x32_7
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 452
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42cf40cc126b462f0800000000000000
-      internalID: -980458562586870748
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Luci Sprite Sheet Original Size 32x32_8
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 420
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 00b8a8c755538f690800000000000000
-      internalID: -7568240532518171904
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Luci Sprite Sheet Original Size 32x32_9
-      rect:
-        serializedVersion: 2
-        x: 34
-        y: 438
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5a6b8436bd7e1e550800000000000000
-      internalID: 6188482292433335973
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Luci Sprite Sheet Original Size 32x32_10
-      rect:
-        serializedVersion: 2
-        x: 70
-        y: 441
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b92e45aa753fd16a0800000000000000
-      internalID: -6476753131243511141
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Luci Sprite Sheet Original Size 32x32_11
-      rect:
-        serializedVersion: 2
-        x: 103
-        y: 441
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8754dc74fca01fa50800000000000000
-      internalID: 6553030818179925368
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Luci Sprite Sheet Original Size 32x32_12
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 420
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5e69db5cb29aae5c0800000000000000
-      internalID: -4185346898221230363
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Luci Sprite Sheet Original Size 32x32_13
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 420
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 141d05c6d52bda820800000000000000
-      internalID: 2931195046806999361
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Luci Sprite Sheet Original Size 32x32_14
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 420
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d4d3d28e0cd2b8100800000000000000
-      internalID: 111232922352958797
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Luci Sprite Sheet Original Size 32x32_15
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 420
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0695650394a6fff90800000000000000
-      internalID: -6917693640041670304
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Luci Sprite Sheet Original Size 32x32_16
       rect:
         serializedVersion: 2
-        x: 0
-        y: 388
+        x: 2
+        y: 396
         width: 32
         height: 32
       alignment: 0
@@ -835,8 +583,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_17
       rect:
         serializedVersion: 2
-        x: 32
-        y: 388
+        x: 36
+        y: 396
         width: 32
         height: 32
       alignment: 0
@@ -856,8 +604,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_18
       rect:
         serializedVersion: 2
-        x: 64
-        y: 388
+        x: 70
+        y: 396
         width: 32
         height: 32
       alignment: 0
@@ -877,8 +625,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_19
       rect:
         serializedVersion: 2
-        x: 96
-        y: 388
+        x: 104
+        y: 396
         width: 32
         height: 32
       alignment: 0
@@ -898,8 +646,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_20
       rect:
         serializedVersion: 2
-        x: 128
-        y: 388
+        x: 138
+        y: 396
         width: 32
         height: 32
       alignment: 0
@@ -919,8 +667,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_21
       rect:
         serializedVersion: 2
-        x: 160
-        y: 388
+        x: 172
+        y: 396
         width: 32
         height: 32
       alignment: 0
@@ -940,8 +688,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_22
       rect:
         serializedVersion: 2
-        x: 192
-        y: 388
+        x: 206
+        y: 396
         width: 32
         height: 32
       alignment: 0
@@ -961,8 +709,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_23
       rect:
         serializedVersion: 2
-        x: 224
-        y: 388
+        x: 240
+        y: 396
         width: 32
         height: 32
       alignment: 0
@@ -982,8 +730,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_24
       rect:
         serializedVersion: 2
-        x: 0
-        y: 356
+        x: 2
+        y: 362
         width: 32
         height: 32
       alignment: 0
@@ -1003,8 +751,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_25
       rect:
         serializedVersion: 2
-        x: 32
-        y: 356
+        x: 36
+        y: 362
         width: 32
         height: 32
       alignment: 0
@@ -1024,8 +772,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_26
       rect:
         serializedVersion: 2
-        x: 64
-        y: 356
+        x: 70
+        y: 362
         width: 32
         height: 32
       alignment: 0
@@ -1045,8 +793,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_27
       rect:
         serializedVersion: 2
-        x: 96
-        y: 356
+        x: 104
+        y: 362
         width: 32
         height: 32
       alignment: 0
@@ -1066,8 +814,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_28
       rect:
         serializedVersion: 2
-        x: 128
-        y: 356
+        x: 138
+        y: 362
         width: 32
         height: 32
       alignment: 0
@@ -1087,8 +835,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_29
       rect:
         serializedVersion: 2
-        x: 160
-        y: 356
+        x: 172
+        y: 362
         width: 32
         height: 32
       alignment: 0
@@ -1108,8 +856,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_30
       rect:
         serializedVersion: 2
-        x: 192
-        y: 356
+        x: 206
+        y: 362
         width: 32
         height: 32
       alignment: 0
@@ -1129,8 +877,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_31
       rect:
         serializedVersion: 2
-        x: 224
-        y: 356
+        x: 240
+        y: 362
         width: 32
         height: 32
       alignment: 0
@@ -1150,8 +898,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_32
       rect:
         serializedVersion: 2
-        x: 0
-        y: 324
+        x: 2
+        y: 328
         width: 32
         height: 32
       alignment: 0
@@ -1171,8 +919,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_33
       rect:
         serializedVersion: 2
-        x: 32
-        y: 324
+        x: 36
+        y: 328
         width: 32
         height: 32
       alignment: 0
@@ -1192,8 +940,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_34
       rect:
         serializedVersion: 2
-        x: 64
-        y: 324
+        x: 70
+        y: 328
         width: 32
         height: 32
       alignment: 0
@@ -1213,8 +961,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_35
       rect:
         serializedVersion: 2
-        x: 96
-        y: 324
+        x: 104
+        y: 328
         width: 32
         height: 32
       alignment: 0
@@ -1234,8 +982,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_36
       rect:
         serializedVersion: 2
-        x: 128
-        y: 324
+        x: 138
+        y: 328
         width: 32
         height: 32
       alignment: 0
@@ -1255,8 +1003,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_37
       rect:
         serializedVersion: 2
-        x: 160
-        y: 324
+        x: 172
+        y: 328
         width: 32
         height: 32
       alignment: 0
@@ -1276,8 +1024,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_38
       rect:
         serializedVersion: 2
-        x: 192
-        y: 324
+        x: 206
+        y: 328
         width: 32
         height: 32
       alignment: 0
@@ -1297,8 +1045,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_39
       rect:
         serializedVersion: 2
-        x: 224
-        y: 324
+        x: 240
+        y: 328
         width: 32
         height: 32
       alignment: 0
@@ -1318,8 +1066,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_40
       rect:
         serializedVersion: 2
-        x: 0
-        y: 292
+        x: 2
+        y: 294
         width: 32
         height: 32
       alignment: 0
@@ -1339,8 +1087,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_41
       rect:
         serializedVersion: 2
-        x: 32
-        y: 292
+        x: 36
+        y: 294
         width: 32
         height: 32
       alignment: 0
@@ -1360,8 +1108,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_42
       rect:
         serializedVersion: 2
-        x: 64
-        y: 292
+        x: 70
+        y: 294
         width: 32
         height: 32
       alignment: 0
@@ -1381,8 +1129,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_43
       rect:
         serializedVersion: 2
-        x: 96
-        y: 292
+        x: 104
+        y: 294
         width: 32
         height: 32
       alignment: 0
@@ -1402,8 +1150,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_44
       rect:
         serializedVersion: 2
-        x: 128
-        y: 292
+        x: 138
+        y: 294
         width: 32
         height: 32
       alignment: 0
@@ -1423,8 +1171,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_45
       rect:
         serializedVersion: 2
-        x: 160
-        y: 292
+        x: 172
+        y: 294
         width: 32
         height: 32
       alignment: 0
@@ -1444,8 +1192,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_46
       rect:
         serializedVersion: 2
-        x: 192
-        y: 292
+        x: 206
+        y: 294
         width: 32
         height: 32
       alignment: 0
@@ -1465,8 +1213,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_47
       rect:
         serializedVersion: 2
-        x: 224
-        y: 292
+        x: 240
+        y: 294
         width: 32
         height: 32
       alignment: 0
@@ -1486,8 +1234,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_48
       rect:
         serializedVersion: 2
-        x: 0
-        y: 260
+        x: 2
+        y: 250
         width: 32
         height: 32
       alignment: 0
@@ -1507,8 +1255,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_49
       rect:
         serializedVersion: 2
-        x: 32
-        y: 260
+        x: 36
+        y: 250
         width: 32
         height: 32
       alignment: 0
@@ -1528,8 +1276,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_50
       rect:
         serializedVersion: 2
-        x: 64
-        y: 260
+        x: 70
+        y: 250
         width: 32
         height: 32
       alignment: 0
@@ -1549,8 +1297,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_51
       rect:
         serializedVersion: 2
-        x: 96
-        y: 260
+        x: 104
+        y: 250
         width: 32
         height: 32
       alignment: 0
@@ -1570,8 +1318,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_52
       rect:
         serializedVersion: 2
-        x: 128
-        y: 260
+        x: 138
+        y: 250
         width: 32
         height: 32
       alignment: 0
@@ -1591,8 +1339,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_53
       rect:
         serializedVersion: 2
-        x: 160
-        y: 260
+        x: 172
+        y: 250
         width: 32
         height: 32
       alignment: 0
@@ -1609,53 +1357,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Luci Sprite Sheet Original Size 32x32_54
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 260
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 87c07628b93323260800000000000000
-      internalID: 7075774707553209464
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Luci Sprite Sheet Original Size 32x32_55
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 260
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4cca8caf75a8ba220800000000000000
-      internalID: 2498242528781315268
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Luci Sprite Sheet Original Size 32x32_56
       rect:
         serializedVersion: 2
-        x: 0
-        y: 228
+        x: 2
+        y: 216
         width: 32
         height: 32
       alignment: 0
@@ -1675,8 +1381,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_57
       rect:
         serializedVersion: 2
-        x: 32
-        y: 228
+        x: 36
+        y: 216
         width: 32
         height: 32
       alignment: 0
@@ -1696,8 +1402,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_58
       rect:
         serializedVersion: 2
-        x: 64
-        y: 228
+        x: 70
+        y: 216
         width: 32
         height: 32
       alignment: 0
@@ -1717,8 +1423,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_59
       rect:
         serializedVersion: 2
-        x: 96
-        y: 228
+        x: 104
+        y: 216
         width: 32
         height: 32
       alignment: 0
@@ -1738,8 +1444,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_60
       rect:
         serializedVersion: 2
-        x: 128
-        y: 228
+        x: 138
+        y: 216
         width: 32
         height: 32
       alignment: 0
@@ -1759,8 +1465,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_61
       rect:
         serializedVersion: 2
-        x: 160
-        y: 228
+        x: 172
+        y: 216
         width: 32
         height: 32
       alignment: 0
@@ -1777,53 +1483,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Luci Sprite Sheet Original Size 32x32_62
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 228
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6dfc6b5e394f41a90800000000000000
-      internalID: -7343976176283103274
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Luci Sprite Sheet Original Size 32x32_63
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 228
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ff13d76ec563eec90800000000000000
-      internalID: -7138708586703801857
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Luci Sprite Sheet Original Size 32x32_64
       rect:
         serializedVersion: 2
-        x: 0
-        y: 196
+        x: 2
+        y: 182
         width: 32
         height: 32
       alignment: 0
@@ -1843,8 +1507,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_65
       rect:
         serializedVersion: 2
-        x: 32
-        y: 196
+        x: 36
+        y: 182
         width: 32
         height: 32
       alignment: 0
@@ -1864,8 +1528,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_66
       rect:
         serializedVersion: 2
-        x: 64
-        y: 196
+        x: 70
+        y: 182
         width: 32
         height: 32
       alignment: 0
@@ -1885,8 +1549,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_67
       rect:
         serializedVersion: 2
-        x: 96
-        y: 196
+        x: 104
+        y: 182
         width: 32
         height: 32
       alignment: 0
@@ -1906,8 +1570,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_68
       rect:
         serializedVersion: 2
-        x: 128
-        y: 196
+        x: 138
+        y: 182
         width: 32
         height: 32
       alignment: 0
@@ -1927,8 +1591,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_69
       rect:
         serializedVersion: 2
-        x: 160
-        y: 196
+        x: 172
+        y: 182
         width: 32
         height: 32
       alignment: 0
@@ -1945,53 +1609,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Luci Sprite Sheet Original Size 32x32_70
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 196
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d7668406060eff050800000000000000
-      internalID: 5836630346632291965
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Luci Sprite Sheet Original Size 32x32_71
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 196
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6813d50a059f406e0800000000000000
-      internalID: -1872097420396121722
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Luci Sprite Sheet Original Size 32x32_72
       rect:
         serializedVersion: 2
-        x: 0
-        y: 164
+        x: 2
+        y: 148
         width: 32
         height: 32
       alignment: 0
@@ -2011,8 +1633,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_73
       rect:
         serializedVersion: 2
-        x: 32
-        y: 164
+        x: 36
+        y: 148
         width: 32
         height: 32
       alignment: 0
@@ -2032,8 +1654,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_74
       rect:
         serializedVersion: 2
-        x: 64
-        y: 164
+        x: 70
+        y: 148
         width: 32
         height: 32
       alignment: 0
@@ -2053,8 +1675,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_75
       rect:
         serializedVersion: 2
-        x: 96
-        y: 164
+        x: 104
+        y: 148
         width: 32
         height: 32
       alignment: 0
@@ -2074,8 +1696,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_76
       rect:
         serializedVersion: 2
-        x: 128
-        y: 164
+        x: 138
+        y: 148
         width: 32
         height: 32
       alignment: 0
@@ -2095,8 +1717,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_77
       rect:
         serializedVersion: 2
-        x: 160
-        y: 164
+        x: 172
+        y: 148
         width: 32
         height: 32
       alignment: 0
@@ -2113,221 +1735,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Luci Sprite Sheet Original Size 32x32_78
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 164
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4ca6c0660981918b0800000000000000
-      internalID: -5181082887846597948
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Luci Sprite Sheet Original Size 32x32_79
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 164
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 22701bec540c61640800000000000000
-      internalID: 5050435438195574562
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Luci Sprite Sheet Original Size 32x32_80
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 132
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ace4d5cb2bee52cc0800000000000000
-      internalID: -3736317864402137398
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Luci Sprite Sheet Original Size 32x32_81
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 132
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e5e73153a4b1dd400800000000000000
-      internalID: 350466351536766558
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Luci Sprite Sheet Original Size 32x32_82
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 132
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 73400349c94bf3940800000000000000
-      internalID: 5278135872895583287
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Luci Sprite Sheet Original Size 32x32_83
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 132
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7a21c43f42fe1b370800000000000000
-      internalID: 8336707327219208871
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Luci Sprite Sheet Original Size 32x32_84
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 132
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8bbf60580e146f740800000000000000
-      internalID: 5185404453524011960
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Luci Sprite Sheet Original Size 32x32_85
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 132
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e286b96e603858220800000000000000
-      internalID: 2487538434854053934
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Luci Sprite Sheet Original Size 32x32_86
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 132
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 64cbec5236dec3250800000000000000
-      internalID: 5925872219804580934
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Luci Sprite Sheet Original Size 32x32_87
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 132
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 16eb0f9e37c1f32f0800000000000000
-      internalID: -991042108826534303
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Luci Sprite Sheet Original Size 32x32_88
       rect:
         serializedVersion: 2
-        x: 0
-        y: 100
+        x: 2
+        y: 104
         width: 32
         height: 32
       alignment: 0
@@ -2347,8 +1759,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_89
       rect:
         serializedVersion: 2
-        x: 32
-        y: 100
+        x: 36
+        y: 104
         width: 32
         height: 32
       alignment: 0
@@ -2368,8 +1780,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_90
       rect:
         serializedVersion: 2
-        x: 64
-        y: 100
+        x: 70
+        y: 104
         width: 32
         height: 32
       alignment: 0
@@ -2389,8 +1801,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_91
       rect:
         serializedVersion: 2
-        x: 96
-        y: 100
+        x: 104
+        y: 104
         width: 32
         height: 32
       alignment: 0
@@ -2410,8 +1822,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_92
       rect:
         serializedVersion: 2
-        x: 128
-        y: 100
+        x: 138
+        y: 104
         width: 32
         height: 32
       alignment: 0
@@ -2431,8 +1843,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_93
       rect:
         serializedVersion: 2
-        x: 160
-        y: 100
+        x: 172
+        y: 104
         width: 32
         height: 32
       alignment: 0
@@ -2452,8 +1864,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_94
       rect:
         serializedVersion: 2
-        x: 192
-        y: 100
+        x: 206
+        y: 104
         width: 32
         height: 32
       alignment: 0
@@ -2473,8 +1885,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_95
       rect:
         serializedVersion: 2
-        x: 224
-        y: 100
+        x: 240
+        y: 104
         width: 32
         height: 32
       alignment: 0
@@ -2494,8 +1906,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_96
       rect:
         serializedVersion: 2
-        x: 0
-        y: 68
+        x: 2
+        y: 70
         width: 32
         height: 32
       alignment: 0
@@ -2515,8 +1927,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_97
       rect:
         serializedVersion: 2
-        x: 32
-        y: 68
+        x: 36
+        y: 70
         width: 32
         height: 32
       alignment: 0
@@ -2536,8 +1948,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_98
       rect:
         serializedVersion: 2
-        x: 64
-        y: 68
+        x: 70
+        y: 70
         width: 32
         height: 32
       alignment: 0
@@ -2557,8 +1969,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_99
       rect:
         serializedVersion: 2
-        x: 96
-        y: 68
+        x: 104
+        y: 70
         width: 32
         height: 32
       alignment: 0
@@ -2578,8 +1990,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_100
       rect:
         serializedVersion: 2
-        x: 128
-        y: 68
+        x: 138
+        y: 70
         width: 32
         height: 32
       alignment: 0
@@ -2599,8 +2011,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_101
       rect:
         serializedVersion: 2
-        x: 160
-        y: 68
+        x: 172
+        y: 70
         width: 32
         height: 32
       alignment: 0
@@ -2620,8 +2032,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_102
       rect:
         serializedVersion: 2
-        x: 192
-        y: 68
+        x: 206
+        y: 70
         width: 32
         height: 32
       alignment: 0
@@ -2641,8 +2053,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_103
       rect:
         serializedVersion: 2
-        x: 224
-        y: 68
+        x: 240
+        y: 70
         width: 32
         height: 32
       alignment: 0
@@ -2662,7 +2074,7 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_104
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 36
         width: 32
         height: 32
@@ -2683,7 +2095,7 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_105
       rect:
         serializedVersion: 2
-        x: 32
+        x: 36
         y: 36
         width: 32
         height: 32
@@ -2704,7 +2116,7 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_106
       rect:
         serializedVersion: 2
-        x: 64
+        x: 70
         y: 36
         width: 32
         height: 32
@@ -2725,7 +2137,7 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_107
       rect:
         serializedVersion: 2
-        x: 96
+        x: 104
         y: 36
         width: 32
         height: 32
@@ -2746,7 +2158,7 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_108
       rect:
         serializedVersion: 2
-        x: 128
+        x: 138
         y: 36
         width: 32
         height: 32
@@ -2767,7 +2179,7 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_109
       rect:
         serializedVersion: 2
-        x: 160
+        x: 172
         y: 36
         width: 32
         height: 32
@@ -2788,7 +2200,7 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_110
       rect:
         serializedVersion: 2
-        x: 192
+        x: 206
         y: 36
         width: 32
         height: 32
@@ -2809,7 +2221,7 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_111
       rect:
         serializedVersion: 2
-        x: 224
+        x: 240
         y: 36
         width: 32
         height: 32
@@ -2830,8 +2242,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_112
       rect:
         serializedVersion: 2
-        x: 0
-        y: 4
+        x: 2
+        y: 2
         width: 32
         height: 32
       alignment: 0
@@ -2851,8 +2263,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_113
       rect:
         serializedVersion: 2
-        x: 32
-        y: 4
+        x: 36
+        y: 2
         width: 32
         height: 32
       alignment: 0
@@ -2872,8 +2284,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_114
       rect:
         serializedVersion: 2
-        x: 64
-        y: 4
+        x: 70
+        y: 2
         width: 32
         height: 32
       alignment: 0
@@ -2893,8 +2305,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_115
       rect:
         serializedVersion: 2
-        x: 96
-        y: 4
+        x: 104
+        y: 2
         width: 32
         height: 32
       alignment: 0
@@ -2914,8 +2326,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_116
       rect:
         serializedVersion: 2
-        x: 128
-        y: 4
+        x: 138
+        y: 2
         width: 32
         height: 32
       alignment: 0
@@ -2935,8 +2347,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_117
       rect:
         serializedVersion: 2
-        x: 160
-        y: 4
+        x: 172
+        y: 2
         width: 32
         height: 32
       alignment: 0
@@ -2956,8 +2368,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_118
       rect:
         serializedVersion: 2
-        x: 192
-        y: 4
+        x: 206
+        y: 2
         width: 32
         height: 32
       alignment: 0
@@ -2977,8 +2389,8 @@ TextureImporter:
       name: Luci Sprite Sheet Original Size 32x32_119
       rect:
         serializedVersion: 2
-        x: 224
-        y: 4
+        x: 240
+        y: 2
         width: 32
         height: 32
       alignment: 0

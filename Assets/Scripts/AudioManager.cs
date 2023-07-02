@@ -4,7 +4,7 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance;
 
-    public AudioSource levelMusic, gameOverMusic, winMusic, choiceMusic, secretEndingMusic;
+    public AudioSource levelMusic, gameOverMusic, winMusic, bossFightMusic;
 
     public AudioSource[] sfx;
 
@@ -36,15 +36,10 @@ public class AudioManager : MonoBehaviour
         sfx[sfxToPlay].Stop();
     }
 
-    public void PlayChoiceMusic()
+    public void PlayBossFightMusic()
     {
         levelMusic.Stop();
-        choiceMusic.Play();
+        bossFightMusic.Play();
     }
-
-    public void PlaySecretEndingMusic()
-    {
-        choiceMusic.Stop();
-        secretEndingMusic.Play();
-    }
+    
 }

@@ -23,7 +23,6 @@ public class EyeDemonAnimations : MonoBehaviour
         bool isMovingUp = currentPos.y > lastPos.y;
         anim.SetBool(MovingUp, isMovingUp);
         movingUp = isMovingUp;
-        Debug.Log(isMovingUp ? "going up" : "going down");
         lastPos = currentPos;
         // Wait for a short period before updating the animation again
         yield return new WaitForSeconds(0.1f); // Adjust the delay time to a suitable amount

@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
@@ -13,6 +14,7 @@ public class PlayerHealthController : MonoBehaviour
 
     public int currentHealth;
     public int maxHealth;
+    private bool _isInvincible;
 
     [FormerlySerializedAs("damageInvincLength")] public float damageInvincibleLength = 1f;
     private float _invincibleCount;
@@ -114,10 +116,27 @@ public class PlayerHealthController : MonoBehaviour
 
     public void MakeInvincible(float length)
     {
-        _invincibleCount = length;
+        if (!_isInvincible) // Check if the player is already invincible
+        {
+            _isInvincible = true; // Set the invincibility status to true
+            _invincibleCount = length;
+            var color = PlayerController.Instance.bodySr.color;
+            color = new Color(color.r, color.g, color.b, 0.5f);
+            PlayerController.Instance.bodySr.color = color;
+        
+            // Start a coroutine to remove the invincibility after the specified length
+            StartCoroutine(DisableInvincibility(length));
+        }
+    }
+
+    private IEnumerator DisableInvincibility(float length)
+    {
+        yield return new WaitForSeconds(length);
         var color = PlayerController.Instance.bodySr.color;
-        color = new Color(color.r, color.g, color.b, 0.5f);
+        color = new Color(color.r, color.g, color.b, 1f);
         PlayerController.Instance.bodySr.color = color;
+    
+        _isInvincible = false; // Set the invincibility status back to false
     }
 
     public void HealPlayer(int healAmount)

@@ -28,15 +28,6 @@ public class LevelExit : MonoBehaviour
             {
                 StartCoroutine(LevelManager.Instance.LevelEnd());
             }
-            else if(UIController.Instance.secretEnding < 2)
-            {
-                StartCoroutine(LevelManager.Instance.LevelEnd());
-            }
-            else
-            {
-                secretEndingScreen.SetActive(true);
-                AudioManager.Instance.PlaySecretEndingMusic();
-            }
         }
     }
 }

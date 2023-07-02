@@ -172,12 +172,12 @@ TextureImporter:
       name: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 160
-        width: 64
-        height: 64
+        x: 5
+        y: 161
+        width: 62
+        height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -193,12 +193,12 @@ TextureImporter:
       name: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_1
       rect:
         serializedVersion: 2
-        x: 72
-        y: 160
-        width: 64
-        height: 64
+        x: 73
+        y: 161
+        width: 62
+        height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -214,12 +214,12 @@ TextureImporter:
       name: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_4
       rect:
         serializedVersion: 2
-        x: 208
-        y: 72
-        width: 64
-        height: 64
+        x: 209
+        y: 73
+        width: 62
+        height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -235,12 +235,12 @@ TextureImporter:
       name: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_5
       rect:
         serializedVersion: 2
-        x: 276
-        y: 72
-        width: 64
-        height: 64
+        x: 277
+        y: 73
+        width: 62
+        height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -256,12 +256,12 @@ TextureImporter:
       name: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_7
       rect:
         serializedVersion: 2
-        x: 480
-        y: 72
-        width: 64
-        height: 64
+        x: 481
+        y: 73
+        width: 62
+        height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -277,12 +277,12 @@ TextureImporter:
       name: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_8
       rect:
         serializedVersion: 2
-        x: 4
-        y: 72
-        width: 64
-        height: 64
+        x: 5
+        y: 73
+        width: 62
+        height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -298,12 +298,12 @@ TextureImporter:
       name: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_9
       rect:
         serializedVersion: 2
-        x: 72
-        y: 72
-        width: 64
-        height: 64
+        x: 73
+        y: 73
+        width: 62
+        height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -319,12 +319,12 @@ TextureImporter:
       name: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_10
       rect:
         serializedVersion: 2
-        x: 140
-        y: 72
-        width: 64
-        height: 64
+        x: 141
+        y: 73
+        width: 62
+        height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -340,12 +340,12 @@ TextureImporter:
       name: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_13
       rect:
         serializedVersion: 2
-        x: 344
-        y: 72
-        width: 64
-        height: 64
+        x: 345
+        y: 73
+        width: 62
+        height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -361,12 +361,12 @@ TextureImporter:
       name: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_14
       rect:
         serializedVersion: 2
-        x: 412
-        y: 72
-        width: 64
-        height: 64
+        x: 413
+        y: 73
+        width: 62
+        height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -382,12 +382,12 @@ TextureImporter:
       name: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_16
       rect:
         serializedVersion: 2
-        x: 4
-        y: 4
-        width: 64
-        height: 64
+        x: 5
+        y: 5
+        width: 62
+        height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -403,12 +403,12 @@ TextureImporter:
       name: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_17
       rect:
         serializedVersion: 2
-        x: 72
-        y: 4
-        width: 64
-        height: 64
+        x: 73
+        y: 5
+        width: 62
+        height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -424,12 +424,12 @@ TextureImporter:
       name: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_18
       rect:
         serializedVersion: 2
-        x: 140
-        y: 4
-        width: 64
-        height: 64
+        x: 141
+        y: 5
+        width: 62
+        height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -445,12 +445,12 @@ TextureImporter:
       name: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_19
       rect:
         serializedVersion: 2
-        x: 208
-        y: 4
-        width: 64
-        height: 64
+        x: 209
+        y: 5
+        width: 62
+        height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -466,12 +466,12 @@ TextureImporter:
       name: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_20
       rect:
         serializedVersion: 2
-        x: 276
-        y: 4
-        width: 64
-        height: 64
+        x: 277
+        y: 5
+        width: 62
+        height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -487,12 +487,12 @@ TextureImporter:
       name: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_21
       rect:
         serializedVersion: 2
-        x: 344
-        y: 4
-        width: 64
-        height: 64
+        x: 345
+        y: 5
+        width: 62
+        height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -508,12 +508,12 @@ TextureImporter:
       name: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_22
       rect:
         serializedVersion: 2
-        x: 412
-        y: 4
-        width: 64
-        height: 64
+        x: 413
+        y: 5
+        width: 62
+        height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -529,12 +529,12 @@ TextureImporter:
       name: Red Eye Monster Spritesheet by Lucas Luel 2x Scale_23
       rect:
         serializedVersion: 2
-        x: 480
-        y: 4
-        width: 64
-        height: 64
+        x: 481
+        y: 5
+        width: 62
+        height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
