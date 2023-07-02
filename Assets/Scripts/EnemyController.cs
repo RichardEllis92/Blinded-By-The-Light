@@ -55,6 +55,7 @@ public class EnemyController : MonoBehaviour
     public GameObject[] itemsToDrop;
     public float itemDropPercent;
     private static readonly int IsMoving = Animator.StringToHash("isMoving");
+    private bool _itemDropped;
 
     [Header("Separation")]
     public float separationDistanceThreshold = 2.0f;
@@ -236,7 +237,7 @@ public class EnemyController : MonoBehaviour
                                                       (PlayerController.Instance.transform.position - transform.position).magnitude *
                                                       (Vector3)PlayerController.Instance.theRb.velocity.normalized;
                     // Aim at the predicted position and shoot
-                    if (enemyDescription == "EyeDemon" && anim.GetCurrentAnimatorStateInfo(0).IsName("Eye_Demon_Moving_Up"))
+                    if (enemyDescription == "EyeDemon" && (anim.GetCurrentAnimatorStateInfo(0).IsName("Eye_Demon_Moving_Up") || anim.GetCurrentAnimatorStateInfo(0).IsName("Eye_Demon_Moving_Up_Purple") || anim.GetCurrentAnimatorStateInfo(0).IsName("Eye_Demon_Moving_Up_Red")))
                     {
                         Vector2 shootDirection = predictedPlayerPosition - (Vector2)firePoint2.position;
                         float angle = Mathf.Atan2(shootDirection.y, shootDirection.x) * Mathf.Rad2Deg;
@@ -292,13 +293,19 @@ public class EnemyController : MonoBehaviour
 
         //drop items
 
-        if (!shouldDropItem) return;
-        var dropChance = Random.Range(0f, 100f);
+        if (shouldDropItem && !_itemDropped)
+        {
+            _itemDropped = true;
+            
+            float dropChance = Random.Range(0f, 100f);
 
-        if (!(dropChance <= itemDropPercent)) return;
-        var randomItem = Random.Range(0, itemsToDrop.Length);
-        
-        Instantiate(itemsToDrop[randomItem], enemyControllerTransform.position, enemyControllerTransform.rotation);
+            if (dropChance <= itemDropPercent)
+            {
+                int randomItem = Random.Range(0, itemsToDrop.Length);
+
+                Instantiate(itemsToDrop[randomItem], enemyControllerTransform.position, enemyControllerTransform.rotation);
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)

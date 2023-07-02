@@ -129,6 +129,8 @@ public class BossController : MonoBehaviour
     }
     private IEnumerator EndGame()
     {
+        AudioManager.Instance.bossFightMusic.Stop();
+        AudioManager.Instance.levelMusic.Play();
         bossIsDead = true;
         UIController.Instance.bossHealthBar.gameObject.SetActive(false);
         bossAnimator.Play(PlayerIdle);

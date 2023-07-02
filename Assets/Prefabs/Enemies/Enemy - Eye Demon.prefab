@@ -158,7 +158,7 @@ MonoBehaviour:
   shootRange: 10
   theBody: {fileID: 8232783800818172837}
   anim: {fileID: 8232783800818172836}
-  health: 150
+  health: 100
   deathSplatters:
   - {fileID: 6988496550906261695, guid: 51566ee29141f7f49bbfdff4da169c5f, type: 3}
   - {fileID: 9109966745166621894, guid: 077d3352467b88e49b3a61cf4088356e, type: 3}

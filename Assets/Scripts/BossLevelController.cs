@@ -33,6 +33,7 @@ public class BossLevelController : MonoBehaviour
     public GameObject bossHealth;
     public GameObject playerHealth;
     public GameObject currentSpell;
+    public GameObject level;
 
     public Transform bossStart;
     public Transform playerStart;
@@ -101,15 +102,18 @@ public class BossLevelController : MonoBehaviour
             //PlayerController.Instance.transform.position = startPoint.position;
             PlayerController.Instance.canMove = true;
             CameraController.Instance.ChangeTargetToPlayer();
+            AudioManager.Instance.PlayBossFightMusic();
             bossHealth.SetActive(true);
             playerHealth.SetActive(true);
             currentSpell.SetActive(true);
+            level.SetActive(true);
             UIController.Instance.bossHealthBar.maxValue = BossController.Instance.currentHealth;
             UIController.Instance.bossHealthBar.value = BossController.Instance.currentHealth;
             bossStarted = true;
         }
         else
         {
+            AudioManager.Instance.PlayBossFightMusic();
             playerAnimator.SetTrigger(DollIdleBack);
             PlayerController.Instance.canMove = true;
             bossHealth.SetActive(true);
