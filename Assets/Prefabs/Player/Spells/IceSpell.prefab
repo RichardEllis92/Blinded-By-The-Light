@@ -101,11 +101,11 @@ MonoBehaviour:
   speed: 7.5
   theRb: {fileID: 4885907329009752585}
   impactEffect: {fileID: 1746649774678931759, guid: 5e18923242b6df84ab7624e20f4bdba0, type: 3}
-  damageToGive: 1
+  damageToGive: 0
   isFireSpell: 0
   isWindSpell: 0
   isIceSpell: 1
-  timeBetweenSpells: 2
+  timeBetweenSpells: 1
 --- !u!61 &4885907329009752581
 BoxCollider2D:
   m_ObjectHideFlags: 0

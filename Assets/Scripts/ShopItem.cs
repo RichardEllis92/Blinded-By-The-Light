@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Random = Unity.Mathematics.Random;
+ using Rewired;
 
 public class ShopItem : MonoBehaviour
 {
@@ -20,10 +21,22 @@ public class ShopItem : MonoBehaviour
     public delegate void MyFunctionDelegate();
 
     public List<MyFunctionDelegate> functions;
+    
+    public int playerId = 0;
+    private Player player;
+    [System.NonSerialized] // Don't serialize this so the value is lost on an editor script recompile.
+    private bool initialized;
 
     private void Awake()
     {
         Instance = this;
+    }
+    
+    private void Initialize() {
+        // Get the Rewired Player object for this player.
+        player = ReInput.players.GetPlayer(playerId);
+            
+        initialized = true;
     }
 
     private void Start()
@@ -40,9 +53,12 @@ public class ShopItem : MonoBehaviour
 
     void Update()
     {
+        if(!ReInput.isReady) return; // Exit if Rewired isn't ready. This would only happen during a script recompile in the editor.
+        if(!initialized) Initialize(); // Reinitialize after a recompile in the editor
+
         if (_inBuyZone)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (player.GetButtonDown("Action"))
             {
                 if (CharacterTracker.Instance.currentHellBucks >= itemCost)
                 {

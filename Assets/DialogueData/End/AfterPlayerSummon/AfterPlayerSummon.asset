@@ -19,6 +19,7 @@ MonoBehaviour:
 '
   - However... if I win, I will take your body and escape this awful place.
   - I've even thrown in some extra health for you.
+  - But... you don't need wind and ice, let's fight fire with fire!
   - Deal?
   responses:
   - responseText: Yes

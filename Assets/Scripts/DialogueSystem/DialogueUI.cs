@@ -2,6 +2,8 @@ using System.Collections;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using Rewired;
+using UnityEngine.UI;
 
 public class DialogueUI : MonoBehaviour
 {
@@ -16,19 +18,41 @@ public class DialogueUI : MonoBehaviour
     public bool talkedToFinalGuide;
 
     public string playerName;
+    public string actionText;
+    public string consoleText;
 
 
     private ResponseHandler _responseHandler;
     private TypeWriterEffect _typeWriterEffect;
+    
+    public int playerId = 0;
+    private Player player;
+    bool skipDisabledMaps = true;
+    [System.NonSerialized] // Don't serialize this so the value is lost on an editor script recompile.
+    private bool initialized;
 
+    private void Initialize() {
+        // Get the Rewired Player object for this player.
+        player = ReInput.players.GetPlayer(playerId);
+            
+        initialized = true;
+    }
     private void Start()
     {
         Instance = this;
-
+        // Get the Rewired Player for the desired player ID
+        player = ReInput.players.GetPlayer(0); // Replace 0 with the appropriate player ID
+        
         playerName = GetUserName();
+        actionText = player.controllers.maps.GetFirstElementMapWithAction("Action", skipDisabledMaps).elementIdentifierName;
+        consoleText = player.controllers.maps.GetFirstElementMapWithAction("Console", skipDisabledMaps).elementIdentifierName;
         _typeWriterEffect = GetComponent<TypeWriterEffect>();
         _responseHandler = GetComponent<ResponseHandler>();
-
+        dialogueBox.SetActive(true);
+        var continueTextString = continueText.GetComponent<Text>().text;
+        continueTextString = continueTextString.Replace("{action}", actionText);
+        continueText.GetComponent<Text>().text = continueTextString;
+        dialogueBox.SetActive(false);
     }
     private string GetUserName()
     {
@@ -45,6 +69,9 @@ public class DialogueUI : MonoBehaviour
     }
     private void Update()
     {
+        if(!ReInput.isReady) return; // Exit if Rewired isn't ready. This would only happen during a script recompile in the editor.
+        if(!initialized) Initialize(); // Reinitialize after a recompile in the editor
+
         var currentScene = SceneManager.GetActiveScene();
         var sceneName = currentScene.name;
 
@@ -66,28 +93,26 @@ public class DialogueUI : MonoBehaviour
     {
         _responseHandler.AddResponseEvents(responseEvents);
     }
-        private IEnumerator StepThroughDialogue(DialogueObject dialogueObject)
+    private IEnumerator StepThroughDialogue(DialogueObject dialogueObject)
     {
         if (!startingDialogue)
         {
             yield return new WaitForSeconds(2f);
         }
-        
+
         for (var i = 0; i < dialogueObject.Dialogue.Length; i++)
         {
             continueText.SetActive(false);
             var dialogue = dialogueObject.Dialogue[i];
-            dialogue = dialogue.Replace("{playerName}", playerName);
+
+            dialogue = dialogue.Replace("{playerName}", playerName).Replace("{console}", consoleText);
             yield return RunTypingEffect(dialogue);
 
-            
-            textLabel.text = dialogue;
-            
             if (i == dialogueObject.Dialogue.Length - 1 && dialogueObject.HasResponses) break;
 
             yield return new WaitForSeconds(0.3f);
             continueText.SetActive(true);
-            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.E));
+            yield return new WaitUntil(() => player.GetButtonDown("Action"));
         }
 
         if (dialogueObject.HasResponses)
@@ -100,7 +125,7 @@ public class DialogueUI : MonoBehaviour
             {
                 startingDialogue = true;
             }
-            
+
             CloseDialogueBox();
         }
     }
@@ -114,10 +139,11 @@ public class DialogueUI : MonoBehaviour
         {
             yield return null;
 
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (player.GetButtonDown("Roll"))
             {
                 AudioManager.Instance.StopSfx(14);
                 _typeWriterEffect.Stop();
+                textLabel.text = dialogue;
             }
         }
     }

@@ -12,14 +12,17 @@ public class Spells : MonoBehaviour
     public bool isWindSpell = false;
     public bool isIceSpell = false;
     public float timeBetweenSpells = 1f;
-    
+
+    private bool _isPaused;
+    private Vector2 _storedVelocity;
+
     public static Spells Instance;
     void Awake()
     {
         Instance = this;
         theRb = gameObject.GetComponent<Rigidbody2D>();
     }
-    
+
     void Start()
     {
         if (isFireSpell)
@@ -45,13 +48,25 @@ public class Spells : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
+        if (LevelManager.Instance.isPaused)
+        {
+            _storedVelocity = theRb.velocity;
+            theRb.velocity = Vector2.zero;
+            return;
+        }   
+    
+        else if (!LevelManager.Instance.isPaused)
+        {
+            theRb.velocity = _storedVelocity;
+            _storedVelocity = Vector2.zero;
+        }
+
         if (isIceSpell)
         {
             if (Magic.Instance.spellMovingUp)
-            { 
+            {
                 theRb.velocity = transform.up * (speed * -1f);
             }
             else if (Magic.Instance.spellMovingDown)
@@ -63,7 +78,10 @@ public class Spells : MonoBehaviour
                 theRb.velocity = transform.right * speed;
             }
         }
-        theRb.velocity = transform.right * speed;
+        else
+        {
+            theRb.velocity = transform.right * speed;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -94,27 +112,25 @@ public class Spells : MonoBehaviour
     {
         Destroy(gameObject);
     }
-
-
 }
 
 public class FireSpell : Spells
 {
     public float fireSpeed = 12f;
-    public int fireDamage = 50;
+    public int fireDamage = 40;
     public float fireTimeBetweenSpells = 1f;
 }
 
 public class WindSpell : Spells
 {
     public float windSpeed = 15f;
-    public int windDamage = 5;
+    public int windDamage = 10;
     public float windTimeBetweenSpells = 0.2f;
 }
 
 public class IceSpell : Spells
 {
     public float iceSpeed = 5f;
-    public int iceDamage = 20;
-    public float iceTimeBetweenSpells = 2f;
+    public int iceDamage = 0;
+    public float iceTimeBetweenSpells = 1f;
 }

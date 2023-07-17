@@ -44,5 +44,23 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BossFail.unity
     guid: 75843fe13dd5aac4dabf4b8b545d1822
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Luci Room 1.unity
+    guid: d935fde30d200684484669471a1ba276
+  - enabled: 1
+    path: Assets/Scenes/Title Menu 2.unity
+    guid: cc051ffd7d8100f479441e39bb67fb10
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 88c89dd30a2b4274cbfa154f92d3e06e, type: 2}

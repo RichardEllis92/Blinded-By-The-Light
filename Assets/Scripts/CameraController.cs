@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Rewired;
 
 public class CameraController : MonoBehaviour
 {
@@ -15,10 +16,22 @@ public class CameraController : MonoBehaviour
 
     public bool isBossRoom;
     private bool _isTargetNotNull;
+    
+    public int playerId = 0;
+    private Player player;
+    [System.NonSerialized] // Don't serialize this so the value is lost on an editor script recompile.
+    private bool initialized;
 
     private void Awake()
     {
         Instance = this;
+    }
+    
+    private void Initialize() {
+        // Get the Rewired Player object for this player.
+        player = ReInput.players.GetPlayer(playerId);
+            
+        initialized = true;
     }
     // Start is called before the first frame update
     void Start()
@@ -43,17 +56,20 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(!ReInput.isReady) return; // Exit if Rewired isn't ready. This would only happen during a script recompile in the editor.
+        if(!initialized) Initialize(); // Reinitialize after a recompile in the editor
+        
         if(target != null)
         {
             transform.position = Vector3.MoveTowards(transform.position, new Vector3(target.position.x, target.position.y, transform.position.z), moveSpeed * Time.deltaTime);
         }
 
-        if (!Input.GetKeyDown(KeyCode.M) || isBossRoom) return;
-        if (!bigMapActive)
+        if (isBossRoom) return;
+        if (player.GetButtonDown("Toggle Map") && !bigMapActive)
         {
             ActivateBigMap();
         }
-        else
+        else if (player.GetButtonDown("Toggle Map") && bigMapActive)
         {
             DeactivateBigMap();
         }
@@ -66,7 +82,10 @@ public class CameraController : MonoBehaviour
 
     private void ActivateBigMap()
     {
-        if (!LevelManager.Instance.isPaused && !DialogueUI.Instance.IsOpen && !CheatSystemController.Instance.showConsole)
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
+        
+        if (!LevelManager.Instance.isPaused && !DialogueUI.Instance.IsOpen && !CheatSystemController.Instance.showConsole && sceneName != "Luci Room" && sceneName != "Luci Room Complete" && sceneName != "Luci Room Doll")
         {
             bigMapActive = true;
 
@@ -89,23 +108,29 @@ public class CameraController : MonoBehaviour
 
     private void DeactivateBigMap()
     {
-        if (LevelManager.Instance.isPaused || DialogueUI.Instance.IsOpen) return;
-        bigMapActive = false;
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
 
-        bigMapCamera.enabled = false;
-        mainCamera.enabled = true;
+        if (!LevelManager.Instance.isPaused && !DialogueUI.Instance.IsOpen &&
+            !CheatSystemController.Instance.showConsole && sceneName != "Luci Room" &&
+            sceneName != "Luci Room Complete" && sceneName != "Luci Room Doll")
+        {
+            bigMapActive = false;
 
-        PlayerController.Instance.canMove = true;
+            bigMapCamera.enabled = false;
+            mainCamera.enabled = true;
 
-        Time.timeScale = 1f;
+            PlayerController.Instance.canMove = true;
 
-        UIController.Instance.mapDisplay.SetActive(true);
-        UIController.Instance.activeSpells.SetActive(true);
-        UIController.Instance.health.SetActive(true);
-        UIController.Instance.hellBucks.SetActive(true);
-        UIController.Instance.experience.SetActive(true);
-        UIController.Instance.bigMapText.SetActive(false);
+            Time.timeScale = 1f;
 
+            UIController.Instance.mapDisplay.SetActive(true);
+            UIController.Instance.activeSpells.SetActive(true);
+            UIController.Instance.health.SetActive(true);
+            UIController.Instance.hellBucks.SetActive(true);
+            UIController.Instance.experience.SetActive(true);
+            UIController.Instance.bigMapText.SetActive(false);
+        }
     }
 
     public void ChangeTargetToPlayer()

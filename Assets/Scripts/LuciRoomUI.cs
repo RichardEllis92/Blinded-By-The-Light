@@ -10,34 +10,19 @@ public class LuciRoomUI : MonoBehaviour
     public float fadeSpeed;
     private bool _fadeToBlack, _fadeOutBlack;
     public GameObject pauseMenu;
-    public string  mainMenuScene;
-    // Start is called before the first frame update
+    public string mainMenuScene;
+
     private void Awake()
     {
         Instance = this;
     }
 
-    // called first
-    void OnEnable()
+    private void Start()
     {
-        SceneManager.sceneLoaded += OnSceneLoaded;
+        FadeOutFromBlack();
     }
 
-    // called second
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        _fadeOutBlack = true;
-        _fadeToBlack = false;
-    }
-
-    void Start()
-    {
-        _fadeOutBlack = true;
-        _fadeToBlack = false;
-    }
-
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (_fadeOutBlack)
         {
@@ -58,10 +43,16 @@ public class LuciRoomUI : MonoBehaviour
         }
     }
 
-    public void StartFadeToBlack()
+    public void FadeToBlack()
     {
         _fadeToBlack = true;
         _fadeOutBlack = false;
+    }
+
+    public void FadeOutFromBlack()
+    {
+        _fadeOutBlack = true;
+        _fadeToBlack = false;
     }
 
     public void Resume()
@@ -69,11 +60,39 @@ public class LuciRoomUI : MonoBehaviour
         LevelManager.Instance.PauseUnpause();
     }
 
-    // called when the game is terminated
-    void OnDisable()
+    public void SwitchPauseToControls()
     {
-        SceneManager.sceneLoaded -= OnSceneLoaded;
+        pauseMenu.SetActive(false);
+        ControlsManager.Instance.controlsMenu.SetActive(true);
+        LevelManager.Instance.controlsMenuOpen = true;
     }
 
-}
+    public void SwitchControlsToPause()
+    {
+        pauseMenu.SetActive(true);
+        ControlsManager.Instance.controlsMenu.SetActive(false);
+        LevelManager.Instance.controlsMenuOpen = false;
+    }
 
+    public void ReturnToMainMenu()
+    {
+        FadeToBlack();
+        LevelManager.Instance.isPaused = false;
+        Invoke("LoadMainMenuScene", fadeSpeed);
+    }
+
+    private void LoadMainMenuScene()
+    {
+        SceneManager.LoadScene(mainMenuScene);
+    }
+
+    public void DestroyAllGameObjects()
+    {
+        GameObject[] gameObjects = GameObject.FindGameObjectsWithTag("DontDestroy");
+
+        foreach (var t in gameObjects)
+        {
+            Destroy(t);
+        }
+    }
+}
