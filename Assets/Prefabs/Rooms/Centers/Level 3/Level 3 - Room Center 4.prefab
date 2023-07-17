@@ -1906,6 +1906,7 @@ MonoBehaviour:
   enemies:
   - {fileID: 2655374535389414781}
   - {fileID: 207609068268173305}
+  - {fileID: 3195695648896004979}
   theRoom: {fileID: 0}
 --- !u!1001 &418608010910051309
 PrefabInstance:
@@ -1967,6 +1968,11 @@ PrefabInstance:
 --- !u!4 &3195695648896004973 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2996676637230635136, guid: 0f81b98a5b2dfe142a6f6955d1886e94, type: 3}
+  m_PrefabInstance: {fileID: 418608010910051309}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3195695648896004979 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2996676637230635166, guid: 0f81b98a5b2dfe142a6f6955d1886e94, type: 3}
   m_PrefabInstance: {fileID: 418608010910051309}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &959157407057518051

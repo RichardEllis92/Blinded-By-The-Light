@@ -127,6 +127,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 756b1886c226fa7498db423b76db4d4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _startingRoomDialogue: 0
+  _dialogueTriggered: 0
   gameObjectRequired: 0
   gameObject: {fileID: 0}
   dialogueObject: {fileID: 11400000, guid: 6a60d69e9892c784c843fe62cb11eea5, type: 2}
@@ -1931,6 +1933,10 @@ PrefabInstance:
     - target: {fileID: 5227375767016839035, guid: d4d0a263db9721741a0415cb84afccf8, type: 3}
       propertyPath: m_Name
       value: Level Exit
+      objectReference: {fileID: 0}
+    - target: {fileID: 6630372532223344083, guid: d4d0a263db9721741a0415cb84afccf8, type: 3}
+      propertyPath: waitToLoad
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6630372532223344083, guid: d4d0a263db9721741a0415cb84afccf8, type: 3}
       propertyPath: levelToLoad

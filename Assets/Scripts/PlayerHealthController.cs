@@ -97,15 +97,14 @@ public class PlayerHealthController : MonoBehaviour
                 if (sceneName == "Boss" || sceneName == "BossFail")
                 {
                     SceneManager.LoadScene("Luci Room Doll");
+                    BossLevelController.Instance.bossHealth.SetActive(false);
                 }
                 else
                 {
                     SceneManager.LoadScene("Luci Room");
                 }
-                
-                BossLevelController.Instance.bossHealth.SetActive(false);
+
                 LevelManager.Instance.isPaused = true;
-                AudioManager.Instance.PlayGameOver();
                 AudioManager.Instance.PlaySfx(7);
             }
 

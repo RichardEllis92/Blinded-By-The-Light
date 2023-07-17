@@ -19,9 +19,10 @@ MonoBehaviour:
   - 'Yes! Ice Spell!
 
     Type in ice_spell into the console to unlock it.'
-  - 'Apparently it has a chance to freeze enemies for a short time.
+  - 'It will freeze enemies for a short time... but only one at a time.
 
-    Sounds pretty
-    cool...'
+    Although
+    you can''t hurt them when they are frozen.'
+  - Maybe you can use it to even the odds...
   responses: []
   name: 

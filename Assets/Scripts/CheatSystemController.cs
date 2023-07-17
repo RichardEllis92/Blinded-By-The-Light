@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Rewired;
 
 public class CheatSystemController : MonoBehaviour
 {
@@ -37,6 +38,11 @@ public class CheatSystemController : MonoBehaviour
     [SerializeField] private DialogueObject healPlayerText;
     [SerializeField] private DialogueObject increaseMaxHealthText;
     [SerializeField] private DialogueObject invincibilityText;
+    
+    public int playerId = 0;
+    private Player player;
+    [System.NonSerialized] // Don't serialize this so the value is lost on an editor script recompile.
+    private bool initialized;
 
     private void Awake()
     {
@@ -82,9 +88,19 @@ public class CheatSystemController : MonoBehaviour
             Help,
         };
     }
+    
+    private void Initialize() {
+        // Get the Rewired Player object for this player.
+        player = ReInput.players.GetPlayer(playerId);
+            
+        initialized = true;
+    }
 
     private void Update()
     {
+        if(!ReInput.isReady) return; // Exit if Rewired isn't ready. This would only happen during a script recompile in the editor.
+        if(!initialized) Initialize(); // Reinitialize after a recompile in the editor
+        
         DisplayCheatBox();
         SubmitCheat();
     }
@@ -161,7 +177,7 @@ public class CheatSystemController : MonoBehaviour
 
     private void DisplayCheatBox()
     {
-        if (Input.GetKeyDown("`") && !LevelManager.Instance.isPaused && !CameraController.Instance.bigMapActive)
+        if (player.GetButtonDown("Console") && !LevelManager.Instance.isPaused && !CameraController.Instance.bigMapActive)
         {
             showConsole = !showConsole;
             _input = "";
@@ -172,7 +188,7 @@ public class CheatSystemController : MonoBehaviour
     {
         if (showConsole)
         {
-            if (Input.GetKeyDown(KeyCode.Return))
+            if (player.GetButtonDown("Enter"))
             {
                 HandleInput();
                 _input = "";

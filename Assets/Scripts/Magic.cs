@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Rewired;
 
 public class Magic : MonoBehaviour
 {
@@ -10,9 +11,9 @@ public class Magic : MonoBehaviour
         Ice,
         Wind
     }
-    
+
     public static Magic Instance;
-    
+
     public SpellType currentSpell = SpellType.Fire;
 
     public GameObject fireUnlocked;
@@ -25,18 +26,17 @@ public class Magic : MonoBehaviour
     public GameObject windSpellUp;
     public GameObject windSpellDown;
     public GameObject impactEffect;
-    [SerializeField]
-    private Transform firePointUp, firePointDown, firePointLeft, firePointRight;
-    
+    [SerializeField] private Transform firePointUp, firePointDown, firePointLeft, firePointRight;
+
     public float _shotCounter;
     public float timeBetweenSpells;
     public float fireTime = 0.8f;
     public float windTime = 0.2f;
-    public float iceTime = 2f;
+    public float iceTime = 0f;
 
     public bool spellMovingUp;
     public bool spellMovingDown;
-    
+
     [SerializeField] private DialogueUI dialogueUI;
     private static readonly int IsMovingUp = Animator.StringToHash("isMovingUp");
     private static readonly int IsMovingDown = Animator.StringToHash("isMovingDown");
@@ -45,10 +45,23 @@ public class Magic : MonoBehaviour
     public DialogueUI DialogueUI => dialogueUI;
 
     public bool multipleArrows;
+    public string currentSpellCheck;
+    
+    [System.NonSerialized] // Don't serialize this so the value is lost on an editor script recompile.
+    private bool initialized;
+    public int playerId = 0;
+    private Player player;
 
     private void Awake()
     {
         Instance = this;
+    }
+    
+    private void Initialize() {
+        // Get the Rewired Player object for this player.
+        player = ReInput.players.GetPlayer(playerId);
+            
+        initialized = true;
     }
 
     private void Start()
@@ -78,19 +91,29 @@ public class Magic : MonoBehaviour
 
     void Update()
     {
+        if(!ReInput.isReady) return; // Exit if Rewired isn't ready. This would only happen during a script recompile in the editor.
+        if(!initialized) Initialize(); // Reinitialize after a recompile in the editor
+
+        ActiveSpell();
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
         MultipleArrowKeys();
-        if (multipleArrows) { return;}
-        
-        if (PlayerController.Instance.canMove && !PlayerController.Instance.animationOverride && !LevelManager.Instance.isPaused && !dialogueUI.IsOpen && (sceneName != "Luci Room" && sceneName != "Luci Room Complete" && sceneName != "Luci Room Doll"))
+        if (multipleArrows)
+        {
+            return;
+        }
+
+        if (PlayerController.Instance.canMove && !PlayerController.Instance.animationOverride &&
+            !LevelManager.Instance.isPaused && !dialogueUI.IsOpen && (sceneName != "Luci Room" &&
+                                                                      sceneName != "Luci Room Complete" &&
+                                                                      sceneName != "Luci Room Doll"))
         {
             if (_shotCounter > 0)
             {
                 _shotCounter -= Time.deltaTime;
             }
-            
-            else if (Input.GetKey(KeyCode.UpArrow))
+
+            else if (player.GetButton("Fire Up"))
             {
                 spellMovingUp = true;
                 switch (currentSpell)
@@ -99,12 +122,14 @@ public class Magic : MonoBehaviour
                         Instantiate(fireSpell, firePointUp.position, Quaternion.Euler(new Vector3(0, 0, 90)));
                         break;
                     case SpellType.Ice:
-                        Instantiate(iceSpell, firePointUp.position, Quaternion.Euler(new Vector3(0, 0, 90)));
+                        if(!EnemyController.Instance.isFrozen)
+                            Instantiate(iceSpell, firePointUp.position, Quaternion.Euler(new Vector3(0, 0, 90)));
                         break;
                     case SpellType.Wind:
                         Instantiate(windSpellUp, firePointUp.position, Quaternion.Euler(new Vector3(0, 0, 90)));
                         break;
                 }
+
                 _shotCounter = timeBetweenSpells;
                 if (currentSpell == SpellType.Fire)
                 {
@@ -118,9 +143,9 @@ public class Magic : MonoBehaviour
                 {
                     AudioManager.Instance.PlaySfx(16);
                 }
-                
+
             }
-            else if (Input.GetKey(KeyCode.DownArrow))
+            else if (player.GetButton("Fire Down"))
             {
                 spellMovingDown = true;
                 switch (currentSpell)
@@ -129,12 +154,14 @@ public class Magic : MonoBehaviour
                         Instantiate(fireSpell, firePointDown.position, Quaternion.Euler(new Vector3(0, 0, -90)));
                         break;
                     case SpellType.Ice:
-                        Instantiate(iceSpell, firePointDown.position, Quaternion.Euler(new Vector3(0, 0, -90)));
+                        if(!EnemyController.Instance.isFrozen)
+                            Instantiate(iceSpell, firePointDown.position, Quaternion.Euler(new Vector3(0, 0, -90)));
                         break;
                     case SpellType.Wind:
                         Instantiate(windSpellDown, firePointDown.position, Quaternion.Euler(new Vector3(0, 0, -90)));
                         break;
                 }
+
                 _shotCounter = timeBetweenSpells;
                 if (currentSpell == SpellType.Fire)
                 {
@@ -149,21 +176,23 @@ public class Magic : MonoBehaviour
                     AudioManager.Instance.PlaySfx(16);
                 }
             }
-            else if (Input.GetKey(KeyCode.LeftArrow))
+            else if (player.GetButton("Fire Left"))
             {
-                
+
                 switch (currentSpell)
                 {
                     case SpellType.Fire:
                         Instantiate(fireSpell, firePointLeft.position, Quaternion.Euler(new Vector3(0, 0, 180)));
                         break;
                     case SpellType.Ice:
-                        Instantiate(iceSpell, firePointLeft.position, Quaternion.Euler(new Vector3(0, 0, 180)));
+                        if(!EnemyController.Instance.isFrozen)
+                            Instantiate(iceSpell, firePointLeft.position, Quaternion.Euler(new Vector3(0, 0, 180)));
                         break;
                     case SpellType.Wind:
                         Instantiate(windSpell, firePointLeft.position, Quaternion.Euler(new Vector3(180, 0, 180)));
                         break;
                 }
+
                 _shotCounter = timeBetweenSpells;
                 if (currentSpell == SpellType.Fire)
                 {
@@ -178,7 +207,7 @@ public class Magic : MonoBehaviour
                     AudioManager.Instance.PlaySfx(16);
                 }
             }
-            else if (Input.GetKey(KeyCode.RightArrow))
+            else if (player.GetButton("Fire Right"))
             {
                 switch (currentSpell)
                 {
@@ -187,7 +216,8 @@ public class Magic : MonoBehaviour
                         timeBetweenSpells = fireTime;
                         break;
                     case SpellType.Ice:
-                        Instantiate(iceSpell, firePointRight.position, Quaternion.identity);
+                        if(!EnemyController.Instance.isFrozen)
+                            Instantiate(iceSpell, firePointRight.position, Quaternion.identity);
                         timeBetweenSpells = iceTime;
                         break;
                     case SpellType.Wind:
@@ -195,6 +225,7 @@ public class Magic : MonoBehaviour
                         timeBetweenSpells = windTime;
                         break;
                 }
+
                 _shotCounter = timeBetweenSpells;
                 if (currentSpell == SpellType.Fire)
                 {
@@ -210,7 +241,8 @@ public class Magic : MonoBehaviour
                 }
             }
         }
-        if (Input.GetKeyDown(KeyCode.Tab))
+
+        if (player.GetButtonDown("Toggle Spells") && (sceneName != "Luci Room" && sceneName != "Luci Room Complete" && sceneName != "Luci Room Doll"))
         {
             switch (currentSpell)
             {
@@ -222,7 +254,7 @@ public class Magic : MonoBehaviour
                         fireUnlocked.SetActive(false);
                         windUnlocked.SetActive(true);
                         iceUnlocked.SetActive(false);
-                        
+
                     }
                     else if (CheatUnlocks.Instance._iceSpellUnlocked)
                     {
@@ -240,6 +272,7 @@ public class Magic : MonoBehaviour
                         windUnlocked.SetActive(false);
                         iceUnlocked.SetActive(false);
                     }
+
                     break;
                 case SpellType.Wind:
                     if (CheatUnlocks.Instance._iceSpellUnlocked)
@@ -258,6 +291,7 @@ public class Magic : MonoBehaviour
                         windUnlocked.SetActive(false);
                         iceUnlocked.SetActive(false);
                     }
+
                     break;
                 case SpellType.Ice:
                     currentSpell = SpellType.Fire;
@@ -266,17 +300,17 @@ public class Magic : MonoBehaviour
                     windUnlocked.SetActive(false);
                     iceUnlocked.SetActive(false);
                     break;
-                
+
             }
         }
     }
-    
+
     void MultipleArrowKeys()
     {
-        bool up = Input.GetKey(KeyCode.UpArrow);
-        bool down = Input.GetKey(KeyCode.DownArrow);
-        bool left = Input.GetKey(KeyCode.LeftArrow);
-        bool right = Input.GetKey(KeyCode.RightArrow);
+        bool up = player.GetButton("Fire Up");
+        bool down = player.GetButton("Fire Down");
+        bool left = player.GetButton("Fire Left");
+        bool right = player.GetButton("Fire Right");
 
         if (up)
         {
@@ -301,4 +335,21 @@ public class Magic : MonoBehaviour
             multipleArrows = false;
         }
     }
+
+    void ActiveSpell()
+    {
+        if (currentSpell == SpellType.Fire)
+        {
+            currentSpellCheck = "Fire";
+        }
+        else if (currentSpell == SpellType.Wind)
+        {
+            currentSpellCheck = "Wind";
+        }
+        else
+        {
+            currentSpellCheck = "Ice";
+        }
+    }
+
 }

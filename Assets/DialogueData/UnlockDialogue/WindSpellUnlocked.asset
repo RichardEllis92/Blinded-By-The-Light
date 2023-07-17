@@ -25,7 +25,7 @@ MonoBehaviour:
   - 'YES!
 
     I''ve unlocked a cheat for the game that will help us.'
-  - 'Type in `
+  - 'Type in ''{console}''
 
     It will bring up a console'
   - 'Type in wind_spell and press enter.
@@ -35,6 +35,11 @@ MonoBehaviour:
 
     It will show
     what cheats are unlocked.'
+  - 'It will knock enemies back slightly.
+
+    It''s much faster than fire but does
+    a lot less damage.'
+  - I guess it could help when you're surrounded.
   - You're welcome...
   responses: []
   name: 

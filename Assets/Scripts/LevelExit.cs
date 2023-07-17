@@ -1,12 +1,12 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class LevelExit : MonoBehaviour
 {
     public string levelToLoad;
-    int _secretEnding = 0;
-    public GameObject secretEndingScreen;
-    
+    public float waitToLoad = 4f;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         Scene currentScene = SceneManager.GetActiveScene();
@@ -16,18 +16,20 @@ public class LevelExit : MonoBehaviour
         {
             if (sceneName == "Luci Room Complete" || sceneName == "Luci Room Doll")
             {
-                SceneManager.LoadScene(levelToLoad);
+                //SceneManager.LoadScene(levelToLoad);
+                StartCoroutine(LevelEndLuciRoom());
             }
-            //SceneManager.LoadScene(levelToLoad);
-            if(sceneName == "Boss" || sceneName == "BossFail")
-            {
-                PlayerHealthController.Instance.DefaultHealth();
-                UIController.Instance.SecretEnding();
-            }
-            if(sceneName != "Boss" && sceneName != "BossFail")
+            else if(sceneName != "Boss" && sceneName != "BossFail")
             {
                 StartCoroutine(LevelManager.Instance.LevelEnd());
             }
         }
+    }
+
+    private IEnumerator LevelEndLuciRoom()
+    {
+        LuciRoomUI.Instance.FadeToBlack();
+        yield return new WaitForSeconds(waitToLoad);
+        SceneManager.LoadScene(levelToLoad);
     }
 }

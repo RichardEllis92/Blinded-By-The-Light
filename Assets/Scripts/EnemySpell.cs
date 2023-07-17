@@ -4,53 +4,87 @@ using UnityEngine;
 
 public class EnemySpell : MonoBehaviour
 {
+    public static EnemySpell Instance;
     public float speed;
     private Vector3 _direction;
+    private Rigidbody2D _rigidbody;
+    private bool _isPaused;
 
-    // Start is called before the first frame update
-    private float _speed = 5f; // or whatever speed you want the enemy to move at
-    private Vector2 _predictedPosition;
+    private float _storedSpeed; // Store the original speed value
 
-    void Start()
+    private void Awake()
     {
-        // Calculate the predicted position of the player
-        _predictedPosition = PlayerController.Instance.transform.position +
-                             (PlayerController.Instance.transform.position - transform.position).magnitude *
-                             (Vector3)PlayerController.Instance.theRb.velocity.normalized;
+        Instance = this;
+    }
 
-        // Normalize the direction vector
-        Vector2 direction = _predictedPosition - (Vector2)transform.position;
-        direction.Normalize();
+    private void Start()
+    {
+        _rigidbody = GetComponent<Rigidbody2D>();
+        _storedSpeed = speed; // Store the original speed value
+
+        // Calculate the direction vector based on the predicted position of the player
+        Vector2 direction = (PlayerController.Instance.transform.position - transform.position).normalized;
 
         // Set the initial velocity of the enemy
-        GetComponent<Rigidbody2D>().velocity = direction * _speed;
+        _rigidbody.velocity = direction * speed;
+        _direction = direction;
     }
-    
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        transform.position += _direction * (speed * Time.deltaTime);
+        if (LevelManager.Instance != null && LevelManager.Instance.isPaused)
+        {
+            if (!_isPaused)
+            {
+                _rigidbody.velocity = Vector2.zero;
+                _isPaused = true;
+            }
+        }
+        else
+        {
+            if (_isPaused)
+            {
+                _rigidbody.velocity = _direction * speed;
+                _isPaused = false;
+            }
+
+            transform.position += _direction * (speed * Time.deltaTime);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
             PlayerHealthController.Instance.DamagePlayer();
         }
+
         AudioManager.Instance.PlaySfx(3);
-        
+
         if (other.CompareTag("EnemySpell"))
         {
             return;
         }
+
         Destroy(gameObject);
-        
     }
 
     private void OnBecameInvisible()
     {
         Destroy(gameObject);
+    }
+
+    public void SetPaused(bool isPaused)
+    {
+        _isPaused = isPaused;
+
+        if (_isPaused)
+        {
+            _rigidbody.velocity = Vector2.zero;
+        }
+        else
+        {
+            _rigidbody.velocity = _direction * speed;
+        }
     }
 }

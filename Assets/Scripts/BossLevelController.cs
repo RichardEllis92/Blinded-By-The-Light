@@ -12,7 +12,7 @@ public class BossLevelController : MonoBehaviour
     public GameObject boss;
     public float walkSpeed = 1.0f;
     public float walkDuration = 10.0f;
-    
+
     [SerializeField]
     private Animator bossAnimator;
     
@@ -20,7 +20,8 @@ public class BossLevelController : MonoBehaviour
     private Animator playerAnimator;
 
     public bool bossStarted;
-
+    public bool videoPlaying;
+    
     private static readonly int PlayerIdle = Animator.StringToHash("Player_Idle");
     private static readonly int DollIdleBack = Animator.StringToHash("Doll_Idle_Back");
 
@@ -52,6 +53,7 @@ public class BossLevelController : MonoBehaviour
     {
         if (!BossIntroComplete.Instance.bossIntroComplete)
         {
+            videoPlaying = true;
             // Cache the boss's initial position
             Vector3 initialPosition = boss.transform.position;
 
@@ -110,6 +112,7 @@ public class BossLevelController : MonoBehaviour
             UIController.Instance.bossHealthBar.maxValue = BossController.Instance.currentHealth;
             UIController.Instance.bossHealthBar.value = BossController.Instance.currentHealth;
             bossStarted = true;
+            videoPlaying = false;
         }
         else
         {

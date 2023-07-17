@@ -1926,7 +1926,6 @@ MonoBehaviour:
   noEnemies: 0
   guideDialogue: 0
   enemies:
-  - {fileID: 0}
   - {fileID: 1812792284809899198}
   theRoom: {fileID: 0}
 --- !u!1001 &959157405947629073

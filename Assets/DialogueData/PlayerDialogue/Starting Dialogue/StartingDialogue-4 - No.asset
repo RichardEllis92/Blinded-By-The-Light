@@ -19,6 +19,6 @@ MonoBehaviour:
   responses:
   - responseText: I'll help
     dialogueObject: {fileID: 11400000, guid: 960325773b1e221458917dfd629c3f21, type: 2}
-  - responseText: I'll help
+  - responseText: Okay
     dialogueObject: {fileID: 11400000, guid: 960325773b1e221458917dfd629c3f21, type: 2}
   name: 

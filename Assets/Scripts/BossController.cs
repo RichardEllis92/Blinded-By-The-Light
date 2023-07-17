@@ -49,6 +49,18 @@ public class BossController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (LevelManager.Instance.isPaused)
+        {
+            theRb.velocity = Vector2.zero;
+            bossAnimator.speed = 0;
+            return;
+        }
+
+        if (!LevelManager.Instance.isPaused)
+        {
+            bossAnimator.speed = 1;
+        }
+        
         if (!dialogueUI.IsOpen && !dialogueBox.activeSelf && LevelManager.Instance.isPaused == false && BossLevelController.Instance.bossStarted)
         {
             if (_actionCounter > 0)

@@ -16,6 +16,8 @@ TagManager:
   - NoSpell
   - Wall
   - EnemySpell
+  - DontDestroy
+  - Controls
   layers:
   - Default
   - TransparentFX

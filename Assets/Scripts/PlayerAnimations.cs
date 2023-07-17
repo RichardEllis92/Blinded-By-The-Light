@@ -1,11 +1,14 @@
 using System;
 using UnityEngine;
+using Rewired;
 
 public class PlayerAnimations : MonoBehaviour
 {
     private Vector2 _moveInput;
     public Animator anim;
     [SerializeField] private DialogueUI dialogueUI;
+    public int playerId = 0;
+    private Player player;
     public DialogueUI DialogueUI => dialogueUI;
     
     private static readonly int IsMovingRight = Animator.StringToHash("isMovingRight");
@@ -26,6 +29,9 @@ public class PlayerAnimations : MonoBehaviour
 
     private bool multipleArrows;
     
+    [System.NonSerialized] // Don't serialize this so the value is lost on an editor script recompile.
+    private bool initialized;
+    
     private enum MovementDirection
     {
         None,
@@ -37,17 +43,24 @@ public class PlayerAnimations : MonoBehaviour
     
     private MovementDirection currentDirection = MovementDirection.None;
 
-
+    private void Initialize() {
+        // Get the Rewired Player object for this player.
+        player = ReInput.players.GetPlayer(playerId);
+            
+        initialized = true;
+    }
     void Update()
     {
+        if(!ReInput.isReady) return; // Exit if Rewired isn't ready. This would only happen during a script recompile in the editor.
+        if(!initialized) Initialize(); // Reinitialize after a recompile in the editor
         GetMovementInput();
         Animations();
     }
 
     void GetMovementInput()
     {
-        _moveInput.x = Input.GetAxisRaw("Horizontal");
-        _moveInput.y = Input.GetAxisRaw("Vertical");
+        _moveInput.x = player.GetAxisRaw("HAIL"); // get input by name or action id
+        _moveInput.y = player.GetAxisRaw("SATAN");
 
         if (_moveInput.x == 0 && _moveInput.y == 0)
         {
@@ -73,8 +86,8 @@ public class PlayerAnimations : MonoBehaviour
 
     void Animations()
     {
-        _moveInput.x = Input.GetAxisRaw("Horizontal");
-        _moveInput.y = Input.GetAxisRaw("Vertical");
+        _moveInput.x = player.GetAxisRaw("HAIL"); // get input by name or action id
+        _moveInput.y = player.GetAxisRaw("SATAN");
 
         if (Magic.Instance._shotCounter > 0)
         {
@@ -128,26 +141,26 @@ public class PlayerAnimations : MonoBehaviour
                 return;
             }
 
-            if (_moveInput.x > 0 && _moveInput.y == 0 && !Input.GetKey(KeyCode.LeftArrow))
+            if (_moveInput.x > 0 && _moveInput.y == 0 && !player.GetButton("Fire Left"))
             {
                 anim.SetBool(IsMovingRight, true);
             }
                 
-            else if (_moveInput.x > 0 && Input.GetKey(KeyCode.LeftArrow))
+            else if (_moveInput.x > 0 && player.GetButton("Fire Left"))
             {
                 anim.SetBool(IsMovingRightBackwards, true);
                 anim.SetBool(IsMovingRight, false);
             }
-            else if (_moveInput.x > 0 && Input.GetKey(KeyCode.RightArrow) && anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Walk_Right_Backwards"))
+            else if (_moveInput.x > 0 && player.GetButton("Fire Right") && anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Walk_Right_Backwards"))
             {
                 anim.SetBool(IsMovingRight, true);
                 anim.SetBool(IsMovingRightBackwards, false);
             }
-            else if (_moveInput.x > 0 && Input.GetKey(KeyCode.RightArrow))
+            else if (_moveInput.x > 0 && player.GetButton("Fire Right"))
             {
                 anim.SetBool(IsMovingRightBackwards, false);
             }
-            else if (_moveInput is { y: 0, x: 0 } && Input.GetKey(KeyCode.LeftArrow))
+            else if (_moveInput is { y: 0, x: 0 } && player.GetButton("Fire Left"))
             {
                 anim.Play("Player_Idle_Left");
             }
@@ -157,25 +170,25 @@ public class PlayerAnimations : MonoBehaviour
                 anim.SetBool(IsMovingRightBackwards, false);
             }
 
-            if (_moveInput.x < 0 &&  !Input.GetKey(KeyCode.RightArrow))
+            if (_moveInput.x < 0 &&  !player.GetButton("Fire Right"))
             {
                 anim.SetBool(IsMovingLeft, true);
             }
-            else if (_moveInput.x < 0 && Input.GetKey(KeyCode.RightArrow))
+            else if (_moveInput.x < 0 && player.GetButton("Fire Right"))
             {
                 anim.SetBool(IsMovingLeftBackwards, true);
                 anim.SetBool(IsMovingLeft, false);
             }
-            else if (_moveInput.x < 0 && Input.GetKey(KeyCode.RightArrow) && anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Walk_Left_Backwards"))
+            else if (_moveInput.x < 0 && player.GetButton("Fire Right") && anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Walk_Left_Backwards"))
             {
                 anim.SetBool(IsMovingLeft, true);
                 anim.SetBool(IsMovingLeftBackwards, false);
             }
-            else if (_moveInput.x < 0 && Input.GetKey(KeyCode.LeftArrow))
+            else if (_moveInput.x < 0 && player.GetButton("Fire Left"))
             {
                 anim.SetBool(IsMovingLeftBackwards, false);
             }
-            else if (_moveInput is { y: 0, x: 0 } && Input.GetKey(KeyCode.RightArrow))
+            else if (_moveInput is { y: 0, x: 0 } && player.GetButton("Fire Right"))
             {
                 anim.Play("Player_Idle_Right");
             }
@@ -185,25 +198,25 @@ public class PlayerAnimations : MonoBehaviour
                 anim.SetBool(IsMovingLeftBackwards, false);
             }
 
-            if (_moveInput.y > 0 && (!Input.GetKeyDown(KeyCode.DownArrow) && !Input.GetKey(KeyCode.DownArrow)))
+            if (_moveInput.y > 0 && (!player.GetButton("Fire Down")))
             {
                 anim.SetBool(IsMovingUp, true);
             }
-            else if (_moveInput.y > 0 && (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKey(KeyCode.DownArrow)))
+            else if (_moveInput.y > 0 && (player.GetButton("Fire Down")))
             {
                 anim.SetBool(IsMovingUp, false);
                 anim.SetBool(IsMovingUpBackwards, true);
             }
-            else if (_moveInput.y > 0 && Input.GetKey(KeyCode.DownArrow) && anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Walk_Up_Backwards"))
+            else if (_moveInput.y > 0 && player.GetButton("Fire Down") && anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Walk_Up_Backwards"))
             {
                 anim.SetBool(IsMovingDown, true);
                 anim.SetBool(IsMovingDownBackwards, false);
             }
-            else if (_moveInput.y > 0 && Input.GetKey(KeyCode.UpArrow))
+            else if (_moveInput.y > 0 && player.GetButton("Fire Up"))
             {
                 anim.SetBool(IsMovingUpBackwards, false);
             }
-            else if (_moveInput is { y: 0, x: 0 } && (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKey(KeyCode.DownArrow)))
+            else if (_moveInput is { y: 0, x: 0 } && (player.GetButton("Fire Down")))
             {
                 anim.Play("Player_Idle");
             }
@@ -213,27 +226,27 @@ public class PlayerAnimations : MonoBehaviour
                 anim.SetBool(IsMovingUpBackwards, false);
             }
 
-            if (_moveInput.y < 0 && (!Input.GetKeyDown(KeyCode.UpArrow) && !Input.GetKey(KeyCode.UpArrow)))
+            if (_moveInput.y < 0 && (!player.GetButton("Fire Up")))
             {
                 anim.SetBool(IsMovingDown, true);
                 //anim.SetBool("isMovingUpBackwards", false);
             }
-            else if (_moveInput.y < 0 && (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKey(KeyCode.UpArrow)))
+            else if (_moveInput.y < 0 && (player.GetButton("Fire Up")))
             {
                 anim.SetBool(IsMovingDown, false);
                 anim.SetBool(IsMovingDownBackwards, true);
                 //Play moving up backwards anim
             }
-            else if (_moveInput.y < 0 && Input.GetKey(KeyCode.UpArrow) && anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Walk_Down_Backwards"))
+            else if (_moveInput.y < 0 && player.GetButton("Fire Up") && anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Walk_Down_Backwards"))
             {
                 anim.SetBool(IsMovingDown, true);
                 anim.SetBool(IsMovingDownBackwards, false);
             }
-            else if (_moveInput.y < 0 && Input.GetKey(KeyCode.DownArrow))
+            else if (_moveInput.y < 0 && player.GetButton("Fire Down"))
             {
                 anim.SetBool(IsMovingDownBackwards, false);
             }
-            else if (_moveInput is { y: 0, x: 0 } && (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKey(KeyCode.UpArrow)))
+            else if (_moveInput is { y: 0, x: 0 } && (player.GetButton("Fire Up")))
             {
                 anim.Play("Player_Idle_Back");
             }

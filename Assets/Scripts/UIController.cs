@@ -18,7 +18,7 @@ public class UIController : MonoBehaviour
 
     public string newGameScene, mainMenuScene;
 
-    public GameObject pauseMenu, mapDisplay, bigMapText, activeSpells, health, hellBucks, experience;
+    public GameObject mapDisplay, bigMapText, activeSpells, health, hellBucks, experience;
 
     public Slider bossHealthBar;
 
@@ -119,7 +119,8 @@ public class UIController : MonoBehaviour
     public void NewGame()
     {
         Time.timeScale = 1f;
-
+        _fadeOutBlack = true;
+        _fadeToBlack = false;
         DialogueUI.Instance.talkedToGuide = false;
         SceneManager.LoadScene(newGameScene);
 
@@ -128,8 +129,8 @@ public class UIController : MonoBehaviour
         
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
-        if(sceneName != "Boss")
-            DestroyAllGameObjects();
+        /*if(sceneName != "Boss")
+            DestroyAllGameObjects();*/
 
     }
 
@@ -138,16 +139,12 @@ public class UIController : MonoBehaviour
         
         Destroy(PlayerController.Instance.gameObject);
         Destroy(gameObject);
-        DestroyAllGameObjects();
+        //DestroyAllGameObjects();
         DialogueUI.Instance.talkedToGuide = false;
-
+        LevelManager.Instance.isPaused = false;
         SceneManager.LoadScene(mainMenuScene);
+        ControlsManager.Instance.pauseMenu.SetActive(false);
         
-    }
-
-    public void Resume()
-    {
-        LevelManager.Instance.PauseUnpause();
     }
 
     // called when the game is terminated
@@ -158,15 +155,13 @@ public class UIController : MonoBehaviour
 
     public void DestroyAllGameObjects()
     {
-        GameObject[] gameObjects = FindObjectsOfType<GameObject>();
-
+        GameObject[] gameObjects = GameObject.FindGameObjectsWithTag("DontDestroy");
+        
         foreach (var t in gameObjects)
         {
             Destroy(t);
         }
     }
-    public void SecretEnding()
-    {
-        secretEnding++;
-    }
+    
+
 }

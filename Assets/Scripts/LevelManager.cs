@@ -1,11 +1,12 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Rewired;
 
 public class LevelManager : MonoBehaviour
 {
     public static LevelManager Instance;
-
+    
     public float waitToLoad = 4f;
 
     public string nextLevel;
@@ -23,12 +24,22 @@ public class LevelManager : MonoBehaviour
     public GameObject dialogueBox;
 
     public GameObject bossDoor;
+    
 
     private const int LevelEndExperience = 50;
+    
+    public int playerId = 0;
+    private Player player;
+    [System.NonSerialized] // Don't serialize this so the value is lost on an editor script recompile.
+    private bool initialized;
+
+    public bool controlsMenuOpen;
+    public bool videoPlaying;
 
     private void Awake()
     {
         Instance = this;
+        isPaused = false;
     }
     
     void OnEnable()
@@ -40,20 +51,22 @@ public class LevelManager : MonoBehaviour
     {
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
-        if (sceneName == "Boss" || sceneName == "BossFail")
-        {
-            CheatUnlocks.Instance.UnlockWindSpell();
-            CheatUnlocks.Instance.UnlockIceSpell();
-        }
     }
 
+    private void Initialize() {
+        // Get the Rewired Player object for this player.
+        player = ReInput.players.GetPlayer(playerId);
+            
+        initialized = true;
+    }
+    
     // Start is called before the first frame update
     void Start()
     {
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
 
-        if (sceneName == "Luci Room" || sceneName == "Luci Room Complete" || sceneName == "Luci Room Doll")
+        if (sceneName == "Luci Room" || sceneName == "Luci Room Complete" || sceneName == "Luci Room Doll" || sceneName == "Luci Room 1")
         {
             return;
         }
@@ -69,14 +82,37 @@ public class LevelManager : MonoBehaviour
         
         Time.timeScale = 1f;
         LevelText();
+        
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P) && !DialogueUI.Instance.dialogueBox.activeSelf && !CheatSystemController.Instance.showConsole)
+        if(!ReInput.isReady) return; // Exit if Rewired isn't ready. This would only happen during a script recompile in the editor.
+        if(!initialized) Initialize(); // Reinitialize after a recompile in the editor
+        
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
+
+        if (sceneName == "Boss")
+        {
+            videoPlaying = BossLevelController.Instance.videoPlaying;
+        }
+        else
+        {
+            videoPlaying = false;
+        }
+        
+        if (player.GetButtonDown("Pause") && !DialogueUI.Instance.dialogueBox.activeSelf && !CheatSystemController.Instance.showConsole && !ControlsManager.Instance.controlsMenuOpen && !videoPlaying)
         {
             PauseUnpause();
+        }
+
+        if (player.GetButtonDown("Controls") && !DialogueUI.Instance.dialogueBox.activeSelf &&
+            !CheatSystemController.Instance.showConsole && !ControlsManager.Instance.controlsMenuOpen)
+        {
+            OpenControls();
         }
         
         LevelText();
@@ -93,7 +129,7 @@ public class LevelManager : MonoBehaviour
 
         if(sceneName == "Luci Room" || sceneName == "Luci Room Complete" || sceneName == "Luci Room Doll")
         {
-            LuciRoomUI.Instance.StartFadeToBlack();
+            LuciRoomUI.Instance.FadeToBlack();
         }
         else
         {
@@ -114,6 +150,7 @@ public class LevelManager : MonoBehaviour
 
         if (sceneName == "Level 3")
         {
+            ControlsManager.Instance.level3Fade.SetActive(true);
             UIController.Instance.NewGame();
             SceneManager.LoadScene("Luci Room Complete");
         }
@@ -125,26 +162,62 @@ public class LevelManager : MonoBehaviour
 
     public void PauseUnpause()
     {
+       
         if (CameraController.Instance.bigMapActive == false)
         {
-            if (!isPaused)
+            if (!isPaused && !controlsMenuOpen)
             {
-                UIController.Instance.pauseMenu.SetActive(true);
 
+                if(ControlsManager.Instance.pauseMenu != null)
+                    ControlsManager.Instance.pauseMenu.SetActive(true);
+                
                 isPaused = true;
 
-                Time.timeScale = 0f;
+                if (EnemySpell.Instance != null)
+                    EnemySpell.Instance.SetPaused(isPaused);
+
+                //Time.timeScale = 0f;
             }
             else
             {
-                UIController.Instance.pauseMenu.SetActive(false);
+
+                ControlsManager.Instance.pauseMenu.SetActive(false);
 
                 isPaused = false;
+                if (EnemySpell.Instance != null)
+                    EnemySpell.Instance.SetPaused(isPaused);
 
-                Time.timeScale = 1f;
+                //Time.timeScale = 1f;
             }
         }
     }
+
+    public void OpenControls()
+    {
+        if (!isPaused && !controlsMenuOpen)
+        {
+            Scene currentScene = SceneManager.GetActiveScene();
+            string sceneName = currentScene.name;
+
+            ControlsManager.Instance.controlsMenu.SetActive(true);
+
+            isPaused = true;
+
+            Time.timeScale = 0f;
+        }
+        else
+        {
+            Scene currentScene = SceneManager.GetActiveScene();
+            string sceneName = currentScene.name;
+                
+            ControlsManager.Instance.controlsMenu.SetActive(false);
+                
+            isPaused = false;
+
+            Time.timeScale = 1f;
+        }
+    }
+    
 
     public void GetHellBucks(int amount)
     {

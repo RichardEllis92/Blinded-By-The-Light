@@ -255,7 +255,6 @@ MonoBehaviour:
   enemies:
   - {fileID: 391770064978874554}
   - {fileID: 2573297469256701591}
-  - {fileID: 0}
   theRoom: {fileID: 0}
 --- !u!1 &6880113979304417360
 GameObject:

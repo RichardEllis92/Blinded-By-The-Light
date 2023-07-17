@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 public class EnemyController : MonoBehaviour
@@ -12,6 +13,7 @@ public class EnemyController : MonoBehaviour
     public float moveSpeed;
     public bool isFrozen;
     private float _frozenTimeRemaining;
+    private float _frozenTime = 10f;
     
     [Header("Chase Player")]
     public bool shouldChasePlayer;
@@ -87,184 +89,205 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        EnemySeparation();
-        
-        if (theBody.isVisible && PlayerController.Instance.gameObject.activeInHierarchy)
+        if (LevelManager.Instance.isPaused)
         {
-            if(isFrozen)
+            theRB.velocity = Vector2.zero;
+            anim.speed = 0;
+            return;
+        }
+
+        if (!LevelManager.Instance.isPaused)
+        {
+            anim.speed = 1;
+        }
+        EnemySeparation();
+
+        if (PlayerController.Instance != null)
+        {
+            if (theBody.isVisible && PlayerController.Instance.gameObject.activeInHierarchy && PlayerController.Instance != null)
             {
-                _frozenTimeRemaining -= Time.deltaTime;
-                if (_frozenTimeRemaining <= 0)
+                if(isFrozen)
                 {
-                    isFrozen = false;
+                    _frozenTimeRemaining -= Time.deltaTime;
+                    if (_frozenTimeRemaining <= 0)
+                    {
+                        isFrozen = false;
+                    }
+                    else
+                    {
+                        theRB.velocity = Vector2.zero;
+                        // Stop the enemy's animation
+                        anim.speed = 0;
+
+                        // Wait for 1 second before unfreezing the enemy
+                        StartCoroutine(UnfreezeAfterDelay(_frozenTime));
+                        return;
+                    }  
                 }
                 else
                 {
-                    theRB.velocity = Vector2.zero;
-                    // Stop the enemy's animation
-                    anim.speed = 0;
-
-                    // Wait for 1 second before unfreezing the enemy
-                    StartCoroutine(UnfreezeAfterDelay(1f));
-                    return;
-                }  
-            }
-
-            IEnumerator UnfreezeAfterDelay(float delay)
-            {
-                yield return new WaitForSeconds(delay);
-
-                // Unfreeze the enemy
-                isFrozen = false;
-
-                // Resume the enemy's animation
-                anim.speed = 1;
-            }
-            
-            _moveDirection = Vector3.zero;
-            
-            if (shouldChasePlayer)
-            {
-                // Calculate the vector from the enemy to the player
-                Vector3 playerDirection = PlayerController.Instance.transform.position - transform.position;
-
-                // Check if the player is within range to chase
-                if (playerDirection.magnitude < rangeToChasePlayer)
-                {
-                    // Move directly towards the player's position
-                    _moveDirection = playerDirection.normalized;
+                    _frozenTimeRemaining = _frozenTime;
                 }
+
+                IEnumerator UnfreezeAfterDelay(float delay)
+                {
+                    yield return new WaitForSeconds(delay);
+
+                    // Unfreeze the enemy
+                    isFrozen = false;
+
+                    // Resume the enemy's animation
+                    anim.speed = 1;
+                }
+            
+                _moveDirection = Vector3.zero;
+            
+                if (shouldChasePlayer)
+                {
+                    // Calculate the vector from the enemy to the player
+                    Vector3 playerDirection = PlayerController.Instance.transform.position - transform.position;
+
+                    // Check if the player is within range to chase
+                    if (playerDirection.magnitude < rangeToChasePlayer)
+                    {
+                        // Move directly towards the player's position
+                        _moveDirection = playerDirection.normalized;
+                    }
+                }
+                else
+                {
+                    if (shouldWander)
+                    {
+                        if (_wanderCounter > 0)
+                        {
+                            _wanderCounter -= Time.deltaTime;
+
+                            //move the enemy
+                            _moveDirection = _wanderDirection;
+
+                            if (_wanderCounter <= 0)
+                            {
+                                _pauseCounter = Random.Range(pauseLength * .75f, pauseLength * 1.25f);
+                            }
+                        }
+
+                        if (_pauseCounter > 0)
+                        {
+                            _pauseCounter -= Time.deltaTime;
+
+                            if (_pauseCounter <= 0)
+                            {
+                                _wanderCounter = Random.Range(wanderLength * .75f, wanderLength * 1.25f);
+
+                                _wanderDirection = new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), 0f);
+                            }
+                        }
+                    }
+
+                    if (shouldPatrol)
+                    {
+                        _moveDirection = patrolPoints[_currentPatrolPoint].position - transform.position;
+
+                        if (Vector3.Distance(transform.position, patrolPoints[_currentPatrolPoint].position) < .2f)
+                        {
+                            _currentPatrolPoint++;
+                            if (_currentPatrolPoint >= patrolPoints.Length)
+                            {
+                                _currentPatrolPoint = 0;
+                            }
+                        }
+                    }
+                }
+
+                if (shouldRunAway && Vector3.Distance(transform.position, PlayerController.Instance.transform.position) < runawayRange)
+                {
+                    if (Mathf.Approximately(_moveDirection.magnitude, 0f)) // Check if object is not moving
+                    {
+                        _idleTimer += Time.deltaTime; // Increment idle timer
+                        if (_idleTimer >= _idleTimeThreshold) // Check if idle time threshold has been reached
+                        {
+                            // The object hasn't moved for 1 second, move away from the player
+                            _moveDirection = transform.position - PlayerController.Instance.transform.position;
+                        }
+                    }
+                    else // Object is moving
+                    {
+                        _idleTimer = 0f; // Reset idle timer
+
+                        // Use OverlapCircleAll to detect walls within the specified radius
+                        Collider2D[] wallColliders = Physics2D.OverlapCircleAll(transform.position, wallDetectionRadius, wallLayerMask);
+
+                        if (wallColliders.Length > 0)
+                        {
+                            // The object is close to a wall, move in a direction that is perpendicular to the wall
+                            Vector3 moveDirection = Vector3.zero;
+                            foreach (Collider2D wallCollider in wallColliders)
+                            {
+                                // Calculate the direction to move away from the wall
+                                Vector3 wallDirection = transform.position - wallCollider.transform.position;
+                                moveDirection += wallDirection;
+                            }
+
+                            _moveDirection = moveDirection.normalized;
+                        }
+                        else
+                        {
+                            // The object is not close to a wall, continue moving away from the player
+                            _moveDirection = transform.position - PlayerController.Instance.transform.position;
+                        }
+                    }
+                }
+
+                _moveDirection.Normalize();
+
+                theRB.velocity = _moveDirection * moveSpeed;
+
+
+                if (shouldShoot && Vector2.Distance(transform.position, PlayerController.Instance.transform.position) < shootRange)
+                {
+                    _fireCounter -= Time.deltaTime;
+
+                    if (_fireCounter <= 0)
+                    {
+                        if (isFrozen && Magic.Instance.currentSpellCheck == "Ice")
+                            return;
+                        _fireCounter = fireRate;
+
+                        // Calculate the predicted position of the player
+                        Vector2 predictedPlayerPosition = PlayerController.Instance.transform.position +
+                                                          (PlayerController.Instance.transform.position - transform.position).magnitude *
+                                                          (Vector3)PlayerController.Instance.theRb.velocity.normalized;
+                        // Aim at the predicted position and shoot
+                        if (enemyDescription == "EyeDemon" && (anim.GetCurrentAnimatorStateInfo(0).IsName("Eye_Demon_Moving_Up") || anim.GetCurrentAnimatorStateInfo(0).IsName("Eye_Demon_Moving_Up_Purple") || anim.GetCurrentAnimatorStateInfo(0).IsName("Eye_Demon_Moving_Up_Red")))
+                        {
+                            Vector2 shootDirection = predictedPlayerPosition - (Vector2)firePoint2.position;
+                            float angle = Mathf.Atan2(shootDirection.y, shootDirection.x) * Mathf.Rad2Deg;
+                            Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+                            Instantiate(spell, firePoint2.position, rotation);
+                            Debug.DrawLine(firePoint2.position, predictedPlayerPosition, Color.green, 0.5f);
+                            AudioManager.Instance.PlaySfx(10);
+                        }
+                        else
+                        {
+                            Vector2 shootDirection = predictedPlayerPosition - (Vector2)firePoint.position;
+                            float angle = Mathf.Atan2(shootDirection.y, shootDirection.x) * Mathf.Rad2Deg;
+                            Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+                            Instantiate(spell, firePoint.position, rotation);
+                            Debug.DrawLine(firePoint.position, predictedPlayerPosition, Color.green, 0.5f);
+                            AudioManager.Instance.PlaySfx(10);
+                        }
+                    
+                    }
+                }
+
+
             }
             else
             {
-                if (shouldWander)
-                {
-                    if (_wanderCounter > 0)
-                    {
-                        _wanderCounter -= Time.deltaTime;
-
-                        //move the enemy
-                        _moveDirection = _wanderDirection;
-
-                        if (_wanderCounter <= 0)
-                        {
-                            _pauseCounter = Random.Range(pauseLength * .75f, pauseLength * 1.25f);
-                        }
-                    }
-
-                    if (_pauseCounter > 0)
-                    {
-                        _pauseCounter -= Time.deltaTime;
-
-                        if (_pauseCounter <= 0)
-                        {
-                            _wanderCounter = Random.Range(wanderLength * .75f, wanderLength * 1.25f);
-
-                            _wanderDirection = new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), 0f);
-                        }
-                    }
-                }
-
-                if (shouldPatrol)
-                {
-                    _moveDirection = patrolPoints[_currentPatrolPoint].position - transform.position;
-
-                    if (Vector3.Distance(transform.position, patrolPoints[_currentPatrolPoint].position) < .2f)
-                    {
-                        _currentPatrolPoint++;
-                        if (_currentPatrolPoint >= patrolPoints.Length)
-                        {
-                            _currentPatrolPoint = 0;
-                        }
-                    }
-                }
+                theRB.velocity = Vector2.zero;
             }
-
-            if (shouldRunAway && Vector3.Distance(transform.position, PlayerController.Instance.transform.position) < runawayRange)
-            {
-                if (Mathf.Approximately(_moveDirection.magnitude, 0f)) // Check if object is not moving
-                {
-                    _idleTimer += Time.deltaTime; // Increment idle timer
-                    if (_idleTimer >= _idleTimeThreshold) // Check if idle time threshold has been reached
-                    {
-                        // The object hasn't moved for 1 second, move away from the player
-                        _moveDirection = transform.position - PlayerController.Instance.transform.position;
-                    }
-                }
-                else // Object is moving
-                {
-                    _idleTimer = 0f; // Reset idle timer
-
-                    // Use OverlapCircleAll to detect walls within the specified radius
-                    Collider2D[] wallColliders = Physics2D.OverlapCircleAll(transform.position, wallDetectionRadius, wallLayerMask);
-
-                    if (wallColliders.Length > 0)
-                    {
-                        // The object is close to a wall, move in a direction that is perpendicular to the wall
-                        Vector3 moveDirection = Vector3.zero;
-                        foreach (Collider2D wallCollider in wallColliders)
-                        {
-                            // Calculate the direction to move away from the wall
-                            Vector3 wallDirection = transform.position - wallCollider.transform.position;
-                            moveDirection += wallDirection;
-                        }
-
-                        _moveDirection = moveDirection.normalized;
-                    }
-                    else
-                    {
-                        // The object is not close to a wall, continue moving away from the player
-                        _moveDirection = transform.position - PlayerController.Instance.transform.position;
-                    }
-                }
-            }
-
-            _moveDirection.Normalize();
-
-            theRB.velocity = _moveDirection * moveSpeed;
-
-
-            if (shouldShoot && Vector2.Distance(transform.position, PlayerController.Instance.transform.position) < shootRange)
-            {
-                _fireCounter -= Time.deltaTime;
-
-                if (_fireCounter <= 0)
-                {
-                    _fireCounter = fireRate;
-
-                    // Calculate the predicted position of the player
-                    Vector2 predictedPlayerPosition = PlayerController.Instance.transform.position +
-                                                      (PlayerController.Instance.transform.position - transform.position).magnitude *
-                                                      (Vector3)PlayerController.Instance.theRb.velocity.normalized;
-                    // Aim at the predicted position and shoot
-                    if (enemyDescription == "EyeDemon" && (anim.GetCurrentAnimatorStateInfo(0).IsName("Eye_Demon_Moving_Up") || anim.GetCurrentAnimatorStateInfo(0).IsName("Eye_Demon_Moving_Up_Purple") || anim.GetCurrentAnimatorStateInfo(0).IsName("Eye_Demon_Moving_Up_Red")))
-                    {
-                        Vector2 shootDirection = predictedPlayerPosition - (Vector2)firePoint2.position;
-                        float angle = Mathf.Atan2(shootDirection.y, shootDirection.x) * Mathf.Rad2Deg;
-                        Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-                        Instantiate(spell, firePoint2.position, rotation);
-                        Debug.DrawLine(firePoint2.position, predictedPlayerPosition, Color.green, 0.5f);
-                        AudioManager.Instance.PlaySfx(10);
-                    }
-                    else
-                    {
-                        Vector2 shootDirection = predictedPlayerPosition - (Vector2)firePoint.position;
-                        float angle = Mathf.Atan2(shootDirection.y, shootDirection.x) * Mathf.Rad2Deg;
-                        Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-                        Instantiate(spell, firePoint.position, rotation);
-                        Debug.DrawLine(firePoint.position, predictedPlayerPosition, Color.green, 0.5f);
-                        AudioManager.Instance.PlaySfx(10);
-                    }
-                    
-                }
-            }
-
-
         }
-        else
-        {
-            theRB.velocity = Vector2.zero;
-        }
+        
     }
 
     private static Vector2 op_Addition()
@@ -274,55 +297,56 @@ public class EnemyController : MonoBehaviour
 
     public void DamageEnemy(int damage)
     {
-        health -= damage;
-
-        var enemyControllerTransform = transform;
-        Instantiate(hitEffect, enemyControllerTransform.position, enemyControllerTransform.rotation);
-
-        if (health > 0) return;
-        Destroy(gameObject);
-        Experience.Instance.UpdateExperiencePoints(experiencePoints);
-
-        AudioManager.Instance.PlaySfx(1);
-
-        int selectedSplatter = Random.Range(0, deathSplatters.Length);
-
-        int rotation = Random.Range(0, 4) * 90;
-
-        Instantiate(deathSplatters[selectedSplatter], transform.position, Quaternion.Euler(0f, 0f, rotation));
-
-        //drop items
-
-        if (shouldDropItem && !_itemDropped)
+        if (!isFrozen)
         {
-            _itemDropped = true;
-            
-            float dropChance = Random.Range(0f, 100f);
+            health -= damage;
 
-            if (dropChance <= itemDropPercent)
+            var enemyControllerTransform = transform;
+            Instantiate(hitEffect, enemyControllerTransform.position, enemyControllerTransform.rotation);
+
+            if (health > 0) return;
+            Destroy(gameObject);
+            Experience.Instance.UpdateExperiencePoints(experiencePoints);
+
+            AudioManager.Instance.PlaySfx(1);
+
+            int selectedSplatter = Random.Range(0, deathSplatters.Length);
+
+            int rotation = Random.Range(0, 4) * 90;
+
+            Instantiate(deathSplatters[selectedSplatter], transform.position, Quaternion.Euler(0f, 0f, rotation));
+
+            //drop items
+
+            if (shouldDropItem && !_itemDropped)
             {
-                int randomItem = Random.Range(0, itemsToDrop.Length);
+                _itemDropped = true;
+            
+                float dropChance = Random.Range(0f, 100f);
 
-                Instantiate(itemsToDrop[randomItem], enemyControllerTransform.position, enemyControllerTransform.rotation);
+                if (dropChance <= itemDropPercent)
+                {
+                    int randomItem = Random.Range(0, itemsToDrop.Length);
+
+                    Instantiate(itemsToDrop[randomItem], enemyControllerTransform.position, enemyControllerTransform.rotation);
+                }
             }
         }
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("IceSpell"))
+        if (other.CompareTag("IceSpell") && !isFrozen)
         {
-            if (Random.value > 0.75)
-            {
-                isFrozen = true;
-                _frozenTimeRemaining = 1f;
-            }
+            isFrozen = true;
+            _frozenTimeRemaining = _frozenTime;
         }
         
         if (other.CompareTag("WindSpell"))
         {
             Vector2 knockbackDirection = (transform.position - other.transform.position).normalized;
-            theRB.AddForce(knockbackDirection * 2000f);
+            theRB.AddForce(knockbackDirection * 3000f);
             
             // Set the flag to indicate that the player is knocked back
             isKnockedBack = true;
