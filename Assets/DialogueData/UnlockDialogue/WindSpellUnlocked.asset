@@ -40,6 +40,12 @@ MonoBehaviour:
     It''s much faster than fire but does
     a lot less damage.'
   - I guess it could help when you're surrounded.
-  - You're welcome...
-  responses: []
+  - 'Happy to help, {playerName}!
+
+    :D'
+  responses:
+  - responseText: You're the best
+    dialogueObject: {fileID: 11400000, guid: e7c100c147276f14597a2fc982b2557e, type: 2}
+  - responseText: You're great, Luci
+    dialogueObject: {fileID: 11400000, guid: e7c100c147276f14597a2fc982b2557e, type: 2}
   name: 

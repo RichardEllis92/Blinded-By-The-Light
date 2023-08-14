@@ -7,28 +7,26 @@ using Rewired;
 public class PlayerController : MonoBehaviour
 {
     public static PlayerController Instance;
-    
+
     public int playerId = 0;
     private Player player;
     public float moveSpeed;
     private Vector2 _moveInput;
 
     [FormerlySerializedAs("theRB")] public Rigidbody2D theRb;
-    
+
     public Animator anim;
 
     [FormerlySerializedAs("bodySR")] public SpriteRenderer bodySr;
 
     private float _activeMoveSpeed;
     public float dashSpeed = 8f, dashLength = 0.5f, dashCooldown = 1f, dashInvincibility = 0.5f;
-    [HideInInspector]
-    public float dashCounter;
+    [HideInInspector] public float dashCounter;
     private float _dashCoolCounter;
 
     public bool animationOverride;
 
-    [SerializeField]
-    public bool canMove = true;
+    [SerializeField] public bool canMove = true;
 
     [SerializeField] private DialogueUI dialogueUI;
 
@@ -46,27 +44,31 @@ public class PlayerController : MonoBehaviour
     private static readonly int IsMovingUpBackwards = Animator.StringToHash("isMovingUpBackwards");
     private static readonly int IsMovingDown = Animator.StringToHash("isMovingDown");
     private static readonly int IsMovingDownBackwards = Animator.StringToHash("isMovingDownBackwards");
-    
+
     public float detectionRadius = 16.0f;
     public string enemyTag = "Enemy";
 
     public bool isRolling;
+
     [System.NonSerialized] // Don't serialize this so the value is lost on an editor script recompile.
     private bool initialized;
-    
+
     private Vector3 previousPosition;
     private Vector3 currentPosition;
-    
+
     private void Awake()
     {
         Instance = this;
     }
-    private void Initialize() {
+
+    private void Initialize()
+    {
         // Get the Rewired Player object for this player.
         player = ReInput.players.GetPlayer(playerId);
-            
+
         initialized = true;
     }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -75,25 +77,26 @@ public class PlayerController : MonoBehaviour
         _activeMoveSpeed = moveSpeed;
     }
 
-    
+
     // Update is called once per frame
     void Update()
     {
-        if(!ReInput.isReady) return; // Exit if Rewired isn't ready. This would only happen during a script recompile in the editor.
-        if(!initialized) Initialize(); // Reinitialize after a recompile in the editor
-        
-        if (LevelManager.Instance.isPaused)
+        if (!ReInput.isReady)
+            return; // Exit if Rewired isn't ready. This would only happen during a script recompile in the editor.
+        if (!initialized) Initialize(); // Reinitialize after a recompile in the editor
+
+        if (LevelManager.Instance.isPaused || CheatSystemController.Instance.showConsole)
         {
             theRb.velocity = Vector2.zero;
             anim.speed = 0;
             return;
         }
 
-        if (!LevelManager.Instance.isPaused)
+        if (!LevelManager.Instance.isPaused && !CheatSystemController.Instance.showConsole)
         {
             anim.speed = 1;
         }
-        
+
         if (!CheatSystemController.Instance.showConsole)
         {
             PlayerMove();
@@ -108,12 +111,12 @@ public class PlayerController : MonoBehaviour
         string sceneName = currentScene.name;
 
         currentPosition = transform.position;
-        
+
         if (dialogueUI.IsOpen)
         {
             animationOverride = true;
             theRb.velocity = Vector3.zero;
-            
+
             if (sceneName == "Luci Room Doll" || sceneName == "Boss" || sceneName == "BossFail")
             {
                 anim.Play("Doll_Idle");
@@ -122,6 +125,7 @@ public class PlayerController : MonoBehaviour
             {
                 anim.Play("Player_Idle");
             }
+
             anim.enabled = false;
             theRb.velocity = Vector3.zero;
         }
@@ -131,11 +135,12 @@ public class PlayerController : MonoBehaviour
             anim.enabled = true;
         }
 
-        if (canMove && !LevelManager.Instance.isPaused && !dialogueUI.IsOpen && !CheatSystemController.Instance.showConsole)
+        if (canMove && !LevelManager.Instance.isPaused && !dialogueUI.IsOpen &&
+            !CheatSystemController.Instance.showConsole)
         {
             // Get the raw input values
-            float horizontalInput = player.GetAxisRaw("HAIL");
-            float verticalInput = player.GetAxisRaw("SATAN");
+            float horizontalInput = player.GetAxisRaw("Horizontal");
+            float verticalInput = player.GetAxisRaw("Vertical");
 
             // Normalize the input vector
             Vector2 moveInput = new Vector2(horizontalInput, verticalInput).normalized;
@@ -180,7 +185,8 @@ public class PlayerController : MonoBehaviour
                 }
             }
 
-            if (player.GetButtonDown("Roll") && (sceneName != "Luci Room" && sceneName != "Luci Room Complete" && sceneName != "Luci Room Doll"))
+            if (player.GetButtonDown("Roll") && (sceneName != "Luci Room" && sceneName != "Luci Room Complete" &&
+                                                 sceneName != "Luci Room Doll"))
             {
                 if (_dashCoolCounter <= 0 && dashCounter <= 0)
                 {
@@ -203,7 +209,7 @@ public class PlayerController : MonoBehaviour
             {
                 isRolling = false;
             }
-            
+
             if (dashCounter > 0)
             {
                 dashCounter -= Time.deltaTime;
@@ -234,12 +240,10 @@ public class PlayerController : MonoBehaviour
     {
         if (player.GetButtonDown("Action") && dialogueUI.IsOpen == false)
         {
-
             if (Interactable != null)
             {
                 Interactable.Interact(this);
             }
-
         }
     }
 
@@ -263,9 +267,10 @@ public class PlayerController : MonoBehaviour
                 return true;
             }
         }
+
         return false;
     }
-    
+
     bool IsPlayerMoving()
     {
         float distance = Vector3.Distance(previousPosition, currentPosition);

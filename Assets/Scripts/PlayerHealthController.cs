@@ -7,8 +7,8 @@ public class PlayerHealthController : MonoBehaviour
 {
     public static PlayerHealthController Instance;
 
-    private const int StartingMaxHealth = 5;
-    private const int StartingHealth = 5;
+    private const int StartingMaxHealth = 10;
+    private const int StartingHealth = 10;
     private const int BossStartingMaxHealth = 10;
     private const int BossStartingHealth = 10;
 
@@ -45,9 +45,6 @@ public class PlayerHealthController : MonoBehaviour
             maxHealth = CharacterTracker.Instance.maxHealth;
             currentHealth = CharacterTracker.Instance.maxHealth;
         }
-
-
-        //currentHealth = UIController.instance.playerCurrentHealth;
 
         UIController.Instance.healthSlider.maxValue = maxHealth;
         UIController.Instance.healthSlider.value = currentHealth;

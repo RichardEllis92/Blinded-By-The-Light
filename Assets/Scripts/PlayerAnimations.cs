@@ -59,8 +59,8 @@ public class PlayerAnimations : MonoBehaviour
 
     void GetMovementInput()
     {
-        _moveInput.x = player.GetAxisRaw("HAIL"); // get input by name or action id
-        _moveInput.y = player.GetAxisRaw("SATAN");
+        _moveInput.x = player.GetAxisRaw("Horizontal"); // get input by name or action id
+        _moveInput.y = player.GetAxisRaw("Vertical");
 
         if (_moveInput.x == 0 && _moveInput.y == 0)
         {
@@ -86,8 +86,8 @@ public class PlayerAnimations : MonoBehaviour
 
     void Animations()
     {
-        _moveInput.x = player.GetAxisRaw("HAIL"); // get input by name or action id
-        _moveInput.y = player.GetAxisRaw("SATAN");
+        _moveInput.x = player.GetAxisRaw("Horizontal"); // get input by name or action id
+        _moveInput.y = player.GetAxisRaw("Vertical");
 
         if (Magic.Instance._shotCounter > 0)
         {

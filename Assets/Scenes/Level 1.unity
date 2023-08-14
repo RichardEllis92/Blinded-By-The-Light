@@ -566,7 +566,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1534498936301955897, guid: 3c6321a573e5a7345abdbf80bf2c2c86, type: 3}
       propertyPath: isShop
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1534498936301955897, guid: 3c6321a573e5a7345abdbf80bf2c2c86, type: 3}
       propertyPath: centerEnd
@@ -631,6 +631,10 @@ PrefabInstance:
     - target: {fileID: 1534498936301955897, guid: 3c6321a573e5a7345abdbf80bf2c2c86, type: 3}
       propertyPath: includeGunRoom
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1534498936301955897, guid: 3c6321a573e5a7345abdbf80bf2c2c86, type: 3}
+      propertyPath: healRoomColor.a
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1534498936301955897, guid: 3c6321a573e5a7345abdbf80bf2c2c86, type: 3}
       propertyPath: healRoomColor.b
@@ -2044,6 +2048,8 @@ MonoBehaviour:
   talkedToGuide: 0
   talkedToFinalGuide: 0
   playerName: 
+  actionText: 
+  consoleText: 
   playerId: 0
 --- !u!114 &504113519
 MonoBehaviour:
@@ -3507,7 +3513,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: (M) for Full Map
+  m_Text: '{MapButton} for Full Map'
 --- !u!1 &865279889
 GameObject:
   m_ObjectHideFlags: 0
@@ -4101,8 +4107,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60cd90b99aba69c4c825107f0de60dd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 5
-  maxHealth: 5
+  currentHealth: 10
+  maxHealth: 10
   currentHellBucks: 0
   experience: 0
 --- !u!4 &1034177449
@@ -5647,7 +5653,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: 0
-  maxHealth: 5
+  maxHealth: 10
   damageInvincibleLength: 1
 --- !u!4 &1625488596
 Transform:
@@ -8811,23 +8817,27 @@ MonoBehaviour:
   healthText: {fileID: 5844066747444801321}
   hellBucksText: {fileID: 590404084207276351}
   levelText: {fileID: 1796130983}
-  deathScreen: {fileID: 5844066747330585310}
+  smallMapText: {fileID: 863479191}
+  bigMapText: {fileID: 6403404429836357461}
   fadeScreen: {fileID: 5844066746615960363}
   fadeSpeed: 5
   newGameScene: Luci Room
   mainMenuScene: Title Menu 2
+  updatedMapText: 
   mapDisplay: {fileID: 36756692}
-  bigMapText: {fileID: 4807540463457947813}
+  bigMap: {fileID: 4807540463457947813}
   activeSpells: {fileID: 2099811920}
   health: {fileID: 534265242}
   hellBucks: {fileID: 514744066}
   experience: {fileID: 769186859}
+  levelTextObject: {fileID: 1796130981}
   bossHealthBar: {fileID: 1547371368}
   defaultHellBucks: 0
   defaultHealth: 5
   defaultMaxHealth: 5
   secretEnding: 0
   playerCurrentHealth: 0
+  playerId: 0
 --- !u!114 &5844066747842121301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9119,7 +9129,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: (M) to exit Map
+  m_Text: '{MapButton} to exit Map'
 --- !u!114 &6602041310964408709
 MonoBehaviour:
   m_ObjectHideFlags: 0

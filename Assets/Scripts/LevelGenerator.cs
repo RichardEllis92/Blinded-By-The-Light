@@ -142,9 +142,7 @@ public class LevelGenerator : MonoBehaviour
             }
         }
     }
-
-    // Update is called once per frame
-
+    
     private void MoveGenerationPoint()
     {
         switch(selectedDirection)

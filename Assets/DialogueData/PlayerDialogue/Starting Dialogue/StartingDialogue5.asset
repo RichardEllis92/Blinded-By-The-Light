@@ -14,11 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - Sorry....
-  - I can see in the code that it is WASD to move.
-  - Arrow keys shoot fireballs out of my eyes...what...?
+  - 'I can see in the code that it is WASD to move.
+
+    Arrow keys shoot fireballs.'
+  - 'Unless you''ve been cheeky enough to change the keys.
+
+    In which case, look
+    them up from the pause menu...'
+  - 'Wait... the fireballs come out of my eyes... what?
+
+'
   - 'Jesus Christ, seems a bit unnecessary...
 
     Hopefully I don''t feel pain here.'
+  - 'Jeez, couldn''t the developer be bothered to animate a hand motion or something.
+
+    -.-'
   - Well go through the open door and let's get out of here!
   responses: []
   name: 
