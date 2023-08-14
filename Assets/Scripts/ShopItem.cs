@@ -1,8 +1,6 @@
- using System;
 using System.Collections.Generic;
 using UnityEngine;
-using Random = Unity.Mathematics.Random;
- using Rewired;
+using Rewired;
 
 public class ShopItem : MonoBehaviour
 {

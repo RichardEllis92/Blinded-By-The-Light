@@ -101,7 +101,8 @@ public class CameraController : MonoBehaviour
             UIController.Instance.health.SetActive(false);
             UIController.Instance.hellBucks.SetActive(false);
             UIController.Instance.experience.SetActive(false);
-            UIController.Instance.bigMapText.SetActive(true);
+            UIController.Instance.levelTextObject.SetActive(false);
+            UIController.Instance.bigMap.SetActive(true);
         }
         
     }
@@ -129,7 +130,8 @@ public class CameraController : MonoBehaviour
             UIController.Instance.health.SetActive(true);
             UIController.Instance.hellBucks.SetActive(true);
             UIController.Instance.experience.SetActive(true);
-            UIController.Instance.bigMapText.SetActive(false);
+            UIController.Instance.levelTextObject.SetActive(true);
+            UIController.Instance.bigMap.SetActive(false);
         }
     }
 

@@ -206,35 +206,14 @@ public class EnemyController : MonoBehaviour
                         _idleTimer += Time.deltaTime; // Increment idle timer
                         if (_idleTimer >= _idleTimeThreshold) // Check if idle time threshold has been reached
                         {
-                            // The object hasn't moved for 1 second, move away from the player
-                            _moveDirection = transform.position - PlayerController.Instance.transform.position;
+                            // The object hasn't moved for 1 second, find a safe direction to move
+                            Vector3 safeDirection = FindSafeDirection();
+                            _moveDirection = safeDirection;
                         }
                     }
                     else // Object is moving
                     {
                         _idleTimer = 0f; // Reset idle timer
-
-                        // Use OverlapCircleAll to detect walls within the specified radius
-                        Collider2D[] wallColliders = Physics2D.OverlapCircleAll(transform.position, wallDetectionRadius, wallLayerMask);
-
-                        if (wallColliders.Length > 0)
-                        {
-                            // The object is close to a wall, move in a direction that is perpendicular to the wall
-                            Vector3 moveDirection = Vector3.zero;
-                            foreach (Collider2D wallCollider in wallColliders)
-                            {
-                                // Calculate the direction to move away from the wall
-                                Vector3 wallDirection = transform.position - wallCollider.transform.position;
-                                moveDirection += wallDirection;
-                            }
-
-                            _moveDirection = moveDirection.normalized;
-                        }
-                        else
-                        {
-                            // The object is not close to a wall, continue moving away from the player
-                            _moveDirection = transform.position - PlayerController.Instance.transform.position;
-                        }
                     }
                 }
 
@@ -288,6 +267,42 @@ public class EnemyController : MonoBehaviour
             }
         }
         
+    }
+    
+    private Vector3 FindSafeDirection()
+    {
+        Vector3 targetDirection = transform.position - PlayerController.Instance.transform.position;
+        Vector3[] possibleDirections = new Vector3[8]; // Eight possible directions
+
+        for (int i = 0; i < 8; i++)
+        {
+            float angle = i * 45f; // 45 degrees increments
+            Vector3 direction = Quaternion.Euler(0, 0, angle) * targetDirection;
+            possibleDirections[i] = direction.normalized;
+        }
+
+        Vector3 safestDirection = Vector3.zero;
+        float maxDistance = 0f;
+
+        foreach (Vector3 direction in possibleDirections)
+        {
+            // Cast a ray to check for obstacles
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, runawayRange, wallLayerMask);
+
+            if (hit.collider == null)
+            {
+                // Calculate the distance to the player in this direction
+                float distanceToPlayer = Vector3.Distance(transform.position + direction, PlayerController.Instance.transform.position);
+
+                if (distanceToPlayer > maxDistance)
+                {
+                    maxDistance = distanceToPlayer;
+                    safestDirection = direction;
+                }
+            }
+        }
+
+        return safestDirection;
     }
 
     private static Vector2 op_Addition()

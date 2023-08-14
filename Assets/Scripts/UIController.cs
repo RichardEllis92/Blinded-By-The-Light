@@ -1,24 +1,22 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using UnityEngine.Serialization;
+using Rewired;
 
 public class UIController : MonoBehaviour
 {
     public static UIController Instance;
 
     public Slider healthSlider, experienceSlider;
-    public Text healthText, hellBucksText, levelText;
-
-    [FormerlySerializedAs("deathscreen")] public GameObject deathScreen;
-
+    public Text healthText, hellBucksText, levelText, smallMapText, bigMapText;
+    
     public Image fadeScreen;
     public float fadeSpeed;
     private bool _fadeToBlack, _fadeOutBlack;
 
-    public string newGameScene, mainMenuScene;
+    public string newGameScene, mainMenuScene, updatedMapText;
 
-    public GameObject mapDisplay, bigMapText, activeSpells, health, hellBucks, experience;
+    public GameObject mapDisplay, bigMap, activeSpells, health, hellBucks, experience, levelTextObject;
 
     public Slider bossHealthBar;
 
@@ -30,6 +28,10 @@ public class UIController : MonoBehaviour
 
     public int playerCurrentHealth;
 
+    public int playerId = 0;
+    private Player player;
+    bool skipDisabledMaps = true;
+    
     // Start is called before the first frame update
     private void Awake()
     {
@@ -44,8 +46,7 @@ public class UIController : MonoBehaviour
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
-
-    // called second
+    
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if (scene.name != "Level 1")
@@ -74,12 +75,17 @@ public class UIController : MonoBehaviour
         }
         _fadeOutBlack = true;
         _fadeToBlack = false;
+        
+        player = ReInput.players.GetPlayer(0);
+
+        UpdateMapText();
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        UpdateMapText();
+        
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
 
@@ -129,9 +135,6 @@ public class UIController : MonoBehaviour
         
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
-        /*if(sceneName != "Boss")
-            DestroyAllGameObjects();*/
-
     }
 
     public void ReturnToMainMenu()
@@ -139,7 +142,6 @@ public class UIController : MonoBehaviour
         
         Destroy(PlayerController.Instance.gameObject);
         Destroy(gameObject);
-        //DestroyAllGameObjects();
         DialogueUI.Instance.talkedToGuide = false;
         LevelManager.Instance.isPaused = false;
         SceneManager.LoadScene(mainMenuScene);
@@ -162,6 +164,20 @@ public class UIController : MonoBehaviour
             Destroy(t);
         }
     }
-    
 
+    private void UpdateMapText()
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
+        if (sceneName != "Boss" && sceneName != "BossFail")
+        {
+            var updatedMapText = player.controllers.maps.GetFirstElementMapWithAction("Toggle Map", skipDisabledMaps).elementIdentifierName;
+
+            // Update the smallMapText
+            smallMapText.GetComponent<Text>().text = "'" + updatedMapText  + "' for full map";
+
+            // Update the bigMapText
+            bigMapText.GetComponent<Text>().text = "'" + updatedMapText  + "' to exit map";
+        }
+    }
 }

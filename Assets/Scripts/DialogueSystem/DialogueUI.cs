@@ -65,12 +65,21 @@ public class DialogueUI : MonoBehaviour
         #else
             Debug.LogError("Retrieving username is not supported on this platform.");
         #endif
-            return userName;
+
+        // Check if the username is not empty and contains at least one character
+        if (!string.IsNullOrEmpty(userName) && userName.Length > 0)
+        {
+            // Capitalize the first letter and convert the rest to lowercase
+            userName = char.ToUpper(userName[0]) + userName.Substring(1).ToLower();
+        }
+
+        return userName;
     }
+
     private void Update()
     {
-        if(!ReInput.isReady) return; // Exit if Rewired isn't ready. This would only happen during a script recompile in the editor.
-        if(!initialized) Initialize(); // Reinitialize after a recompile in the editor
+        if(!ReInput.isReady) return; 
+        if(!initialized) Initialize();
 
         var currentScene = SceneManager.GetActiveScene();
         var sceneName = currentScene.name;

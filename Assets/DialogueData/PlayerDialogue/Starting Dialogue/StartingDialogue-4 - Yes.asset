@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: StartingDialogue-4 - Yes
   m_EditorClassIdentifier: 
   dialogue:
-  - Thank you!
+  - 'Thank you!
+
+    That''s a verbal... well... written contract now you know!'
   - 'I''m Luci by the way.
 
     Nice to meet you.'

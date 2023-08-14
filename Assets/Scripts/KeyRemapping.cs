@@ -42,6 +42,7 @@ public class KeyRemapping : MonoBehaviour {
 
     private List<Row> rows = new List<Row>();
     private TargetMapping _replaceTargetMapping;
+    private int _buttonsDisabled = 0;
 
     private Player player { get { return ReInput.players.GetPlayer(0); } }
 
@@ -92,43 +93,62 @@ public class KeyRemapping : MonoBehaviour {
         inputMapper_mouse.StoppedEvent -= OnStopped;
     }
 
-    private void RedrawUI() {
-        
-        // Update joystick name in UI
-        controllerNameUIText.text = "Keyboard/Mouse";
+    private void RedrawUI()
+{
+    // Update joystick name in UI
+    controllerNameUIText.text = "Keyboard/Mouse";
 
-        // Update each button label with the currently mapped element identifier
-        for(int i = 0; i < rows.Count; i++) {
-            Row row = rows[i];
-            InputAction action = rows[i].action;
+    // Update each button label with the currently mapped element identifier
+    for (int i = 0; i < rows.Count; i++)
+    {
+        Row row = rows[i];
+        InputAction action = rows[i].action;
 
-            string name = string.Empty;
-            int actionElementMapId = -1;
+        string name = string.Empty;
+        int actionElementMapId = -1;
 
-            // Find the first ActionElementMap that maps to this Action and is compatible with this field type
-            for (int j = 0; j < 2; j++) {
-                // Search the Keyboard Map first, then the Mouse Map
-                ControllerType controllerType = j == 0 ? ControllerType.Keyboard : ControllerType.Mouse;
-                ControllerMap controllerMap = player.controllers.maps.GetMap(controllerType, 0, category, layout);
-                foreach (var actionElementMap in controllerMap.ElementMapsWithAction(action.id)) {
-                    if (actionElementMap.ShowInField(row.actionRange)) {
-                        name = actionElementMap.elementIdentifierName;
-                        actionElementMapId = actionElementMap.id;
-                        break;
-                    }
+        // Find the first ActionElementMap that maps to this Action and is compatible with this field type
+        for (int j = 0; j < 2; j++)
+        {
+            // Search the Keyboard Map first, then the Mouse Map
+            ControllerType controllerType = j == 0 ? ControllerType.Keyboard : ControllerType.Mouse;
+            ControllerMap controllerMap = player.controllers.maps.GetMap(controllerType, 0, category, layout);
+            foreach (var actionElementMap in controllerMap.ElementMapsWithAction(action.id))
+            {
+                if (actionElementMap.ShowInField(row.actionRange))
+                {
+                    name = actionElementMap.elementIdentifierName;
+                    actionElementMapId = actionElementMap.id;
+                    break;
                 }
-                if (actionElementMapId >= 0) break; // found one
             }
+            if (actionElementMapId >= 0) break; // found one
+        }
 
-            // Set the label in the field button
-            row.text.text = name;
+        // Set the label in the field button
+        row.text.text = name;
 
-            // Set the field button callback
-            row.button.onClick.RemoveAllListeners(); // clear the button event listeners first
-            int index = i; // copy variable for closure
-            row.button.onClick.AddListener(() => OnInputFieldClicked(index, actionElementMapId));
+        // Set the field button callback
+        row.button.onClick.RemoveAllListeners(); // clear the button event listeners first
+        int index = i; // copy variable for closure
+        row.button.onClick.AddListener(() => OnInputFieldClicked(index, actionElementMapId));
+
+        // Hide the button and make it unclickable if there's no text
+        if (string.IsNullOrEmpty(name) && _buttonsDisabled < 2)
+        {
+            // Make the button unclickable
+            row.button.interactable = false;
+
+            // Set the label to an empty space so it still occupies the same space
+            row.text.text = " ";
+
+            // You can also make the text color transparent to hide it
+            row.text.color = new Color(0f, 0f, 0f, 0f);
+
+            _buttonsDisabled++;
         }
     }
+}
 
     private void ClearUI() {
 

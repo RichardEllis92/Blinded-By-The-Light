@@ -1078,6 +1078,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bossIntroComplete: 0
+--- !u!114 &215589208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215589205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b4751cc30b74d74ca557b0765705134, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  demoEndScreen: {fileID: 1552421611}
 --- !u!4 &215589209 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 906038184893086175, guid: 2f75f78c013939b439d72fcbfa00891e, type: 3}
@@ -4038,9 +4051,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: StartGame
+      - m_Target: {fileID: 215589208}
+        m_TargetAssemblyTypeName: BossControlsManager, Assembly-CSharp
+        m_MethodName: ReturnToMainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5521,7 +5534,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1330963845}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 95d904133cc9c1a4293be2a0d18b5569, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 4763ca7205a49ce4e8f5400790e18d40, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -6335,8 +6348,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+      - m_Target: {fileID: 215589208}
+        m_TargetAssemblyTypeName: BossControlsManager, Assembly-CSharp
         m_MethodName: ExitGame
         m_Mode: 1
         m_Arguments:
@@ -12454,6 +12467,8 @@ MonoBehaviour:
   talkedToGuide: 0
   talkedToFinalGuide: 0
   playerName: 
+  actionText: 
+  consoleText: 
   playerId: 0
 --- !u!224 &1856017887
 RectTransform:
@@ -12506,23 +12521,27 @@ MonoBehaviour:
   healthText: {fileID: 712224952}
   hellBucksText: {fileID: 460360418}
   levelText: {fileID: 806008595}
-  deathScreen: {fileID: 1594154665}
+  smallMapText: {fileID: 0}
+  bigMapText: {fileID: 0}
   fadeScreen: {fileID: 1409036083}
   fadeSpeed: 5
   newGameScene: Luci Room
   mainMenuScene: Title Menu
+  updatedMapText: 
   mapDisplay: {fileID: 31615741}
-  bigMapText: {fileID: 1698443455}
+  bigMap: {fileID: 0}
   activeSpells: {fileID: 1840156348}
   health: {fileID: 722461028}
   hellBucks: {fileID: 1260611261}
   experience: {fileID: 1806429974}
+  levelTextObject: {fileID: 0}
   bossHealthBar: {fileID: 2119105838}
   defaultHellBucks: 0
   defaultHealth: 5
   defaultMaxHealth: 5
   secretEnding: 0
   playerCurrentHealth: 0
+  playerId: 0
 --- !u!114 &1856017889
 MonoBehaviour:
   m_ObjectHideFlags: 0

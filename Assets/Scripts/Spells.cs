@@ -1,9 +1,8 @@
-using System;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class Spells : MonoBehaviour
 {
+    public static Spells Instance;
     public float speed = 7.5f;
     public Rigidbody2D theRb;
     public GameObject impactEffect;
@@ -15,8 +14,7 @@ public class Spells : MonoBehaviour
 
     private bool _isPaused;
     private Vector2 _storedVelocity;
-
-    public static Spells Instance;
+    
     void Awake()
     {
         Instance = this;

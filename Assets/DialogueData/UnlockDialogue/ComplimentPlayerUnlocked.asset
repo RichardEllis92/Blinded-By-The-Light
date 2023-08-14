@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - Let me look through the code and see what you just unlocked...
-  - "\"Compliment Player\". \nIf you type in this cheat you will get a nice compliment."
+  - "\"compliment\". \nIf you type in this cheat you will get a nice compliment."
   - 'Not very useful but maybe it will give you some motivation!
 
     Try typing

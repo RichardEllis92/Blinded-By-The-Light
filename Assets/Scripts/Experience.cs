@@ -12,7 +12,7 @@ public class Experience : MonoBehaviour
     private bool _windSpellUnlocked;
     private bool _iceSpellUnlocked;
     private int _windUnlockExperience = 100;
-    private int _iceUnlockExperience = 200;
+    private int _iceUnlockExperience = 300;
     private bool windSpellDialogueUsed;
     private bool iceSpellDialogueUsed;
     
@@ -58,12 +58,12 @@ public class Experience : MonoBehaviour
         {
             CheatSystemController.Instance.AddToListIceSpell();
             _iceSpellUnlocked = true;
-            
-            if (!iceSpellDialogueUsed && !PlayerController.Instance.EnemyNearby())
-            {
-                DialogueUI.ShowDialogue(iceSpellUnlockDialogue);
-                iceSpellDialogueUsed = true;
-            }
+        }
+
+        if (experiencePoints >= _iceUnlockExperience && windSpellDialogueUsed && !iceSpellDialogueUsed && !PlayerController.Instance.EnemyNearby())
+        {
+            DialogueUI.ShowDialogue(iceSpellUnlockDialogue);
+            iceSpellDialogueUsed = true;
         }
     }
 

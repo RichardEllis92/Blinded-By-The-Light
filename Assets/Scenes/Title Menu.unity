@@ -1944,18 +1944,18 @@ MonoBehaviour:
       _userAssignable: 1
       _categoryId: 1
     - _id: 8
-      _name: HAIL
+      _name: Horizontal
       _type: 0
-      _descriptiveName: HAIL
+      _descriptiveName: Horizontal
       _positiveDescriptiveName: Move Right
       _negativeDescriptiveName: Move Left
       _behaviorId: 0
       _userAssignable: 1
       _categoryId: 0
     - _id: 9
-      _name: SATAN
+      _name: Vertical
       _type: 0
-      _descriptiveName: SATAN
+      _descriptiveName: Vertical
       _positiveDescriptiveName: Move Up
       _negativeDescriptiveName: Move Down
       _behaviorId: 0

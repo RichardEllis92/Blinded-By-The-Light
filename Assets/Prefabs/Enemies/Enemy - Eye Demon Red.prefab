@@ -154,7 +154,7 @@ MonoBehaviour:
   spell: {fileID: 8903432001235117488, guid: f6340dea17fa6aa43aa34f6120c73757, type: 3}
   firePoint: {fileID: 8232783800162270641}
   firePoint2: {fileID: 257972326}
-  fireRate: 1
+  fireRate: 1.5
   shootRange: 10
   theBody: {fileID: 8232783800818172837}
   anim: {fileID: 6399205874636233974}

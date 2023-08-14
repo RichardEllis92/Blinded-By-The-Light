@@ -3767,7 +3767,7 @@ MonoBehaviour:
   _dialogueTriggered: 0
   gameObjectRequired: 0
   gameObject: {fileID: 0}
-  dialogueObject: {fileID: 11400000, guid: c6d3f3ff8465c2c4aa6919b505ff9c5e, type: 2}
+  dialogueObject: {fileID: 11400000, guid: bb1825bc185c26747bd660fef32c2b3c, type: 2}
 --- !u!1 &2062157593
 GameObject:
   m_ObjectHideFlags: 0

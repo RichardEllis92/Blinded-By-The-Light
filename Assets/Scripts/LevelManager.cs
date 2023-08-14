@@ -14,7 +14,6 @@ public class LevelManager : MonoBehaviour
     public bool isPaused;
 
     public int currentHellBucks;
-
     public int defaultHellBucks;
     public int defaultHealth = 5;
     public int defaultMaxHealth = 5;
@@ -22,10 +21,8 @@ public class LevelManager : MonoBehaviour
     public Transform startPoint;
 
     public GameObject dialogueBox;
-
     public GameObject bossDoor;
     
-
     private const int LevelEndExperience = 50;
     
     public int playerId = 0;
@@ -175,8 +172,6 @@ public class LevelManager : MonoBehaviour
 
                 if (EnemySpell.Instance != null)
                     EnemySpell.Instance.SetPaused(isPaused);
-
-                //Time.timeScale = 0f;
             }
             else
             {
@@ -186,8 +181,6 @@ public class LevelManager : MonoBehaviour
                 isPaused = false;
                 if (EnemySpell.Instance != null)
                     EnemySpell.Instance.SetPaused(isPaused);
-
-                //Time.timeScale = 1f;
             }
         }
     }

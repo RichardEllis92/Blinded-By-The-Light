@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemySpell : MonoBehaviour
@@ -10,7 +8,7 @@ public class EnemySpell : MonoBehaviour
     private Rigidbody2D _rigidbody;
     private bool _isPaused;
 
-    private float _storedSpeed; // Store the original speed value
+    private float _storedSpeed;
 
     private void Awake()
     {
@@ -20,12 +18,10 @@ public class EnemySpell : MonoBehaviour
     private void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
-        _storedSpeed = speed; // Store the original speed value
-
-        // Calculate the direction vector based on the predicted position of the player
+        _storedSpeed = speed; 
+        
         Vector2 direction = (PlayerController.Instance.transform.position - transform.position).normalized;
-
-        // Set the initial velocity of the enemy
+        
         _rigidbody.velocity = direction * speed;
         _direction = direction;
     }
